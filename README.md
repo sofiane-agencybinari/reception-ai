@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Reception AI - MVP Fast Food
 
-## Getting Started
+Application web pour receptionniste telephonique IA:
+- webhook de commande depuis l'agent vocal (ElevenLabs),
+- ecran cuisine en temps reel,
+- dashboard manager avec historique et indicateurs de base,
+- gestion simple du menu.
 
-First, run the development server:
+## 1) Installation
+
+```bash
+npm install
+cp .env.example .env.local
+```
+
+Renseigner les variables dans `.env.local`:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+NEXT_PUBLIC_DEFAULT_RESTAURANT_ID=
+```
+
+## 2) Base de donnees Supabase
+
+1. Ouvrir Supabase SQL Editor.
+2. Executer le script: `supabase/schema.sql`.
+3. Executer ensuite: `supabase/seed.sql`.
+4. Le seed cree deja le restaurant `11111111-1111-1111-1111-111111111111`.
+5. Tu peux garder `NEXT_PUBLIC_DEFAULT_RESTAURANT_ID` tel quel pour commencer.
+
+## 3) Lancer le projet en local
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Pages principales:
+- `http://localhost:3000/kitchen`
+- `http://localhost:3000/dashboard`
+- `http://localhost:3000/settings/menu`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 4) Endpoint webhook ElevenLabs
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Route backend:
+- `POST /api/orders/from-call`
 
-## Learn More
+Payload exemple:
 
-To learn more about Next.js, take a look at the following resources:
+```json
+{
+  "callId": "call_123",
+  "restaurantId": "11111111-1111-1111-1111-111111111111",
+  "customerPhone": "+33600000000",
+  "customerName": "Client Test",
+  "pickupTime": "2026-04-30T18:45:00Z",
+  "notes": "Sans oignons",
+  "transcript": "Je prends un burger et des frites",
+  "items": [
+    { "name": "Burger", "quantity": 1, "unitPrice": 8.9 },
+    { "name": "Frites", "quantity": 1, "unitPrice": 3.5 }
+  ]
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 5) Deploiement Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push le repo sur GitHub.
+2. Importer le projet sur Vercel.
+3. Copier les variables `.env.local` dans les Environment Variables Vercel.
+4. Deployer.
+5. Configurer l'URL publique du webhook dans ElevenLabs:
+   - `https://votre-domaine/api/orders/from-call`
 
-## Deploy on Vercel
+## 6) Procedure pilote
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+La procedure operationnelle est dans:
+- `docs/pilot-procedure.md`
