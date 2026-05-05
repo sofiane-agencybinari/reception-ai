@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { AuthGuard } from "@/components/auth-guard";
+import { ElevenLabsWidget } from "@/components/elevenlabs-widget";
 
 export default function PortalPage() {
   return (
@@ -43,6 +44,15 @@ export default function PortalPage() {
               Ajouter des produits et gerer la disponibilite.
             </p>
           </Link>
+        </section>
+        <section className="rounded-2xl border border-indigo-200 bg-white/85 p-5 shadow-sm backdrop-blur">
+          <h2 className="text-lg font-semibold text-slate-900">Agent vocal Support</h2>
+          <p className="mt-1 text-sm text-slate-600">
+            Lance une conversation en direct avec ElevenLabs depuis le portail.
+          </p>
+          <div className="mt-4">
+            <ElevenLabsWidget />
+          </div>
         </section>
       </main>
     </AuthGuard>
