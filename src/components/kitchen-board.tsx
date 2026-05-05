@@ -67,7 +67,7 @@ export function KitchenBoard() {
   }
 
   if (loading) {
-    return <p className="text-sm text-zinc-600">Chargement des commandes...</p>;
+    return <p className="text-sm text-slate-600">Chargement des commandes...</p>;
   }
 
   if (error) {
@@ -80,7 +80,7 @@ export function KitchenBoard() {
 
   if (!hasOrders) {
     return (
-      <div className="rounded-lg border border-black/10 bg-white p-6 text-sm text-zinc-600">
+      <div className="rounded-lg border border-black/10 bg-white p-6 text-sm text-slate-700">
         Aucune commande active pour le moment.
       </div>
     );
@@ -91,16 +91,16 @@ export function KitchenBoard() {
       {orders.map((order) => (
         <article
           key={order.id}
-          className="rounded-xl border border-black/10 bg-white p-5 shadow-sm"
+          className="rounded-xl border border-black/10 bg-white p-5 text-slate-900 shadow-sm"
         >
           <div className="flex items-center justify-between gap-3">
-            <h3 className="font-semibold">Commande {order.id.slice(0, 8)}</h3>
-            <span className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium uppercase">
+            <h3 className="font-semibold text-slate-900">Commande {order.id.slice(0, 8)}</h3>
+            <span className="rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium uppercase text-indigo-700">
               {order.status}
             </span>
           </div>
-          <p className="mt-1 text-sm text-zinc-600">{order.customer_phone}</p>
-          <ul className="mt-3 space-y-1 text-sm">
+          <p className="mt-1 text-sm text-slate-700">{order.customer_phone}</p>
+          <ul className="mt-3 space-y-1 text-sm text-slate-700">
             {order.order_items.map((item) => (
               <li key={item.id}>
                 {item.quantity}x {item.item_name} - {item.line_total.toFixed(2)} EUR
@@ -115,7 +115,7 @@ export function KitchenBoard() {
               <button
                 type="button"
                 onClick={() => void moveStatus(order)}
-                className="rounded-lg bg-black px-3 py-2 text-sm text-white transition hover:opacity-85"
+                className="rounded-lg bg-indigo-600 px-3 py-2 text-sm text-white transition hover:bg-indigo-500"
               >
                 Passer a {NEXT_STATUS[order.status]}
               </button>
