@@ -143,17 +143,17 @@ export function MenuSettings() {
 
   return (
     <div className="space-y-6">
-      <section className="rounded-xl border border-indigo-200 bg-white/90 p-5 text-slate-900">
-        <h2 className="text-lg font-semibold text-slate-900">Ajouter un produit</h2>
+      <section className="rounded-xl border border-slate-800 bg-slate-950/80 p-5 text-slate-100">
+        <h2 className="text-lg font-semibold text-white">Ajouter un produit</h2>
         <form onSubmit={handleSubmit} className="mt-4 grid gap-3 sm:grid-cols-3">
           <input
-            className="rounded-lg border border-slate-300 px-3 py-2"
+            className="rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-indigo-500"
             placeholder="Nom produit"
             value={name}
             onChange={(event) => setName(event.target.value)}
           />
           <input
-            className="rounded-lg border border-slate-300 px-3 py-2"
+            className="rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-slate-100 outline-none transition placeholder:text-slate-500 focus:border-indigo-500"
             placeholder="Prix"
             type="number"
             min="0"
@@ -163,23 +163,23 @@ export function MenuSettings() {
           />
           <button
             type="submit"
-            className="rounded-lg bg-indigo-600 px-3 py-2 text-white transition hover:bg-indigo-500"
+            className="rounded-lg bg-indigo-600 px-3 py-2 text-white transition duration-300 hover:-translate-y-0.5 hover:bg-indigo-500"
           >
             Ajouter
           </button>
         </form>
-        {error ? <p className="mt-3 text-sm text-red-600">{error}</p> : null}
+        {error ? <p className="mt-3 text-sm text-red-300">{error}</p> : null}
       </section>
 
-      <section className="rounded-xl border border-indigo-200 bg-white/90 p-5 text-slate-900">
-        <h2 className="text-lg font-semibold text-slate-900">Menu actuel</h2>
+      <section className="rounded-xl border border-slate-800 bg-slate-950/80 p-5 text-slate-100">
+        <h2 className="text-lg font-semibold text-white">Menu actuel</h2>
         <div className="mt-4 space-y-3">
           {(Object.keys(CATEGORY_TITLES) as MenuCategory[]).map((category) => {
             const items = groupedMenuItems[category];
             const isOpen = expanded[category];
 
             return (
-              <article key={category} className="rounded-lg border border-slate-200">
+              <article key={category} className="rounded-lg border border-slate-700 bg-slate-900/70">
                 <button
                   type="button"
                   onClick={() =>
@@ -188,26 +188,26 @@ export function MenuSettings() {
                       [category]: !prev[category],
                     }))
                   }
-                  className="flex w-full items-center justify-between px-3 py-2 text-left"
+                  className="flex w-full items-center justify-between px-3 py-2 text-left transition hover:bg-slate-800/60"
                 >
-                  <span className="font-medium text-slate-900">
+                  <span className="font-medium text-slate-100">
                     {CATEGORY_TITLES[category]} ({items.length})
                   </span>
-                  <span className="text-lg text-slate-600">{isOpen ? "-" : "+"}</span>
+                  <span className="text-lg text-slate-300">{isOpen ? "-" : "+"}</span>
                 </button>
 
                 {isOpen ? (
-                  <ul className="space-y-2 border-t border-slate-100 p-3">
+                  <ul className="space-y-2 border-t border-slate-800 p-3">
                     {items.length === 0 ? (
-                      <li className="text-sm text-slate-500">Aucun produit</li>
+                      <li className="text-sm text-slate-400">Aucun produit</li>
                     ) : (
                       items.map((item) => (
                         <li
                           key={item.id}
-                          className="flex items-center justify-between rounded-lg border border-slate-200 px-3 py-2"
+                          className="flex items-center justify-between rounded-lg border border-slate-700 bg-slate-950/70 px-3 py-2 transition hover:border-indigo-500/60"
                         >
-                          <span className="text-slate-900">{item.name}</span>
-                          <span className="text-sm text-slate-600">
+                          <span className="text-slate-100">{item.name}</span>
+                          <span className="text-sm text-slate-300">
                             {Number(item.price).toFixed(2)} EUR
                           </span>
                         </li>

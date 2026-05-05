@@ -281,17 +281,17 @@ export function DashboardClient() {
       </section>
 
       <section className="grid gap-4 lg:grid-cols-2">
-        <article className="rounded-xl border border-indigo-200 bg-white/90 p-5 text-slate-800">
-          <h2 className="text-lg font-semibold text-slate-900">Top produits commandes ({periodLabel})</h2>
+        <article className="rounded-xl border border-slate-800 bg-slate-950/80 p-5 text-slate-100">
+          <h2 className="text-lg font-semibold text-white">Top produits commandes ({periodLabel})</h2>
           <div className="mt-4 space-y-3">
             {topProducts.length === 0 ? (
-              <p className="text-sm text-slate-600">Aucune vente enregistree pour la periode.</p>
+              <p className="text-sm text-slate-400">Aucune vente enregistree pour la periode.</p>
             ) : (
               topProducts.map((product) => (
                 <div key={product.name}>
                   <div className="mb-1 flex items-center justify-between text-sm">
-                    <span className="font-medium text-slate-800">{product.name}</span>
-                    <span className="text-slate-600">{product.quantity} ventes</span>
+                    <span className="font-medium text-slate-100">{product.name}</span>
+                    <span className="text-slate-400">{product.quantity} ventes</span>
                   </div>
                 </div>
               ))
@@ -300,13 +300,13 @@ export function DashboardClient() {
         </article>
       </section>
 
-      <section className="rounded-xl border border-indigo-200 bg-white/90 p-5 text-slate-800">
-        <h2 className="text-lg font-semibold text-slate-900">
+      <section className="rounded-xl border border-slate-800 bg-slate-950/80 p-5 text-slate-100">
+        <h2 className="text-lg font-semibold text-white">
           Historique des commandes ({filteredOrders.length})
         </h2>
-        <p className="mt-1 text-sm text-slate-600">
+        <p className="mt-1 text-sm text-slate-400">
           Filtre actif:{" "}
-          <span className="font-medium text-slate-800">
+          <span className="font-medium text-slate-200">
             {selectedFilter === "all"
               ? "Toutes"
               : selectedFilter === "active"
@@ -317,8 +317,8 @@ export function DashboardClient() {
           </span>
         </p>
         <div className="mt-4 overflow-x-auto">
-          <table className="min-w-full text-left text-sm text-slate-800">
-            <thead className="border-b border-slate-200 text-slate-600">
+          <table className="min-w-full text-left text-sm text-slate-200">
+            <thead className="border-b border-slate-700 text-slate-400">
               <tr>
                 <th className="px-2 py-2 font-medium">Commande</th>
                 <th className="px-2 py-2 font-medium">Telephone</th>
@@ -329,7 +329,7 @@ export function DashboardClient() {
             </thead>
             <tbody>
               {filteredOrders.map((order) => (
-                <tr key={order.id} className="border-b border-slate-100">
+                <tr key={order.id} className="border-b border-slate-800">
                   <td className="px-2 py-2">{order.id.slice(0, 8)}</td>
                   <td className="px-2 py-2">{order.customer_phone}</td>
                   <td className="px-2 py-2">{order.status}</td>
@@ -387,12 +387,12 @@ function MetricCard({
   return (
     <article
       onClick={onClick}
-      className={`rounded-xl border bg-white/90 p-4 ${
-        onClick ? "cursor-pointer transition hover:border-indigo-400" : ""
-      } ${active ? "border-indigo-500 ring-2 ring-indigo-200" : "border-indigo-200"}`}
+      className={`rounded-xl border bg-slate-950/80 p-4 transition ${
+        onClick ? "cursor-pointer hover:-translate-y-0.5 hover:border-indigo-400/70" : ""
+      } ${active ? "border-indigo-500 ring-2 ring-indigo-500/30" : "border-slate-800"}`}
     >
-      <p className="text-xs uppercase tracking-wide text-slate-500">{label}</p>
-      <p className="mt-1 text-2xl font-semibold text-slate-900">{value}</p>
+      <p className="text-xs uppercase tracking-wide text-slate-400">{label}</p>
+      <p className="mt-1 text-2xl font-semibold text-white">{value}</p>
     </article>
   );
 }
