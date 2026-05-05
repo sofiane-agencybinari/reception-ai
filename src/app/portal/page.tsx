@@ -6,8 +6,8 @@ import { ElevenLabsWidget } from "@/components/elevenlabs-widget";
 export default function PortalPage() {
   return (
     <AuthGuard>
-      <main className="mx-auto flex w-full max-w-4xl flex-1 flex-col gap-8 px-6 py-12">
-        <section className="rounded-2xl border border-indigo-200 bg-white/85 p-8 shadow-sm backdrop-blur">
+      <main className="mx-auto flex w-full max-w-4xl flex-1 flex-col gap-8 px-6 py-12 animate-fade-up">
+        <section className="animate-pulse-glow rounded-2xl border border-indigo-200 bg-white/85 p-8 shadow-sm backdrop-blur">
           <h1 className="text-3xl font-bold tracking-tight text-slate-900">
             Reception AI - Commandes telephoniques
           </h1>
@@ -19,7 +19,7 @@ export default function PortalPage() {
         <section className="grid gap-4 sm:grid-cols-3">
           <Link
             href="/kitchen"
-            className="rounded-xl border border-indigo-200 bg-white/85 p-5 shadow-sm transition hover:border-indigo-400"
+            className="rounded-xl border border-indigo-200 bg-white/85 p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-lg"
           >
             <h2 className="font-semibold text-slate-900">Cuisine</h2>
             <p className="mt-1 text-sm text-slate-600">
@@ -28,7 +28,7 @@ export default function PortalPage() {
           </Link>
           <Link
             href="/dashboard"
-            className="rounded-xl border border-indigo-200 bg-white/85 p-5 shadow-sm transition hover:border-indigo-400"
+            className="rounded-xl border border-indigo-200 bg-white/85 p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-lg"
           >
             <h2 className="font-semibold text-slate-900">Dashboard</h2>
             <p className="mt-1 text-sm text-slate-600">
@@ -37,7 +37,7 @@ export default function PortalPage() {
           </Link>
           <Link
             href="/settings/menu"
-            className="rounded-xl border border-indigo-200 bg-white/85 p-5 shadow-sm transition hover:border-indigo-400"
+            className="rounded-xl border border-indigo-200 bg-white/85 p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-lg"
           >
             <h2 className="font-semibold text-slate-900">Parametres menu</h2>
             <p className="mt-1 text-sm text-slate-600">
@@ -45,7 +45,7 @@ export default function PortalPage() {
             </p>
           </Link>
         </section>
-        <section className="rounded-2xl border border-indigo-200 bg-white/85 p-5 shadow-sm backdrop-blur">
+        <section className="animate-soft-float rounded-2xl border border-indigo-200 bg-white/85 p-5 shadow-sm backdrop-blur">
           <h2 className="text-lg font-semibold text-slate-900">Agent vocal Support</h2>
           <p className="mt-1 text-sm text-slate-600">
             Lance une conversation en direct avec ElevenLabs depuis le portail.
