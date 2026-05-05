@@ -16,7 +16,7 @@ export default function PortalPage() {
             puis l&apos;equipe cuisine la traite en temps reel.
           </p>
         </section>
-        <section className="grid gap-4 sm:grid-cols-3">
+        <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <Link
             href="/kitchen"
             className="rounded-xl border border-indigo-200 bg-white/85 p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-lg"
@@ -42,6 +42,15 @@ export default function PortalPage() {
             <h2 className="font-semibold text-slate-900">Parametres menu</h2>
             <p className="mt-1 text-sm text-slate-600">
               Ajouter des produits et gerer la disponibilite.
+            </p>
+          </Link>
+          <Link
+            href="/clients"
+            className="rounded-xl border border-indigo-200 bg-white/85 p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-lg"
+          >
+            <h2 className="font-semibold text-slate-900">Suivi clients</h2>
+            <p className="mt-1 text-sm text-slate-600">
+              Base clients, historique des commandes et export CSV pour mailing.
             </p>
           </Link>
         </section>
