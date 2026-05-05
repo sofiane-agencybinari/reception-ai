@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useCallback, useEffect, useState } from "react";
+import { FormEvent, useCallback, useEffect, useMemo, useState } from "react";
 
 import { DEFAULT_RESTAURANT_ID } from "@/lib/config";
 
@@ -11,11 +11,65 @@ type MenuItem = {
   is_available: boolean;
 };
 
+type MenuCategory = "menus" | "boissons" | "sauces" | "autres";
+
+const CATEGORY_TITLES: Record<MenuCategory, string> = {
+  menus: "Menus",
+  boissons: "Boissons",
+  sauces: "Sauces",
+  autres: "Autres",
+};
+
+function detectCategory(name: string): MenuCategory {
+  const normalized = name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+
+  if (
+    normalized.includes("menu") ||
+    normalized.includes("burger") ||
+    normalized.includes("tacos") ||
+    normalized.includes("sandwich")
+  ) {
+    return "menus";
+  }
+
+  if (
+    normalized.includes("boisson") ||
+    normalized.includes("coca") ||
+    normalized.includes("sprite") ||
+    normalized.includes("fanta") ||
+    normalized.includes("eau") ||
+    normalized.includes("jus")
+  ) {
+    return "boissons";
+  }
+
+  if (
+    normalized.includes("sauce") ||
+    normalized.includes("ketchup") ||
+    normalized.includes("mayo") ||
+    normalized.includes("mayonnaise") ||
+    normalized.includes("harissa")
+  ) {
+    return "sauces";
+  }
+
+  return "autres";
+}
+
 export function MenuSettings() {
   const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState<Record<MenuCategory, boolean>>({
+    menus: true,
+    boissons: false,
+    sauces: false,
+    autres: false,
+  });
 
   const loadMenu = useCallback(async () => {
     const res = await fetch(`/api/menu-items?restaurantId=${DEFAULT_RESTAURANT_ID}`);
@@ -34,6 +88,27 @@ export function MenuSettings() {
     }, 0);
     return () => clearTimeout(firstLoad);
   }, [loadMenu]);
+
+  const sortedMenuItems = useMemo(
+    () =>
+      [...menuItems].sort((a, b) =>
+        a.name.localeCompare(b.name, "fr", { sensitivity: "base", numeric: true }),
+      ),
+    [menuItems],
+  );
+
+  const groupedMenuItems = useMemo(() => {
+    const groups: Record<MenuCategory, MenuItem[]> = {
+      menus: [],
+      boissons: [],
+      sauces: [],
+      autres: [],
+    };
+    for (const item of sortedMenuItems) {
+      groups[detectCategory(item.name)].push(item);
+    }
+    return groups;
+  }, [sortedMenuItems]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -98,19 +173,52 @@ export function MenuSettings() {
 
       <section className="rounded-xl border border-indigo-200 bg-white/90 p-5 text-slate-900">
         <h2 className="text-lg font-semibold text-slate-900">Menu actuel</h2>
-        <ul className="mt-4 space-y-2">
-          {menuItems.map((item) => (
-            <li
-              key={item.id}
-              className="flex items-center justify-between rounded-lg border border-slate-200 px-3 py-2"
-            >
-              <span className="text-slate-900">{item.name}</span>
-              <span className="text-sm text-slate-600">
-                {Number(item.price).toFixed(2)} EUR
-              </span>
-            </li>
-          ))}
-        </ul>
+        <div className="mt-4 space-y-3">
+          {(Object.keys(CATEGORY_TITLES) as MenuCategory[]).map((category) => {
+            const items = groupedMenuItems[category];
+            const isOpen = expanded[category];
+
+            return (
+              <article key={category} className="rounded-lg border border-slate-200">
+                <button
+                  type="button"
+                  onClick={() =>
+                    setExpanded((prev) => ({
+                      ...prev,
+                      [category]: !prev[category],
+                    }))
+                  }
+                  className="flex w-full items-center justify-between px-3 py-2 text-left"
+                >
+                  <span className="font-medium text-slate-900">
+                    {CATEGORY_TITLES[category]} ({items.length})
+                  </span>
+                  <span className="text-lg text-slate-600">{isOpen ? "-" : "+"}</span>
+                </button>
+
+                {isOpen ? (
+                  <ul className="space-y-2 border-t border-slate-100 p-3">
+                    {items.length === 0 ? (
+                      <li className="text-sm text-slate-500">Aucun produit</li>
+                    ) : (
+                      items.map((item) => (
+                        <li
+                          key={item.id}
+                          className="flex items-center justify-between rounded-lg border border-slate-200 px-3 py-2"
+                        >
+                          <span className="text-slate-900">{item.name}</span>
+                          <span className="text-sm text-slate-600">
+                            {Number(item.price).toFixed(2)} EUR
+                          </span>
+                        </li>
+                      ))
+                    )}
+                  </ul>
+                ) : null}
+              </article>
+            );
+          })}
+        </div>
       </section>
     </div>
   );
