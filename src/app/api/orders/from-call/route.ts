@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+import { sendOrderSummarySms } from "@/lib/notifications";
 import { getSupabaseAdminClient } from "@/lib/supabase";
 import { webhookOrderSchema } from "@/lib/validators";
 
@@ -180,5 +181,27 @@ export async function POST(request: Request) {
     success: true,
   });
 
-  return NextResponse.json({ ok: true, orderId: order.id }, { status: 201 });
+  const prepMinutes = Number(process.env.ORDER_PREP_MINUTES ?? "20");
+  const estimatedReadyAt = new Date(Date.now() + prepMinutes * 60 * 1000);
+  const sms = await sendOrderSummarySms({
+    orderId: order.id,
+    customerPhone: payload.customerPhone,
+    customerName: payload.customerName ?? null,
+    items: payload.items.map((item) => ({
+      name: item.name,
+      quantity: item.quantity,
+    })),
+    estimatedReadyAt,
+  });
+
+  return NextResponse.json(
+    {
+      ok: true,
+      orderId: order.id,
+      orderNumber: `SB-${order.id.slice(0, 8).toUpperCase()}`,
+      estimatedReadyAt: estimatedReadyAt.toISOString(),
+      sms,
+    },
+    { status: 201 },
+  );
 }
