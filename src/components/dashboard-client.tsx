@@ -17,6 +17,7 @@ export function DashboardClient() {
   const [metrics, setMetrics] = useState<DashboardMetrics>(EMPTY_METRICS);
   const [orders, setOrders] = useState<Order[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [selectedPeriod, setSelectedPeriod] = useState<"week" | "month" | "year">("month");
   const [selectedFilter, setSelectedFilter] = useState<
     "all" | "active" | "picked_up" | "cancelled"
   >("all");
@@ -49,21 +50,6 @@ export function DashboardClient() {
     return () => clearTimeout(firstLoad);
   }, [loadData]);
 
-  const statusCount = useMemo(() => {
-    const counts: Record<OrderStatus, number> = {
-      new: 0,
-      accepted: 0,
-      preparing: 0,
-      ready: 0,
-      picked_up: 0,
-      cancelled: 0,
-    };
-    for (const order of orders) {
-      counts[order.status] += 1;
-    }
-    return counts;
-  }, [orders]);
-
   const filteredOrders = useMemo(() => {
     if (selectedFilter === "all") return orders;
     if (selectedFilter === "active") {
@@ -74,9 +60,16 @@ export function DashboardClient() {
     return orders.filter((order) => order.status === selectedFilter);
   }, [orders, selectedFilter]);
 
+  const analyticsOrders = useMemo(() => {
+    const days = selectedPeriod === "week" ? 7 : selectedPeriod === "month" ? 30 : 365;
+    const now = Date.now();
+    const periodStart = now - (days - 1) * 24 * 60 * 60 * 1000;
+    return orders.filter((order) => new Date(order.created_at).getTime() >= periodStart);
+  }, [orders, selectedPeriod]);
+
   const topProducts = useMemo(() => {
     const map = new Map<string, { quantity: number; revenue: number }>();
-    for (const order of orders) {
+    for (const order of analyticsOrders) {
       for (const item of order.order_items) {
         const prev = map.get(item.item_name) ?? { quantity: 0, revenue: 0 };
         map.set(item.item_name, {
@@ -89,36 +82,66 @@ export function DashboardClient() {
       .map(([name, data]) => ({ name, ...data }))
       .sort((a, b) => b.quantity - a.quantity)
       .slice(0, 8);
-  }, [orders]);
+  }, [analyticsOrders]);
 
-  const last7Days = useMemo(() => {
+  const analyticsPoints = useMemo(() => {
     const now = new Date();
-    const points = Array.from({ length: 7 }, (_, index) => {
+    const days = selectedPeriod === "week" ? 7 : selectedPeriod === "month" ? 30 : 365;
+    const points = Array.from({ length: days }, (_, index) => {
       const day = new Date(now);
-      day.setDate(now.getDate() - (6 - index));
+      day.setDate(now.getDate() - (days - 1 - index));
       return {
         key: day.toISOString().slice(0, 10),
-        label: day.toLocaleDateString("fr-FR", { weekday: "short" }),
-        count: 0,
+        label:
+          selectedPeriod === "week"
+            ? day.toLocaleDateString("fr-FR", { weekday: "short" })
+            : day.toLocaleDateString("fr-FR", { day: "2-digit", month: "short" }),
+        total: 0,
+        perProduct: {} as Record<string, number>,
       };
     });
 
-    for (const order of orders) {
+    for (const order of analyticsOrders) {
       const key = new Date(order.created_at).toISOString().slice(0, 10);
       const point = points.find((p) => p.key === key);
-      if (point) point.count += 1;
+      if (!point) continue;
+      for (const item of order.order_items) {
+        point.total += item.quantity;
+        point.perProduct[item.item_name] = (point.perProduct[item.item_name] ?? 0) + item.quantity;
+      }
     }
     return points;
-  }, [orders]);
+  }, [analyticsOrders, selectedPeriod]);
 
-  const maxDayCount = useMemo(
-    () => Math.max(...last7Days.map((point) => point.count), 1),
-    [last7Days],
+  const maxDayVolume = useMemo(
+    () => Math.max(...analyticsPoints.map((point) => point.total), 1),
+    [analyticsPoints],
   );
-  const maxProductQty = useMemo(
-    () => Math.max(...topProducts.map((product) => product.quantity), 1),
+
+  const topProductNames = useMemo(
+    () => topProducts.slice(0, 5).map((product) => product.name),
     [topProducts],
   );
+
+  const productColorByName = useMemo(() => {
+    const palette = [
+      "bg-cyan-400",
+      "bg-indigo-400",
+      "bg-violet-400",
+      "bg-emerald-400",
+      "bg-amber-400",
+    ];
+    const entries = topProductNames.map((name, idx) => [name, palette[idx % palette.length]] as const);
+    return Object.fromEntries(entries);
+  }, [topProductNames]);
+
+  const totalVolumeForPeriod = useMemo(
+    () => analyticsPoints.reduce((sum, point) => sum + point.total, 0),
+    [analyticsPoints],
+  );
+
+  const periodLabel = selectedPeriod === "week" ? "7 jours" : selectedPeriod === "month" ? "30 jours" : "365 jours";
+  const featuredProduct = topProducts[0];
 
   if (error) {
     return (
@@ -158,45 +181,117 @@ export function DashboardClient() {
         <MetricCard label="Panier moyen" value={`${metrics.avgTicket.toFixed(2)} EUR`} />
       </section>
 
+      <section className="rounded-2xl border border-slate-800 bg-slate-950 p-5 text-slate-100 shadow-[0_0_0_1px_rgba(15,23,42,0.5)]">
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-300">
+            Tableau d&apos;analyse produits
+          </h2>
+          <div className="inline-flex rounded-lg border border-slate-700 bg-slate-900 p-1">
+            <PeriodButton
+              label="Semaine"
+              active={selectedPeriod === "week"}
+              onClick={() => setSelectedPeriod("week")}
+            />
+            <PeriodButton
+              label="Mois"
+              active={selectedPeriod === "month"}
+              onClick={() => setSelectedPeriod("month")}
+            />
+            <PeriodButton
+              label="Annee"
+              active={selectedPeriod === "year"}
+              onClick={() => setSelectedPeriod("year")}
+            />
+          </div>
+        </div>
+        <div className="grid gap-3 md:grid-cols-2">
+          <article className="rounded-xl border border-slate-800 bg-slate-900/50 p-4">
+            <p className="text-xs uppercase tracking-wide text-slate-400">Total ({periodLabel})</p>
+            <p className="mt-2 text-4xl font-semibold text-white">{totalVolumeForPeriod}</p>
+            <p className="mt-1 text-xs text-slate-500">Unites produits vendues</p>
+          </article>
+          <article className="rounded-xl border border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-slate-900 p-4">
+            <p className="text-xs uppercase tracking-wide text-slate-300">Produit le plus commande</p>
+            <p className="mt-2 text-2xl font-semibold text-cyan-300">
+              {featuredProduct?.name ?? "Aucun produit"}
+            </p>
+            <p className="mt-1 text-sm text-slate-300">
+              {featuredProduct
+                ? `${featuredProduct.quantity} unites | ${featuredProduct.revenue.toFixed(2)} EUR`
+                : "Ajoutez des ventes pour voir les stats"}
+            </p>
+          </article>
+        </div>
+        <div className="mt-5 rounded-xl border border-slate-800 bg-slate-900/40 p-4">
+          <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-300">
+            Volume par jour et par produit ({periodLabel})
+          </h3>
+          {topProducts.length === 0 ? (
+            <p className="mt-4 text-sm text-slate-400">Aucune vente enregistree pour le moment.</p>
+          ) : (
+            <>
+              <div className="mt-4 flex h-56 items-end gap-1 overflow-x-auto pb-2">
+                {analyticsPoints.map((point) => {
+                  const safeTotal = Math.max(point.total, 1);
+                  const height = Math.max((point.total / maxDayVolume) * 100, point.total > 0 ? 8 : 2);
+                  const tooltipProducts = topProductNames
+                    .map((name) => `${name}: ${point.perProduct[name] ?? 0}`)
+                    .join(" | ");
+
+                  return (
+                    <div key={point.key} className="group flex min-w-4 flex-1 flex-col items-center justify-end">
+                      <div
+                        className="flex w-full flex-col overflow-hidden rounded-sm border border-slate-700/50 bg-slate-800/70"
+                        style={{ height: `${height}%` }}
+                        title={`${point.label} - Total: ${point.total} | ${tooltipProducts}`}
+                      >
+                        {topProductNames.map((name) => {
+                          const qty = point.perProduct[name] ?? 0;
+                          if (qty === 0) return null;
+                          return (
+                            <div
+                              key={`${point.key}-${name}`}
+                              className={productColorByName[name] ?? "bg-slate-500"}
+                              style={{ height: `${(qty / safeTotal) * 100}%` }}
+                            />
+                          );
+                        })}
+                      </div>
+                      <span className="mt-2 text-[10px] text-slate-500">
+                        {selectedPeriod === "week" ? point.label : point.label.split(" ")[0]}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="mt-4 flex flex-wrap gap-2 text-xs">
+                {topProductNames.map((name) => (
+                  <span
+                    key={name}
+                    className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-2 py-1 text-slate-300"
+                  >
+                    <span className={`h-2 w-2 rounded-full ${productColorByName[name] ?? "bg-slate-500"}`} />
+                    {name}
+                  </span>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      </section>
+
       <section className="grid gap-4 lg:grid-cols-2">
         <article className="rounded-xl border border-indigo-200 bg-white/90 p-5 text-slate-800">
-          <h2 className="text-lg font-semibold text-slate-900">Volume commandes (7 jours)</h2>
-          <div className="mt-4 space-y-3">
-            {last7Days.map((point) => (
-              <div key={point.key} className="grid grid-cols-[58px_1fr_38px] items-center gap-3">
-                <span className="text-xs uppercase text-slate-500">{point.label}</span>
-                <div className="h-2 rounded-full bg-slate-100">
-                  <div
-                    className="h-2 rounded-full bg-indigo-500"
-                    style={{ width: `${(point.count / maxDayCount) * 100}%` }}
-                  />
-                </div>
-                <span className="text-right text-sm font-medium text-slate-700">{point.count}</span>
-              </div>
-            ))}
-          </div>
-        </article>
-
-        <article className="rounded-xl border border-indigo-200 bg-white/90 p-5 text-slate-800">
-          <h2 className="text-lg font-semibold text-slate-900">Top produits commandes</h2>
-          <p className="mt-1 text-sm text-slate-600">
-            Classement par quantite vendue (clic sur une commande pour details).
-          </p>
+          <h2 className="text-lg font-semibold text-slate-900">Top produits commandes ({periodLabel})</h2>
           <div className="mt-4 space-y-3">
             {topProducts.length === 0 ? (
-              <p className="text-sm text-slate-600">Aucune vente enregistree pour le moment.</p>
+              <p className="text-sm text-slate-600">Aucune vente enregistree pour la periode.</p>
             ) : (
               topProducts.map((product) => (
                 <div key={product.name}>
                   <div className="mb-1 flex items-center justify-between text-sm">
                     <span className="font-medium text-slate-800">{product.name}</span>
                     <span className="text-slate-600">{product.quantity} ventes</span>
-                  </div>
-                  <div className="h-2 rounded-full bg-slate-100">
-                    <div
-                      className="h-2 rounded-full bg-emerald-500"
-                      style={{ width: `${(product.quantity / maxProductQty) * 100}%` }}
-                    />
                   </div>
                 </div>
               ))
@@ -251,6 +346,30 @@ export function DashboardClient() {
         </div>
       </section>
     </div>
+  );
+}
+
+function PeriodButton({
+  label,
+  active,
+  onClick,
+}: {
+  label: string;
+  active: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`rounded-md px-3 py-1 text-xs font-medium transition ${
+        active
+          ? "bg-cyan-500 text-slate-950"
+          : "text-slate-300 hover:bg-slate-800 hover:text-white"
+      }`}
+    >
+      {label}
+    </button>
   );
 }
 
