@@ -2,7 +2,8 @@
 
 import { useEffect, useRef } from "react";
 
-const AGENT_ID = "agent_1301khmc2x71e30anhrycs0cqhky";
+const AGENT_ID =
+  process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID ?? "agent_1301khmc2x71e30anhrycs0cqhky";
 
 export function ElevenLabsWidget() {
   const containerRef = useRef<HTMLDivElement | null>(null);

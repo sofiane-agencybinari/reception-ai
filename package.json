@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:webhook": "node scripts/test-webhook.mjs",
+    "test:health": "node -e \"fetch(process.env.WEBHOOK_BASE_URL?process.env.WEBHOOK_BASE_URL+\\\"/api/health\\\":\\\"http://localhost:3000/api/health\\\").then(r=>r.json()).then(console.log)\""
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.1",

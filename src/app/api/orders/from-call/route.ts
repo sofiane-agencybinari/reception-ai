@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { sendOrderSummarySms } from "@/lib/notifications";
 import { getSupabaseAdminClient } from "@/lib/supabase";
 import { webhookOrderSchema } from "@/lib/validators";
+import { isWebhookAuthorized } from "@/lib/webhook-auth";
 
 function pickFirstString(...values: unknown[]): string | undefined {
   for (const value of values) {
@@ -53,6 +54,10 @@ async function parseRequestBody(request: Request): Promise<Record<string, unknow
 }
 
 export async function POST(request: Request) {
+  if (!isWebhookAuthorized(request)) {
+    return NextResponse.json({ error: "Webhook non autorise" }, { status: 401 });
+  }
+
   const supabase = getSupabaseAdminClient();
   if (!supabase) {
     return NextResponse.json(

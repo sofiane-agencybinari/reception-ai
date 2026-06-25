@@ -35,7 +35,9 @@ function buildMessage(input: SmsOrderSummaryInput): string {
     .map((item) => `${item.quantity}x ${item.name}`)
     .join(", ");
 
-  return `Bonjour ${customer}, votre commande ${orderNumber} est confirmee. Pret vers ${formatEta(input.estimatedReadyAt)}. Detail: ${itemsLabel}. Merci Shake Beef.`;
+  const restaurantName = process.env.RESTAURANT_NAME ?? "votre restaurant";
+
+  return `Bonjour ${customer}, votre commande ${orderNumber} est confirmee chez ${restaurantName}. Pret vers ${formatEta(input.estimatedReadyAt)}. Detail: ${itemsLabel}. Merci !`;
 }
 
 function canSendSms(phone: string): boolean {
