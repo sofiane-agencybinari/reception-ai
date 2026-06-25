@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+import { getAppUrl } from "@/lib/app-url";
 import { getSupabaseAdminClient } from "@/lib/supabase";
 
 export async function GET() {
@@ -21,9 +22,7 @@ export async function GET() {
     databaseError = error?.message;
   }
 
-  const appUrl =
-    process.env.NEXT_PUBLIC_APP_URL ??
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+  const appUrl = getAppUrl();
 
   const status = databaseOk ? "ok" : "degraded";
 
@@ -32,6 +31,7 @@ export async function GET() {
       status,
       appUrl,
       webhookUrl: `${appUrl}/api/orders/from-call`,
+      smsStatusWebhookUrl: `${appUrl}/api/webhooks/twilio/sms-status`,
       checks: {
         supabase: Boolean(supabase),
         database: databaseOk,

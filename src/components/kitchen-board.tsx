@@ -1,6 +1,7 @@
 "use client";
 
-import { type ReactNode, useCallback, useEffect, useMemo, useState } from "react";
+import { type ReactNode, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Bell, Clock, Phone, User } from "lucide-react";
 
 import { DEFAULT_RESTAURANT_ID } from "@/lib/config";
 import type { Order, OrderStatus } from "@/lib/types";
@@ -14,11 +15,45 @@ const NEXT_STATUS: Record<OrderStatus, OrderStatus | null> = {
   cancelled: null,
 };
 
+const STATUS_LABEL: Record<OrderStatus, string> = {
+  new: "Nouvelle",
+  accepted: "Acceptee",
+  preparing: "En preparation",
+  ready: "Prete",
+  picked_up: "Recuperee",
+  cancelled: "Annulee",
+};
+
+function playNewOrderChime() {
+  try {
+    const ctx = new AudioContext();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.frequency.value = 880;
+    gain.gain.setValueAtTime(0.15, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.35);
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.35);
+  } catch {
+    // Audio non disponible
+  }
+}
+
+function formatPickupTime(pickupTime: string | null) {
+  if (!pickupTime) return null;
+  const date = new Date(pickupTime);
+  if (Number.isNaN(date.getTime())) return null;
+  return date.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
+}
+
 export function KitchenBoard() {
   const [orders, setOrders] = useState<Order[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [lastUpdatedAt, setLastUpdatedAt] = useState<Date | null>(null);
+  const prevNewCountRef = useRef(0);
 
   const loadOrders = useCallback(async () => {
     try {
@@ -38,24 +73,15 @@ export function KitchenBoard() {
   }, []);
 
   useEffect(() => {
-    const firstLoad = setTimeout(() => {
-      void loadOrders();
-    }, 0);
-    const interval = setInterval(() => {
-      void loadOrders();
-    }, 5000);
-
-    return () => {
-      clearTimeout(firstLoad);
-      clearInterval(interval);
-    };
+    void loadOrders();
+    const interval = setInterval(() => void loadOrders(), 5000);
+    return () => clearInterval(interval);
   }, [loadOrders]);
 
   const sortedOrders = useMemo(
     () =>
       [...orders].sort(
-        (a, b) =>
-          new Date(a.created_at).getTime() - new Date(b.created_at).getTime(),
+        (a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime(),
       ),
     [orders],
   );
@@ -82,7 +108,13 @@ export function KitchenBoard() {
     [sortedOrders],
   );
 
-  const hasOrders = useMemo(() => sortedOrders.length > 0, [sortedOrders.length]);
+  useEffect(() => {
+    if (loading) return;
+    if (newOrders.length > prevNewCountRef.current) {
+      playNewOrderChime();
+    }
+    prevNewCountRef.current = newOrders.length;
+  }, [newOrders.length, loading]);
 
   async function moveStatus(order: Order) {
     const next = NEXT_STATUS[order.status];
@@ -98,55 +130,63 @@ export function KitchenBoard() {
   }
 
   if (loading) {
-    return <p className="text-sm text-slate-600">Chargement des commandes...</p>;
+    return (
+      <div className="glass-card rounded-2xl p-8 text-center text-sm text-zinc-500">
+        Chargement des commandes…
+      </div>
+    );
   }
 
   if (error) {
     return (
-      <div className="rounded-lg border border-red-300 bg-red-50 p-4 text-sm text-red-700">
+      <div className="rounded-xl border border-rose-500/30 bg-rose-500/10 p-4 text-sm text-rose-200">
         {error}
       </div>
     );
   }
 
-  if (!hasOrders) {
+  if (sortedOrders.length === 0) {
     return (
-      <div className="rounded-xl border border-slate-800 bg-slate-950/80 p-6 text-sm text-slate-300">
-        Aucune commande pour le moment. La cuisine est prete.
+      <div className="glass-card rounded-2xl p-10 text-center">
+        <Bell className="mx-auto h-10 w-10 text-zinc-600" />
+        <p className="mt-4 text-lg font-medium text-white">Cuisine prete</p>
+        <p className="mt-1 text-sm text-zinc-500">
+          Les commandes telephoniques apparaitront ici en temps reel.
+        </p>
       </div>
     );
   }
 
   return (
     <div className="space-y-5">
-      <section className="rounded-xl border border-slate-800 bg-slate-950/80 p-4 text-slate-100">
+      <section className="glass-card rounded-2xl p-4">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div className="flex flex-wrap items-center gap-2">
-            <KpiBadge label="Nouvelles" value={newOrders.length} tone="red" />
+            <KpiBadge label="Nouvelles" value={newOrders.length} tone="amber" pulse={newOrders.length > 0} />
             <KpiBadge label="En cours" value={inProgressOrders.length} tone="blue" />
             <KpiBadge label="Traitees" value={handledOrders.length} tone="green" />
           </div>
-          <p className="text-xs text-slate-400">
-            Derniere synchro:{" "}
-            <span className="font-medium text-slate-300">
-              {lastUpdatedAt ? lastUpdatedAt.toLocaleTimeString("fr-FR") : "--:--:--"}
+          <p className="text-xs text-zinc-500">
+            Sync{" "}
+            <span className="font-mono text-zinc-400">
+              {lastUpdatedAt ? lastUpdatedAt.toLocaleTimeString("fr-FR") : "--:--"}
             </span>
           </p>
         </div>
       </section>
 
       <section className="grid gap-4 lg:grid-cols-3">
-        <OrderColumn title="Nouvelles commandes" subtitle="A traiter rapidement" accent="red">
+        <OrderColumn title="Nouvelles commandes" subtitle="A traiter en priorite" accent="amber" highlight={newOrders.length > 0}>
           {newOrders.length === 0 ? (
             <EmptyColumnMessage message="Aucune nouvelle commande." />
           ) : (
             newOrders.map((order) => (
-              <OrderCard key={order.id} order={order} onMoveStatus={moveStatus} />
+              <OrderCard key={order.id} order={order} onMoveStatus={moveStatus} isNew />
             ))
           )}
         </OrderColumn>
 
-        <OrderColumn title="Commandes en cours" subtitle="Preparation cuisine" accent="blue">
+        <OrderColumn title="En cours" subtitle="Preparation cuisine" accent="blue">
           {inProgressOrders.length === 0 ? (
             <EmptyColumnMessage message="Aucune commande en cours." />
           ) : (
@@ -156,7 +196,7 @@ export function KitchenBoard() {
           )}
         </OrderColumn>
 
-        <OrderColumn title="Commandes traitees" subtitle="Historique recent" accent="green">
+        <OrderColumn title="Traitees" subtitle="Historique recent" accent="green">
           {handledOrders.length === 0 ? (
             <EmptyColumnMessage message="Aucune commande traitee." />
           ) : (
@@ -174,20 +214,22 @@ function KpiBadge({
   label,
   value,
   tone,
+  pulse = false,
 }: {
   label: string;
   value: number;
-  tone: "red" | "blue" | "green";
+  tone: "amber" | "blue" | "green";
+  pulse?: boolean;
 }) {
   const toneClass =
-    tone === "red"
-      ? "border-rose-500/30 bg-rose-500/10 text-rose-200"
+    tone === "amber"
+      ? "border-amber-500/30 bg-amber-500/10 text-amber-200"
       : tone === "blue"
-        ? "border-cyan-500/30 bg-cyan-500/10 text-cyan-200"
+        ? "border-sky-500/30 bg-sky-500/10 text-sky-200"
         : "border-emerald-500/30 bg-emerald-500/10 text-emerald-200";
 
   return (
-    <div className={`rounded-full border px-3 py-1 text-xs ${toneClass}`}>
+    <div className={`rounded-full border px-3 py-1 text-xs ${toneClass} ${pulse ? "animate-new-order" : ""}`}>
       <span className="font-semibold">{label}</span>: {value}
     </div>
   );
@@ -197,24 +239,28 @@ function OrderColumn({
   title,
   subtitle,
   accent,
+  highlight = false,
   children,
 }: {
   title: string;
   subtitle: string;
-  accent: "red" | "blue" | "green";
+  accent: "amber" | "blue" | "green";
+  highlight?: boolean;
   children: ReactNode;
 }) {
   const accentClass =
-    accent === "red"
-      ? "border-rose-500/30"
+    accent === "amber"
+      ? "border-amber-500/25"
       : accent === "blue"
-        ? "border-cyan-500/30"
-        : "border-emerald-500/30";
+        ? "border-sky-500/25"
+        : "border-emerald-500/25";
 
   return (
-    <article className={`rounded-xl border bg-slate-950/80 p-4 ${accentClass}`}>
-      <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-200">{title}</h3>
-      <p className="mt-1 text-xs text-slate-400">{subtitle}</p>
+    <article
+      className={`glass-card rounded-2xl p-4 ${accentClass} ${highlight ? "ring-1 ring-amber-500/20" : ""}`}
+    >
+      <h3 className="text-sm font-semibold uppercase tracking-wide text-white">{title}</h3>
+      <p className="mt-1 text-xs text-zinc-500">{subtitle}</p>
       <div className="mt-4 space-y-3">{children}</div>
     </article>
   );
@@ -222,29 +268,10 @@ function OrderColumn({
 
 function EmptyColumnMessage({ message }: { message: string }) {
   return (
-    <p className="rounded-lg border border-dashed border-slate-700 bg-slate-900/60 p-3 text-sm text-slate-400">
+    <p className="rounded-xl border border-dashed border-white/10 bg-black/20 p-4 text-center text-sm text-zinc-500">
       {message}
     </p>
   );
-}
-
-function formatStatus(status: OrderStatus) {
-  switch (status) {
-    case "new":
-      return "nouvelle";
-    case "accepted":
-      return "acceptee";
-    case "preparing":
-      return "en preparation";
-    case "ready":
-      return "prete";
-    case "picked_up":
-      return "recuperee";
-    case "cancelled":
-      return "annulee";
-    default:
-      return status;
-  }
 }
 
 function elapsedMinutes(createdAt: string) {
@@ -255,57 +282,90 @@ function OrderCard({
   order,
   onMoveStatus,
   compact = false,
+  isNew = false,
 }: {
   order: Order;
   onMoveStatus: (order: Order) => Promise<void>;
   compact?: boolean;
+  isNew?: boolean;
 }) {
   const nextStatus = NEXT_STATUS[order.status];
   const elapsed = elapsedMinutes(order.created_at);
-  const alertTone =
-    elapsed >= 20 && !["picked_up", "cancelled"].includes(order.status)
-      ? "border-rose-500/40"
-      : "border-slate-700";
+  const pickup = formatPickupTime(order.pickup_time);
+  const isLate = elapsed >= 20 && !["picked_up", "cancelled"].includes(order.status);
 
   return (
     <article
-      className={`rounded-xl border bg-slate-900/80 p-4 text-slate-100 shadow-sm transition hover:-translate-y-0.5 hover:border-indigo-400/60 ${alertTone}`}
+      className={`rounded-xl border bg-black/40 p-4 transition hover:-translate-y-0.5 hover:border-amber-500/30 ${
+        isLate ? "border-rose-500/40" : "border-white/8"
+      } ${isNew ? "animate-new-order" : ""}`}
     >
-      <div className="flex items-center justify-between gap-2">
-        <h4 className="font-semibold">#{order.id.slice(0, 8)}</h4>
-        <span className="rounded-full border border-slate-600 px-2 py-0.5 text-[11px] uppercase text-slate-300">
-          {formatStatus(order.status)}
+      <div className="flex items-start justify-between gap-2">
+        <div>
+          <p className="font-mono text-xs text-amber-400/80">
+            SB-{order.id.slice(0, 8).toUpperCase()}
+          </p>
+          <h4 className="mt-0.5 font-semibold text-white">
+            {order.customer_name?.trim() || "Client"}
+          </h4>
+        </div>
+        <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[10px] font-medium uppercase text-zinc-400">
+          {STATUS_LABEL[order.status]}
         </span>
       </div>
-      <div className="mt-1 flex items-center justify-between text-xs text-slate-400">
-        <span>{order.customer_phone}</span>
-        <span>{elapsed} min</span>
+
+      <div className="mt-2 flex flex-wrap gap-3 text-xs text-zinc-500">
+        <span className="inline-flex items-center gap-1">
+          <Phone className="h-3 w-3" />
+          {order.customer_phone}
+        </span>
+        {pickup ? (
+          <span className="inline-flex items-center gap-1 text-amber-300/90">
+            <Clock className="h-3 w-3" />
+            Retrait {pickup}
+          </span>
+        ) : null}
+        <span className={isLate ? "text-rose-400" : ""}>{elapsed} min</span>
       </div>
 
       {!compact ? (
-        <ul className="mt-3 space-y-1 text-sm text-slate-300">
-          {order.order_items.map((item) => (
-            <li key={item.id} className="flex items-center justify-between gap-2">
-              <span>
-                {item.quantity}x {item.item_name}
-              </span>
-              <span>{item.line_total.toFixed(2)} EUR</span>
-            </li>
-          ))}
-        </ul>
-      ) : null}
+        <>
+          <ul className="mt-3 space-y-1 border-t border-white/5 pt-3 text-sm text-zinc-300">
+            {order.order_items.map((item) => (
+              <li key={item.id} className="flex items-center justify-between gap-2">
+                <span>
+                  {item.quantity}x {item.item_name}
+                </span>
+                <span className="font-mono text-xs text-zinc-500">
+                  {item.line_total.toFixed(2)} EUR
+                </span>
+              </li>
+            ))}
+          </ul>
+          {order.notes ? (
+            <p className="mt-2 rounded-lg bg-amber-500/10 px-2 py-1.5 text-xs text-amber-200/90">
+              Note : {order.notes}
+            </p>
+          ) : null}
+        </>
+      ) : (
+        <p className="mt-2 text-xs text-zinc-500">
+          <User className="mr-1 inline h-3 w-3" />
+          {order.order_items.map((i) => `${i.quantity}x ${i.item_name}`).join(", ")}
+        </p>
+      )}
 
-      <div className="mt-3 flex items-center justify-between">
-        <p className="text-sm font-semibold text-white">
+      <div className="mt-3 flex items-center justify-between border-t border-white/5 pt-3">
+        <p className="text-sm font-bold text-white">
           {Number(order.total_amount).toFixed(2)} EUR
         </p>
         {nextStatus ? (
           <button
             type="button"
             onClick={() => void onMoveStatus(order)}
-            className="rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-medium text-white transition hover:bg-indigo-500"
+            className="cockpit-btn-primary px-3 py-1.5 text-xs"
           >
-            Passer a {formatStatus(nextStatus)}
+            {STATUS_LABEL[nextStatus]}
           </button>
         ) : null}
       </div>

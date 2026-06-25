@@ -19,7 +19,11 @@ export function AuthGuard({ children }: { children: ReactNode }) {
   }, [router]);
 
   if (!ready) {
-    return <p className="text-sm text-slate-600">Verification acces...</p>;
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[#07080c] text-sm text-zinc-500">
+        Verification acces…
+      </div>
+    );
   }
 
   return <>{children}</>;

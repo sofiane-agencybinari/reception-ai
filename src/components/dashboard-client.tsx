@@ -182,7 +182,7 @@ export function DashboardClient() {
 
   if (error) {
     return (
-      <div className="rounded-lg border border-red-300 bg-red-50 p-4 text-sm text-red-700">
+      <div className="rounded-xl border border-rose-500/30 bg-rose-500/10 p-4 text-sm text-rose-200">
         {error}
       </div>
     );
@@ -257,12 +257,12 @@ export function DashboardClient() {
         <MetricCard label={`CA (${periodLabel})`} value={`${periodRevenue.toFixed(2)} EUR`} />
       </section>
 
-      <section className="rounded-2xl border border-slate-800 bg-slate-950 p-5 text-slate-100 shadow-[0_0_0_1px_rgba(15,23,42,0.5)]">
+      <section className="rounded-2xl border border-white/8 bg-black/30 p-5 backdrop-blur">
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-300">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-400">
             Tableau d&apos;analyse produits
           </h2>
-          <div className="inline-flex rounded-lg border border-slate-700 bg-slate-900 p-1">
+          <div className="inline-flex rounded-lg border border-white/10 bg-black/40 p-1">
             <PeriodButton
               label="Semaine"
               active={selectedPeriod === "week"}
@@ -281,29 +281,29 @@ export function DashboardClient() {
           </div>
         </div>
         <div className="grid gap-3 md:grid-cols-2">
-          <article className="rounded-xl border border-slate-800 bg-slate-900/50 p-4">
-            <p className="text-xs uppercase tracking-wide text-slate-400">Total ({periodLabel})</p>
+          <article className="glass-card rounded-xl p-4">
+            <p className="text-xs uppercase tracking-wide text-zinc-500">Total ({periodLabel})</p>
             <p className="mt-2 text-4xl font-semibold text-white">{totalVolumeForPeriod}</p>
-            <p className="mt-1 text-xs text-slate-500">Unites produits vendues</p>
+            <p className="mt-1 text-xs text-zinc-500">Unites produits vendues</p>
           </article>
-          <article className="rounded-xl border border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-slate-900 p-4">
-            <p className="text-xs uppercase tracking-wide text-slate-300">Produit le plus commande</p>
-            <p className="mt-2 text-2xl font-semibold text-cyan-300">
+          <article className="glass-card rounded-xl border-amber-500/20 p-4">
+            <p className="text-xs uppercase tracking-wide text-zinc-400">Produit le plus commande</p>
+            <p className="mt-2 text-2xl font-semibold text-amber-300">
               {featuredProduct?.name ?? "Aucun produit"}
             </p>
-            <p className="mt-1 text-sm text-slate-300">
+            <p className="mt-1 text-sm text-zinc-400">
               {featuredProduct
                 ? `${featuredProduct.quantity} unites | ${featuredProduct.revenue.toFixed(2)} EUR`
                 : "Ajoutez des ventes pour voir les stats"}
             </p>
           </article>
         </div>
-        <div className="mt-5 rounded-xl border border-slate-800 bg-slate-900/40 p-4">
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-300">
+        <div className="mt-5 glass-card rounded-xl p-4">
+          <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-400">
             Volume par jour et par produit ({periodLabel})
           </h3>
           {topProducts.length === 0 ? (
-            <p className="mt-4 text-sm text-slate-400">Aucune vente enregistree pour le moment.</p>
+            <p className="mt-4 text-sm text-zinc-500">Aucune vente enregistree pour le moment.</p>
           ) : (
             <>
               <div className="mt-4 flex h-56 items-end gap-1 overflow-x-auto pb-2">
@@ -317,7 +317,7 @@ export function DashboardClient() {
                   return (
                     <div key={point.key} className="group flex min-w-4 flex-1 flex-col items-center justify-end">
                       <div
-                        className="flex w-full flex-col overflow-hidden rounded-sm border border-slate-700/50 bg-slate-800/70"
+                        className="flex w-full flex-col overflow-hidden rounded-sm border border-white/10 bg-black/50"
                         style={{ height: `${height}%` }}
                         title={`${point.label} - Total: ${point.total} | ${tooltipProducts}`}
                       >
@@ -333,7 +333,7 @@ export function DashboardClient() {
                           );
                         })}
                       </div>
-                      <span className="mt-2 text-[10px] text-slate-500">
+                      <span className="mt-2 text-[10px] text-zinc-600">
                         {selectedPeriod === "week" ? point.label : point.label.split(" ")[0]}
                       </span>
                     </div>
@@ -344,7 +344,7 @@ export function DashboardClient() {
                 {topProductNames.map((name) => (
                   <span
                     key={name}
-                    className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900 px-2 py-1 text-slate-300"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-black/40 px-2 py-1 text-xs text-zinc-400"
                   >
                     <span className={`h-2 w-2 rounded-full ${productColorByName[name] ?? "bg-slate-500"}`} />
                     {name}
@@ -357,17 +357,17 @@ export function DashboardClient() {
       </section>
 
       <section className="grid gap-4 lg:grid-cols-2">
-        <article className="rounded-xl border border-slate-800 bg-slate-950/80 p-5 text-slate-100">
+        <article className="glass-card rounded-xl p-5">
           <h2 className="text-lg font-semibold text-white">Top produits commandes ({periodLabel})</h2>
           <div className="mt-4 space-y-3">
             {topProducts.length === 0 ? (
-              <p className="text-sm text-slate-400">Aucune vente enregistree pour la periode.</p>
+              <p className="text-sm text-zinc-500">Aucune vente enregistree pour la periode.</p>
             ) : (
               topProducts.map((product) => (
                 <div key={product.name}>
                   <div className="mb-1 flex items-center justify-between text-sm">
-                    <span className="font-medium text-slate-100">{product.name}</span>
-                    <span className="text-slate-400">{product.quantity} ventes</span>
+                    <span className="font-medium text-zinc-200">{product.name}</span>
+                    <span className="text-zinc-500">{product.quantity} ventes</span>
                   </div>
                 </div>
               ))
@@ -376,13 +376,13 @@ export function DashboardClient() {
         </article>
       </section>
 
-      <section className="rounded-xl border border-slate-800 bg-slate-950/80 p-5 text-slate-100">
+      <section className="glass-card rounded-xl p-5">
         <h2 className="text-lg font-semibold text-white">
           Historique des commandes ({filteredOrders.length})
         </h2>
-        <p className="mt-1 text-sm text-slate-400">
+        <p className="mt-1 text-sm text-zinc-500">
           Filtre actif:{" "}
-          <span className="font-medium text-slate-200">
+          <span className="font-medium text-zinc-300">
             {selectedFilter === "all"
               ? "Toutes"
               : selectedFilter === "active"
@@ -393,8 +393,8 @@ export function DashboardClient() {
           </span>
         </p>
         <div className="mt-4 overflow-x-auto">
-          <table className="min-w-full text-left text-sm text-slate-200">
-            <thead className="border-b border-slate-700 text-slate-400">
+          <table className="min-w-full text-left text-sm text-zinc-300">
+            <thead className="border-b border-white/10 text-zinc-500">
               <tr>
                 <th className="px-2 py-2 font-medium">Commande</th>
                 <th className="px-2 py-2 font-medium">Telephone</th>
@@ -405,7 +405,7 @@ export function DashboardClient() {
             </thead>
             <tbody>
               {filteredOrders.map((order) => (
-                <tr key={order.id} className="border-b border-slate-800">
+                <tr key={order.id} className="border-b border-white/5">
                   <td className="px-2 py-2">{order.id.slice(0, 8)}</td>
                   <td className="px-2 py-2">{order.customer_phone}</td>
                   <td className="px-2 py-2">{order.status}</td>
@@ -440,8 +440,8 @@ function PeriodButton({
       onClick={onClick}
       className={`rounded-md px-3 py-1 text-xs font-medium transition ${
         active
-          ? "bg-cyan-500 text-slate-950"
-          : "text-slate-300 hover:bg-slate-800 hover:text-white"
+          ? "bg-amber-500 text-black"
+          : "text-zinc-400 hover:bg-white/5 hover:text-white"
       }`}
     >
       {label}
@@ -463,11 +463,11 @@ function MetricCard({
   return (
     <article
       onClick={onClick}
-      className={`rounded-xl border bg-slate-950/80 p-4 transition ${
-        onClick ? "cursor-pointer hover:-translate-y-0.5 hover:border-indigo-400/70" : ""
-      } ${active ? "border-indigo-500 ring-2 ring-indigo-500/30" : "border-slate-800"}`}
+      className={`glass-card rounded-xl p-4 transition ${
+        onClick ? "cursor-pointer hover:-translate-y-0.5 hover:border-amber-500/30" : ""
+      } ${active ? "border-amber-500/40 ring-1 ring-amber-500/25" : ""}`}
     >
-      <p className="text-xs uppercase tracking-wide text-slate-400">{label}</p>
+      <p className="text-xs uppercase tracking-wide text-zinc-500">{label}</p>
       <p className="mt-1 text-2xl font-semibold text-white">{value}</p>
     </article>
   );

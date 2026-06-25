@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const LOGIN_ID = process.env.NEXT_PUBLIC_APP_LOGIN_ID ?? "manager";
@@ -26,50 +27,60 @@ export function LoginScreen() {
   }
 
   return (
-    <main className="relative flex min-h-screen flex-1 items-center justify-center overflow-hidden bg-slate-950 px-6 py-12 text-slate-100">
-      <div className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-cyan-500/20 blur-3xl" />
-      <section className="animate-fade-up w-full max-w-md">
-        <p className="text-center text-xs uppercase tracking-[0.28em] text-slate-500">
-          Dashboard - Receptionniste - Telephone
-        </p>
-        <h1 className="mt-4 text-center text-3xl font-semibold">Logiciel de gestion</h1>
-        <p className="mt-2 text-center text-sm text-slate-400">
-          Connectez-vous pour acceder au tableau de bord.
-        </p>
+    <main className="relative flex min-h-screen flex-1 items-center justify-center overflow-hidden bg-[#07080c] px-6 py-12 text-zinc-100">
+      <div className="marketing-grid pointer-events-none absolute inset-0 opacity-30" />
+      <div className="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[600px] -translate-x-1/2 rounded-full bg-amber-500/10 blur-[100px]" />
 
-        <div className="mt-8 rounded-2xl border border-slate-800 bg-slate-900/85 p-6 shadow-2xl backdrop-blur animate-pulse-glow">
-          <form className="space-y-3" onSubmit={onSubmit}>
-            <label className="block text-xs font-medium uppercase tracking-widest text-slate-400">
-              Identifiant
-            </label>
-            <input
-              type="text"
-              value={identifier}
-              onChange={(event) => setIdentifier(event.target.value)}
-              placeholder="manager"
-              className="w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 outline-none placeholder:text-slate-500 transition focus:border-indigo-500"
-            />
-            <label className="mt-4 block text-xs font-medium uppercase tracking-widest text-slate-400">
-              Mot de passe
-            </label>
-            <input
-              type="password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              placeholder="1234"
-              className="w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 outline-none placeholder:text-slate-500 transition focus:border-indigo-500"
-            />
-            <button
-              type="submit"
-              className="mt-4 w-full rounded-lg bg-slate-100 px-4 py-2 text-sm font-medium text-slate-900 transition duration-300 hover:-translate-y-0.5 hover:bg-white"
-            >
-              Connexion
+      <section className="animate-fade-up relative z-10 w-full max-w-md">
+        <div className="mb-8 text-center">
+          <Link href="/" className="inline-flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 to-orange-600 text-sm font-bold text-black">
+              A
+            </div>
+            <span className="text-xl font-bold tracking-tight">ASTOR</span>
+          </Link>
+          <p className="mt-4 text-sm text-zinc-500">Cockpit restaurant — acces personnel</p>
+        </div>
+
+        <div className="glass-card rounded-2xl p-6">
+          <h1 className="text-lg font-semibold text-white">Connexion</h1>
+          <p className="mt-1 text-sm text-zinc-500">
+            Cuisine, analytics et gestion des commandes telephoniques.
+          </p>
+
+          <form className="mt-6 space-y-4" onSubmit={onSubmit}>
+            <div>
+              <label className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
+                Identifiant
+              </label>
+              <input
+                type="text"
+                value={identifier}
+                onChange={(e) => setIdentifier(e.target.value)}
+                placeholder="manager"
+                className="cockpit-input mt-1 w-full px-3 py-2.5 text-sm"
+              />
+            </div>
+            <div>
+              <label className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
+                Mot de passe
+              </label>
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="••••"
+                className="cockpit-input mt-1 w-full px-3 py-2.5 text-sm"
+              />
+            </div>
+            <button type="submit" className="cockpit-btn-primary w-full px-4 py-2.5 text-sm">
+              Acceder au cockpit
             </button>
           </form>
-          {error ? <p className="mt-3 text-sm text-red-400">{error}</p> : null}
+          {error ? <p className="mt-3 text-sm text-rose-400">{error}</p> : null}
         </div>
-        <p className="mt-4 text-center text-xs text-slate-500">
+
+        <p className="mt-6 text-center text-xs text-zinc-600">
           Acces reserve au personnel autorise.
         </p>
       </section>

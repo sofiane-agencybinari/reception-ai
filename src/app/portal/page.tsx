@@ -4,6 +4,7 @@ import { ArrowUpRight, BarChart3, ChefHat, Settings, Users } from "lucide-react"
 import { AuthGuard } from "@/components/auth-guard";
 import { AppShell } from "@/components/app-shell";
 import { ElevenLabsWidget } from "@/components/elevenlabs-widget";
+import { PortalOverview } from "@/components/portal-overview";
 
 const MODULES = [
   {
@@ -43,7 +44,9 @@ export default function PortalPage() {
         title="Cockpit ASTOR"
         subtitle="Pilotez vos commandes telephoniques depuis un seul endroit."
       >
-        <section className="grid gap-4 sm:grid-cols-2">
+        <PortalOverview />
+
+        <section className="mt-8 grid gap-4 sm:grid-cols-2">
           {MODULES.map(({ href, icon: Icon, title, description, tag }) => (
             <Link
               key={href}

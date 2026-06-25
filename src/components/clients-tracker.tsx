@@ -78,27 +78,26 @@ export function ClientsTracker() {
 
   return (
     <div className="space-y-6">
-      <section className="rounded-xl border border-slate-800 bg-slate-950/80 p-5 text-slate-100">
+      <section className="glass-card rounded-xl p-5">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <h2 className="text-lg font-semibold text-white">Base clients</h2>
-            <p className="mt-1 text-sm text-slate-400">
-              Profils deduits des commandes (telephone, nom, historique et dates). Export CSV pour
-              outils mailing.
+            <p className="mt-1 text-sm text-zinc-500">
+              Profils deduits des commandes (telephone, nom, historique). Export CSV pour mailing.
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
             <button
               type="button"
               onClick={() => void load()}
-              className="rounded-lg border border-slate-600 px-3 py-2 text-xs font-medium text-slate-200 transition hover:border-indigo-400 hover:text-white"
+              className="cockpit-btn-ghost px-3 py-2 text-xs font-medium"
             >
               Actualiser
             </button>
             <button
               type="button"
               onClick={exportAll}
-              className="rounded-lg bg-indigo-600 px-3 py-2 text-xs font-medium text-white transition hover:bg-indigo-500"
+              className="cockpit-btn-primary px-3 py-2 text-xs"
             >
               Exporter tout (CSV)
             </button>
@@ -106,33 +105,32 @@ export function ClientsTracker() {
               type="button"
               onClick={exportFiltered}
               disabled={filtered.length === 0}
-              className="rounded-lg border border-indigo-500/50 px-3 py-2 text-xs font-medium text-indigo-200 transition hover:bg-indigo-500/10 disabled:opacity-40"
+              className="cockpit-btn-ghost border-amber-500/30 px-3 py-2 text-xs text-amber-300 disabled:opacity-40"
             >
               Exporter filtre (CSV)
             </button>
           </div>
         </div>
         <div className="mt-4">
-          <label className="text-xs font-medium uppercase tracking-wide text-slate-500">
+          <label className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">
             Rechercher
           </label>
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Nom ou telephone..."
-            className="mt-1 w-full max-w-md rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100 outline-none placeholder:text-slate-500 focus:border-indigo-500"
+            className="cockpit-input mt-1 w-full max-w-md px-3 py-2 text-sm"
           />
         </div>
-        <p className="mt-3 text-xs text-slate-500">
+        <p className="mt-3 text-xs text-zinc-600">
           {customers.length} client(s) uniques · {filtered.length} affiche(s)
         </p>
       </section>
 
       <div className="space-y-3">
         {filtered.length === 0 ? (
-          <p className="rounded-xl border border-dashed border-slate-700 bg-slate-950/60 p-6 text-center text-sm text-slate-400">
-            Aucun client pour ce filtre. Les profils apparaissent des la premiere commande enregistree
-            dans Supabase.
+          <p className="rounded-xl border border-dashed border-white/10 bg-black/20 p-6 text-center text-sm text-zinc-500">
+            Aucun client pour ce filtre. Les profils apparaissent des la premiere commande enregistree.
           </p>
         ) : (
           filtered.map((c) => {
@@ -140,45 +138,45 @@ export function ClientsTracker() {
             return (
               <article
                 key={c.phone}
-                className="overflow-hidden rounded-xl border border-slate-800 bg-slate-950/80 text-slate-100 transition hover:border-indigo-500/40"
+                className="glass-card overflow-hidden rounded-xl transition hover:border-amber-500/20"
               >
                 <button
                   type="button"
                   onClick={() => setExpandedPhone(open ? null : c.phone)}
-                  className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left transition hover:bg-slate-900/80"
+                  className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left transition hover:bg-white/5"
                 >
                   <div>
                     <p className="font-semibold text-white">{c.name}</p>
-                    <p className="text-sm text-slate-400">{c.phone}</p>
+                    <p className="text-sm text-zinc-500">{c.phone}</p>
                   </div>
-                  <div className="flex items-center gap-3 text-right text-xs text-slate-400">
+                  <div className="flex items-center gap-3 text-right text-xs text-zinc-500">
                     <span>
                       {c.orderCount} commande{c.orderCount > 1 ? "s" : ""}
                     </span>
-                    <span className="rounded-full border border-slate-600 px-2 py-0.5 text-slate-300">
+                    <span className="rounded-full border border-white/10 px-2 py-0.5 text-zinc-400">
                       {open ? "Masquer" : "Historique"}
                     </span>
                   </div>
                 </button>
                 {open ? (
-                  <div className="border-t border-slate-800 bg-slate-900/50 px-4 py-3">
+                  <div className="border-t border-white/5 bg-black/30 px-4 py-3">
                     <ul className="space-y-2">
                       {c.orders.map((o) => (
                         <li
                           key={o.id}
-                          className="rounded-lg border border-slate-800 bg-slate-950/70 px-3 py-2 text-sm"
+                          className="rounded-lg border border-white/5 bg-black/40 px-3 py-2 text-sm"
                         >
                           <div className="flex flex-wrap items-center justify-between gap-2">
-                            <span className="text-slate-300">
+                            <span className="text-zinc-400">
                               {new Date(o.createdAt).toLocaleString("fr-FR", {
                                 dateStyle: "short",
                                 timeStyle: "short",
                               })}
                             </span>
-                            <span className="text-xs uppercase text-slate-500">{o.status}</span>
+                            <span className="text-[10px] font-mono uppercase text-zinc-600">{o.status}</span>
                           </div>
-                          <p className="mt-1 text-slate-200">{o.itemsLabel}</p>
-                          <p className="mt-1 text-xs text-slate-500">
+                          <p className="mt-1 text-zinc-200">{o.itemsLabel}</p>
+                          <p className="mt-1 text-xs text-zinc-600">
                             Total {o.totalAmount.toFixed(2)} EUR · #{o.id.slice(0, 8)}
                           </p>
                         </li>

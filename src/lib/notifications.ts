@@ -1,3 +1,6 @@
+import { getAppUrl } from "@/lib/app-url";
+import { parseTwilioApiError } from "@/lib/twilio";
+
 type SmsOrderItem = {
   name: string;
   quantity: number;
@@ -15,6 +18,8 @@ export type SmsSendResult = {
   attempted: boolean;
   sent: boolean;
   reason?: string;
+  messageSid?: string;
+  status?: string;
 };
 
 function toOrderNumber(orderId: string): string {
@@ -70,6 +75,13 @@ export async function sendOrderSummarySms(
     Body: body,
   });
 
+  const statusCallbackUrl = new URL(
+    "/api/webhooks/twilio/sms-status",
+    getAppUrl(),
+  );
+  statusCallbackUrl.searchParams.set("orderId", input.orderId);
+  payload.set("StatusCallback", statusCallbackUrl.toString());
+
   const res = await fetch(
     `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`,
     {
@@ -84,8 +96,14 @@ export async function sendOrderSummarySms(
 
   if (!res.ok) {
     const details = await res.text();
-    return { attempted: true, sent: false, reason: details.slice(0, 300) };
+    return { attempted: true, sent: false, reason: parseTwilioApiError(details) };
   }
 
-  return { attempted: true, sent: true };
+  const data = (await res.json()) as { sid?: string; status?: string };
+  return {
+    attempted: true,
+    sent: true,
+    messageSid: data.sid,
+    status: data.status ?? "queued",
+  };
 }
