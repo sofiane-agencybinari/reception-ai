@@ -12,7 +12,7 @@ export function AuthGuard({ children }: { children: ReactNode }) {
   useEffect(() => {
     const ok = window.sessionStorage.getItem(AUTH_STORAGE_KEY) === "true";
     if (!ok) {
-      router.replace("/");
+      router.replace("/login");
       return;
     }
     setReady(true);
