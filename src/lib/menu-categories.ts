@@ -22,13 +22,15 @@ export function detectMenuCategory(name: string): MenuCategory {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
 
+  // Sauces et boissons avant menus : evite "Sauce burger" → menus.
   if (
-    normalized.includes("menu") ||
-    normalized.includes("burger") ||
-    normalized.includes("tacos") ||
-    normalized.includes("sandwich")
+    normalized.includes("sauce") ||
+    normalized.includes("ketchup") ||
+    normalized.includes("mayo") ||
+    normalized.includes("mayonnaise") ||
+    normalized.includes("harissa")
   ) {
-    return "menus";
+    return "sauces";
   }
 
   if (
@@ -43,13 +45,12 @@ export function detectMenuCategory(name: string): MenuCategory {
   }
 
   if (
-    normalized.includes("sauce") ||
-    normalized.includes("ketchup") ||
-    normalized.includes("mayo") ||
-    normalized.includes("mayonnaise") ||
-    normalized.includes("harissa")
+    normalized.includes("menu") ||
+    normalized.includes("burger") ||
+    normalized.includes("tacos") ||
+    normalized.includes("sandwich")
   ) {
-    return "sauces";
+    return "menus";
   }
 
   return "autres";
