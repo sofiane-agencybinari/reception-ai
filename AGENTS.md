@@ -26,3 +26,5 @@ WEBHOOK_BASE_URL=https://reception-ai-zeta.vercel.app npm run test:webhook
 
 Config ElevenLabs: `docs/elevenlabs-setup.md`
 Config Twilio SMS: `docs/twilio-setup.md` — test: `npm run test:sms -- +33XXXXXXXXX`
+
+Sync env Vercel (si CLI connecte): `npm run sync:vercel` puis redeploy. Sans `vercel login`, pousser les vars manuellement dans Vercel Dashboard.
