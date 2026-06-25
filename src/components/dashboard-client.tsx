@@ -3,7 +3,14 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 import { DEFAULT_RESTAURANT_ID } from "@/lib/config";
-import type { DashboardMetrics, Order, OrderStatus } from "@/lib/types";
+import {
+  buildProductSalesRows,
+  downloadCsv,
+  ordersToCsv,
+  productSalesToCsv,
+  sumRevenue,
+} from "@/lib/exports";
+import type { DashboardMetrics, Order } from "@/lib/types";
 
 const EMPTY_METRICS: DashboardMetrics = {
   totalOrders: 0,
@@ -140,8 +147,38 @@ export function DashboardClient() {
     [analyticsPoints],
   );
 
+  const periodRevenue = useMemo(() => sumRevenue(analyticsOrders), [analyticsOrders]);
+
+  const todayStats = useMemo(() => {
+    const todayKey = new Date().toISOString().slice(0, 10);
+    const todayOrders = orders.filter(
+      (o) => new Date(o.created_at).toISOString().slice(0, 10) === todayKey,
+    );
+    const valid = todayOrders.filter((o) => o.status !== "cancelled");
+    return {
+      orders: todayOrders.length,
+      revenue: sumRevenue(todayOrders),
+      units: valid.reduce(
+        (sum, o) => sum + o.order_items.reduce((s, i) => s + i.quantity, 0),
+        0,
+      ),
+    };
+  }, [orders]);
+
   const periodLabel = selectedPeriod === "week" ? "7 jours" : selectedPeriod === "month" ? "30 jours" : "365 jours";
   const featuredProduct = topProducts[0];
+
+  function exportProductSales() {
+    const products = buildProductSalesRows(analyticsOrders);
+    const rows = productSalesToCsv(products, periodLabel, periodRevenue);
+    const stamp = new Date().toISOString().slice(0, 10);
+    downloadCsv(rows, `astor_compta_produits_${stamp}.csv`);
+  }
+
+  function exportOrders() {
+    const stamp = new Date().toISOString().slice(0, 10);
+    downloadCsv(ordersToCsv(filteredOrders), `astor_commandes_${stamp}.csv`);
+  }
 
   if (error) {
     return (
@@ -153,7 +190,45 @@ export function DashboardClient() {
 
   return (
     <div className="space-y-6">
-      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+      <section className="glass-card rounded-2xl p-5">
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-amber-500">
+              Rapport du jour
+            </p>
+            <p className="mt-2 text-3xl font-bold text-white">
+              {todayStats.revenue.toFixed(2)} EUR
+            </p>
+            <p className="mt-1 text-sm text-zinc-500">
+              {todayStats.orders} commandes · {todayStats.units} produits vendus
+            </p>
+          </div>
+          <div className="text-right">
+            <p className="text-xs uppercase tracking-wider text-zinc-500">CA periode ({periodLabel})</p>
+            <p className="mt-2 text-2xl font-semibold text-amber-400">
+              {periodRevenue.toFixed(2)} EUR
+            </p>
+          </div>
+        </div>
+        <div className="mt-5 flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={exportProductSales}
+            className="rounded-full bg-amber-500 px-4 py-2 text-xs font-semibold text-black transition hover:bg-amber-400"
+          >
+            Export compta produits (CSV)
+          </button>
+          <button
+            type="button"
+            onClick={exportOrders}
+            className="rounded-full border border-white/10 px-4 py-2 text-xs font-medium text-zinc-300 transition hover:border-amber-500/30 hover:text-white"
+          >
+            Export commandes (CSV)
+          </button>
+        </div>
+      </section>
+
+      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
         <MetricCard
           label="Total commandes"
           value={metrics.totalOrders.toString()}
@@ -179,6 +254,7 @@ export function DashboardClient() {
           onClick={() => setSelectedFilter("cancelled")}
         />
         <MetricCard label="Panier moyen" value={`${metrics.avgTicket.toFixed(2)} EUR`} />
+        <MetricCard label={`CA (${periodLabel})`} value={`${periodRevenue.toFixed(2)} EUR`} />
       </section>
 
       <section className="rounded-2xl border border-slate-800 bg-slate-950 p-5 text-slate-100 shadow-[0_0_0_1px_rgba(15,23,42,0.5)]">

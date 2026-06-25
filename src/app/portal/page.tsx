@@ -1,69 +1,80 @@
 import Link from "next/link";
+import { ArrowUpRight, BarChart3, ChefHat, Settings, Users } from "lucide-react";
 
 import { AuthGuard } from "@/components/auth-guard";
+import { AppShell } from "@/components/app-shell";
 import { ElevenLabsWidget } from "@/components/elevenlabs-widget";
+
+const MODULES = [
+  {
+    href: "/kitchen",
+    icon: ChefHat,
+    title: "Cuisine",
+    description: "Commandes en direct et gestion des statuts.",
+    tag: "Live",
+  },
+  {
+    href: "/dashboard",
+    icon: BarChart3,
+    title: "Analytics",
+    description: "CA, top produits et exports compta.",
+    tag: "Stats",
+  },
+  {
+    href: "/clients",
+    icon: Users,
+    title: "Clients",
+    description: "Historique, fidelite et export CSV.",
+    tag: "CRM",
+  },
+  {
+    href: "/settings/menu",
+    icon: Settings,
+    title: "Menu",
+    description: "Carte, prix et disponibilite des produits.",
+    tag: "Catalogue",
+  },
+] as const;
 
 export default function PortalPage() {
   return (
     <AuthGuard>
-      <main className="mx-auto flex w-full max-w-4xl flex-1 flex-col gap-8 px-6 py-12 animate-fade-up">
-        <section className="animate-pulse-glow rounded-2xl border border-indigo-200 bg-white/85 p-8 shadow-sm backdrop-blur">
-          <h1 className="text-3xl font-bold tracking-tight text-slate-900">
-            Reception AI - Commandes telephoniques
-          </h1>
-          <p className="mt-3 text-slate-700">
-            MVP pour restaurants fast-food: l&apos;agent vocal recoit la commande,
-            puis l&apos;equipe cuisine la traite en temps reel.
-          </p>
+      <AppShell
+        title="Cockpit ASTOR"
+        subtitle="Pilotez vos commandes telephoniques depuis un seul endroit."
+      >
+        <section className="grid gap-4 sm:grid-cols-2">
+          {MODULES.map(({ href, icon: Icon, title, description, tag }) => (
+            <Link
+              key={href}
+              href={href}
+              className="group glass-card rounded-2xl p-6 transition hover:border-amber-500/20"
+            >
+              <div className="flex items-start justify-between">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/10 text-amber-400">
+                  <Icon className="h-5 w-5" />
+                </div>
+                <span className="rounded-full border border-white/10 px-2 py-0.5 text-[10px] uppercase tracking-wider text-zinc-500">
+                  {tag}
+                </span>
+              </div>
+              <h2 className="mt-4 text-lg font-semibold text-white">{title}</h2>
+              <p className="mt-1 text-sm text-zinc-500">{description}</p>
+              <ArrowUpRight className="mt-4 h-4 w-4 text-zinc-600 transition group-hover:text-amber-400" />
+            </Link>
+          ))}
         </section>
-        <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <Link
-            href="/kitchen"
-            className="rounded-xl border border-indigo-200 bg-white/85 p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-lg"
-          >
-            <h2 className="font-semibold text-slate-900">Cuisine</h2>
-            <p className="mt-1 text-sm text-slate-600">
-              Voir les commandes en direct et changer le statut.
-            </p>
-          </Link>
-          <Link
-            href="/dashboard"
-            className="rounded-xl border border-indigo-200 bg-white/85 p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-lg"
-          >
-            <h2 className="font-semibold text-slate-900">Dashboard</h2>
-            <p className="mt-1 text-sm text-slate-600">
-              Historique des commandes et indicateurs de base.
-            </p>
-          </Link>
-          <Link
-            href="/settings/menu"
-            className="rounded-xl border border-indigo-200 bg-white/85 p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-lg"
-          >
-            <h2 className="font-semibold text-slate-900">Parametres menu</h2>
-            <p className="mt-1 text-sm text-slate-600">
-              Ajouter des produits et gerer la disponibilite.
-            </p>
-          </Link>
-          <Link
-            href="/clients"
-            className="rounded-xl border border-indigo-200 bg-white/85 p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-lg"
-          >
-            <h2 className="font-semibold text-slate-900">Suivi clients</h2>
-            <p className="mt-1 text-sm text-slate-600">
-              Base clients, historique des commandes et export CSV pour mailing.
-            </p>
-          </Link>
-        </section>
-        <section className="animate-soft-float rounded-2xl border border-indigo-200 bg-white/85 p-5 shadow-sm backdrop-blur">
-          <h2 className="text-lg font-semibold text-slate-900">Agent vocal Support</h2>
-          <p className="mt-1 text-sm text-slate-600">
-            Lance une conversation en direct avec ElevenLabs depuis le portail.
+
+        <section className="glass-card mt-8 rounded-2xl p-6">
+          <h2 className="text-lg font-semibold text-white">Test agent vocal</h2>
+          <p className="mt-1 text-sm text-zinc-500">
+            Simulez un appel client avant le service ou pour former l&apos;equipe.
           </p>
-          <div className="mt-4">
+          <div className="mt-6 rounded-xl border border-white/5 bg-black/30 p-4">
             <ElevenLabsWidget />
           </div>
         </section>
-      </main>
+      </AppShell>
     </AuthGuard>
   );
 }

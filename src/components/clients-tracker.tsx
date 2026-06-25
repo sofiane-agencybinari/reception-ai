@@ -59,13 +59,13 @@ export function ClientsTracker() {
   function exportAll() {
     const rows = customersToCsvRows(customers);
     const stamp = new Date().toISOString().slice(0, 10);
-    downloadCsv(rows, `clients_shake_beef_${stamp}.csv`);
+    downloadCsv(rows, `astor_clients_${stamp}.csv`);
   }
 
   function exportFiltered() {
     const rows = customersToCsvRows(filtered);
     const stamp = new Date().toISOString().slice(0, 10);
-    downloadCsv(rows, `clients_filtre_${stamp}.csv`);
+    downloadCsv(rows, `astor_clients_filtre_${stamp}.csv`);
   }
 
   if (error) {
