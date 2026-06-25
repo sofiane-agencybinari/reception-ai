@@ -1,158 +1,380 @@
 import Link from "next/link";
-import { ArrowRight, ChefHat, Clock, Phone, Sparkles, TrendingUp } from "lucide-react";
+import {
+  ArrowRight,
+  BarChart3,
+  Check,
+  ChefHat,
+  Headphones,
+  MessageSquare,
+  Phone,
+  Sparkles,
+  Users,
+  Zap,
+} from "lucide-react";
 
-const STEPS = [
+import { MarketingFooter } from "@/components/marketing/marketing-footer";
+import { MarketingHeader } from "@/components/marketing/marketing-header";
+import { ProductPreview } from "@/components/marketing/product-preview";
+
+const FEATURES = [
   {
-    title: "Le client appelle",
-    text: "Votre agent IA decroche, presente le menu et prend la commande en francais.",
+    icon: Phone,
+    title: "Appels simultanes",
+    text: "Plusieurs clients appellent en meme temps ? L'IA gere chaque ligne sans file d'attente.",
   },
   {
-    title: "La cuisine recoit",
-    text: "La commande apparait instantanement sur l'ecran cuisine, sans post-it ni erreur.",
+    icon: ChefHat,
+    title: "Transmission cuisine",
+    text: "Chaque commande arrive structuree sur l'ecran cuisine. Zero ressaisie, zero post-it.",
   },
   {
-    title: "Vous pilotez",
-    text: "Dashboard, historique clients, SMS de confirmation et stats en temps reel.",
+    icon: MessageSquare,
+    title: "SMS de confirmation",
+    text: "Le client recoit un numero de commande et l'heure de retrait automatiquement.",
+  },
+  {
+    icon: BarChart3,
+    title: "Compta produits vendus",
+    text: "Top ventes, CA journalier, panier moyen — tout est trace pour piloter votre activite.",
+  },
+  {
+    icon: Users,
+    title: "Base clients",
+    text: "Historique des commandes, preferences et export CSV pour vos campagnes.",
+  },
+  {
+    icon: Zap,
+    title: "Installation rapide",
+    text: "Agent configure, menu importe, ecran cuisine pret. Operationnel en moins de 24h.",
   },
 ] as const;
 
-const FEATURES = [
-  { icon: Phone, title: "Zero appel manque", text: "Disponible 24h/24, meme pendant le rush du midi." },
-  { icon: ChefHat, title: "Ecran cuisine live", text: "Statuts new → ready, workflow clair pour l'equipe." },
-  { icon: Clock, title: "Gain de temps", text: "Fini de repeter le menu et de noter les commandes a la main." },
-  { icon: TrendingUp, title: "Pilotage simple", text: "Panier moyen, delais, annulations : tout est trace." },
+const PLANS = [
+  "Agent vocal IA 24h/24",
+  "Ecran cuisine temps reel",
+  "Dashboard & statistiques",
+  "SMS confirmation client",
+  "Suivi clients & export",
+  "Support pilote inclus",
+] as const;
+
+const FAQ = [
+  {
+    q: "ASTOR remplace-t-il mon employe au telephone ?",
+    a: "ASTOR prend les commandes standards pendant le rush. Votre equipe reste disponible pour les cas complexes via transfert d'appel.",
+  },
+  {
+    q: "Faut-il changer de numero de telephone ?",
+    a: "Non. On branche l'IA sur votre ligne existante ou un numero dedie selon votre configuration.",
+  },
+  {
+    q: "Quels types de restaurants ?",
+    a: "Fast-food, snack, pizzeria, traiteur — tout etablissement avec des commandes a emporter par telephone.",
+  },
+  {
+    q: "Comment se passe l'essai gratuit ?",
+    a: "2 semaines de pilote avec installation, formation equipe et ajustements inclus. Sans engagement.",
+  },
 ] as const;
 
 export function LandingPage() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
+    <div className="min-h-screen bg-[#07080c] text-zinc-100">
+      <div className="marketing-grid pointer-events-none fixed inset-0 opacity-40" />
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="absolute -left-32 top-0 h-96 w-96 rounded-full bg-indigo-600/20 blur-3xl" />
-        <div className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-cyan-500/15 blur-3xl" />
+        <div className="absolute left-1/2 top-0 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-amber-500/10 blur-[120px]" />
       </div>
 
-      <header className="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-        <div>
-          <p className="text-[10px] font-mono uppercase tracking-[0.3em] text-indigo-300/80">Reception AI</p>
-          <p className="text-xl font-bold tracking-[0.15em]">ASTOR</p>
-        </div>
-        <nav className="flex items-center gap-3 text-sm">
-          <Link href="/demo" className="hidden rounded-full px-4 py-2 text-slate-300 transition hover:text-white sm:inline">
-            Demo vocale
-          </Link>
-          <Link
-            href="/login"
-            className="rounded-full border border-slate-700 px-4 py-2 text-slate-200 transition hover:border-indigo-400 hover:text-white"
-          >
-            Espace client
-          </Link>
-        </nav>
-      </header>
+      <MarketingHeader />
 
-      <main className="relative z-10 mx-auto max-w-6xl px-6 pb-20">
-        <section className="animate-fade-up pt-10 pb-16 text-center sm:pt-16">
-          <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs text-indigo-200">
-            <Sparkles className="h-3.5 w-3.5" />
-            Receptionniste telephonique IA pour restaurants
+      <main className="relative z-10">
+        {/* Hero */}
+        <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-20 pt-16 lg:grid-cols-2 lg:pt-24">
+          <div className="animate-fade-up">
+            <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/10 px-4 py-1.5 text-xs font-medium text-amber-200">
+              <Sparkles className="h-3.5 w-3.5" />
+              IA vocale pour restauration rapide
+            </div>
+            <h1 className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+              L&apos;IA qui prend vos{" "}
+              <span className="text-gradient">commandes par telephone</span>
+            </h1>
+            <p className="mt-6 max-w-lg text-lg leading-relaxed text-zinc-400">
+              ASTOR decroche, comprend le client, envoie la commande en cuisine et vous donne
+              la compta de vos ventes. Disponible 24h/24, sans attente, sans erreur.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-amber-500 px-6 py-3.5 text-sm font-semibold text-black transition hover:bg-amber-400"
+              >
+                Demarrer l&apos;essai gratuit
+                <ArrowRight className="h-4 w-4" />
+              </a>
+              <Link
+                href="/demo"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 px-6 py-3.5 text-sm font-medium text-zinc-200 transition hover:border-amber-500/30 hover:text-white"
+              >
+                <Headphones className="h-4 w-4" />
+                Tester la demo vocale
+              </Link>
+            </div>
+            <div className="mt-10 flex flex-wrap gap-6 text-sm text-zinc-500">
+              <span className="flex items-center gap-2">
+                <Check className="h-4 w-4 text-emerald-500" /> Sans engagement
+              </span>
+              <span className="flex items-center gap-2">
+                <Check className="h-4 w-4 text-emerald-500" /> Setup en 24h
+              </span>
+              <span className="flex items-center gap-2">
+                <Check className="h-4 w-4 text-emerald-500" /> Heberge en France
+              </span>
+            </div>
           </div>
-          <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight sm:text-6xl">
-            Ne ratez plus aucune commande telephone
-          </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-400">
-            ASTOR decroche, prend la commande, l&apos;envoie en cuisine et confirme au client.
-            Vous gardez le controle depuis un dashboard simple.
-          </p>
-          <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              href="/demo"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-indigo-50"
-            >
-              Tester la demo vocale
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-            <a
-              href="mailto:contact@agencybinari.com?subject=Demo%20ASTOR%20Reception%20AI"
-              className="inline-flex items-center gap-2 rounded-full border border-slate-700 px-6 py-3 text-sm font-medium text-slate-200 transition hover:border-indigo-400"
-            >
-              Demander une demo gratuite
-            </a>
+          <div className="animate-fade-up lg:pl-8" style={{ animationDelay: "0.15s" }}>
+            <ProductPreview />
           </div>
-          <div className="mx-auto mt-14 grid max-w-3xl grid-cols-3 gap-4 text-center">
+        </section>
+
+        {/* Stats */}
+        <section className="border-y border-white/5 bg-white/[0.02] py-12">
+          <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 px-6 md:grid-cols-4">
             {[
               ["0", "appel manque"],
-              ["-2h", "par jour"],
+              ["100%", "des commandes tracees"],
+              ["-2h", "de saisie / jour"],
               ["24/7", "disponible"],
-            ].map(([value, label]) => (
-              <div key={label} className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
-                <p className="text-2xl font-bold text-white">{value}</p>
-                <p className="mt-1 text-xs uppercase tracking-wider text-slate-500">{label}</p>
+            ].map(([val, label]) => (
+              <div key={label} className="text-center">
+                <p className="text-3xl font-bold text-white md:text-4xl">{val}</p>
+                <p className="mt-1 text-xs uppercase tracking-wider text-zinc-500">{label}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="py-16">
-          <h2 className="text-center text-3xl font-bold">Comment ca marche</h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {STEPS.map((step, index) => (
-              <article
-                key={step.title}
-                className="rounded-2xl border border-slate-800 bg-slate-900/50 p-6"
-              >
-                <p className="font-mono text-xs text-indigo-300">0{index + 1}</p>
-                <h3 className="mt-3 text-lg font-semibold">{step.title}</h3>
-                <p className="mt-2 text-sm text-slate-400">{step.text}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="py-16">
-          <h2 className="text-center text-3xl font-bold">Pourquoi les restos nous choisissent</h2>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2">
-            {FEATURES.map(({ icon: Icon, title, text }) => (
-              <article
-                key={title}
-                className="flex gap-4 rounded-2xl border border-slate-800 bg-slate-900/40 p-5"
-              >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-indigo-500/15 text-indigo-300">
-                  <Icon className="h-5 w-5" />
-                </div>
-                <div>
-                  <h3 className="font-semibold">{title}</h3>
-                  <p className="mt-1 text-sm text-slate-400">{text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="py-16">
-          <div className="rounded-3xl border border-indigo-500/30 bg-gradient-to-br from-indigo-950/80 to-slate-900 p-8 text-center sm:p-12">
-            <p className="text-xs uppercase tracking-[0.25em] text-indigo-300">Offre de lancement</p>
-            <h2 className="mt-4 text-3xl font-bold">A partir de 99 EUR / mois</h2>
-            <p className="mx-auto mt-4 max-w-xl text-slate-400">
-              Installation, agent vocal configure, ecran cuisine et support pilote inclus.
-              Essai gratuit 2 semaines pour le premier restaurant partenaire.
+        {/* How it works */}
+        <section id="comment" className="mx-auto max-w-6xl px-6 py-24">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500">
+              Comment ca marche
             </p>
-            <a
-              href="mailto:contact@agencybinari.com?subject=Essai%20gratuit%20ASTOR"
-              className="mt-8 inline-flex rounded-full bg-indigo-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-indigo-400"
-            >
-              Reserver mon essai gratuit
-            </a>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">De l&apos;appel a la cuisine en 3 etapes</h2>
+          </div>
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {[
+              {
+                step: "01",
+                title: "Le client appelle",
+                text: "L'IA decroche instantanement, presente votre menu et prend la commande en langage naturel.",
+              },
+              {
+                step: "02",
+                title: "La cuisine recoit",
+                text: "Le bon de commande apparait sur l'ecran cuisine avec statuts, notes et heure de retrait.",
+              },
+              {
+                step: "03",
+                title: "Vous pilotez",
+                text: "Dashboard, compta produits, historique clients et exports — tout est centralise.",
+              },
+            ].map((item) => (
+              <article key={item.step} className="glass-card rounded-2xl p-6">
+                <p className="font-mono text-sm text-amber-500">{item.step}</p>
+                <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-zinc-400">{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        {/* Features */}
+        <section id="fonctionnalites" className="border-t border-white/5 bg-[#050608] py-24">
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="max-w-2xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500">
+                Fonctionnalites
+              </p>
+              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+                Plus qu&apos;un repondeur.
+                <br />
+                <span className="text-zinc-500">Un vrai outil de gestion.</span>
+              </h2>
+              <p className="mt-4 text-zinc-400">
+                On fait ce que les autres font sur la voix — et on va plus loin sur le pilotage
+                de votre restaurant.
+              </p>
+            </div>
+            <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {FEATURES.map(({ icon: Icon, title, text }) => (
+                <article
+                  key={title}
+                  className="group rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition hover:border-amber-500/20 hover:bg-white/[0.04]"
+                >
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-500/10 text-amber-400 transition group-hover:bg-amber-500/20">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <h3 className="mt-4 font-semibold text-white">{title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-zinc-500">{text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Differentiator */}
+        <section className="mx-auto max-w-6xl px-6 py-24">
+          <div className="glass-card overflow-hidden rounded-3xl">
+            <div className="grid lg:grid-cols-2">
+              <div className="p-8 sm:p-12">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500">
+                  Votre avantage
+                </p>
+                <h2 className="mt-3 text-3xl font-bold">
+                  Vous savez exactement ce que vous vendez
+                </h2>
+                <p className="mt-4 text-zinc-400">
+                  Chaque commande telephonique alimente votre dashboard : produits les plus
+                  vendus, chiffre d&apos;affaires, panier moyen, heures de rush. Fini le flou
+                  sur ce qui rentre vraiment.
+                </p>
+                <ul className="mt-8 space-y-3">
+                  {[
+                    "Top produits vendus par jour / semaine",
+                    "Chiffre d'affaires telephonique en temps reel",
+                    "Export CSV pour votre comptable",
+                    "Historique client et preferences",
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-3 text-sm text-zinc-300">
+                      <Check className="h-4 w-4 shrink-0 text-amber-500" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="border-t border-white/5 bg-black/40 p-8 sm:p-12 lg:border-l lg:border-t-0">
+                <div className="space-y-4">
+                  <StatBar label="Burger Classique" value={42} />
+                  <StatBar label="Frites" value={38} />
+                  <StatBar label="Menu Duo" value={24} />
+                  <StatBar label="Boisson" value={31} />
+                </div>
+                <div className="mt-8 flex items-end justify-between border-t border-white/5 pt-6">
+                  <div>
+                    <p className="text-xs text-zinc-500">CA aujourd&apos;hui</p>
+                    <p className="text-3xl font-bold text-white">1 247 EUR</p>
+                  </div>
+                  <p className="text-sm text-emerald-400">+18% vs hier</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing */}
+        <section id="tarifs" className="border-t border-white/5 py-24">
+          <div className="mx-auto max-w-6xl px-6 text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500">Tarifs</p>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Un prix simple et transparent</h2>
+            <p className="mx-auto mt-4 max-w-lg text-zinc-400">
+              Pas de commission par commande. Un abonnement fixe, tout inclus.
+            </p>
+            <div className="mx-auto mt-12 max-w-md">
+              <div className="glass-card animate-pulse-ring rounded-3xl p-8 text-left">
+                <p className="text-sm font-medium text-amber-400">Offre lancement</p>
+                <div className="mt-4 flex items-baseline gap-1">
+                  <span className="text-5xl font-bold text-white">99</span>
+                  <span className="text-xl text-zinc-400">EUR / mois</span>
+                </div>
+                <p className="mt-2 text-sm text-zinc-500">+ essai gratuit 2 semaines</p>
+                <ul className="mt-8 space-y-3">
+                  {PLANS.map((item) => (
+                    <li key={item} className="flex items-center gap-3 text-sm text-zinc-300">
+                      <Check className="h-4 w-4 shrink-0 text-emerald-500" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="#contact"
+                  className="mt-8 flex w-full items-center justify-center rounded-full bg-amber-500 py-3.5 text-sm font-semibold text-black transition hover:bg-amber-400"
+                >
+                  Reserver mon essai gratuit
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section id="faq" className="mx-auto max-w-3xl px-6 py-24">
+          <h2 className="text-center text-3xl font-bold">Questions frequentes</h2>
+          <div className="mt-12 space-y-4">
+            {FAQ.map((item) => (
+              <details
+                key={item.q}
+                className="group rounded-2xl border border-white/5 bg-white/[0.02] open:bg-white/[0.04]"
+              >
+                <summary className="cursor-pointer list-none px-6 py-4 font-medium text-white [&::-webkit-details-marker]:hidden">
+                  {item.q}
+                </summary>
+                <p className="border-t border-white/5 px-6 py-4 text-sm leading-relaxed text-zinc-400">
+                  {item.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
+
+        {/* Contact CTA */}
+        <section id="contact" className="mx-auto max-w-6xl px-6 pb-24">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-500 to-orange-600 px-8 py-16 text-center sm:px-16">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wOCI+PHBhdGggIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-50" />
+            <div className="relative">
+              <h2 className="text-3xl font-bold text-black sm:text-4xl">
+                Pret a ne plus perdre une commande ?
+              </h2>
+              <p className="mx-auto mt-4 max-w-lg text-black/70">
+                Rejoignez les restaurants qui automatisent leur prise de commande.
+                Installation en 24h, essai gratuit 2 semaines.
+              </p>
+              <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                <a
+                  href="mailto:contact@agencybinari.com?subject=Essai%20gratuit%20ASTOR"
+                  className="inline-flex rounded-full bg-black px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-zinc-900"
+                >
+                  Demander une demo
+                </a>
+                <Link
+                  href="/demo"
+                  className="inline-flex rounded-full border-2 border-black/20 px-8 py-3.5 text-sm font-semibold text-black transition hover:bg-black/10"
+                >
+                  Essayer la demo vocale
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
       </main>
 
-      <footer className="relative z-10 border-t border-slate-800 py-8 text-center text-sm text-slate-500">
-        <p>ASTOR Reception AI — Automatisation telephonique pour restaurants</p>
-        <p className="mt-2">
-          <Link href="/login" className="text-slate-400 hover:text-white">
-            Acces espace client
-          </Link>
-        </p>
-      </footer>
+      <MarketingFooter />
+    </div>
+  );
+}
+
+function StatBar({ label, value }: { label: string; value: number }) {
+  return (
+    <div>
+      <div className="flex justify-between text-sm">
+        <span className="text-zinc-400">{label}</span>
+        <span className="font-mono text-zinc-500">{value}</span>
+      </div>
+      <div className="mt-2 h-2 overflow-hidden rounded-full bg-white/5">
+        <div
+          className="h-full rounded-full bg-gradient-to-r from-amber-500 to-orange-500"
+          style={{ width: `${value}%` }}
+        />
+      </div>
     </div>
   );
 }

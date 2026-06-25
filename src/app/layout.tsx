@@ -14,8 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ASTOR — Receptionniste IA pour restaurants",
-  description: "Ne ratez plus aucune commande telephone. Agent vocal, ecran cuisine et dashboard pour restaurants.",
+  title: "ASTOR — L'IA qui prend vos commandes par telephone",
+  description:
+    "ASTOR decroche, prend les commandes, les envoie en cuisine et trace vos ventes. IA vocale 24h/24 pour fast-food, snack et pizzeria.",
+  openGraph: {
+    title: "ASTOR — Commandes telephoniques automatisees",
+    description: "Ne ratez plus aucune commande. Agent vocal, ecran cuisine et dashboard.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

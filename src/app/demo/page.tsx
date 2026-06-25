@@ -1,31 +1,48 @@
 import Link from "next/link";
+import { Headphones } from "lucide-react";
 
 import { ElevenLabsWidget } from "@/components/elevenlabs-widget";
+import { MarketingFooter } from "@/components/marketing/marketing-footer";
+import { MarketingHeader } from "@/components/marketing/marketing-header";
 
 export default function DemoPage() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-slate-950 px-6 py-12 text-slate-100">
-      <div className="pointer-events-none absolute -left-24 top-0 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl" />
-      <div className="pointer-events-none absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-cyan-500/15 blur-3xl" />
-      <div className="relative mx-auto max-w-2xl">
-        <Link href="/" className="text-sm text-slate-400 transition hover:text-white">
+    <div className="min-h-screen bg-[#07080c] text-zinc-100">
+      <div className="marketing-grid pointer-events-none fixed inset-0 opacity-30" />
+      <MarketingHeader />
+      <main className="relative z-10 mx-auto max-w-2xl px-6 py-16">
+        <Link href="/" className="text-sm text-zinc-500 transition hover:text-white">
           ← Retour au site
         </Link>
-        <h1 className="mt-6 text-3xl font-bold">Demo vocale ASTOR</h1>
-        <p className="mt-3 text-slate-400">
-          Parlez avec le receptionniste IA comme le ferait un client au telephone.
-          Dites par exemple : &quot;Je voudrais un burger et des frites.&quot;
+        <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/10 px-4 py-1.5 text-xs font-medium text-amber-200">
+          <Headphones className="h-3.5 w-3.5" />
+          Demo interactive
+        </div>
+        <h1 className="mt-6 text-4xl font-bold tracking-tight">
+          Parlez avec <span className="text-gradient">ASTOR</span>
+        </h1>
+        <p className="mt-4 text-lg text-zinc-400">
+          Testez le receptionniste IA comme un vrai client. Essayez par exemple :
         </p>
-        <div className="mt-8 rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
+        <ul className="mt-4 space-y-2 text-sm text-zinc-500">
+          <li>&quot;Bonjour, je voudrais un burger classique et des frites.&quot;</li>
+          <li>&quot;C&apos;est pour dans 20 minutes, au nom de Sophie.&quot;</li>
+          <li>&quot;Qu&apos;est-ce que vous avez comme boissons ?&quot;</li>
+        </ul>
+        <div className="glass-card mt-10 rounded-2xl p-6">
           <ElevenLabsWidget />
         </div>
-        <p className="mt-6 text-center text-sm text-slate-500">
-          Pret a l&apos;installer dans votre restaurant ?{" "}
-          <a href="mailto:contact@agencybinari.com" className="text-indigo-300 hover:text-indigo-200">
-            Contactez-nous
+        <p className="mt-8 text-center text-sm text-zinc-500">
+          Convaincu ?{" "}
+          <a
+            href="mailto:contact@agencybinari.com?subject=Demo%20ASTOR"
+            className="font-medium text-amber-400 hover:text-amber-300"
+          >
+            Demandez votre essai gratuit →
           </a>
         </p>
-      </div>
-    </main>
+      </main>
+      <MarketingFooter />
+    </div>
   );
 }
