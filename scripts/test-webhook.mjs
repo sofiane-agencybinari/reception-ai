@@ -1,3 +1,7 @@
+import { loadProjectEnv } from "./load-env.mjs";
+
+loadProjectEnv();
+
 const baseUrl = process.env.WEBHOOK_BASE_URL ?? "http://localhost:3000";
 const secret = process.env.ORDERS_WEBHOOK_SECRET;
 

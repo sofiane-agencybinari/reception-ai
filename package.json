@@ -10,6 +10,7 @@
     "test:webhook": "node scripts/test-webhook.mjs",
     "test:sms": "node scripts/test-sms.mjs",
     "test:health": "node -e \"fetch(process.env.WEBHOOK_BASE_URL?process.env.WEBHOOK_BASE_URL+\\\"/api/health\\\":\\\"http://localhost:3000/api/health\\\").then(r=>r.json()).then(console.log)\"",
+    "check:prod": "node scripts/check-prod.mjs",
     "sync:vercel": "node scripts/push-vercel-env.mjs"
   },
   "dependencies": {

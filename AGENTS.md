@@ -20,6 +20,7 @@ vercel --prod
 
 ### Tests
 ```bash
+npm run check:prod
 npm run test:health
 WEBHOOK_BASE_URL=https://reception-ai-zeta.vercel.app npm run test:webhook
 ```

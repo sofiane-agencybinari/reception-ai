@@ -24,9 +24,13 @@ const KEYS = [
 function loadToken() {
   const fromEnv = process.env.VERCEL_TOKEN?.trim();
   if (fromEnv) return fromEnv;
-  const authPath = join(homedir(), "Library/Application Support/com.vercel.cli/auth.json");
-  const auth = JSON.parse(readFileSync(authPath, "utf8"));
-  return auth.token ?? auth.credentials?.[0]?.token;
+  try {
+    const authPath = join(homedir(), "Library/Application Support/com.vercel.cli/auth.json");
+    const auth = JSON.parse(readFileSync(authPath, "utf8"));
+    return auth.token ?? auth.credentials?.[0]?.token;
+  } catch {
+    return null;
+  }
 }
 
 function loadProject() {
@@ -82,6 +86,15 @@ async function upsertEnv(token, projectId, teamId, key, value, target) {
 
 async function main() {
   const token = loadToken();
+  if (!token) {
+    console.error(
+      "Token Vercel manquant.\n\n" +
+        "  Option A : vercel login\n" +
+        "  Option B : creer un token sur https://vercel.com/account/tokens puis :\n" +
+        "             VERCEL_TOKEN=xxx npm run sync:vercel\n",
+    );
+    process.exit(1);
+  }
   const { projectId, teamId } = loadProject();
   const env = parseEnvFile(ENV_FILE);
   const results = [];
