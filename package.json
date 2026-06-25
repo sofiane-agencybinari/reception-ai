@@ -11,12 +11,14 @@
     "test:sms": "node scripts/test-sms.mjs",
     "test:health": "node -e \"fetch(process.env.WEBHOOK_BASE_URL?process.env.WEBHOOK_BASE_URL+\\\"/api/health\\\":\\\"http://localhost:3000/api/health\\\").then(r=>r.json()).then(console.log)\"",
     "check:prod": "node scripts/check-prod.mjs",
-    "sync:vercel": "node scripts/push-vercel-env.mjs"
+    "sync:vercel": "node scripts/push-vercel-env.mjs",
+    "twilio:verified": "node scripts/verify-twilio-number.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.1",
     "lucide-react": "^1.21.0",
     "next": "16.2.4",
+    "pdfkit": "^0.19.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "twilio": "^6.0.2",
@@ -25,6 +27,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/pdfkit": "^0.17.6",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",

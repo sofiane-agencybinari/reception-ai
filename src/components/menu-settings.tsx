@@ -1,75 +1,34 @@
 "use client";
 
 import { FormEvent, useCallback, useEffect, useMemo, useState } from "react";
+import { Download, FileText } from "lucide-react";
 
 import { DEFAULT_RESTAURANT_ID } from "@/lib/config";
+import {
+  CATEGORY_ORDER,
+  CATEGORY_TITLES,
+  type MenuCategory,
+  type MenuItemRow,
+  detectMenuCategory,
+  formatMenuPrice,
+} from "@/lib/menu-categories";
 
-type MenuItem = {
-  id: string;
-  name: string;
-  price: number;
-  is_available: boolean;
-};
-
-type MenuCategory = "menus" | "boissons" | "sauces" | "autres";
-
-const CATEGORY_TITLES: Record<MenuCategory, string> = {
-  menus: "Menus",
-  boissons: "Boissons",
-  sauces: "Sauces",
-  autres: "Autres",
-};
-
-function detectCategory(name: string): MenuCategory {
-  const normalized = name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-
-  if (
-    normalized.includes("menu") ||
-    normalized.includes("burger") ||
-    normalized.includes("tacos") ||
-    normalized.includes("sandwich")
-  ) {
-    return "menus";
-  }
-
-  if (
-    normalized.includes("boisson") ||
-    normalized.includes("coca") ||
-    normalized.includes("sprite") ||
-    normalized.includes("fanta") ||
-    normalized.includes("eau") ||
-    normalized.includes("jus")
-  ) {
-    return "boissons";
-  }
-
-  if (
-    normalized.includes("sauce") ||
-    normalized.includes("ketchup") ||
-    normalized.includes("mayo") ||
-    normalized.includes("mayonnaise") ||
-    normalized.includes("harissa")
-  ) {
-    return "sauces";
-  }
-
-  return "autres";
-}
+type MenuItem = MenuItemRow;
 
 export function MenuSettings() {
   const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [pdfLoading, setPdfLoading] = useState(false);
   const [expanded, setExpanded] = useState<Record<MenuCategory, boolean>>({
     menus: true,
     boissons: false,
     sauces: false,
     autres: false,
   });
+
+  const pdfUrl = `/api/menu-items/pdf?restaurantId=${DEFAULT_RESTAURANT_ID}`;
 
   const loadMenu = useCallback(async () => {
     const res = await fetch(`/api/menu-items?restaurantId=${DEFAULT_RESTAURANT_ID}`);
@@ -105,7 +64,7 @@ export function MenuSettings() {
       autres: [],
     };
     for (const item of sortedMenuItems) {
-      groups[detectCategory(item.name)].push(item);
+      groups[detectMenuCategory(item.name)].push(item);
     }
     return groups;
   }, [sortedMenuItems]);
@@ -141,8 +100,74 @@ export function MenuSettings() {
     void loadMenu();
   }
 
+  async function handleDownloadPdf() {
+    setPdfLoading(true);
+    setError(null);
+    try {
+      const res = await fetch(pdfUrl);
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error ?? "Export PDF impossible");
+      }
+      const blob = await res.blob();
+      const objectUrl = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      const disposition = res.headers.get("Content-Disposition") ?? "";
+      const match = disposition.match(/filename="([^"]+)"/);
+      anchor.href = objectUrl;
+      anchor.download = match?.[1] ?? "menu-restaurant.pdf";
+      anchor.click();
+      URL.revokeObjectURL(objectUrl);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Export PDF impossible");
+    } finally {
+      setPdfLoading(false);
+    }
+  }
+
   return (
     <div className="space-y-6">
+      <section className="glass-card overflow-hidden rounded-xl">
+        <div className="border-b border-white/8 bg-gradient-to-r from-amber-500/10 via-transparent to-transparent px-5 py-4">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex items-start gap-3">
+              <div className="rounded-lg bg-amber-500/15 p-2 text-amber-400">
+                <FileText className="h-5 w-5" />
+              </div>
+              <div>
+                <h2 className="text-lg font-semibold text-white">Menu PDF</h2>
+                <p className="mt-1 text-sm text-zinc-400">
+                  Carte professionnelle generee depuis vos produits — categories, prix EUR, pret a imprimer.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <a
+                href={pdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cockpit-btn-secondary inline-flex items-center gap-2 px-4 py-2 text-sm"
+              >
+                <FileText className="h-4 w-4" />
+                Apercu
+              </a>
+              <button
+                type="button"
+                onClick={() => void handleDownloadPdf()}
+                disabled={pdfLoading || menuItems.length === 0}
+                className="cockpit-btn-primary inline-flex items-center gap-2 px-4 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                <Download className="h-4 w-4" />
+                {pdfLoading ? "Generation…" : "Telecharger PDF"}
+              </button>
+            </div>
+          </div>
+        </div>
+        <p className="px-5 py-3 text-xs text-zinc-500">
+          {menuItems.length} produit{menuItems.length > 1 ? "s" : ""} — mise a jour automatique a chaque export.
+        </p>
+      </section>
+
       <section className="glass-card rounded-xl p-5">
         <h2 className="text-lg font-semibold text-white">Ajouter un produit</h2>
         <form onSubmit={handleSubmit} className="mt-4 grid gap-3 sm:grid-cols-3">
@@ -171,7 +196,7 @@ export function MenuSettings() {
       <section className="glass-card rounded-xl p-5">
         <h2 className="text-lg font-semibold text-white">Menu actuel</h2>
         <div className="mt-4 space-y-3">
-          {(Object.keys(CATEGORY_TITLES) as MenuCategory[]).map((category) => {
+          {CATEGORY_ORDER.map((category) => {
             const items = groupedMenuItems[category];
             const isOpen = expanded[category];
 
@@ -203,9 +228,11 @@ export function MenuSettings() {
                           key={item.id}
                           className="flex items-center justify-between rounded-lg border border-white/5 bg-black/40 px-3 py-2 transition hover:border-amber-500/25"
                         >
-                          <span className="text-zinc-200">{item.name}</span>
+                          <span className={item.is_available ? "text-zinc-200" : "text-zinc-500 line-through"}>
+                            {item.name}
+                          </span>
                           <span className="font-mono text-sm text-amber-400/90">
-                            {Number(item.price).toFixed(2)} EUR
+                            {formatMenuPrice(Number(item.price))}
                           </span>
                         </li>
                       ))

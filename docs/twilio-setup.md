@@ -58,10 +58,28 @@ ORDER_PREP_MINUTES=20
 
 Si tu es en mode **Trial** :
 
-1. Twilio Console → **Phone Numbers** → **Verified Caller IDs**
-2. Ajoute **ton propre mobile** (+33…)
-3. Twilio t'envoie un code de validation
+```bash
+npm run twilio:verified
+```
+
+Puis dans la Console Twilio :
+
+1. [Verified Caller IDs](https://console.twilio.com/us1/develop/phone-numbers/verified-caller-ids)
+2. **Add a new Caller ID** → ton mobile **+33…**
+3. Twilio envoie un **code SMS** → entre-le
 4. Tu ne pourras envoyer des SMS de test **qu'a ce numero** tant que le compte n'est pas upgrade
+
+Verification par appel (alternative) :
+
+```bash
+npm run twilio:verified -- +33612345678
+```
+
+Ajoute ensuite dans `.env.local` :
+
+```env
+TEST_CUSTOMER_PHONE=+33612345678
+```
 
 Pour envoyer a n'importe quel client : passe le compte en **payant** (carte bancaire sur Twilio).
 
