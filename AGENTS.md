@@ -26,7 +26,7 @@ WEBHOOK_BASE_URL=https://reception-ai-zeta.vercel.app npm run test:webhook
 ```
 
 Config ElevenLabs: `docs/elevenlabs-setup.md`
-Config Twilio SMS: `docs/twilio-setup.md` — test: `npm run test:sms -- +33XXXXXXXXX` — verify: `npm run twilio:verified`
+Config Twilio SMS: `docs/twilio-setup.md` — test: `npm run test:sms -- +33XXXXXXXXX` — verify: `npm run twilio:verified` — configure: `npm run twilio:configure`
 
 Menu PDF: `/settings/menu` → Telecharger PDF — API: `GET /api/menu-items/pdf?restaurantId=...`
 
