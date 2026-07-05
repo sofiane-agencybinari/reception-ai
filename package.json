@@ -13,7 +13,12 @@
     "check:prod": "node scripts/check-prod.mjs",
     "sync:vercel": "node scripts/push-vercel-env.mjs",
     "twilio:verified": "node scripts/verify-twilio-number.mjs",
-    "twilio:configure": "node scripts/configure-twilio-number.mjs"
+    "twilio:configure": "node scripts/configure-twilio-number.mjs",
+    "elevenlabs:import-phone": "node scripts/import-elevenlabs-phone.mjs",
+    "elevenlabs:configure-webhook": "node scripts/configure-elevenlabs-webhook.mjs",
+    "elevenlabs:configure-agent": "node scripts/configure-elevenlabs-agent.mjs",
+    "elevenlabs:fix-phone": "node scripts/fix-elevenlabs-phone.mjs",
+    "diagnose:voice": "node scripts/diagnose-voice-call.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.1",

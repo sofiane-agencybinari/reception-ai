@@ -79,10 +79,11 @@ const FAQ = [
 
 export function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#07080c] text-zinc-100">
+    <div className="min-h-screen bg-background text-foreground">
       <div className="marketing-grid pointer-events-none fixed inset-0 opacity-40" />
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="absolute left-1/2 top-0 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-amber-500/10 blur-[120px]" />
+        <div className="absolute left-1/2 top-0 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-astor-accent/8 blur-[120px]" />
+        <div className="absolute -right-32 top-1/3 h-[300px] w-[400px] rounded-full bg-teal-900/20 blur-[100px]" />
       </div>
 
       <MarketingHeader />
@@ -91,7 +92,7 @@ export function LandingPage() {
         {/* Hero */}
         <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-20 pt-16 lg:grid-cols-2 lg:pt-24">
           <div className="animate-fade-up">
-            <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/10 px-4 py-1.5 text-xs font-medium text-amber-200">
+            <div className="inline-flex items-center gap-2 rounded-full border border-astor-accent/20 bg-astor-accent/10 px-4 py-1.5 text-xs font-medium text-teal-100">
               <Sparkles className="h-3.5 w-3.5" />
               IA vocale pour restauration rapide
             </div>
@@ -106,14 +107,14 @@ export function LandingPage() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-amber-500 px-6 py-3.5 text-sm font-semibold text-black transition hover:bg-amber-400"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-astor-accent px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-astor-accent-soft"
               >
                 Demarrer l&apos;essai gratuit
                 <ArrowRight className="h-4 w-4" />
               </a>
               <Link
                 href="/demo"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 px-6 py-3.5 text-sm font-medium text-zinc-200 transition hover:border-amber-500/30 hover:text-white"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 px-6 py-3.5 text-sm font-medium text-zinc-200 transition hover:border-astor-accent/30 hover:text-white"
               >
                 <Headphones className="h-4 w-4" />
                 Tester la demo vocale
@@ -156,7 +157,7 @@ export function LandingPage() {
         {/* How it works */}
         <section id="comment" className="mx-auto max-w-6xl px-6 py-24">
           <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-astor-accent">
               Comment ca marche
             </p>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl">De l&apos;appel a la cuisine en 3 etapes</h2>
@@ -180,7 +181,7 @@ export function LandingPage() {
               },
             ].map((item) => (
               <article key={item.step} className="glass-card rounded-2xl p-6">
-                <p className="font-mono text-sm text-amber-500">{item.step}</p>
+                <p className="font-mono text-sm text-astor-accent">{item.step}</p>
                 <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-zinc-400">{item.text}</p>
               </article>
@@ -189,10 +190,10 @@ export function LandingPage() {
         </section>
 
         {/* Features */}
-        <section id="fonctionnalites" className="border-t border-white/5 bg-[#050608] py-24">
+        <section id="fonctionnalites" className="border-t border-white/5 bg-astor-surface py-24">
           <div className="mx-auto max-w-6xl px-6">
             <div className="max-w-2xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-astor-accent">
                 Fonctionnalites
               </p>
               <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
@@ -209,9 +210,9 @@ export function LandingPage() {
               {FEATURES.map(({ icon: Icon, title, text }) => (
                 <article
                   key={title}
-                  className="group rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition hover:border-amber-500/20 hover:bg-white/[0.04]"
+                  className="group rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition hover:border-astor-accent/20 hover:bg-white/[0.04]"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-500/10 text-amber-400 transition group-hover:bg-amber-500/20">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-astor-accent/10 text-astor-accent-soft transition group-hover:bg-astor-accent/20">
                     <Icon className="h-5 w-5" />
                   </div>
                   <h3 className="mt-4 font-semibold text-white">{title}</h3>
@@ -227,7 +228,7 @@ export function LandingPage() {
           <div className="glass-card overflow-hidden rounded-3xl">
             <div className="grid lg:grid-cols-2">
               <div className="p-8 sm:p-12">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-astor-accent">
                   Votre avantage
                 </p>
                 <h2 className="mt-3 text-3xl font-bold">
@@ -246,7 +247,7 @@ export function LandingPage() {
                     "Historique client et preferences",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-sm text-zinc-300">
-                      <Check className="h-4 w-4 shrink-0 text-amber-500" />
+                      <Check className="h-4 w-4 shrink-0 text-astor-accent" />
                       {item}
                     </li>
                   ))}
@@ -274,14 +275,14 @@ export function LandingPage() {
         {/* Pricing */}
         <section id="tarifs" className="border-t border-white/5 py-24">
           <div className="mx-auto max-w-6xl px-6 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500">Tarifs</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-astor-accent">Tarifs</p>
             <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Un prix simple et transparent</h2>
             <p className="mx-auto mt-4 max-w-lg text-zinc-400">
               Pas de commission par commande. Un abonnement fixe, tout inclus.
             </p>
             <div className="mx-auto mt-12 max-w-md">
               <div className="glass-card animate-pulse-ring rounded-3xl p-8 text-left">
-                <p className="text-sm font-medium text-amber-400">Offre lancement</p>
+                <p className="text-sm font-medium text-astor-accent-soft">Offre lancement</p>
                 <div className="mt-4 flex items-baseline gap-1">
                   <span className="text-5xl font-bold text-white">99</span>
                   <span className="text-xl text-zinc-400">EUR / mois</span>
@@ -297,7 +298,7 @@ export function LandingPage() {
                 </ul>
                 <a
                   href="#contact"
-                  className="mt-8 flex w-full items-center justify-center rounded-full bg-amber-500 py-3.5 text-sm font-semibold text-black transition hover:bg-amber-400"
+                  className="mt-8 flex w-full items-center justify-center rounded-full bg-astor-accent py-3.5 text-sm font-semibold text-white transition hover:bg-astor-accent-soft"
                 >
                   Reserver mon essai gratuit
                 </a>
@@ -328,26 +329,26 @@ export function LandingPage() {
 
         {/* Contact CTA */}
         <section id="contact" className="mx-auto max-w-6xl px-6 pb-24">
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-500 to-orange-600 px-8 py-16 text-center sm:px-16">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wOCI+PHBhdGggIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-50" />
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-astor-accent via-teal-700 to-slate-900 px-8 py-16 text-center sm:px-16">
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNiI+PHBhdGggIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-50" />
             <div className="relative">
-              <h2 className="text-3xl font-bold text-black sm:text-4xl">
+              <h2 className="text-3xl font-bold text-white sm:text-4xl">
                 Pret a ne plus perdre une commande ?
               </h2>
-              <p className="mx-auto mt-4 max-w-lg text-black/70">
+              <p className="mx-auto mt-4 max-w-lg text-white/75">
                 Rejoignez les restaurants qui automatisent leur prise de commande.
                 Installation en 24h, essai gratuit 2 semaines.
               </p>
               <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <a
                   href="mailto:contact@agencybinari.com?subject=Essai%20gratuit%20ASTOR"
-                  className="inline-flex rounded-full bg-black px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-zinc-900"
+                  className="inline-flex rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-slate-900 transition hover:bg-stone-100"
                 >
                   Demander une demo
                 </a>
                 <Link
                   href="/demo"
-                  className="inline-flex rounded-full border-2 border-black/20 px-8 py-3.5 text-sm font-semibold text-black transition hover:bg-black/10"
+                  className="inline-flex rounded-full border-2 border-white/25 px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10"
                 >
                   Essayer la demo vocale
                 </Link>
@@ -371,7 +372,7 @@ function StatBar({ label, value }: { label: string; value: number }) {
       </div>
       <div className="mt-2 h-2 overflow-hidden rounded-full bg-white/5">
         <div
-          className="h-full rounded-full bg-gradient-to-r from-amber-500 to-orange-500"
+          className="h-full rounded-full bg-gradient-to-r from-astor-accent to-teal-600"
           style={{ width: `${value}%` }}
         />
       </div>

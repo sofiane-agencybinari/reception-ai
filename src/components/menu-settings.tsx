@@ -128,10 +128,10 @@ export function MenuSettings() {
   return (
     <div className="space-y-6">
       <section className="glass-card overflow-hidden rounded-xl">
-        <div className="border-b border-white/8 bg-gradient-to-r from-amber-500/10 via-transparent to-transparent px-5 py-4">
+        <div className="border-b border-white/8 bg-gradient-to-r from-astor-accent/10 via-transparent to-transparent px-5 py-4">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-start gap-3">
-              <div className="rounded-lg bg-amber-500/15 p-2 text-amber-400">
+              <div className="rounded-lg bg-astor-accent/15 p-2 text-astor-accent-soft">
                 <FileText className="h-5 w-5" />
               </div>
               <div>
@@ -226,12 +226,12 @@ export function MenuSettings() {
                       items.map((item) => (
                         <li
                           key={item.id}
-                          className="flex items-center justify-between rounded-lg border border-white/5 bg-black/40 px-3 py-2 transition hover:border-amber-500/25"
+                          className="flex items-center justify-between rounded-lg border border-white/5 bg-black/40 px-3 py-2 transition hover:border-astor-accent/25"
                         >
                           <span className={item.is_available ? "text-zinc-200" : "text-zinc-500 line-through"}>
                             {item.name}
                           </span>
-                          <span className="font-mono text-sm text-amber-400/90">
+                          <span className="font-mono text-sm text-astor-accent-soft/90">
                             {formatMenuPrice(Number(item.price))}
                           </span>
                         </li>

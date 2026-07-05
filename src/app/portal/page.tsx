@@ -51,10 +51,10 @@ export default function PortalPage() {
             <Link
               key={href}
               href={href}
-              className="group glass-card rounded-2xl p-6 transition hover:border-amber-500/20"
+              className="group glass-card rounded-2xl p-6 transition hover:border-astor-accent/20"
             >
               <div className="flex items-start justify-between">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/10 text-amber-400">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-astor-accent/10 text-astor-accent-soft">
                   <Icon className="h-5 w-5" />
                 </div>
                 <span className="rounded-full border border-white/10 px-2 py-0.5 text-[10px] uppercase tracking-wider text-zinc-500">
@@ -63,7 +63,7 @@ export default function PortalPage() {
               </div>
               <h2 className="mt-4 text-lg font-semibold text-white">{title}</h2>
               <p className="mt-1 text-sm text-zinc-500">{description}</p>
-              <ArrowUpRight className="mt-4 h-4 w-4 text-zinc-600 transition group-hover:text-amber-400" />
+              <ArrowUpRight className="mt-4 h-4 w-4 text-zinc-600 transition group-hover:text-astor-accent-soft" />
             </Link>
           ))}
         </section>

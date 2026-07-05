@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export function MarketingFooter() {
   return (
-    <footer className="border-t border-white/5 bg-[#050608]">
+    <footer className="border-t border-white/5 bg-astor-surface">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 to-orange-600 text-sm font-bold text-black">A</div>
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-astor-accent-soft to-teal-800 text-sm font-bold text-white">A</div>
             <p className="text-lg font-bold text-white">ASTOR</p>
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-zinc-500">

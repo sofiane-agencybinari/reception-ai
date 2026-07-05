@@ -31,11 +31,11 @@ export function AppShell({ title, subtitle, children }: AppShellProps) {
   }
 
   return (
-    <div className="min-h-screen bg-[#07080c] text-zinc-100">
-      <header className="sticky top-0 z-40 border-b border-white/5 bg-[#07080c]/95 backdrop-blur-xl">
+    <div className="min-h-screen bg-background text-foreground">
+      <header className="sticky top-0 z-40 border-b border-white/5 bg-background/95 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
           <Link href="/portal" className="flex items-center gap-3">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-amber-400 to-orange-600 text-xs font-bold text-black">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-astor-accent-soft to-teal-800 text-xs font-bold text-white">
               A
             </div>
             <div>
@@ -57,7 +57,7 @@ export function AppShell({ title, subtitle, children }: AppShellProps) {
                   href={item.href}
                   className={`rounded-lg px-3 py-1.5 text-xs font-medium transition ${
                     active
-                      ? "bg-amber-500/15 text-amber-300"
+                      ? "bg-astor-accent/15 text-astor-accent-bright"
                       : "text-zinc-400 hover:bg-white/5 hover:text-white"
                   }`}
                 >
@@ -83,7 +83,7 @@ export function AppShell({ title, subtitle, children }: AppShellProps) {
                 key={item.href}
                 href={item.href}
                 className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium ${
-                  active ? "bg-amber-500/15 text-amber-300" : "text-zinc-400"
+                  active ? "bg-astor-accent/15 text-astor-accent-bright" : "text-zinc-400"
                 }`}
               >
                 {item.label}

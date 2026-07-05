@@ -1,12 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #07080c;
-  --foreground: #f4f4f5;
-  --astor-accent: #f59e0b;
-  --astor-accent-soft: #fbbf24;
-  --astor-surface: #111318;
-  --astor-border: rgba(255, 255, 255, 0.08);
+  --background: #0a0c0f;
+  --foreground: #ece8e3;
+  --astor-accent: #4a9b8e;
+  --astor-accent-soft: #6bb8aa;
+  --astor-accent-bright: #8ed4c6;
+  --astor-surface: #12151a;
+  --astor-surface-elevated: #1a1f27;
+  --astor-border: rgba(236, 232, 227, 0.08);
+  --astor-muted: #8a919c;
+  --astor-warm: #c4a882;
 }
 
 @theme inline {
@@ -14,7 +18,11 @@
   --color-foreground: var(--foreground);
   --color-astor-accent: var(--astor-accent);
   --color-astor-accent-soft: var(--astor-accent-soft);
+  --color-astor-accent-bright: var(--astor-accent-bright);
   --color-astor-surface: var(--astor-surface);
+  --color-astor-surface-elevated: var(--astor-surface-elevated);
+  --color-astor-muted: var(--astor-muted);
+  --color-astor-warm: var(--astor-warm);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -36,8 +44,8 @@ body {
 }
 
 @keyframes pulse-ring {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.25); }
-  50% { box-shadow: 0 0 0 12px rgba(245, 158, 11, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(74, 155, 142, 0.28); }
+  50% { box-shadow: 0 0 0 12px rgba(74, 155, 142, 0); }
 }
 
 @keyframes shimmer {
@@ -51,27 +59,27 @@ body {
 
 .marketing-grid {
   background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    linear-gradient(rgba(236, 232, 227, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(236, 232, 227, 0.025) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
 .glass-card {
   border: 1px solid var(--astor-border);
-  background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  background: linear-gradient(145deg, rgba(26, 31, 39, 0.85), rgba(18, 21, 26, 0.6));
   backdrop-filter: blur(12px);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #fff 0%, #fbbf24 50%, #f59e0b 100%);
+  background: linear-gradient(135deg, #f5f0ea 0%, var(--astor-accent-bright) 45%, var(--astor-accent) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 @keyframes new-order-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.45); }
-  50% { box-shadow: 0 0 0 8px rgba(245, 158, 11, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(74, 155, 142, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(74, 155, 142, 0); }
 }
 
 @keyframes live-dot {
@@ -84,23 +92,23 @@ body {
 
 .cockpit-input {
   border: 1px solid var(--astor-border);
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(10, 12, 15, 0.65);
   color: var(--foreground);
   border-radius: 0.5rem;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.cockpit-input::placeholder { color: rgba(255, 255, 255, 0.28); }
+.cockpit-input::placeholder { color: rgba(236, 232, 227, 0.28); }
 .cockpit-input:focus {
-  border-color: rgba(245, 158, 11, 0.45);
-  box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.2);
+  border-color: rgba(74, 155, 142, 0.5);
+  box-shadow: 0 0 0 1px rgba(74, 155, 142, 0.22);
 }
 
 .cockpit-btn-primary {
   border-radius: 0.5rem;
   background: var(--astor-accent);
-  color: #000;
+  color: #fff;
   font-weight: 600;
   transition: background 0.2s, transform 0.2s;
 }
@@ -113,26 +121,26 @@ body {
 .cockpit-btn-ghost {
   border: 1px solid var(--astor-border);
   border-radius: 0.5rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(236, 232, 227, 0.75);
   transition: border-color 0.2s, color 0.2s, background 0.2s;
 }
 
 .cockpit-btn-ghost:hover {
-  border-color: rgba(245, 158, 11, 0.35);
+  border-color: rgba(74, 155, 142, 0.35);
   color: #fff;
   background: rgba(255, 255, 255, 0.04);
 }
 
 .cockpit-btn-secondary {
-  border: 1px solid rgba(245, 158, 11, 0.35);
+  border: 1px solid rgba(74, 155, 142, 0.35);
   border-radius: 0.5rem;
-  background: rgba(245, 158, 11, 0.08);
-  color: #fbbf24;
+  background: rgba(74, 155, 142, 0.1);
+  color: var(--astor-accent-bright);
   font-weight: 500;
   transition: border-color 0.2s, background 0.2s;
 }
 
 .cockpit-btn-secondary:hover {
-  border-color: rgba(245, 158, 11, 0.55);
-  background: rgba(245, 158, 11, 0.14);
+  border-color: rgba(74, 155, 142, 0.55);
+  background: rgba(74, 155, 142, 0.16);
 }

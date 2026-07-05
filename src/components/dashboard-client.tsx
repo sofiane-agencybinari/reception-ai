@@ -136,7 +136,7 @@ export function DashboardClient() {
       "bg-indigo-400",
       "bg-violet-400",
       "bg-emerald-400",
-      "bg-amber-400",
+      "bg-astor-accent-soft",
     ];
     const entries = topProductNames.map((name, idx) => [name, palette[idx % palette.length]] as const);
     return Object.fromEntries(entries);
@@ -193,7 +193,7 @@ export function DashboardClient() {
       <section className="glass-card rounded-2xl p-5">
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-amber-500">
+            <p className="text-xs font-semibold uppercase tracking-wider text-astor-accent">
               Rapport du jour
             </p>
             <p className="mt-2 text-3xl font-bold text-white">
@@ -205,7 +205,7 @@ export function DashboardClient() {
           </div>
           <div className="text-right">
             <p className="text-xs uppercase tracking-wider text-zinc-500">CA periode ({periodLabel})</p>
-            <p className="mt-2 text-2xl font-semibold text-amber-400">
+            <p className="mt-2 text-2xl font-semibold text-astor-accent-soft">
               {periodRevenue.toFixed(2)} EUR
             </p>
           </div>
@@ -214,14 +214,14 @@ export function DashboardClient() {
           <button
             type="button"
             onClick={exportProductSales}
-            className="rounded-full bg-amber-500 px-4 py-2 text-xs font-semibold text-black transition hover:bg-amber-400"
+            className="rounded-full bg-astor-accent px-4 py-2 text-xs font-semibold text-white transition hover:bg-astor-accent-soft"
           >
             Export compta produits (CSV)
           </button>
           <button
             type="button"
             onClick={exportOrders}
-            className="rounded-full border border-white/10 px-4 py-2 text-xs font-medium text-zinc-300 transition hover:border-amber-500/30 hover:text-white"
+            className="rounded-full border border-white/10 px-4 py-2 text-xs font-medium text-zinc-300 transition hover:border-astor-accent/30 hover:text-white"
           >
             Export commandes (CSV)
           </button>
@@ -286,9 +286,9 @@ export function DashboardClient() {
             <p className="mt-2 text-4xl font-semibold text-white">{totalVolumeForPeriod}</p>
             <p className="mt-1 text-xs text-zinc-500">Unites produits vendues</p>
           </article>
-          <article className="glass-card rounded-xl border-amber-500/20 p-4">
+          <article className="glass-card rounded-xl border-astor-accent/20 p-4">
             <p className="text-xs uppercase tracking-wide text-zinc-400">Produit le plus commande</p>
-            <p className="mt-2 text-2xl font-semibold text-amber-300">
+            <p className="mt-2 text-2xl font-semibold text-astor-accent-bright">
               {featuredProduct?.name ?? "Aucun produit"}
             </p>
             <p className="mt-1 text-sm text-zinc-400">
@@ -440,7 +440,7 @@ function PeriodButton({
       onClick={onClick}
       className={`rounded-md px-3 py-1 text-xs font-medium transition ${
         active
-          ? "bg-amber-500 text-black"
+          ? "bg-astor-accent text-white"
           : "text-zinc-400 hover:bg-white/5 hover:text-white"
       }`}
     >
@@ -464,8 +464,8 @@ function MetricCard({
     <article
       onClick={onClick}
       className={`glass-card rounded-xl p-4 transition ${
-        onClick ? "cursor-pointer hover:-translate-y-0.5 hover:border-amber-500/30" : ""
-      } ${active ? "border-amber-500/40 ring-1 ring-amber-500/25" : ""}`}
+        onClick ? "cursor-pointer hover:-translate-y-0.5 hover:border-astor-accent/30" : ""
+      } ${active ? "border-astor-accent/40 ring-1 ring-astor-accent/25" : ""}`}
     >
       <p className="text-xs uppercase tracking-wide text-zinc-500">{label}</p>
       <p className="mt-1 text-2xl font-semibold text-white">{value}</p>

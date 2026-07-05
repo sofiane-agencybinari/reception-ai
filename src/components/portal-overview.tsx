@@ -105,7 +105,7 @@ export function PortalOverview() {
                 key={log.id}
                 className="flex items-start gap-3 rounded-xl border border-white/5 bg-black/30 px-4 py-3 text-sm"
               >
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-amber-400" />
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-astor-accent-soft" />
                 <div className="min-w-0 flex-1">
                   <p className="text-zinc-300">
                     {log.transcript?.slice(0, 120) ?? "Appel traite — commande enregistree"}
@@ -150,7 +150,7 @@ function StatTile({
 }) {
   return (
     <article className="glass-card rounded-2xl p-4">
-      <div className="flex items-center gap-2 text-amber-400">
+      <div className="flex items-center gap-2 text-astor-accent-soft">
         <Icon className="h-4 w-4" />
         <p className="text-[10px] font-semibold uppercase tracking-wider text-zinc-500">{label}</p>
       </div>

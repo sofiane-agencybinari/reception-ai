@@ -20,7 +20,7 @@ export function AuthGuard({ children }: { children: ReactNode }) {
 
   if (!ready) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[#07080c] text-sm text-zinc-500">
+      <div className="flex min-h-screen items-center justify-center bg-background text-sm text-zinc-500">
         Verification acces…
       </div>
     );

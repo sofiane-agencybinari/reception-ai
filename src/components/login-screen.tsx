@@ -27,14 +27,14 @@ export function LoginScreen() {
   }
 
   return (
-    <main className="relative flex min-h-screen flex-1 items-center justify-center overflow-hidden bg-[#07080c] px-6 py-12 text-zinc-100">
+    <main className="relative flex min-h-screen flex-1 items-center justify-center overflow-hidden bg-background px-6 py-12 text-foreground">
       <div className="marketing-grid pointer-events-none absolute inset-0 opacity-30" />
-      <div className="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[600px] -translate-x-1/2 rounded-full bg-amber-500/10 blur-[100px]" />
+      <div className="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[600px] -translate-x-1/2 rounded-full bg-astor-accent/8 blur-[100px]" />
 
       <section className="animate-fade-up relative z-10 w-full max-w-md">
         <div className="mb-8 text-center">
           <Link href="/" className="inline-flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 to-orange-600 text-sm font-bold text-black">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-astor-accent-soft to-teal-800 text-sm font-bold text-white">
               A
             </div>
             <span className="text-xl font-bold tracking-tight">ASTOR</span>

@@ -162,7 +162,7 @@ export function KitchenBoard() {
       <section className="glass-card rounded-2xl p-4">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div className="flex flex-wrap items-center gap-2">
-            <KpiBadge label="Nouvelles" value={newOrders.length} tone="amber" pulse={newOrders.length > 0} />
+            <KpiBadge label="Nouvelles" value={newOrders.length} tone="accent" pulse={newOrders.length > 0} />
             <KpiBadge label="En cours" value={inProgressOrders.length} tone="blue" />
             <KpiBadge label="Traitees" value={handledOrders.length} tone="green" />
           </div>
@@ -176,7 +176,7 @@ export function KitchenBoard() {
       </section>
 
       <section className="grid gap-4 lg:grid-cols-3">
-        <OrderColumn title="Nouvelles commandes" subtitle="A traiter en priorite" accent="amber" highlight={newOrders.length > 0}>
+        <OrderColumn title="Nouvelles commandes" subtitle="A traiter en priorite" accent="accent" highlight={newOrders.length > 0}>
           {newOrders.length === 0 ? (
             <EmptyColumnMessage message="Aucune nouvelle commande." />
           ) : (
@@ -218,12 +218,12 @@ function KpiBadge({
 }: {
   label: string;
   value: number;
-  tone: "amber" | "blue" | "green";
+  tone: "accent" | "blue" | "green";
   pulse?: boolean;
 }) {
   const toneClass =
-    tone === "amber"
-      ? "border-amber-500/30 bg-amber-500/10 text-amber-200"
+    tone === "accent"
+      ? "border-astor-accent/30 bg-astor-accent/10 text-teal-100"
       : tone === "blue"
         ? "border-sky-500/30 bg-sky-500/10 text-sky-200"
         : "border-emerald-500/30 bg-emerald-500/10 text-emerald-200";
@@ -244,20 +244,20 @@ function OrderColumn({
 }: {
   title: string;
   subtitle: string;
-  accent: "amber" | "blue" | "green";
+  accent: "accent" | "blue" | "green";
   highlight?: boolean;
   children: ReactNode;
 }) {
   const accentClass =
-    accent === "amber"
-      ? "border-amber-500/25"
+    accent === "accent"
+      ? "border-astor-accent/25"
       : accent === "blue"
         ? "border-sky-500/25"
         : "border-emerald-500/25";
 
   return (
     <article
-      className={`glass-card rounded-2xl p-4 ${accentClass} ${highlight ? "ring-1 ring-amber-500/20" : ""}`}
+      className={`glass-card rounded-2xl p-4 ${accentClass} ${highlight ? "ring-1 ring-astor-accent/20" : ""}`}
     >
       <h3 className="text-sm font-semibold uppercase tracking-wide text-white">{title}</h3>
       <p className="mt-1 text-xs text-zinc-500">{subtitle}</p>
@@ -296,13 +296,13 @@ function OrderCard({
 
   return (
     <article
-      className={`rounded-xl border bg-black/40 p-4 transition hover:-translate-y-0.5 hover:border-amber-500/30 ${
+      className={`rounded-xl border bg-black/40 p-4 transition hover:-translate-y-0.5 hover:border-astor-accent/30 ${
         isLate ? "border-rose-500/40" : "border-white/8"
       } ${isNew ? "animate-new-order" : ""}`}
     >
       <div className="flex items-start justify-between gap-2">
         <div>
-          <p className="font-mono text-xs text-amber-400/80">
+          <p className="font-mono text-xs text-astor-accent-soft/80">
             SB-{order.id.slice(0, 8).toUpperCase()}
           </p>
           <h4 className="mt-0.5 font-semibold text-white">
@@ -320,7 +320,7 @@ function OrderCard({
           {order.customer_phone}
         </span>
         {pickup ? (
-          <span className="inline-flex items-center gap-1 text-amber-300/90">
+          <span className="inline-flex items-center gap-1 text-astor-accent-bright/90">
             <Clock className="h-3 w-3" />
             Retrait {pickup}
           </span>
@@ -343,7 +343,7 @@ function OrderCard({
             ))}
           </ul>
           {order.notes ? (
-            <p className="mt-2 rounded-lg bg-amber-500/10 px-2 py-1.5 text-xs text-amber-200/90">
+            <p className="mt-2 rounded-lg bg-astor-accent/10 px-2 py-1.5 text-xs text-teal-100/90">
               Note : {order.notes}
             </p>
           ) : null}

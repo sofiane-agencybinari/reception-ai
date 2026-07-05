@@ -105,7 +105,7 @@ export function ClientsTracker() {
               type="button"
               onClick={exportFiltered}
               disabled={filtered.length === 0}
-              className="cockpit-btn-ghost border-amber-500/30 px-3 py-2 text-xs text-amber-300 disabled:opacity-40"
+              className="cockpit-btn-ghost border-astor-accent/30 px-3 py-2 text-xs text-astor-accent-bright disabled:opacity-40"
             >
               Exporter filtre (CSV)
             </button>
@@ -138,7 +138,7 @@ export function ClientsTracker() {
             return (
               <article
                 key={c.phone}
-                className="glass-card overflow-hidden rounded-xl transition hover:border-amber-500/20"
+                className="glass-card overflow-hidden rounded-xl transition hover:border-astor-accent/20"
               >
                 <button
                   type="button"

@@ -13,6 +13,7 @@ export function ElevenLabsWidget() {
 
     const element = document.createElement("elevenlabs-convai");
     element.setAttribute("agent-id", AGENT_ID);
+    element.setAttribute("language", "fr");
     containerRef.current.innerHTML = "";
     containerRef.current.appendChild(element);
   }, []);

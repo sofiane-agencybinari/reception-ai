@@ -108,11 +108,23 @@ export async function POST(request: Request) {
     notes: pickFirstString(mergedBody.notes, mergedBody.comment),
     items: normalizedItemsInput.map((item) => {
       const normalizedItem = safeObject(item);
-      return {
-        name: normalizedItem.name ?? normalizedItem.item_name ?? normalizedItem.product ?? "",
-        quantity: normalizedItem.quantity ?? normalizedItem.qty ?? 1,
-        unitPrice: normalizedItem.unitPrice ?? normalizedItem.unit_price ?? normalizedItem.price ?? 0,
-      };
+      const name = pickFirstString(
+        normalizedItem.name,
+        normalizedItem.Name,
+        normalizedItem.item_name,
+        normalizedItem.product,
+      ) ?? "";
+      const quantity =
+        normalizedItem.quantity ??
+        normalizedItem.Number ??
+        normalizedItem.qty ??
+        1;
+      const unitPrice =
+        normalizedItem.unitPrice ??
+        normalizedItem.unit_price ??
+        normalizedItem.price ??
+        0;
+      return { name, quantity, unitPrice };
     }),
   };
 

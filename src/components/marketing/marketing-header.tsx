@@ -9,10 +9,10 @@ const NAV = [
 
 export function MarketingHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/5 bg-[#07080c]/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/5 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="group flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 to-orange-600 text-sm font-bold text-black shadow-lg shadow-amber-500/20">
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-astor-accent-soft to-teal-800 text-sm font-bold text-white shadow-lg shadow-astor-accent/20">
             A
           </div>
           <div>
@@ -31,10 +31,10 @@ export function MarketingHeader() {
           <Link href="/demo" className="hidden rounded-full px-4 py-2 text-sm text-zinc-300 transition hover:text-white sm:inline">
             Demo live
           </Link>
-          <Link href="/login" className="rounded-full border border-white/10 px-4 py-2 text-sm text-zinc-200 transition hover:border-amber-500/40 hover:text-white">
+          <Link href="/login" className="rounded-full border border-white/10 px-4 py-2 text-sm text-zinc-200 transition hover:border-astor-accent/40 hover:text-white">
             Connexion
           </Link>
-          <a href="#contact" className="rounded-full bg-amber-500 px-4 py-2 text-sm font-semibold text-black transition hover:bg-amber-400">
+          <a href="#contact" className="rounded-full bg-astor-accent px-4 py-2 text-sm font-semibold text-white transition hover:bg-astor-accent-soft">
             Essai gratuit
           </a>
         </div>
