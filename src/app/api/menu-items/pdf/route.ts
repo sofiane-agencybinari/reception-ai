@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 import { buildMenuPdfBuffer, buildMenuPdfFilename } from "@/lib/menu-pdf";
 import { getSupabaseAdminClient } from "@/lib/supabase";
 
+export const runtime = "nodejs";
+
 export async function GET(request: Request) {
   const supabase = getSupabaseAdminClient();
   if (!supabase) {
@@ -45,21 +47,30 @@ export async function GET(request: Request) {
   const restaurantName =
     restaurant?.name?.trim() || process.env.RESTAURANT_NAME?.trim() || "Restaurant";
 
-  const pdf = await buildMenuPdfBuffer({
-    restaurantName,
-    restaurantPhone: restaurant?.phone ?? null,
-    restaurantAddress: restaurant?.address ?? null,
-    items: items ?? [],
-  });
+  try {
+    const pdf = await buildMenuPdfBuffer({
+      restaurantName,
+      restaurantPhone: restaurant?.phone ?? null,
+      restaurantAddress: restaurant?.address ?? null,
+      items: items ?? [],
+    });
 
-  const filename = buildMenuPdfFilename(restaurantName);
+    const filename = buildMenuPdfFilename(restaurantName);
 
-  return new NextResponse(new Uint8Array(pdf), {
-    status: 200,
-    headers: {
-      "Content-Type": "application/pdf",
-      "Content-Disposition": `attachment; filename="${filename}"`,
-      "Cache-Control": "no-store",
-    },
-  });
+    return new NextResponse(new Uint8Array(pdf), {
+      status: 200,
+      headers: {
+        "Content-Type": "application/pdf",
+        "Content-Disposition": `attachment; filename="${filename}"`,
+        "Cache-Control": "no-store",
+      },
+    });
+  } catch (err) {
+    const message = err instanceof Error ? err.message : "Erreur inconnue";
+    console.error("[menu-pdf]", message);
+    return NextResponse.json(
+      { error: "Impossible de generer le menu PDF", details: message },
+      { status: 500 },
+    );
+  }
 }
