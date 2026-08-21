@@ -33,6 +33,54 @@ function parsePossiblyJsonObject(value: unknown): Record<string, unknown> {
   }
 }
 
+/** Convert agent pickup phrases to a DB-safe timestamptz or null. */
+function normalizePickupTime(raw: string | undefined): {
+  pickupTime: string | null;
+  noteFragment: string | null;
+} {
+  if (!raw?.trim()) return { pickupTime: null, noteFragment: null };
+  const value = raw.trim();
+  const asap =
+    /d[eè]s que possible|asap|au plus vite|tout de suite|maintenant|imm[eé]diat/i.test(
+      value,
+    );
+  if (asap) {
+    return { pickupTime: null, noteFragment: `Retrait: ${value}` };
+  }
+
+  const parsed = Date.parse(value);
+  if (!Number.isNaN(parsed)) {
+    return { pickupTime: new Date(parsed).toISOString(), noteFragment: null };
+  }
+
+  // French clock like "19h30", "19:30"
+  const hm = value.match(/^(\d{1,2})\s*[h:]\s*(\d{2})?$/i);
+  if (hm) {
+    const hours = Number(hm[1]);
+    const minutes = Number(hm[2] ?? "0");
+    if (hours >= 0 && hours <= 23 && minutes >= 0 && minutes <= 59) {
+      const dt = new Date();
+      dt.setSeconds(0, 0);
+      dt.setHours(hours, minutes, 0, 0);
+      if (dt.getTime() < Date.now() - 5 * 60 * 1000) {
+        dt.setDate(dt.getDate() + 1);
+      }
+      return { pickupTime: dt.toISOString(), noteFragment: null };
+    }
+  }
+
+  const inMinutes = value.match(/dans\s+(\d+)\s*(min|minutes?)/i);
+  if (inMinutes) {
+    const mins = Number(inMinutes[1]);
+    return {
+      pickupTime: new Date(Date.now() + mins * 60 * 1000).toISOString(),
+      noteFragment: null,
+    };
+  }
+
+  return { pickupTime: null, noteFragment: `Retrait: ${value}` };
+}
+
 async function parseRequestBody(request: Request): Promise<Record<string, unknown>> {
   // Read the raw body once to avoid "body stream already used" errors.
   const rawBody = await request.text();
@@ -153,14 +201,17 @@ export async function POST(request: Request) {
     0,
   );
 
+  const { pickupTime, noteFragment } = normalizePickupTime(payload.pickupTime);
+  const notes = [payload.notes?.trim(), noteFragment].filter(Boolean).join(" | ") || null;
+
   const { data: order, error: orderError } = await supabase
     .from("orders")
     .insert({
       restaurant_id: payload.restaurantId,
       customer_phone: payload.customerPhone,
       customer_name: payload.customerName ?? null,
-      pickup_time: payload.pickupTime ?? null,
-      notes: payload.notes ?? null,
+      pickup_time: pickupTime,
+      notes,
       source: "phone",
       status: "new",
       total_amount: totalAmount,
