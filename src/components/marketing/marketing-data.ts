@@ -70,99 +70,97 @@ export type FeatureItem = {
   icon: LucideIcon;
   title: string;
   text: string;
-  tags: string[];
-  size: "sm" | "md" | "lg";
-  highlight?: string;
 };
 
-export const FEATURES: FeatureItem[] = [
+export type FeatureGroup = {
+  label: string;
+  title: string;
+  features: FeatureItem[];
+};
+
+export const FEATURE_GROUPS: FeatureGroup[] = [
   {
-    icon: Headphones,
-    title: "Comprehension vocale avancee",
-    text: "Accents regionaux, vocabulaire metier et demandes complexes — l'IA s'adapte a votre carte et votre clientele.",
-    tags: ["Accents", "Slang", "24/7"],
-    size: "lg",
+    label: "Telephone & voix",
+    title: "Decrocher, comprendre, convertir",
+    features: [
+      {
+        icon: Headphones,
+        title: "Comprehension vocale avancee",
+        text: "Accents, slang resto et demandes complexes — l'IA s'adapte a votre carte.",
+      },
+      {
+        icon: PhoneCall,
+        title: "Multi-ligne",
+        text: "Jusqu'a 10 appels en parallele. Zero tonalite occupee pendant le rush.",
+      },
+      {
+        icon: TrendingUp,
+        title: "Upsell intelligent",
+        text: "Boissons et accompagnements suggeres au bon moment, sans forcer.",
+      },
+      {
+        icon: UserCheck,
+        title: "Relais humain",
+        text: "Transfert vers votre equipe pour les cas hors standard.",
+      },
+    ],
   },
   {
-    icon: PhoneCall,
-    title: "Multi-ligne",
-    text: "Jusqu'a 10 appels simultanes selon l'offre. Jamais de sonnerie occupee pendant le rush du midi.",
-    tags: ["2 a 10 lignes", "Parallele"],
-    size: "md",
-    highlight: "4 appels actifs",
+    label: "Operations",
+    title: "Menu, cuisine et caisse",
+    features: [
+      {
+        icon: FileUp,
+        title: "Import de carte",
+        text: "PDF ou Excel : votre catalogue vocal est genere automatiquement.",
+      },
+      {
+        icon: RefreshCw,
+        title: "Integration caisse",
+        text: "HubRise, Zelty et connecteurs sur demande pour sync menu et stocks.",
+      },
+      {
+        icon: MessageSquare,
+        title: "SMS confirmation",
+        text: "Numero de commande, montant et heure de retrait envoyes au client.",
+      },
+      {
+        icon: Zap,
+        title: "Installation 24h",
+        text: "Agent, menu et ecran cuisine prets. Formation equipe incluse.",
+      },
+    ],
   },
   {
-    icon: FileUp,
-    title: "Import de carte",
-    text: "Importez votre menu PDF ou Excel : ASTOR genere votre catalogue vocal automatiquement.",
-    tags: ["PDF", "Mise a jour live"],
-    size: "md",
-  },
-  {
-    icon: TrendingUp,
-    title: "Upsell intelligent",
-    text: "Suggere boissons, accompagnements et desserts au bon moment — sans jamais forcer le client.",
-    tags: ["Panier moyen", "Naturel"],
-    size: "sm",
-    highlight: "+18%",
-  },
-  {
-    icon: UserCheck,
-    title: "Relais humain",
-    text: "Transfert vers votre equipe pour les cas hors standard : reclamation, reservation speciale, demande atypique.",
-    tags: ["Transfert live", "Zero perte"],
-    size: "sm",
-  },
-  {
-    icon: RefreshCw,
-    title: "Integration caisse",
-    text: "Synchronisation menu et stocks avec votre logiciel de caisse (HubRise, Zelty et connecteurs sur demande).",
-    tags: ["HubRise", "API"],
-    size: "md",
-  },
-  {
-    icon: MessageSquare,
-    title: "SMS confirmation",
-    text: "Le client recoit numero de commande, montant et heure de retrait par SMS automatiquement.",
-    tags: ["Twilio", "Auto"],
-    size: "sm",
-  },
-  {
-    icon: BarChart3,
-    title: "Analytics & compta",
-    text: "CA telephonique, top produits, panier moyen, heures de rush — exports CSV pour votre comptable.",
-    tags: ["Dashboard", "Export"],
-    size: "lg",
-  },
-  {
-    icon: Users,
-    title: "Base clients",
-    text: "Historique des commandes, preferences recurrentes et segmentation pour vos campagnes.",
-    tags: ["CRM", "Fidelite"],
-    size: "md",
-  },
-  {
-    icon: Globe,
-    title: "Multi-sites",
-    text: "Gerez plusieurs restaurants depuis un seul compte : agent, menu et dashboard par etablissement.",
-    tags: ["Franchise", "Chaine"],
-    size: "sm",
-  },
-  {
-    icon: Shield,
-    title: "Heberge en France",
-    text: "Donnees hebergees en UE, conformite RGPD et support en francais.",
-    tags: ["RGPD", "UE"],
-    size: "sm",
-  },
-  {
-    icon: Zap,
-    title: "Installation 24h",
-    text: "Agent configure, menu importe, ecran cuisine pret. Formation equipe incluse au demarrage.",
-    tags: ["Onboarding", "Support"],
-    size: "md",
+    label: "Pilotage",
+    title: "Visibilite et croissance",
+    features: [
+      {
+        icon: BarChart3,
+        title: "Analytics & compta",
+        text: "CA, top produits, panier moyen — exports CSV pour votre comptable.",
+      },
+      {
+        icon: Users,
+        title: "Base clients",
+        text: "Historique, preferences et segmentation pour vos campagnes.",
+      },
+      {
+        icon: Globe,
+        title: "Multi-sites",
+        text: "Plusieurs restaurants, un dashboard : agent et menu par etablissement.",
+      },
+      {
+        icon: Shield,
+        title: "Heberge en France",
+        text: "Donnees en UE, RGPD et support en francais.",
+      },
+    ],
   },
 ];
+
+/** @deprecated Use FEATURE_GROUPS — kept for backwards compatibility */
+export const FEATURES: FeatureItem[] = FEATURE_GROUPS.flatMap((g) => g.features);
 
 export const PRICING_PLANS = [
   {
