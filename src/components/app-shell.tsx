@@ -5,6 +5,9 @@ import { usePathname, useRouter } from "next/navigation";
 import type { ReactNode } from "react";
 import { LogOut } from "lucide-react";
 
+import { clearRestaurantSession } from "@/lib/auth-accounts";
+import { useRestaurant } from "@/lib/restaurant-context";
+
 type AppShellProps = {
   title: string;
   subtitle?: string;
@@ -19,14 +22,13 @@ const NAV = [
   { href: "/settings/menu", label: "Menu" },
 ] as const;
 
-const AUTH_STORAGE_KEY = "reception_ai_authenticated";
-
 export function AppShell({ title, subtitle, children }: AppShellProps) {
   const pathname = usePathname();
   const router = useRouter();
+  const restaurant = useRestaurant();
 
   function logout() {
-    window.sessionStorage.removeItem(AUTH_STORAGE_KEY);
+    clearRestaurantSession();
     router.push("/login");
   }
 
@@ -40,6 +42,9 @@ export function AppShell({ title, subtitle, children }: AppShellProps) {
             </div>
             <div>
               <span className="font-bold tracking-tight">ASTOR</span>
+              <span className="ml-2 hidden text-[10px] text-zinc-500 sm:inline">
+                {restaurant.name}
+              </span>
               <span className="ml-2 hidden items-center gap-1.5 text-[10px] text-zinc-500 sm:inline-flex">
                 <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500 animate-live-dot" />
                 En ligne
@@ -94,7 +99,10 @@ export function AppShell({ title, subtitle, children }: AppShellProps) {
       </header>
       <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-8">
         <div className="mb-8 animate-fade-up">
-          <h1 className="text-2xl font-bold text-white">{title}</h1>
+          <p className="text-xs font-medium uppercase tracking-wider text-astor-accent-soft">
+            {restaurant.name}
+          </p>
+          <h1 className="mt-1 text-2xl font-bold text-white">{title}</h1>
           {subtitle ? <p className="mt-1 text-sm text-zinc-500">{subtitle}</p> : null}
         </div>
         {children}

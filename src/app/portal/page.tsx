@@ -42,7 +42,7 @@ export default function PortalPage() {
     <AuthGuard>
       <AppShell
         title="Cockpit ASTOR"
-        subtitle="Pilotez vos commandes telephoniques depuis un seul endroit."
+        subtitle="Cuisine, menu, clients et commandes telephoniques de ce restaurant."
       >
         <PortalOverview />
 

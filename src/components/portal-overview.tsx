@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { Phone, ShoppingBag, TrendingUp, Clock } from "lucide-react";
 
-import { DEFAULT_RESTAURANT_ID } from "@/lib/config";
+import { useRestaurant } from "@/lib/restaurant-context";
 
 type CallLog = {
   id: string;
@@ -22,15 +22,16 @@ type Metrics = {
 };
 
 export function PortalOverview() {
+  const { restaurantId } = useRestaurant();
   const [metrics, setMetrics] = useState<Metrics | null>(null);
   const [todayRevenue, setTodayRevenue] = useState(0);
   const [callLogs, setCallLogs] = useState<CallLog[]>([]);
 
   const load = useCallback(async () => {
     const [metricsRes, ordersRes, logsRes] = await Promise.all([
-      fetch(`/api/dashboard?restaurantId=${DEFAULT_RESTAURANT_ID}`),
-      fetch(`/api/orders?restaurantId=${DEFAULT_RESTAURANT_ID}`),
-      fetch(`/api/call-logs?restaurantId=${DEFAULT_RESTAURANT_ID}&limit=5`),
+      fetch(`/api/dashboard?restaurantId=${restaurantId}`),
+      fetch(`/api/orders?restaurantId=${restaurantId}`),
+      fetch(`/api/call-logs?restaurantId=${restaurantId}&limit=5`),
     ]);
 
     const metricsData = await metricsRes.json();
@@ -57,7 +58,7 @@ export function PortalOverview() {
     if (logsRes.ok) {
       setCallLogs(logsData.callLogs ?? []);
     }
-  }, []);
+  }, [restaurantId]);
 
   useEffect(() => {
     void load();

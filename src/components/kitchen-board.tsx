@@ -3,7 +3,7 @@
 import { type ReactNode, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Bell, Clock, Phone, User } from "lucide-react";
 
-import { DEFAULT_RESTAURANT_ID } from "@/lib/config";
+import { useRestaurant } from "@/lib/restaurant-context";
 import type { Order, OrderStatus } from "@/lib/types";
 
 const NEXT_STATUS: Record<OrderStatus, OrderStatus | null> = {
@@ -49,6 +49,7 @@ function formatPickupTime(pickupTime: string | null) {
 }
 
 export function KitchenBoard() {
+  const { restaurantId } = useRestaurant();
   const [orders, setOrders] = useState<Order[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -57,7 +58,7 @@ export function KitchenBoard() {
 
   const loadOrders = useCallback(async () => {
     try {
-      const res = await fetch(`/api/orders?restaurantId=${DEFAULT_RESTAURANT_ID}`);
+      const res = await fetch(`/api/orders?restaurantId=${restaurantId}`);
       const data = await res.json();
       if (!res.ok) {
         throw new Error(data.error ?? "Erreur chargement commandes");
@@ -70,7 +71,7 @@ export function KitchenBoard() {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [restaurantId]);
 
   useEffect(() => {
     void loadOrders();

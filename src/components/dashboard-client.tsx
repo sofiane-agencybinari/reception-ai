@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 
-import { DEFAULT_RESTAURANT_ID } from "@/lib/config";
+import { useRestaurant } from "@/lib/restaurant-context";
 import {
   buildProductSalesRows,
   downloadCsv,
@@ -21,6 +21,7 @@ const EMPTY_METRICS: DashboardMetrics = {
 };
 
 export function DashboardClient() {
+  const { restaurantId } = useRestaurant();
   const [metrics, setMetrics] = useState<DashboardMetrics>(EMPTY_METRICS);
   const [orders, setOrders] = useState<Order[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -32,8 +33,8 @@ export function DashboardClient() {
   const loadData = useCallback(async () => {
     try {
       const [metricsRes, ordersRes] = await Promise.all([
-        fetch(`/api/dashboard?restaurantId=${DEFAULT_RESTAURANT_ID}`),
-        fetch(`/api/orders?restaurantId=${DEFAULT_RESTAURANT_ID}`),
+        fetch(`/api/dashboard?restaurantId=${restaurantId}`),
+        fetch(`/api/orders?restaurantId=${restaurantId}`),
       ]);
 
       const metricsData = await metricsRes.json();
@@ -48,7 +49,7 @@ export function DashboardClient() {
     } catch (err) {
       setError(err instanceof Error ? err.message : "Erreur inconnue");
     }
-  }, []);
+  }, [restaurantId]);
 
   useEffect(() => {
     const firstLoad = setTimeout(() => {

@@ -4,9 +4,7 @@ import { FormEvent, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const LOGIN_ID = process.env.NEXT_PUBLIC_APP_LOGIN_ID ?? "manager";
-const LOGIN_PASSWORD = process.env.NEXT_PUBLIC_APP_LOGIN_PASSWORD ?? "1234";
-const AUTH_STORAGE_KEY = "reception_ai_authenticated";
+import { findAccount, toSession, writeRestaurantSession } from "@/lib/auth-accounts";
 
 export function LoginScreen() {
   const router = useRouter();
@@ -17,13 +15,14 @@ export function LoginScreen() {
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    if (identifier === LOGIN_ID && password === LOGIN_PASSWORD) {
-      window.sessionStorage.setItem(AUTH_STORAGE_KEY, "true");
-      router.push("/portal");
+    const account = findAccount(identifier, password);
+    if (!account) {
+      setError("Identifiant ou mot de passe incorrect.");
       return;
     }
 
-    setError("Identifiant ou mot de passe incorrect.");
+    writeRestaurantSession(toSession(account));
+    router.push("/portal");
   }
 
   return (
@@ -45,7 +44,7 @@ export function LoginScreen() {
         <div className="glass-card rounded-2xl p-6">
           <h1 className="text-lg font-semibold text-white">Connexion</h1>
           <p className="mt-1 text-sm text-zinc-500">
-            Cuisine, analytics et gestion des commandes telephoniques.
+            Chaque identifiant ouvre le cockpit de son restaurant.
           </p>
 
           <form className="mt-6 space-y-4" onSubmit={onSubmit}>
@@ -57,7 +56,8 @@ export function LoginScreen() {
                 type="text"
                 value={identifier}
                 onChange={(e) => setIdentifier(e.target.value)}
-                placeholder="manager"
+                placeholder="elbahja"
+                autoComplete="username"
                 className="cockpit-input mt-1 w-full px-3 py-2.5 text-sm"
               />
             </div>
@@ -70,6 +70,7 @@ export function LoginScreen() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••"
+                autoComplete="current-password"
                 className="cockpit-input mt-1 w-full px-3 py-2.5 text-sm"
               />
             </div>

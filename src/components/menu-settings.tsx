@@ -3,7 +3,7 @@
 import { FormEvent, useCallback, useEffect, useMemo, useState } from "react";
 import { Download, FileText } from "lucide-react";
 
-import { DEFAULT_RESTAURANT_ID } from "@/lib/config";
+import { useRestaurant } from "@/lib/restaurant-context";
 import {
   CATEGORY_ORDER,
   CATEGORY_TITLES,
@@ -16,6 +16,7 @@ import {
 type MenuItem = MenuItemRow;
 
 export function MenuSettings() {
+  const { restaurantId } = useRestaurant();
   const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
@@ -28,10 +29,10 @@ export function MenuSettings() {
     autres: false,
   });
 
-  const pdfUrl = `/api/menu-items/pdf?restaurantId=${DEFAULT_RESTAURANT_ID}`;
+  const pdfUrl = `/api/menu-items/pdf?restaurantId=${restaurantId}`;
 
   const loadMenu = useCallback(async () => {
-    const res = await fetch(`/api/menu-items?restaurantId=${DEFAULT_RESTAURANT_ID}`);
+    const res = await fetch(`/api/menu-items?restaurantId=${restaurantId}`);
     const data = await res.json();
     if (res.ok) {
       setMenuItems(data.menuItems ?? []);
@@ -39,7 +40,7 @@ export function MenuSettings() {
     } else {
       setError(data.error ?? "Erreur chargement menu");
     }
-  }, []);
+  }, [restaurantId]);
 
   useEffect(() => {
     const firstLoad = setTimeout(() => {
@@ -83,7 +84,7 @@ export function MenuSettings() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        restaurantId: DEFAULT_RESTAURANT_ID,
+        restaurantId,
         name: name.trim(),
         price: priceNumber,
         isAvailable: true,

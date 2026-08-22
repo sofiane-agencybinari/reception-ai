@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 
 import { customersToCsvRows } from "@/lib/customers";
 import type { CustomerProfile } from "@/lib/customers";
-import { DEFAULT_RESTAURANT_ID } from "@/lib/config";
+import { useRestaurant } from "@/lib/restaurant-context";
 
 function escapeCsvCell(value: string): string {
   if (/[",\n\r]/.test(value)) {
@@ -25,6 +25,7 @@ function downloadCsv(rows: string[][], filename: string) {
 }
 
 export function ClientsTracker() {
+  const { restaurantId } = useRestaurant();
   const [customers, setCustomers] = useState<CustomerProfile[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [query, setQuery] = useState("");
@@ -32,7 +33,7 @@ export function ClientsTracker() {
 
   const load = useCallback(async () => {
     try {
-      const res = await fetch(`/api/customers?restaurantId=${DEFAULT_RESTAURANT_ID}`);
+      const res = await fetch(`/api/customers?restaurantId=${restaurantId}`);
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Erreur chargement clients");
       setCustomers(data.customers ?? []);
@@ -40,7 +41,7 @@ export function ClientsTracker() {
     } catch (e) {
       setError(e instanceof Error ? e.message : "Erreur inconnue");
     }
-  }, []);
+  }, [restaurantId]);
 
   useEffect(() => {
     void load();
