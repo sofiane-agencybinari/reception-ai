@@ -1,25 +1,23 @@
 import { Phone } from "lucide-react";
 
 import { STEPS } from "@/components/marketing/marketing-data";
+import { GlowCard } from "@/components/ui/glow-card";
+import { SectionHeader } from "@/components/ui/section-header";
 
 export function MarketingHowItWorks() {
   return (
     <section id="comment" className="mx-auto max-w-6xl px-6 py-24">
-      <div className="max-w-2xl">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-astor-warm">
-          Simple comme bonjour
-        </p>
-        <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Comment ca marche ?</h2>
-        <p className="mt-4 text-zinc-400">
-          De l&apos;appel entrant au bon en cuisine — en trois etapes automatisees.
-        </p>
-      </div>
+      <SectionHeader
+        label="Simple comme bonjour"
+        title="Comment ca marche ?"
+        description="De l'appel entrant au bon en cuisine — en trois etapes automatisees."
+      />
 
-      <div className="mt-16 space-y-20">
+      <div className="mt-16 space-y-16">
         {STEPS.map((step, index) => (
           <article
             key={step.num}
-            className={`grid items-center gap-10 lg:grid-cols-2 lg:gap-16 ${
+            className={`grid items-center gap-10 lg:grid-cols-2 lg:gap-14 ${
               index % 2 === 1 ? "lg:[&>div:first-child]:order-2" : ""
             }`}
           >
@@ -52,7 +50,7 @@ export function MarketingHowItWorks() {
 function StepVisual({ type }: { type: "calls" | "chat" | "order" }) {
   if (type === "calls") {
     return (
-      <div className="glass-card rounded-3xl p-6">
+      <GlowCard glow="accent">
         <p className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
           Appels entrants
         </p>
@@ -80,13 +78,13 @@ function StepVisual({ type }: { type: "calls" | "chat" | "order" }) {
         <p className="mt-4 text-center text-xs text-astor-accent-soft">
           ASTOR gere tout simultanement
         </p>
-      </div>
+      </GlowCard>
     );
   }
 
   if (type === "chat") {
     return (
-      <div className="glass-card rounded-3xl p-6">
+      <GlowCard glow="warm">
         <div className="mb-4 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-astor-accent/20 text-xs font-bold text-astor-accent-bright">
             A
@@ -104,12 +102,12 @@ function StepVisual({ type }: { type: "calls" | "chat" | "order" }) {
           />
           <Bubble from="ai" text="Parfait ! Souhaitez-vous ajouter une boisson ou un dessert ?" />
         </div>
-      </div>
+      </GlowCard>
     );
   }
 
   return (
-    <div className="glass-card overflow-hidden rounded-3xl">
+    <GlowCard glow="accent" padding={false} className="overflow-hidden">
       <div className="border-b border-white/6 bg-astor-accent/10 px-5 py-3">
         <p className="font-mono text-xs text-astor-accent-bright">COMMANDE #2847</p>
         <p className="text-[10px] text-zinc-500">Pour 14:45 — Tel: 06 12 34 56 78</p>
@@ -127,7 +125,7 @@ function StepVisual({ type }: { type: "calls" | "chat" | "order" }) {
         <Phone className="h-3.5 w-3.5" />
         SMS confirmation envoye
       </div>
-    </div>
+    </GlowCard>
   );
 }
 

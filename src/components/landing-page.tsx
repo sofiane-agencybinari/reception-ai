@@ -1,3 +1,4 @@
+import { MarketingAmbient } from "@/components/marketing/marketing-ambient";
 import { MarketingComparison } from "@/components/marketing/marketing-comparison";
 import { MarketingCta } from "@/components/marketing/marketing-cta";
 import { MarketingFaq } from "@/components/marketing/marketing-faq";
@@ -12,8 +13,7 @@ import { MarketingPricing } from "@/components/marketing/marketing-pricing";
 export function LandingPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <div className="marketing-grid pointer-events-none fixed inset-0 opacity-30" />
-
+      <MarketingAmbient />
       <MarketingHeader />
 
       <main className="relative z-10">

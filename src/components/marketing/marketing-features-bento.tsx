@@ -2,22 +2,21 @@ import type { ReactNode } from "react";
 import { PhoneCall, TrendingUp } from "lucide-react";
 
 import { FEATURE_GROUPS } from "@/components/marketing/marketing-data";
+import { GlowCard } from "@/components/ui/glow-card";
+import { SectionHeader } from "@/components/ui/section-header";
 
 export function MarketingFeaturesBento() {
   return (
-    <section id="fonctionnalites" className="border-t border-white/5 bg-astor-surface py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="fonctionnalites" className="relative border-t border-white/5 py-24">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(74,155,142,0.06),transparent_65%)]" />
+
+      <div className="relative mx-auto max-w-6xl px-6">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-astor-accent">
-              Fonctionnalites
-            </p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Tout ce dont vous avez besoin</h2>
-            <p className="mt-4 text-zinc-400">
-              Voix, operations et pilotage — une plateforme complete pour ne plus perdre une
-              commande au telephone.
-            </p>
-          </div>
+          <SectionHeader
+            label="Fonctionnalites"
+            title="Tout ce dont vous avez besoin"
+            description="Voix, operations et pilotage — une plateforme complete pour ne plus perdre une commande au telephone."
+          />
           <div className="flex shrink-0 gap-6">
             <div className="text-right">
               <p className="text-2xl font-bold text-astor-warm">+18%</p>
@@ -89,7 +88,7 @@ export function MarketingFeaturesBento() {
                   return (
                     <article
                       key={feature.title}
-                      className="group rounded-xl border border-white/6 bg-white/[0.02] p-5 transition hover:border-astor-accent/25 hover:bg-white/[0.04]"
+                      className="group rounded-xl border border-white/6 bg-white/[0.02] p-5 transition duration-300 hover:-translate-y-0.5 hover:border-astor-accent/30 hover:bg-white/[0.04] hover:shadow-lg hover:shadow-astor-accent/5"
                     >
                       <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-astor-accent/10 text-astor-accent-soft transition group-hover:bg-astor-accent/20">
                         <Icon className="h-5 w-5" />
@@ -120,7 +119,7 @@ function HighlightCard({
   children: ReactNode;
 }) {
   return (
-    <article className="glass-card rounded-2xl p-6">
+    <GlowCard glow="accent">
       <div className="flex items-start gap-4">
         <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-astor-accent/15 text-astor-accent-soft">
           <Icon className="h-5 w-5" />
@@ -131,6 +130,6 @@ function HighlightCard({
         </div>
       </div>
       {children}
-    </article>
+    </GlowCard>
   );
 }

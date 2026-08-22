@@ -1,15 +1,15 @@
 import { FAQ } from "@/components/marketing/marketing-data";
+import { SectionHeader } from "@/components/ui/section-header";
 
 export function MarketingFaq() {
   return (
     <section id="faq" className="mx-auto max-w-3xl px-6 py-24">
-      <div className="text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-astor-accent">FAQ</p>
-        <h2 className="mt-3 text-3xl font-bold">Questions frequentes</h2>
-        <p className="mt-4 text-zinc-400">
-          Tout ce que vous devez savoir sur ASTOR et la prise de commande automatisee.
-        </p>
-      </div>
+      <SectionHeader
+        align="center"
+        label="FAQ"
+        title="Questions frequentes"
+        description="Tout ce que vous devez savoir sur ASTOR et la prise de commande automatisee."
+      />
       <div className="mt-12 space-y-3">
         {FAQ.map((item) => (
           <details
