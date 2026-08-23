@@ -20,7 +20,9 @@ export function LandingPage() {
 
       <main className="relative z-10">
         <MarketingHero />
-        <MarketingStats />
+        <div className="relative z-10 -mt-2">
+          <MarketingStats />
+        </div>
         <MarketingMarquee />
         <MarketingHowItWorks />
         <MarketingFeaturesBento />

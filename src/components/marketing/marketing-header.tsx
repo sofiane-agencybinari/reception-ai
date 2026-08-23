@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { motion, useReducedMotion } from "motion/react";
 
 const NAV = [
   { href: "/#fonctionnalites", label: "Produit" },
@@ -8,8 +11,15 @@ const NAV = [
 ] as const;
 
 export function MarketingHeader() {
+  const reduce = useReducedMotion();
+
   return (
-    <header className="sticky top-0 z-50 px-4 pt-4">
+    <motion.header
+      className="fixed inset-x-0 top-0 z-50 px-4 pt-4"
+      initial={{ opacity: 0, y: -16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: reduce ? 0 : 1.4, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+    >
       <div className="mx-auto flex max-w-6xl items-center justify-between rounded-2xl border border-white/[0.07] bg-[#050607]/75 px-4 py-2.5 shadow-[0_8px_40px_-12px_rgba(0,0,0,0.8)] backdrop-blur-2xl sm:px-5">
         <Link href="/" className="flex items-center gap-3">
           <div className="relative flex h-9 w-9 items-center justify-center">
@@ -48,6 +58,6 @@ export function MarketingHeader() {
           </a>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 }
