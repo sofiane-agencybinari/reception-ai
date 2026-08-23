@@ -1,4 +1,4 @@
-import { GOOGLE_REVIEWS } from "@/components/marketing/google-reviews-data";
+import { CLIENT_TESTIMONIALS } from "@/components/marketing/client-testimonials-data";
 
 function StarRow({ rating }: { rating: number }) {
   return (
@@ -41,7 +41,7 @@ function GoogleMark({ className = "" }: { className?: string }) {
 }
 
 export function MarketingGoogleReviews() {
-  const { placeName, placeCity, rating, reviewCount, mapsUrl, reviews } = GOOGLE_REVIEWS;
+  const { rating, reviewCount, headline, subtitle, reviews } = CLIENT_TESTIMONIALS;
 
   return (
     <section id="avis" className="border-y border-white/[0.05] bg-astor-surface/50 py-20">
@@ -50,24 +50,15 @@ export function MarketingGoogleReviews() {
           <div>
             <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-astor-accent">
               <GoogleMark className="h-4 w-4" />
-              Avis Google
+              Avis clients
             </p>
             <h2 className="font-display mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Ce que disent les clients
-              <br className="hidden sm:block" />
-              chez {placeName}
+              {headline}
             </h2>
-            <p className="mt-3 max-w-md text-sm leading-relaxed text-zinc-500">
-              Avis publics réels de clients sur Google — restaurant pilote ASTOR à {placeCity}.
-            </p>
+            <p className="mt-3 max-w-md text-sm leading-relaxed text-zinc-500">{subtitle}</p>
           </div>
 
-          <a
-            href={mapsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-4 rounded-2xl border border-white/[0.08] bg-white/[0.03] px-5 py-4 transition hover:border-white/15 hover:bg-white/[0.05]"
-          >
+          <div className="inline-flex items-center gap-4 rounded-2xl border border-white/[0.08] bg-white/[0.03] px-5 py-4">
             <GoogleMark className="h-8 w-8 shrink-0" />
             <div>
               <div className="flex items-center gap-2">
@@ -75,16 +66,16 @@ export function MarketingGoogleReviews() {
                 <StarRow rating={Math.round(rating)} />
               </div>
               <p className="mt-0.5 text-xs text-zinc-500">
-                {reviewCount}+ avis · Voir sur Google Maps →
+                Note moyenne · {reviewCount}+ retours restaurateurs
               </p>
             </div>
-          </a>
+          </div>
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {reviews.map((review) => (
             <article
-              key={`${review.author}-${review.text.slice(0, 24)}`}
+              key={`${review.author}-${review.place}`}
               className="flex flex-col rounded-2xl border border-white/[0.07] bg-gradient-to-b from-white/[0.04] to-transparent p-5"
             >
               <div className="flex items-start justify-between gap-3">
@@ -94,7 +85,9 @@ export function MarketingGoogleReviews() {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-white">{review.author}</p>
-                    <p className="text-[11px] text-zinc-500">Avis {review.source}</p>
+                    <p className="text-[11px] text-zinc-500">
+                      {review.role} · {review.place}
+                    </p>
                   </div>
                 </div>
                 <StarRow rating={review.rating} />
