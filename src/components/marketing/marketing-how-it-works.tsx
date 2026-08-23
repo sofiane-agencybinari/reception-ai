@@ -1,25 +1,35 @@
+"use client";
+
 import { Phone } from "lucide-react";
+import { motion } from "motion/react";
 
 import { STEPS } from "@/components/marketing/marketing-data";
+import { Reveal } from "@/components/marketing/reveal";
 import { GlowCard } from "@/components/ui/glow-card";
 import { SectionHeader } from "@/components/ui/section-header";
 
 export function MarketingHowItWorks() {
   return (
     <section id="comment" className="mx-auto max-w-6xl px-6 py-24">
-      <SectionHeader
-        label="Simple comme bonjour"
-        title="Comment ca marche ?"
-        description="De l'appel entrant au bon en cuisine — en trois etapes automatisees."
-      />
+      <Reveal>
+        <SectionHeader
+          label="Simple comme bonjour"
+          title="Comment ça marche ?"
+          description="De l'appel entrant au bon en cuisine — en trois étapes automatisées."
+        />
+      </Reveal>
 
       <div className="mt-16 space-y-16">
         {STEPS.map((step, index) => (
-          <article
+          <motion.article
             key={step.num}
             className={`grid items-center gap-10 lg:grid-cols-2 lg:gap-14 ${
               index % 2 === 1 ? "lg:[&>div:first-child]:order-2" : ""
             }`}
+            initial={{ opacity: 0, y: 48 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-15%" }}
+            transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
           >
             <div>
               <p className="font-mono text-sm text-astor-accent">{step.num}</p>
@@ -40,7 +50,7 @@ export function MarketingHowItWorks() {
               </div>
             </div>
             <StepVisual type={step.visual} />
-          </article>
+          </motion.article>
         ))}
       </div>
     </section>
