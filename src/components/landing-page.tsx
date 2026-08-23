@@ -9,6 +9,8 @@ import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { MarketingHowItWorks } from "@/components/marketing/marketing-how-it-works";
 import { MarketingMarquee } from "@/components/marketing/marketing-marquee";
 import { MarketingPricing } from "@/components/marketing/marketing-pricing";
+import { MarketingSocialProof } from "@/components/marketing/marketing-social-proof";
+import { MarketingStats } from "@/components/marketing/marketing-stats";
 
 export function LandingPage() {
   return (
@@ -18,9 +20,11 @@ export function LandingPage() {
 
       <main className="relative z-10">
         <MarketingHero />
+        <MarketingStats />
         <MarketingMarquee />
         <MarketingHowItWorks />
         <MarketingFeaturesBento />
+        <MarketingSocialProof />
         <MarketingComparison />
         <MarketingPricing />
         <MarketingFaq />

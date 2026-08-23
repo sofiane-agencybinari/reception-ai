@@ -13,19 +13,23 @@ export function MarketingFeaturesBento() {
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeader
-            label="Fonctionnalites"
-            title="Tout ce dont vous avez besoin"
-            description="Voix, operations et pilotage — une plateforme complete pour ne plus perdre une commande au telephone."
+            label="Produit"
+            title="La suite complete pour le telephone du resto"
+            description="Voix, cuisine, SMS, analytics et multi-sites — sans empiler cinq outils."
           />
-          <div className="flex shrink-0 gap-6">
+          <div className="flex shrink-0 gap-8">
             <div className="text-right">
-              <p className="text-2xl font-bold text-astor-warm">+18%</p>
-              <p className="text-xs text-zinc-500">Panier moyen</p>
+              <p className="font-display text-3xl font-bold text-astor-warm">+18%</p>
+              <p className="mt-1 text-[10px] uppercase tracking-[0.16em] text-zinc-500">
+                Panier moyen
+              </p>
             </div>
-            <div className="h-10 w-px bg-white/10" />
+            <div className="h-12 w-px bg-white/10" />
             <div className="text-right">
-              <p className="text-2xl font-bold text-white">10</p>
-              <p className="text-xs text-zinc-500">Appels simultanes</p>
+              <p className="font-display text-3xl font-bold text-white">10</p>
+              <p className="mt-1 text-[10px] uppercase tracking-[0.16em] text-zinc-500">
+                Appels en parallele
+              </p>
             </div>
           </div>
         </div>
