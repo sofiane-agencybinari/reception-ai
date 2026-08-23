@@ -4,12 +4,12 @@ import { MarketingCta } from "@/components/marketing/marketing-cta";
 import { MarketingFaq } from "@/components/marketing/marketing-faq";
 import { MarketingFeaturesBento } from "@/components/marketing/marketing-features-bento";
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
+import { MarketingGoogleReviews } from "@/components/marketing/marketing-google-reviews";
 import { MarketingHeader } from "@/components/marketing/marketing-header";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
 import { MarketingHowItWorks } from "@/components/marketing/marketing-how-it-works";
 import { MarketingMarquee } from "@/components/marketing/marketing-marquee";
 import { MarketingPricing } from "@/components/marketing/marketing-pricing";
-import { MarketingSocialProof } from "@/components/marketing/marketing-social-proof";
 import { MarketingStats } from "@/components/marketing/marketing-stats";
 
 export function LandingPage() {
@@ -26,7 +26,7 @@ export function LandingPage() {
         <MarketingMarquee />
         <MarketingHowItWorks />
         <MarketingFeaturesBento />
-        <MarketingSocialProof />
+        <MarketingGoogleReviews />
         <MarketingComparison />
         <MarketingPricing />
         <MarketingFaq />
