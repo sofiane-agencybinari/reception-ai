@@ -1,74 +1,86 @@
 import Link from "next/link";
 
+const COLUMNS = [
+  {
+    title: "Produit",
+    links: [
+      { href: "#comment", label: "Comment ça marche" },
+      { href: "#fonctionnalites", label: "Fonctionnalités" },
+      { href: "#tarifs", label: "Tarification" },
+      { href: "#faq", label: "FAQ" },
+    ],
+  },
+  {
+    title: "Légal",
+    links: [{ href: "mailto:contact@agencybinari.com?subject=Mentions%20legales", label: "Mentions légales" }],
+  },
+  {
+    title: "Contact",
+    links: [
+      { href: "mailto:contact@agencybinari.com?subject=Support%20ASTOR", label: "Support technique" },
+      { href: "mailto:contact@agencybinari.com?subject=Partenariat%20ASTOR", label: "Devenir partenaire" },
+    ],
+  },
+  {
+    title: "Ressources",
+    links: [
+      { href: "/login", label: "Connexion", internal: true },
+      { href: "/demo", label: "Guide de démarrage", internal: true },
+    ],
+  },
+] as const;
+
 export function MarketingFooter() {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="border-t border-white/5 bg-astor-surface">
-      <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 md:grid-cols-4">
-        <div className="md:col-span-2">
-          <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-astor-accent-soft to-teal-900 text-sm font-bold text-white">
-              A
-            </div>
-            <p className="text-lg font-bold text-white">ASTOR</p>
-          </div>
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-zinc-500">
-            L&apos;IA qui prend vos commandes par telephone, les envoie en cuisine, confirme par
-            SMS et vous donne la visibilite sur vos ventes.
-          </p>
-        </div>
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400">Produit</p>
-          <ul className="mt-4 space-y-2 text-sm text-zinc-500">
-            <li>
-              <a href="#fonctionnalites" className="hover:text-white">
-                Fonctionnalites
-              </a>
-            </li>
-            <li>
-              <a href="#comment" className="hover:text-white">
-                Comment ca marche
-              </a>
-            </li>
-            <li>
-              <Link href="/demo" className="hover:text-white">
-                Demo vocale
-              </Link>
-            </li>
-            <li>
-              <a href="#tarifs" className="hover:text-white">
-                Tarifs
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400">Compte</p>
-          <ul className="mt-4 space-y-2 text-sm text-zinc-500">
-            <li>
-              <Link href="/login" className="hover:text-white">
-                Espace restaurant
-              </Link>
-            </li>
-            <li>
-              <Link href="/el-bahja" className="hover:text-white">
-                Exemple client
-              </Link>
-            </li>
-            <li>
-              <a href="mailto:contact@agencybinari.com" className="hover:text-white">
-                Contact commercial
-              </a>
-            </li>
-            <li>
-              <a href="#faq" className="hover:text-white">
-                FAQ
-              </a>
-            </li>
-          </ul>
-        </div>
+    <footer className="relative overflow-hidden border-t border-white/[0.06]">
+      {/* Giant watermark — Yallo-style */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-1/2 z-0 flex -translate-y-[42%] justify-center overflow-hidden select-none"
+      >
+        <span className="font-display text-[clamp(5.5rem,22vw,14rem)] font-bold leading-none tracking-[-0.06em] text-white/[0.045]">
+          ASTOR
+        </span>
       </div>
-      <div className="border-t border-white/5 py-6 text-center text-xs text-zinc-600">
-        © {new Date().getFullYear()} ASTOR — Tous droits reserves
+
+      <div className="relative z-10 mx-auto max-w-6xl px-6 pb-8 pt-16 sm:pt-20">
+        <div className="grid grid-cols-2 gap-10 sm:grid-cols-4 sm:gap-8">
+          {COLUMNS.map((col) => (
+            <div key={col.title}>
+              <p className="text-sm font-semibold text-white">{col.title}</p>
+              <ul className="mt-4 space-y-2.5">
+                {col.links.map((link) => (
+                  <li key={link.label}>
+                    {"internal" in link && link.internal ? (
+                      <Link
+                        href={link.href}
+                        className="text-sm text-zinc-500 transition hover:text-zinc-200"
+                      >
+                        {link.label}
+                      </Link>
+                    ) : (
+                      <a
+                        href={link.href}
+                        className="text-sm text-zinc-500 transition hover:text-zinc-200"
+                      >
+                        {link.label}
+                      </a>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-14 flex flex-wrap items-center gap-x-2 gap-y-1 border-t border-white/[0.06] pt-6 text-sm">
+          <span className="font-display font-semibold text-astor-warm">ASTOR</span>
+          <span className="text-zinc-600">
+            © {year}. Tous droits réservés.
+          </span>
+        </div>
       </div>
     </footer>
   );
