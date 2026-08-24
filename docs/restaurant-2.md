@@ -9,9 +9,12 @@
 | Adresse | 63 avenue de Palavas, 34070 Montpellier |
 | Telephone | +33951183756 (09 51 18 37 56) |
 | Agent ElevenLabs | `agent_6001m0jmjg8ye0rsrsqfwac6323e` |
-| Voix | Emilie (FR) |
+| Voix | Emilie (FR) — `fBpCO0Kf0krKLYGOu65w` |
+| TTS | `eleven_flash_v2_5` (latence basse) |
 | Outil webhook | `tool_3701m0jmh19ee8ft711karppyfwy` |
+| Branch Main | `agtbrch_7501m0jmjgw1f8rb4skx7069bvv0` |
 | Menu | 71 produits en base |
+| Demo web | `/demo` (même agent) |
 
 ## Flux commande
 
@@ -37,7 +40,15 @@ Chaque compte ouvre le cockpit filtre (cuisine, menu, clients, analytics, agent 
 
 - Numero Twilio dedie a brancher sur cet agent
 
+## Reconfigurer (prompt + voix + webhook)
+
+```bash
+npm run elevenlabs:configure-elbahja
+npm run elevenlabs:configure-elbahja-webhook
+```
+
 ## Test
 
-ElevenLabs → agent **El Bahja Reception** → Test conversation.
-PDF menu : `/api/menu-items/pdf?restaurantId=fe397713-e62b-40a5-a26f-e094c9034e44`
+- Site : https://reception-ai-zeta.vercel.app/demo
+- ElevenLabs → agent **El Bahja Reception** → Test conversation
+- PDF menu : `/api/menu-items/pdf?restaurantId=fe397713-e62b-40a5-a26f-e094c9034e44`

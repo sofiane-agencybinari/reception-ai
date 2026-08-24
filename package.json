@@ -17,6 +17,8 @@
     "elevenlabs:import-phone": "node scripts/import-elevenlabs-phone.mjs",
     "elevenlabs:configure-webhook": "node scripts/configure-elevenlabs-webhook.mjs",
     "elevenlabs:configure-agent": "node scripts/configure-elevenlabs-agent.mjs",
+    "elevenlabs:configure-elbahja": "node scripts/configure-elbahja-agent.mjs",
+    "elevenlabs:configure-elbahja-webhook": "node scripts/configure-elbahja-webhook.mjs",
     "elevenlabs:fix-phone": "node scripts/fix-elevenlabs-phone.mjs",
     "diagnose:voice": "node scripts/diagnose-voice-call.mjs"
   },
