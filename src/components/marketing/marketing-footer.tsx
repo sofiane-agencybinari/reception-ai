@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { AstorLogo } from "@/components/astor-logo";
+
 const COLUMNS = [
   {
     title: "Produit",
@@ -75,11 +77,12 @@ export function MarketingFooter() {
           ))}
         </div>
 
-        <div className="mt-14 flex flex-wrap items-center gap-x-2 gap-y-1 border-t border-white/[0.06] pt-6 text-sm">
-          <span className="font-display font-semibold text-astor-warm">ASTOR</span>
-          <span className="text-zinc-600">
-            © {year}. Tous droits réservés.
-          </span>
+        <div className="mt-14 flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-white/[0.06] pt-6 text-sm">
+          <AstorLogo
+            size={28}
+            wordmarkClassName="font-display text-sm font-semibold tracking-tight text-astor-warm"
+          />
+          <span className="text-zinc-600">© {year}. Tous droits réservés.</span>
         </div>
       </div>
     </footer>

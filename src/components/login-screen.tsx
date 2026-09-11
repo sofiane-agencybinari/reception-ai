@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
+import { AstorLogo } from "@/components/astor-logo";
 import { findAccount, toSession, writeRestaurantSession } from "@/lib/auth-accounts";
 
 export function LoginScreen() {
@@ -32,11 +33,11 @@ export function LoginScreen() {
 
       <section className="animate-fade-up relative z-10 w-full max-w-md">
         <div className="mb-8 text-center">
-          <Link href="/" className="inline-flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-astor-accent-soft to-teal-800 text-sm font-bold text-white">
-              A
-            </div>
-            <span className="text-xl font-bold tracking-tight">ASTOR</span>
+          <Link href="/" className="inline-flex transition hover:opacity-90">
+            <AstorLogo
+              size={40}
+              wordmarkClassName="text-xl font-bold tracking-tight text-white"
+            />
           </Link>
           <p className="mt-4 text-sm text-zinc-500">Cockpit restaurant — acces personnel</p>
         </div>

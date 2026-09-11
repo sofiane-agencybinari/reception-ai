@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
 
+import { AstorLogo } from "@/components/astor-logo";
+
 const NAV = [
   { href: "/#fonctionnalites", label: "Produit" },
   { href: "/#comment", label: "Parcours" },
@@ -29,14 +31,8 @@ export function MarketingHeader({ ready = true }: Props) {
       }}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between rounded-2xl border border-white/[0.07] bg-[#050607]/75 px-4 py-2.5 shadow-[0_8px_40px_-12px_rgba(0,0,0,0.8)] backdrop-blur-2xl sm:px-5">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="relative flex h-9 w-9 items-center justify-center">
-            <span className="absolute inset-0 rounded-xl bg-astor-accent/30 blur-md" />
-            <span className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-astor-accent-soft to-[#1a4a44] font-display text-sm font-bold text-white">
-              A
-            </span>
-          </div>
-          <span className="font-display text-lg font-bold tracking-tight text-white">ASTOR</span>
+        <Link href="/" className="transition hover:opacity-90">
+          <AstorLogo size={36} priority />
         </Link>
 
         <nav className="hidden items-center gap-0.5 rounded-full border border-white/[0.06] bg-white/[0.02] p-1 lg:flex">

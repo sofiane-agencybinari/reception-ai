@@ -5,6 +5,8 @@ import { usePathname, useRouter } from "next/navigation";
 import type { ReactNode } from "react";
 import { LogOut } from "lucide-react";
 
+import { AstorLogo } from "@/components/astor-logo";
+
 import { clearRestaurantSession } from "@/lib/auth-accounts";
 import { useRestaurant } from "@/lib/restaurant-context";
 
@@ -36,20 +38,16 @@ export function AppShell({ title, subtitle, children }: AppShellProps) {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-40 border-b border-white/5 bg-background/95 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
-          <Link href="/portal" className="flex items-center gap-3">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-astor-accent-soft to-teal-800 text-xs font-bold text-white">
-              A
-            </div>
-            <div>
-              <span className="font-bold tracking-tight">ASTOR</span>
-              <span className="ml-2 hidden text-[10px] text-zinc-500 sm:inline">
-                {restaurant.name}
-              </span>
-              <span className="ml-2 hidden items-center gap-1.5 text-[10px] text-zinc-500 sm:inline-flex">
-                <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500 animate-live-dot" />
-                En ligne
-              </span>
-            </div>
+          <Link href="/portal" className="flex items-center gap-3 transition hover:opacity-90">
+            <AstorLogo
+              size={32}
+              wordmarkClassName="font-bold tracking-tight text-white"
+            />
+            <span className="hidden text-[10px] text-zinc-500 sm:inline">{restaurant.name}</span>
+            <span className="hidden items-center gap-1.5 text-[10px] text-zinc-500 sm:inline-flex">
+              <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500 animate-live-dot" />
+              En ligne
+            </span>
           </Link>
           <nav className="hidden flex-wrap justify-end gap-1 sm:flex">
             {NAV.map((item) => {

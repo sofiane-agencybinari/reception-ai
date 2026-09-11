@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   title: "ASTOR — L'IA qui prend vos commandes par telephone",
   description:
     "ASTOR decroche, prend les commandes, les envoie en cuisine et trace vos ventes. IA vocale 24h/24 pour fast-food, snack et pizzeria.",
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/apple-icon.svg", type: "image/svg+xml" }],
+  },
   openGraph: {
     title: "ASTOR — Commandes telephoniques automatisees",
     description: "Ne ratez plus aucune commande. Agent vocal, ecran cuisine et dashboard.",
