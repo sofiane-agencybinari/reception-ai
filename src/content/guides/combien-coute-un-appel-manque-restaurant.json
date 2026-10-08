@@ -1,0 +1,86 @@
+{
+  "slug": "combien-coute-un-appel-manque-restaurant",
+  "title": "Combien coûte un appel manqué à votre restaurant ?",
+  "metaTitle": "Combien coûte un appel manqué à un restaurant ? Méthode de calcul",
+  "description": "Une méthode simple pour estimer ce que les appels sans réponse coûtent à votre snack, pizzeria ou restaurant chaque mois, et comment réduire ces pertes.",
+  "keywords": [
+    "appel manqué restaurant",
+    "coût appel manqué",
+    "commandes perdues téléphone",
+    "chiffre d'affaires restaurant téléphone"
+  ],
+  "published": "2026-10-08",
+  "lead": "Un téléphone qui sonne dans le vide ne laisse aucune trace dans la caisse. Pourtant, chaque appel sans réponse a un coût. Voici comment l’estimer pour votre établissement, avec vos propres chiffres.",
+  "sections": [
+    {
+      "title": "Pourquoi les appels manqués passent inaperçus",
+      "body": [
+        "Une commande perdue au comptoir se voit : le client repart. Au téléphone, la perte est invisible. Le client tombe sur une ligne occupée, raccroche et compose le numéro suivant dans sa liste. Rien n’apparaît dans vos ventes, et pourtant la commande a bien existé.",
+        "Les appels se concentrent aux heures de service, précisément quand personne ne peut décrocher. C’est donc pendant vos meilleurs créneaux que la perte est la plus forte."
+      ]
+    },
+    {
+      "title": "Étape 1 : compter les appels sans réponse",
+      "body": [
+        "La plupart des opérateurs et des box internet affichent l’historique des appels reçus et manqués. Relevez sur une semaine complète le nombre d’appels non décrochés, en notant l’heure. À défaut, demandez à l’équipe de cocher chaque appel laissé sans réponse pendant deux ou trois services."
+      ]
+    },
+    {
+      "title": "Étape 2 : appliquer votre panier moyen",
+      "body": [
+        "Tous les appels ne sont pas des commandes : certains clients demandent seulement vos horaires. Retenez une part prudente d’appels de commande, par exemple la moitié, puis multipliez par votre panier moyen par téléphone."
+      ],
+      "list": [
+        "Appels manqués par semaine × part de commandes × panier moyen = perte hebdomadaire estimée.",
+        "Exemple : 30 appels manqués × 50 % × 22 € = 330 € par semaine, soit environ 1 400 € par mois.",
+        "Remplacez ces valeurs par les vôtres : l’ordre de grandeur suffit pour décider."
+      ]
+    },
+    {
+      "title": "Étape 3 : ajouter ce que le calcul ne montre pas",
+      "body": [
+        "Un client qui n’obtient pas de réponse découvre souvent un concurrent, et peut ne jamais revenir. Ajoutez aussi le temps perdu par l’équipe quand elle décroche en plein coup de feu : préparation interrompue, erreurs de prise de note, commandes refaites."
+      ]
+    },
+    {
+      "title": "Repérer vos créneaux les plus exposés",
+      "body": [
+        "Une fois les appels manqués relevés, regroupez-les par tranche horaire. Dans la plupart des établissements de restauration rapide, deux pics ressortent : entre 11 h 45 et 13 h 30, puis entre 19 h et 21 h 30. Le vendredi, le samedi et les soirs de match concentrent souvent l’essentiel des pertes.",
+        "Cette répartition est utile pour décider : si les appels manqués se limitent à quelques créneaux, il est tentant d’y affecter une personne. Mais c’est aussi sur ces créneaux que chaque bras compte en cuisine et au comptoir."
+      ],
+      "list": [
+        "Notez le jour et l’heure de chaque appel sans réponse.",
+        "Repérez les deux ou trois créneaux qui cumulent le plus d’appels perdus.",
+        "Comparez avec votre chiffre d’affaires sur ces mêmes créneaux."
+      ]
+    },
+    {
+      "title": "Suivre l’évolution dans le temps",
+      "body": [
+        "Refaites la mesure après chaque changement d’organisation : nouvelle personne au téléphone, ligne supplémentaire ou agent vocal. Comparez le nombre d’appels décrochés, le nombre de commandes prises par téléphone et le panier moyen. Un tableau simple, rempli une semaine par mois, suffit pour savoir si la solution retenue est rentable.",
+        "Avec Ligne, ces chiffres sont disponibles dans le tableau de bord : appels reçus, commandes prises, ventes réalisées par téléphone, avec export pour la comptabilité."
+      ]
+    },
+    {
+      "title": "Comment réduire ces pertes",
+      "body": [
+        "Trois options existent : dédier une personne au téléphone aux heures de pointe, ajouter des lignes avec un standard classique, ou confier la réponse à un agent vocal qui prend la commande. La dernière option est la seule qui traite plusieurs appels en même temps sans personnel supplémentaire.",
+        "Ligne décroche en moins de deux secondes, prend la commande à la voix, l’envoie sur l’écran cuisine et confirme au client par SMS. L’abonnement démarre à 49 € par mois plus les minutes utilisées, sans engagement : comparez ce montant à votre perte estimée."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Combien d’appels un restaurant manque-t-il en moyenne ?",
+      "a": "Cela dépend fortement du volume et de l’organisation. Le plus fiable est de mesurer vos propres appels manqués sur une semaine, avec l’historique de votre opérateur."
+    },
+    {
+      "q": "Un répondeur suffit-il à limiter la perte ?",
+      "a": "Rarement : peu de clients laissent un message pour commander, et il faut ensuite les rappeler. Un agent vocal prend directement la commande."
+    }
+  ],
+  "related": [
+    "appels-manques-restaurant",
+    "standard-telephonique-restaurant"
+  ]
+}

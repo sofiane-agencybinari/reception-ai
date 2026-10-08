@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { SOLUTION_PAGES } from "@/components/seo/solutions-data";
+import { getGuides } from "@/lib/guides";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -39,6 +40,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    { url: `${SITE_URL}/guides`, lastModified, changeFrequency: "weekly" as const, priority: 0.7 },
+    ...getGuides().map((g) => ({
+      url: `${SITE_URL}/guides/${g.slug}`,
+      lastModified: new Date(g.updated ?? g.published),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
     ...SOLUTION_PAGES.map((p) => ({
       url: `${SITE_URL}/solutions/${p.slug}`,
       lastModified,

@@ -115,6 +115,9 @@ export function LuxeFooter() {
               {p.label}
             </Link>
           ))}
+          <Link href="/guides" className="transition-colors hover:text-[#f2efe8]">
+            Guides
+          </Link>
         </nav>
 
         <div className="mt-6 flex flex-wrap justify-between gap-3 text-[11px] text-white/40">
