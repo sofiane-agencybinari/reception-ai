@@ -1,44 +1,49 @@
-import Image from "next/image";
-
 type AstorLogoProps = {
-  /** Mark size in pixels */
+  /** Hauteur de référence en pixels (le logo complet fait ~1,6 × cette taille). */
   size?: number;
-  /** Show wordmark next to the mark */
+  /** Conservé pour compatibilité : le logo Ligne contient déjà le mot « LIGNE ». */
   withWordmark?: boolean;
-  /** Extra class on the outer wrapper */
+  /** Classe supplémentaire sur l'élément. */
   className?: string;
-  /** Wordmark text class override */
+  /** Classe de texte des appelants : sa couleur colore le logo (via currentColor). */
   wordmarkClassName?: string;
+  /** Conservé pour compatibilité avec l'ancien composant image. */
   priority?: boolean;
 };
 
+/** Ratio du fichier public/ligne-logo.png (largeur / hauteur). */
+const RATIO = 391 / 388;
+
+/**
+ * Logo Ligne (toque + mot « LIGNE »).
+ * Rendu en masque CSS : il prend la couleur du texte (encre sur fond clair, crème sur fond sombre).
+ */
 export function AstorLogo({
   size = 36,
-  withWordmark = true,
   className = "",
-  wordmarkClassName = "font-display text-lg font-bold tracking-tight text-white",
-  priority = false,
+  wordmarkClassName = "text-[#1a1816]",
 }: AstorLogoProps) {
+  const height = Math.round(size * 1.6);
   return (
-    <span className={`inline-flex items-center gap-2.5 ${className}`}>
-      <span
-        className="relative shrink-0"
-        style={{ width: size, height: size }}
-      >
-        <span
-          className="absolute inset-0 rounded-[28%] bg-astor-accent/35 blur-md"
-          aria-hidden
-        />
-        <Image
-          src="/astor-mark.svg"
-          alt="ASTOR"
-          width={size}
-          height={size}
-          className="relative drop-shadow-[0_4px_12px_rgba(61,155,143,0.35)]"
-          priority={priority}
-        />
-      </span>
-      {withWordmark ? <span className={wordmarkClassName}>ASTOR</span> : null}
-    </span>
+    <span
+      role="img"
+      aria-label="Ligne"
+      className={`inline-block shrink-0 bg-current ${wordmarkClassName} ${className}`}
+      style={{
+        width: Math.round(height * RATIO),
+        height,
+        WebkitMaskImage: "url(/ligne-logo.png)",
+        maskImage: "url(/ligne-logo.png)",
+        WebkitMaskSize: "contain",
+        maskSize: "contain",
+        WebkitMaskRepeat: "no-repeat",
+        maskRepeat: "no-repeat",
+        WebkitMaskPosition: "center",
+        maskPosition: "center",
+      }}
+    />
   );
 }
+
+/** Alias explicite pour le nouveau nom de marque. */
+export const LigneLogo = AstorLogo;

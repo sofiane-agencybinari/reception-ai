@@ -47,7 +47,7 @@ export function productSalesToCsv(
   totalRevenue: number,
 ): string[][] {
   const rows: string[][] = [
-    ["Rapport ASTOR - Ventes produits"],
+    ["Rapport LIGNE - Ventes produits"],
     ["Periode", periodLabel],
     ["CA total EUR", totalRevenue.toFixed(2)],
     [],

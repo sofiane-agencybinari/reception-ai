@@ -3,163 +3,107 @@
 import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 
-const ease = [0.76, 0, 0.24, 1] as const;
-const TICKER = "WELCOME · ASTOR · RÉCEPTION VOCALE · NE RATE JAMAIS · ";
+/**
+ * Preloader luxe — minimal : marque + barre + %.
+ */
+
+const ease = [0.23, 1, 0.32, 1] as const;
 
 type Props = {
-  onEnter: () => void;
+  onReveal?: () => void;
+  onComplete: () => void;
 };
 
-/** Silencio-style gate: tickers, giant type, then curtain split. */
-export function MarketingIntro({ onEnter }: Props) {
+export function MarketingIntro({ onReveal, onComplete }: Props) {
   const reduce = useReducedMotion();
-  const [phase, setPhase] = useState<"boot" | "ready" | "exit">("boot");
+  const [progress, setProgress] = useState(0);
+  const [exiting, setExiting] = useState(false);
+  const [gone, setGone] = useState(false);
 
   useEffect(() => {
     if (reduce) {
-      onEnter();
+      onReveal?.();
+      onComplete();
+      setGone(true);
       return;
     }
-    const t = window.setTimeout(() => setPhase("ready"), 1400);
-    return () => window.clearTimeout(t);
-  }, [reduce, onEnter]);
 
-  useEffect(() => {
-    document.documentElement.style.overflow = "hidden";
-    return () => {
-      document.documentElement.style.overflow = "";
+    const duration = 2000;
+    const start = performance.now();
+    let raf = 0;
+    let exitTimer = 0;
+    let doneTimer = 0;
+    let revealed = false;
+
+    const tick = (now: number) => {
+      const t = Math.min(1, (now - start) / duration);
+      const eased = t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2;
+      setProgress(Math.min(100, Math.round(eased * 100)));
+
+      if (t < 1) {
+        raf = requestAnimationFrame(tick);
+        return;
+      }
+
+      setProgress(100);
+      exitTimer = window.setTimeout(() => {
+        if (!revealed) {
+          revealed = true;
+          onReveal?.();
+        }
+        setExiting(true);
+        doneTimer = window.setTimeout(() => {
+          setGone(true);
+          onComplete();
+        }, 900);
+      }, 200);
     };
-  }, []);
 
-  function enter() {
-    if (phase === "exit") return;
-    setPhase("exit");
-    window.setTimeout(onEnter, 1150);
-  }
+    raf = requestAnimationFrame(tick);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.clearTimeout(exitTimer);
+      window.clearTimeout(doneTimer);
+    };
+  }, [reduce, onComplete, onReveal]);
 
-  if (reduce) return null;
+  if (gone) return null;
 
   return (
-    <div
-      className="fixed inset-0 z-[100] overflow-hidden"
-      aria-modal="true"
-      role="dialog"
-      aria-label="Bienvenue sur ASTOR"
+    <motion.div
+      className="fixed inset-0 z-[100] flex flex-col bg-[#f3f0ed]"
+      initial={{ y: 0 }}
+      animate={{ y: exiting ? "-105%" : 0 }}
+      transition={{ duration: 0.9, ease }}
+      aria-busy={!exiting}
+      aria-label="Chargement"
     >
-      {/* Curtains mount on exit: flash cover, then split open */}
-      {phase === "exit" ? (
-        <>
-          <motion.div
-            className="absolute inset-y-0 left-0 z-50 w-1/2 bg-[#020303]"
-            initial={{ x: 0 }}
-            animate={{ x: "-100%" }}
-            transition={{ duration: 1.05, ease, delay: 0.05 }}
-          />
-          <motion.div
-            className="absolute inset-y-0 right-0 z-50 w-1/2 bg-[#020303]"
-            initial={{ x: 0 }}
-            animate={{ x: "100%" }}
-            transition={{ duration: 1.05, ease, delay: 0.05 }}
-          />
-        </>
-      ) : null}
+      <div className="flex flex-1 flex-col items-center justify-center px-6">
+        <motion.p
+          className="font-serif text-[clamp(1.6rem,4vw,2.4rem)] uppercase tracking-[0.18em] text-[#1a1816]/45"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, ease }}
+        >
+          LIGNE
+        </motion.p>
+      </div>
 
-      {/* Intro content — fades as curtains wipe */}
-      <motion.div
-        className="absolute inset-0 z-40 flex flex-col bg-[#030405]"
-        animate={
-          phase === "exit"
-            ? { opacity: 0, scale: 1.04, filter: "blur(6px)" }
-            : { opacity: 1, scale: 1, filter: "blur(0px)" }
-        }
-        transition={{ duration: 0.7, ease, delay: phase === "exit" ? 0.15 : 0 }}
-      >
-        <div className="relative overflow-hidden border-b border-white/[0.08] py-3">
-          <motion.div
-            className="flex whitespace-nowrap font-mono text-[11px] uppercase tracking-[0.28em] text-zinc-500"
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
-          >
-            <span className="pr-8">{TICKER.repeat(6)}</span>
-            <span className="pr-8">{TICKER.repeat(6)}</span>
-          </motion.div>
-        </div>
-
-        <div className="relative flex flex-1 flex-col items-center justify-center px-6">
-          <motion.p
-            className="mb-6 font-mono text-[10px] uppercase tracking-[0.35em] text-astor-accent"
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.25, duration: 0.55 }}
-          >
-            Digital reception · FR
-          </motion.p>
-
-          <h1 className="font-display text-center text-[clamp(4.5rem,18vw,11rem)] font-bold leading-[0.85] tracking-[-0.04em] text-white">
-            {"ASTOR".split("").map((letter, i) => (
-              <span key={letter} className="inline-block overflow-hidden align-bottom">
-                <motion.span
-                  className="inline-block"
-                  initial={{ y: "115%", rotate: 6 }}
-                  animate={{ y: "0%", rotate: 0 }}
-                  transition={{ delay: 0.35 + i * 0.07, duration: 0.85, ease }}
-                >
-                  {letter}
-                </motion.span>
-              </span>
-            ))}
-          </h1>
-
-          <motion.p
-            className="mt-8 max-w-sm text-center text-sm leading-relaxed text-zinc-400 sm:text-base"
-            initial={{ opacity: 0, filter: "blur(8px)" }}
-            animate={{ opacity: 1, filter: "blur(0px)" }}
-            transition={{ delay: 0.95, duration: 0.65 }}
-          >
-            Le téléphone qui ne rate jamais une commande.
-          </motion.p>
-
-          <motion.button
-            type="button"
-            onClick={enter}
-            disabled={phase === "exit"}
-            className="group relative mt-12 inline-flex flex-col items-center gap-4"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{
-              opacity: phase === "ready" || phase === "exit" ? 1 : 0,
-              y: phase === "ready" || phase === "exit" ? 0 : 10,
-            }}
-            transition={{ duration: 0.45 }}
-          >
-            <span className="relative overflow-hidden rounded-full border border-white/15 bg-white/[0.03] px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-white transition group-hover:border-astor-accent/50 group-hover:bg-astor-accent/10">
-              <span className="relative z-10">Cliquez pour entrer</span>
-              <motion.span
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent"
-                animate={{ x: ["-100%", "200%"] }}
-                transition={{ duration: 2.2, repeat: Infinity, ease: "linear" }}
-              />
+      <div className="px-8 pb-9 sm:px-12 sm:pb-11">
+        <div className="mx-auto w-full max-w-md">
+          <div className="mb-2.5 flex justify-between">
+            <span className="font-serif text-[12px] tabular-nums tracking-[0.06em] text-[#1a1816]/40">
+              {progress}%
             </span>
-            <motion.span
-              className="h-10 w-px bg-gradient-to-b from-astor-accent to-transparent"
-              animate={{ scaleY: [0.5, 1, 0.5], opacity: [0.4, 1, 0.4] }}
-              transition={{ duration: 1.6, repeat: Infinity }}
+          </div>
+          <div className="h-px w-full overflow-hidden bg-[#1a1816]/10">
+            <div
+              className="h-full origin-left bg-[#1a1816]/70"
+              style={{ transform: `scaleX(${progress / 100})` }}
             />
-          </motion.button>
+          </div>
         </div>
-
-        <div className="relative overflow-hidden border-t border-white/[0.08] py-3">
-          <motion.div
-            className="flex whitespace-nowrap font-mono text-[11px] uppercase tracking-[0.28em] text-zinc-600"
-            animate={{ x: ["-50%", "0%"] }}
-            transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
-          >
-            <span className="pr-8">{TICKER.repeat(6)}</span>
-            <span className="pr-8">{TICKER.repeat(6)}</span>
-          </motion.div>
-        </div>
-
-        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[40vh] w-[70vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse,rgba(61,155,143,0.2),transparent_65%)] blur-3xl" />
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   );
 }

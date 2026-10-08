@@ -1,75 +1,65 @@
 "use client";
 
-import { useCallback, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { useCallback, useEffect, useState } from "react";
+import { useReducedMotion } from "motion/react";
 
 import { MarketingAmbient } from "@/components/marketing/marketing-ambient";
-import { MarketingComparison } from "@/components/marketing/marketing-comparison";
-import { MarketingCta } from "@/components/marketing/marketing-cta";
-import { MarketingFaq } from "@/components/marketing/marketing-faq";
-import { MarketingFeaturesBento } from "@/components/marketing/marketing-features-bento";
-import { MarketingFooter } from "@/components/marketing/marketing-footer";
-import { MarketingGoogleReviews } from "@/components/marketing/marketing-google-reviews";
 import { MarketingHeader } from "@/components/marketing/marketing-header";
 import { MarketingHero } from "@/components/marketing/marketing-hero";
-import { MarketingHowItWorks } from "@/components/marketing/marketing-how-it-works";
 import { MarketingIntro } from "@/components/marketing/marketing-intro";
-import { MarketingMarquee } from "@/components/marketing/marketing-marquee";
-import { MarketingPricing } from "@/components/marketing/marketing-pricing";
-import { MarketingStats } from "@/components/marketing/marketing-stats";
-import { Reveal } from "@/components/marketing/reveal";
+import { MarketingScrollStory } from "@/components/marketing/marketing-scroll-story";
+import { Compare } from "@/components/immersive/compare";
+import { DayTimeline } from "@/components/immersive/day-timeline";
+import { Faq } from "@/components/immersive/faq";
+import { OrbJourney } from "@/components/immersive/orb-journey";
+import { LuxeFooter } from "@/components/immersive/finale";
+import { LiveDemo } from "@/components/immersive/live-demo";
+import { SubscribeProvider } from "@/components/immersive/subscribe-panel";
+import { Pricing } from "@/components/immersive/pricing";
+import { SmoothScroll } from "@/components/immersive/smooth-scroll";
 
+/**
+ * Landing — preloader → hero salle → récit iPhone 3D (début Cursor conservé),
+ * puis sections sobres et animées : journée type → capacités → avant/avec → tarifs → FAQ → démo vocale en direct.
+ */
 export function LandingPage() {
   const reduce = useReducedMotion();
-  const [entered, setEntered] = useState(() => Boolean(reduce));
+  const [ready, setReady] = useState(false);
+  const [introGone, setIntroGone] = useState(false);
 
-  const onEnter = useCallback(() => setEntered(true), []);
+  useEffect(() => {
+    if (reduce) {
+      setReady(true);
+      setIntroGone(true);
+    }
+  }, [reduce]);
+
+  const onReveal = useCallback(() => setReady(true), []);
+  const onIntroComplete = useCallback(() => setIntroGone(true), []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <AnimatePresence>
-        {!entered ? <MarketingIntro key="intro" onEnter={onEnter} /> : null}
-      </AnimatePresence>
+    <SubscribeProvider>
+    <div className="lx min-h-screen bg-[#ebe6de] text-[#1a1816]">
+      <SmoothScroll locked={!introGone} />
+      {!reduce && !introGone ? (
+        <MarketingIntro onReveal={onReveal} onComplete={onIntroComplete} />
+      ) : null}
+      <MarketingAmbient />
+      <MarketingHeader ready={ready} />
 
-      <motion.div
-        initial={reduce ? false : { opacity: 0, scale: 0.985 }}
-        animate={entered ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.985 }}
-        transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: entered ? 0.15 : 0 }}
-      >
-        <MarketingAmbient />
-        <MarketingHeader ready={entered} />
+      <main className="relative z-10">
+        <MarketingHero ready={ready} />
+        <MarketingScrollStory />
+        <DayTimeline />
+        <OrbJourney />
+        <Compare />
+        <Pricing />
+        <Faq />
+        <LiveDemo />
+      </main>
 
-        <main className="relative z-10">
-          <MarketingHero ready={entered} />
-          <Reveal>
-            <MarketingStats />
-          </Reveal>
-          <MarketingMarquee />
-          <Reveal>
-            <MarketingHowItWorks />
-          </Reveal>
-          <Reveal>
-            <MarketingFeaturesBento />
-          </Reveal>
-          <Reveal>
-            <MarketingGoogleReviews />
-          </Reveal>
-          <Reveal>
-            <MarketingComparison />
-          </Reveal>
-          <Reveal>
-            <MarketingPricing />
-          </Reveal>
-          <Reveal>
-            <MarketingFaq />
-          </Reveal>
-          <Reveal>
-            <MarketingCta />
-          </Reveal>
-        </main>
-
-        <MarketingFooter />
-      </motion.div>
+      <LuxeFooter />
     </div>
+    </SubscribeProvider>
   );
 }

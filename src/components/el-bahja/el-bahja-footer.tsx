@@ -34,7 +34,7 @@ export function ElBahjaFooter() {
           <p className="text-xs text-zinc-600">
             Propulsé par{" "}
             <Link href="/" className="text-zinc-500 transition hover:text-astor-accent-soft">
-              ASTOR
+              LIGNE
             </Link>
           </p>
         </div>

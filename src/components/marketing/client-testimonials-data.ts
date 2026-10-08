@@ -1,17 +1,17 @@
 export const CLIENT_TESTIMONIALS = {
-  company: "ASTOR",
+  company: "LIGNE",
   rating: 5,
   reviewCount: 12,
   headline: "Ce que disent les restaurateurs",
   subtitle:
-    "Des gérants qui ont confié leurs appels à ASTOR — moins de stress en cuisine, plus de commandes traitées.",
+    "Des gérants qui ont confié leurs appels à LIGNE — moins de stress en cuisine, plus de commandes traitées.",
   reviews: [
     {
       author: "Karim B.",
       role: "Gérant",
       place: "Snack & Grillades — Montpellier",
       rating: 5,
-      text: "Depuis ASTOR, on ne rate plus les appels aux heures de rush. L’IA prend la commande proprement et ça arrive direct en cuisine. L’équipe a soufflé.",
+      text: "Depuis LIGNE, on ne rate plus les appels aux heures de rush. L’IA prend la commande proprement et ça arrive direct en cuisine. L’équipe a soufflé.",
     },
     {
       author: "Sophie M.",
@@ -25,7 +25,7 @@ export const CLIENT_TESTIMONIALS = {
       role: "Associé",
       place: "Burger — Marseille",
       rating: 5,
-      text: "Avant, un employé était bloqué au téléphone. Maintenant il reste en prep et ASTOR gère. SMS de confirmation inclus — zéro quiproquo sur les commandes.",
+      text: "Avant, un employé était bloqué au téléphone. Maintenant il reste en prep et LIGNE gère. SMS de confirmation inclus — zéro quiproquo sur les commandes.",
     },
     {
       author: "Nadia R.",

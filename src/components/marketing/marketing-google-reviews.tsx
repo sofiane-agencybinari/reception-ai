@@ -7,7 +7,7 @@ function StarRow({ rating }: { rating: number }) {
         <svg
           key={i}
           viewBox="0 0 24 24"
-          className={`h-3.5 w-3.5 ${i < rating ? "fill-[#fbbc04] text-[#fbbc04]" : "fill-white/10 text-white/10"}`}
+          className={`h-3.5 w-3.5 ${i < rating ? "fill-[#fbbc04] text-[#fbbc04]" : "fill-white/10 text-zinc-900/10"}`}
           aria-hidden
         >
           <path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
@@ -44,7 +44,7 @@ export function MarketingGoogleReviews() {
   const { rating, reviewCount, headline, subtitle, reviews } = CLIENT_TESTIMONIALS;
 
   return (
-    <section id="avis" className="border-y border-white/[0.05] bg-astor-surface/50 py-20">
+    <section id="avis" className="border-y border-zinc-200 bg-astor-surface/50 py-20">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <div>
@@ -52,17 +52,17 @@ export function MarketingGoogleReviews() {
               <GoogleMark className="h-4 w-4" />
               Avis clients
             </p>
-            <h2 className="font-display mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="font-display mt-3 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl">
               {headline}
             </h2>
             <p className="mt-3 max-w-md text-sm leading-relaxed text-zinc-500">{subtitle}</p>
           </div>
 
-          <div className="inline-flex items-center gap-4 rounded-2xl border border-white/[0.08] bg-white/[0.03] px-5 py-4">
+          <div className="inline-flex items-center gap-4 rounded-2xl border border-zinc-200 bg-zinc-50 px-5 py-4">
             <GoogleMark className="h-8 w-8 shrink-0" />
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-display text-2xl font-bold text-white">{rating.toFixed(1)}</span>
+                <span className="font-display text-2xl font-bold text-zinc-900">{rating.toFixed(1)}</span>
                 <StarRow rating={Math.round(rating)} />
               </div>
               <p className="mt-0.5 text-xs text-zinc-500">
@@ -76,15 +76,15 @@ export function MarketingGoogleReviews() {
           {reviews.map((review) => (
             <article
               key={`${review.author}-${review.place}`}
-              className="flex flex-col rounded-2xl border border-white/[0.07] bg-gradient-to-b from-white/[0.04] to-transparent p-5"
+              className="flex flex-col rounded-2xl border border-zinc-200 bg-gradient-to-b from-white/[0.04] to-transparent p-5"
             >
               <div className="flex items-start justify-between gap-3">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-full bg-astor-accent/20 text-sm font-semibold text-astor-accent-bright">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-full bg-astor-accent/20 text-sm font-semibold text-astor-accent">
                     {review.author.charAt(0)}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-white">{review.author}</p>
+                    <p className="text-sm font-semibold text-zinc-900">{review.author}</p>
                     <p className="text-[11px] text-zinc-500">
                       {review.role} · {review.place}
                     </p>
@@ -92,7 +92,7 @@ export function MarketingGoogleReviews() {
                 </div>
                 <StarRow rating={review.rating} />
               </div>
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-zinc-300">{review.text}</p>
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-zinc-700">{review.text}</p>
             </article>
           ))}
         </div>

@@ -155,7 +155,7 @@ function drawFooter(doc: PDFKit.PDFDocument) {
   doc.moveTo(margin, footerY - 8).lineTo(pageWidth - margin, footerY - 8).stroke();
 
   doc.fillColor(BRAND.muted).font("Helvetica").fontSize(8);
-  doc.text("Propulse par ASTOR — Reception IA", margin, footerY, {
+  doc.text("Propulse par LIGNE — Reception IA", margin, footerY, {
     width: pageWidth - margin * 2,
     align: "center",
   });
@@ -174,7 +174,7 @@ export async function buildMenuPdfBuffer(input: MenuPdfInput): Promise<Buffer> {
     margins: { top: 48, bottom: 56, left: 48, right: 48 },
     info: {
       Title: `Menu — ${input.restaurantName}`,
-      Author: "ASTOR",
+      Author: "LIGNE",
       Subject: "Carte restaurant",
     },
   });

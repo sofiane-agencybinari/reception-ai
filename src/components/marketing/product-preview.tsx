@@ -23,7 +23,7 @@ export function ProductPreview() {
             <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-zinc-500">
               Ecran cuisine
             </p>
-            <span className="flex items-center gap-1.5 text-[10px] font-medium text-emerald-400">
+            <span className="flex items-center gap-1.5 text-[10px] font-medium text-emerald-600">
               <span className="h-1.5 w-1.5 animate-live-dot rounded-full bg-emerald-400" />
               En ligne
             </span>
@@ -57,7 +57,7 @@ export function ProductPreview() {
 
           <div className="flex items-center justify-between border-t border-white/[0.06] bg-black/45 px-5 py-3.5">
             <p className="text-xs text-zinc-500">18 commandes · aujourd&apos;hui</p>
-            <p className="font-mono text-sm font-semibold text-astor-accent-bright">1 247 €</p>
+            <p className="font-mono text-sm font-semibold text-astor-accent">1 247 €</p>
           </div>
         </div>
       </GlowCard>
@@ -98,8 +98,8 @@ function OrderCard({
   pulse?: boolean;
 }) {
   const colors: Record<string, string> = {
-    accent: "bg-astor-accent/20 text-astor-accent-bright",
-    blue: "bg-sky-500/20 text-sky-300",
+    accent: "bg-astor-accent/20 text-astor-accent",
+    blue: "bg-stone-500/15 text-stone-400",
     emerald: "bg-emerald-500/20 text-emerald-300",
   };
 

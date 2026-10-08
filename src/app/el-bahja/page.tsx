@@ -7,13 +7,32 @@ import { getSupabaseAdminClient } from "@/lib/supabase";
 
 export const revalidate = 300;
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_APP_URL?.trim() || "https://reception-ai-zeta.vercel.app";
+
 export const metadata: Metadata = {
-  title: `${EL_BAHJA.name} — Menu & Commandes | Montpellier`,
-  description: `Commandez chez ${EL_BAHJA.name} : sandwichs, assiettes et formules. ${EL_BAHJA.address}, ${EL_BAHJA.city}. Tel. ${EL_BAHJA.phoneDisplay}.`,
+  title: `${EL_BAHJA.name} — Menu & commandes | Montpellier`,
+  description: `Commandez chez ${EL_BAHJA.name} : sandwichs, assiettes et formules. ${EL_BAHJA.address}, ${EL_BAHJA.city}. Tel. ${EL_BAHJA.phoneDisplay}. Commande aussi possible via réceptionniste téléphonique IA LIGNE.`,
+  keywords: [
+    "El Bahja Montpellier",
+    "grillades Montpellier",
+    "commande téléphone El Bahja",
+    "LIGNE réceptionniste IA",
+  ],
+  alternates: {
+    canonical: "/el-bahja",
+  },
   openGraph: {
-    title: `${EL_BAHJA.name} — Menu & Commandes`,
+    title: `${EL_BAHJA.name} — Menu & commandes`,
     description: `${EL_BAHJA.tagline} · ${EL_BAHJA.city}`,
+    url: `${SITE_URL}/el-bahja`,
     type: "website",
+    locale: "fr_FR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${EL_BAHJA.name} — Menu & commandes | Montpellier`,
+    description: `${EL_BAHJA.tagline} · Tel. ${EL_BAHJA.phoneDisplay}`,
   },
 };
 

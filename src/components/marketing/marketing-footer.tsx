@@ -6,28 +6,32 @@ const COLUMNS = [
   {
     title: "Produit",
     links: [
-      { href: "#comment", label: "Comment ça marche" },
-      { href: "#fonctionnalites", label: "Fonctionnalités" },
-      { href: "#tarifs", label: "Tarification" },
+      { href: "#produits", label: "Parcours" },
+      { href: "#capacites", label: "Capacités" },
+      { href: "#tarifs", label: "Tarifs" },
+      { href: "/#tarifs", label: "S’abonner" },
       { href: "#faq", label: "FAQ" },
-    ],
-  },
-  {
-    title: "Légal",
-    links: [{ href: "mailto:contact@agencybinari.com?subject=Mentions%20legales", label: "Mentions légales" }],
-  },
-  {
-    title: "Contact",
-    links: [
-      { href: "mailto:contact@agencybinari.com?subject=Support%20ASTOR", label: "Support technique" },
-      { href: "mailto:contact@agencybinari.com?subject=Partenariat%20ASTOR", label: "Devenir partenaire" },
     ],
   },
   {
     title: "Ressources",
     links: [
+      { href: "/demo-pizza", label: "Démo vocale", internal: true },
+      { href: "/pour-les-restaurants", label: "Pour les restaurants", internal: true },
       { href: "/login", label: "Connexion", internal: true },
-      { href: "/demo", label: "Guide de démarrage", internal: true },
+    ],
+  },
+  {
+    title: "Contact",
+    links: [
+      { href: "mailto:contact@agencybinari.com?subject=Support%20Ligne", label: "Support" },
+      { href: "mailto:contact@agencybinari.com?subject=Partenariat%20Ligne", label: "Partenariat" },
+    ],
+  },
+  {
+    title: "Légal",
+    links: [
+      { href: "mailto:contact@agencybinari.com?subject=Mentions%20legales", label: "Mentions légales" },
     ],
   },
 ] as const;
@@ -36,36 +40,37 @@ export function MarketingFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden border-t border-white/[0.06]">
-      {/* Giant watermark — Yallo-style */}
+    <footer className="relative overflow-hidden border-t border-[#ddd6cb] bg-[#f3f0ed]">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-1/2 z-0 flex -translate-y-[42%] justify-center overflow-hidden select-none"
       >
-        <span className="font-display text-[clamp(5.5rem,22vw,14rem)] font-bold leading-none tracking-[-0.06em] text-white/[0.045]">
-          ASTOR
+        <span className="font-serif text-[clamp(5rem,20vw,12rem)] font-normal italic leading-none tracking-[-0.04em] text-[#1a1816]/[0.035]">
+          LIGNE
         </span>
       </div>
 
-      <div className="relative z-10 mx-auto max-w-6xl px-6 pb-8 pt-16 sm:pt-20">
+      <div className="relative z-10 mx-auto max-w-5xl px-6 pb-10 pt-20 sm:pt-24">
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-4 sm:gap-8">
           {COLUMNS.map((col) => (
             <div key={col.title}>
-              <p className="text-sm font-semibold text-white">{col.title}</p>
-              <ul className="mt-4 space-y-2.5">
+              <p className="font-serif text-[11px] uppercase tracking-[0.22em] text-[#1a1816]">
+                {col.title}
+              </p>
+              <ul className="mt-5 space-y-2.5">
                 {col.links.map((link) => (
                   <li key={link.label}>
                     {"internal" in link && link.internal ? (
                       <Link
                         href={link.href}
-                        className="text-sm text-zinc-500 transition hover:text-zinc-200"
+                        className="font-serif text-sm text-[#6f6a62] transition hover:text-[#1a1816]"
                       >
                         {link.label}
                       </Link>
                     ) : (
                       <a
                         href={link.href}
-                        className="text-sm text-zinc-500 transition hover:text-zinc-200"
+                        className="font-serif text-sm text-[#6f6a62] transition hover:text-[#1a1816]"
                       >
                         {link.label}
                       </a>
@@ -77,12 +82,12 @@ export function MarketingFooter() {
           ))}
         </div>
 
-        <div className="mt-14 flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-white/[0.06] pt-6 text-sm">
+        <div className="mt-16 flex flex-wrap items-center gap-x-3 gap-y-2 border-t border-[#ddd6cb] pt-7 text-sm">
           <AstorLogo
-            size={28}
-            wordmarkClassName="font-display text-sm font-semibold tracking-tight text-astor-warm"
+            size={26}
+            wordmarkClassName="font-serif text-sm tracking-tight text-[#1a1816]"
           />
-          <span className="text-zinc-600">© {year}. Tous droits réservés.</span>
+          <span className="font-serif text-[#8a8175]">© {year}. Tous droits réservés.</span>
         </div>
       </div>
     </footer>

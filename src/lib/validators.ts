@@ -47,3 +47,18 @@ export const menuItemSchema = z.object({
   price: z.number().nonnegative(),
   isAvailable: z.boolean().default(true),
 });
+
+export const trialLeadSchema = z.object({
+  restaurantName: z.string().trim().min(2).max(120),
+  city: z.string().trim().min(2).max(80),
+  phone: z
+    .string()
+    .trim()
+    .min(8)
+    .max(30)
+    .refine((v) => v.replace(/[\s.-]/g, "").length >= 8, "phone_too_short"),
+  email: z.string().trim().email().max(160),
+  cuisineType: z.enum(["kebab", "pizza", "burger", "grill", "autre"]),
+  message: z.string().trim().max(1000).optional(),
+  website: z.string().max(200).optional(), // honeypot
+});
