@@ -3,8 +3,7 @@ import { DM_Sans, Geist_Mono, Instrument_Serif, Syne } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_APP_URL?.trim() || "https://reception-ai-zeta.vercel.app";
+import { SITE_URL } from "@/lib/site";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",

@@ -6,13 +6,12 @@ import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { MarketingHeader } from "@/components/marketing/marketing-header";
 import { JsonLd } from "@/components/seo/json-ld";
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_APP_URL?.trim() || "https://reception-ai-zeta.vercel.app";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Réceptionniste téléphonique IA pour restaurants",
   description:
-    "Appels manqués, file d’attente, commandes perdues : LIGNE est le réceptionniste téléphonique IA qui décroche 24h/24 pour votre restaurant. Découvrez comment ça marche.",
+    "Appels manqués, file d’attente, commandes perdues : Ligne est le réceptionniste téléphonique IA qui décroche 24h/24 pour votre restaurant. Découvrez comment ça marche.",
   keywords: [
     "réceptionniste téléphonique restaurant",
     "réceptionniste téléphonique IA",
@@ -25,16 +24,16 @@ export const metadata: Metadata = {
     canonical: "/pour-les-restaurants",
   },
   openGraph: {
-    title: "Réceptionniste téléphonique IA pour restaurants | LIGNE",
+    title: "Réceptionniste téléphonique IA pour restaurants | Ligne",
     description:
-      "Ne ratez plus les appels de commande. LIGNE décroche, prend la commande et l’envoie en cuisine — 24h/24.",
+      "Ne ratez plus les appels de commande. Ligne décroche, prend la commande et l’envoie en cuisine — 24h/24.",
     url: `${SITE_URL}/pour-les-restaurants`,
     type: "article",
     locale: "fr_FR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Réceptionniste téléphonique IA pour restaurants | LIGNE",
+    title: "Réceptionniste téléphonique IA pour restaurants | Ligne",
     description:
       "L’IA qui répond au téléphone de votre restaurant et transforme chaque appel en commande.",
   },
@@ -43,19 +42,19 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Réceptionniste téléphonique IA pour restaurants — LIGNE",
+  headline: "Réceptionniste téléphonique IA pour restaurants — Ligne",
   description:
     "Comment un agent vocal IA remplace les appels manqués et automatise la prise de commande au téléphone.",
   inLanguage: "fr-FR",
   mainEntityOfPage: `${SITE_URL}/pour-les-restaurants`,
   author: {
     "@type": "Organization",
-    name: "LIGNE",
+    name: "Ligne",
     url: SITE_URL,
   },
   publisher: {
     "@type": "Organization",
-    name: "LIGNE",
+    name: "Ligne",
     url: SITE_URL,
   },
 };
@@ -75,7 +74,7 @@ export default function PourLesRestaurantsPage() {
           Réceptionniste téléphonique IA : ne ratez plus aucun appel
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-zinc-400">
-          Chaque coup de fil manqué, c’est une commande qui part chez le concurrent. LIGNE
+          Chaque coup de fil manqué, c’est une commande qui part chez le concurrent. Ligne
           est le réceptionniste téléphonique intelligent conçu pour la restauration
           française : il décroche, comprend le menu, prend la commande et la transmet en
           cuisine — jour et nuit.
@@ -125,18 +124,18 @@ export default function PourLesRestaurantsPage() {
           <div className="flex items-center gap-3 text-astor-accent-soft">
             <Sparkles className="h-5 w-5" />
             <h2 className="font-display text-2xl font-semibold text-white">
-              La solution : LIGNE, votre agent vocal restaurant
+              La solution : Ligne, votre agent vocal restaurant
             </h2>
           </div>
           <p className="leading-relaxed text-zinc-400">
-            LIGNE est un réceptionniste téléphonique IA dédié aux restaurants. Dès qu’un
+            Ligne est un réceptionniste téléphonique IA dédié aux restaurants. Dès qu’un
             client appelle votre numéro, l’agent vocal répond avec une voix naturelle,
             présente le service (à emporter, sur place, livraison selon votre config) et
             guide la commande produit par produit : sandwichs, assiettes, formules, extras,
             sauces, boissons.
           </p>
           <p className="leading-relaxed text-zinc-400">
-            Contrairement à un simple répondeur ou à un standard générique, LIGNE connaît
+            Contrairement à un simple répondeur ou à un standard générique, Ligne connaît
             votre carte, vos prix et vos règles métier. Il ne se contente pas d’enregistrer
             un message : il structure la commande, confirme le total et l’heure de
             préparation, puis pousse l’ordre vers votre écran cuisine et votre tableau de
@@ -153,7 +152,7 @@ export default function PourLesRestaurantsPage() {
             </li>
             <li>
               <strong className="text-white">Suivi des ventes</strong> — chaque appel utile
-              apparaît dans le cockpit LIGNE.
+              apparaît dans le cockpit Ligne.
             </li>
             <li>
               <strong className="text-white">Déploiement rapide</strong> — branché sur
@@ -175,7 +174,7 @@ export default function PourLesRestaurantsPage() {
                 1. Le client appelle votre restaurant
               </span>
               <br />
-              Le numéro public reste le vôtre. LIGNE décroche à votre place, salue dans le
+              Le numéro public reste le vôtre. Ligne décroche à votre place, salue dans le
               ton de votre enseigne et oriente vers une commande claire.
             </li>
             <li className="leading-relaxed text-zinc-400">
@@ -208,10 +207,10 @@ export default function PourLesRestaurantsPage() {
 
         <section className="mt-14 space-y-5">
           <h2 className="font-display text-2xl font-semibold text-white">
-            Pour qui est fait LIGNE ?
+            Pour qui est fait Ligne ?
           </h2>
           <p className="leading-relaxed text-zinc-400">
-            LIGNE cible les établissements où le téléphone est un levier de ventes
+            Ligne cible les établissements où le téléphone est un levier de ventes
             immédiat : kebabs, snacks, grillades, pizzerias, burgers, dark kitchens et
             restaurants à emporter. Si vous recevez des pics d’appels le midi et le soir,
             si votre équipe ne peut pas décrocher sans ralentir le service, un
@@ -231,13 +230,13 @@ export default function PourLesRestaurantsPage() {
           <p className="leading-relaxed text-zinc-400">
             Les recherches autour du réceptionniste téléphonique IA, de l’agent vocal
             restaurant ou du standard automatique pour la restauration explosent : les
-            gérants veulent un système qui répond vraiment, pas une boîte vocale. LIGNE
+            gérants veulent un système qui répond vraiment, pas une boîte vocale. Ligne
             répond à cette intention avec un produit pensé pour la France — langue,
             parcours de commande, et intégration cuisine.
           </p>
           <p className="leading-relaxed text-zinc-400">
             Un bon référencement local ne sert à rien si, une fois le numéro trouvé, personne
-            ne décroche. LIGNE ferme cette boucle : la visibilité Google amène l’appel ; le
+            ne décroche. Ligne ferme cette boucle : la visibilité Google amène l’appel ; le
             réceptionniste IA convertit l’appel en ticket cuisine. C’est exactement le
             scénario que recherchent les restaurateurs qui tapent « IA téléphone restaurant »
             ou « prise de commande téléphone automatisée ».
@@ -252,7 +251,7 @@ export default function PourLesRestaurantsPage() {
             <Link href="/#tarifs" className="font-medium text-astor-accent-soft hover:text-astor-accent-bright">
               abonnez-vous en ligne
             </Link>{" "}
-            : on branche LIGNE sur votre carte et votre ligne.
+            : on branche Ligne sur votre carte et votre ligne.
           </p>
         </section>
 
@@ -261,7 +260,7 @@ export default function PourLesRestaurantsPage() {
             Ce que change un réceptionniste téléphonique IA au quotidien
           </h2>
           <p className="leading-relaxed text-zinc-400">
-            Avant LIGNE, le téléphone est une interruption permanente : le cuisinier lâche
+            Avant Ligne, le téléphone est une interruption permanente : le cuisinier lâche
             la plancha, le serveur coupe une conversation en salle, le gérant note sur un
             bout de papier. Après, le flux d’appels devient un canal de vente prévisible.
             Les pics du vendredi soir ne saturent plus la ligne ; les commandes hors horaires
@@ -303,7 +302,7 @@ export default function PourLesRestaurantsPage() {
             illustre une carte grillades reliée au même type d’agent.
           </p>
           <p className="leading-relaxed text-zinc-400">
-            LIGNE s’adresse aux gérants qui veulent un réceptionniste téléphonique fiable
+            Ligne s’adresse aux gérants qui veulent un réceptionniste téléphonique fiable
             sans recruter une personne dédiée uniquement au téléphone. L’objectif est simple :
             chaque appel utile devient une commande préparée — pas un bip dans le vide.
           </p>
@@ -314,7 +313,7 @@ export default function PourLesRestaurantsPage() {
             Prêt à récupérer vos appels manqués ?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-zinc-400">
-            Écoutez LIGNE en action, puis lancez un essai sur votre établissement. Moins
+            Écoutez Ligne en action, puis lancez un essai sur votre établissement. Moins
             d’appels perdus, plus de commandes préparées.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">

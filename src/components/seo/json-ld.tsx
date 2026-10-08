@@ -1,7 +1,6 @@
 import { FAQ, PRICING_PLANS } from "@/components/marketing/marketing-data";
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_APP_URL?.trim() || "https://reception-ai-zeta.vercel.app";
+import { SITE_URL } from "@/lib/site";
 
 const organization = {
   "@context": "https://schema.org",

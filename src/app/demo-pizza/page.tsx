@@ -8,8 +8,7 @@ import { DemoStickyCta } from "@/components/marketing/demo-sticky-cta";
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { MarketingHeader } from "@/components/marketing/marketing-header";
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_APP_URL?.trim() || "https://reception-ai-zeta.vercel.app";
+import { SITE_URL } from "@/lib/site";
 
 const BELLA_NAPOLI_AGENT_ID =
   process.env.NEXT_PUBLIC_BELLA_NAPOLI_AGENT_ID?.trim() ||

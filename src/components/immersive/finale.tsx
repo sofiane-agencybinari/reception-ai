@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "motion/react";
 
 import { LEGAL_LINKS } from "@/components/legal/legal-page";
+import { SOLUTION_PAGES } from "@/components/seo/solutions-data";
 
 import { EASE } from "./reveal";
 
@@ -108,7 +109,15 @@ export function LuxeFooter() {
           </motion.text>
         </svg>
 
-        <div className="mt-10 flex flex-wrap justify-between gap-3 text-[11px] text-white/40">
+        <nav aria-label="Solutions" className="mt-12 flex flex-wrap gap-x-6 gap-y-2 text-[12px] text-white/45">
+          {SOLUTION_PAGES.map((p) => (
+            <Link key={p.slug} href={`/solutions/${p.slug}`} className="transition-colors hover:text-[#f2efe8]">
+              {p.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="mt-6 flex flex-wrap justify-between gap-3 text-[11px] text-white/40">
           <span className="flex flex-wrap gap-x-4 gap-y-1">
             <span>© {new Date().getFullYear()} Ligne</span>
             {LEGAL_LINKS.map((l) => (
