@@ -61,6 +61,8 @@ function Demo() {
   const [limited, setLimited] = useState(false);
   const lastAgentAt = useRef(0);
   const modeRef = useRef<"voice" | "text">("voice");
+  const sectionRef = useRef<HTMLElement>(null);
+  const callRef = useRef<HTMLDivElement>(null);
 
   const conversation = useConversation({
     onMessage: (m) => {
@@ -100,10 +102,15 @@ function Demo() {
     let raf = 0;
     const tick = () => {
       const m = mobile();
+      // Sur téléphone, l'orbe se cale au-dessus du bouton d'appel, quelle que soit la hauteur de la section.
+      let my = 0.36;
+      const sec = sectionRef.current?.getBoundingClientRect();
+      const col = callRef.current?.getBoundingClientRect();
+      if (m && sec && col && sec.height > 0) my = (col.top - sec.top + col.height * 0.22) / sec.height;
       const base = {
         x: m ? 0.5 : 0.64,
-        y: m ? 0.36 : 0.42,
-        s: m ? 0.62 : 0.95,
+        y: m ? my : 0.42,
+        s: m ? 0.44 : 0.95,
       };
       if (live) {
         let vol = 0;
@@ -239,6 +246,7 @@ function Demo() {
 
   return (
     <section
+      ref={sectionRef}
       id="essai"
       data-tone="dark"
       className="relative min-h-[100svh] overflow-hidden bg-[#120a0c] text-[#f2efe8]"
@@ -273,9 +281,9 @@ function Demo() {
         ) : null}
       </AnimatePresence>
 
-      <div className="relative z-10 mx-auto grid min-h-[100svh] max-w-6xl gap-10 px-5 pb-16 pt-28 sm:px-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:pt-24">
-        {/* Texte */}
-        <div className="order-2 lg:order-1">
+      <div className="relative z-10 mx-auto grid min-h-[100svh] max-w-6xl gap-x-10 gap-y-8 px-5 pb-16 pt-24 sm:px-10 lg:grid-cols-[0.85fr_1.15fr] lg:grid-rows-[1fr_auto_1fr] lg:pt-24">
+        {/* Titre (en premier sur téléphone) */}
+        <div className="lg:col-start-1 lg:row-start-1 lg:self-end">
           <p className="font-[family-name:var(--font-geist-mono)] text-[10px] uppercase tracking-[0.22em] text-[#d9a3b0]">
             06 — Démo en direct
           </p>
@@ -290,16 +298,20 @@ function Demo() {
             Pas de formulaire, pas d’attente : parlez-lui comme un vrai client.
             Autorisez le micro, c’est tout.
           </p>
+        </div>
 
-          <div className="mt-8 flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur-xl">
+        {/* Détails */}
+        <div className="order-3 lg:col-start-1 lg:row-start-2 lg:row-end-4 lg:self-start">
+          <div className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur-xl">
             <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-[#f2efe8] font-serif text-lg text-[#5c2a36]">
               C
             </span>
-            <div>
+            <div className="min-w-0">
               <p className="text-[15px] font-medium">{DEMO_AGENT.restaurant}</p>
               <p className="text-[12px] text-white/50">{DEMO_AGENT.menu}</p>
+              <p className="mt-1 text-[10px] uppercase tracking-[0.16em] text-white/40 sm:hidden">Restaurant de démo</p>
             </div>
-            <span className="ml-auto shrink-0 whitespace-nowrap rounded-full border border-white/15 px-2.5 py-1 text-[10px] uppercase tracking-[0.16em] text-white/45">
+            <span className="ml-auto hidden shrink-0 whitespace-nowrap rounded-full sm:inline border border-white/15 px-2.5 py-1 text-[10px] uppercase tracking-[0.16em] text-white/45">
               Restaurant de démo
             </span>
           </div>
@@ -339,7 +351,7 @@ function Demo() {
         </div>
 
         {/* Appel */}
-        <div className="order-1 flex min-h-[52svh] flex-col items-center justify-end lg:order-2 lg:min-h-[78svh]">
+        <div ref={callRef} className="order-2 flex min-h-[48svh] flex-col items-center justify-end lg:col-start-2 lg:row-span-3 lg:row-start-1 lg:min-h-[78svh] lg:self-center">
           <p className="mb-4 flex items-center gap-2 text-[12px] text-white/60">
             <span
               className={`h-1.5 w-1.5 rounded-full ${live ? "bg-[#7ae582]" : connecting ? "bg-[#ffd166]" : "bg-white/30"}`}
@@ -375,15 +387,17 @@ function Demo() {
             </button>
           )}
 
-          <p className="mt-3 flex items-center gap-1.5 text-[11px] text-white/35">
-            <Mic className="h-3 w-3" /> Vraie conversation · 3 min max · 2 essais par visiteur · aucune commande réelle
+          <div className="mt-4 flex flex-col items-center rounded-2xl bg-[#120a0c]/70 px-4 py-2.5 backdrop-blur-md lg:bg-transparent lg:p-0 lg:backdrop-blur-none">
+          <p className="flex items-center gap-1.5 text-center text-[11px] text-white/50">
+            <Mic className="h-3 w-3 shrink-0" /> Vraie conversation · 3 min max · 2 essais · aucune commande réelle
           </p>
-          <p className="mt-1 max-w-sm text-center text-[10px] leading-relaxed text-white/30">
+          <p className="mt-1 max-w-sm text-center text-[10px] leading-relaxed text-white/40">
             En lançant la démo, vous acceptez que la conversation soit traitée par notre agent IA.{" "}
             <a href="/confidentialite" className="underline underline-offset-2 hover:text-white/60">
               En savoir plus
             </a>
           </p>
+          </div>
 
           {remaining !== null && !live && !connecting && !limited ? (
             <p className="mt-2 text-[11px] text-white/40">

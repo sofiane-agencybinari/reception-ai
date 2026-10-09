@@ -57,7 +57,7 @@ export function Pricing() {
           </SplitReveal>
         </div>
         <p className="max-w-sm font-serif text-[clamp(1.1rem,1.6vw,1.35rem)] leading-snug text-[#5c574f]">
-          Abonnement mensuel + minutes consommées. <span className="italic">14 jours offerts,</span> sans engagement,
+          Abonnement mensuel + minutes consommées. <span className="italic">Installé en 24 h,</span> sans engagement,
           résiliable à tout moment.
         </p>
       </div>

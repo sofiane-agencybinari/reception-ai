@@ -104,7 +104,7 @@ const PHASES: Phase[] = [
   },
   {
     id: "dive",
-    at: 0.49,
+    at: 0.462,
     kicker: "Transmission",
     lines: [
       [{ t: "Plus de post-it.", italic: true }],
@@ -204,7 +204,7 @@ export function MarketingScrollStory() {
   const stoneFade = useTransform(scrollYProgress, [0.49, 0.6], [1, 0]);
   const blackWash = useTransform(scrollYProgress, [0.5, 0.62], [0, 1]);
 
-  const hudOrbit = useTransform(scrollYProgress, [0.46, 0.52, 0.56], [1, 0.35, 0]);
+  const hudOrbit = useTransform(scrollYProgress, [0.485, 0.5, 0.512], [1, 0.5, 0]);
   const hudImmerse = useTransform(scrollYProgress, [0.56, 0.6, 0.92, 0.97], [0, 1, 1, 0]);
   // Fin du récit : fondu vers le papier de la section suivante (pas de coupure visible).
   const endWash = useTransform(scrollYProgress, [0.95, 0.995], [0, 1]);

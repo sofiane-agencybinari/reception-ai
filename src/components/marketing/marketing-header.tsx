@@ -138,13 +138,14 @@ export function MarketingHeader({ ready = true }: Props) {
           </Link>
           <a
             href="#essai"
-            className={`marketing-btn hidden font-serif text-[12px] tracking-[0.04em] transition sm:inline-flex ${
+            className={`marketing-btn inline-flex font-serif text-[12px] tracking-[0.04em] transition ${
               !light
                 ? "text-[#1a1816] underline decoration-[#1a1816]/30 underline-offset-[5px] hover:decoration-[#1a1816]"
                 : "text-[#f2efe8]/80 underline decoration-[#f2efe8]/30 underline-offset-[5px] hover:decoration-[#f2efe8]"
             }`}
           >
-            Tester Ligne
+            <span className="sm:hidden">Tester</span>
+            <span className="hidden sm:inline">Tester Ligne</span>
           </a>
           <button
             type="button"

@@ -77,7 +77,9 @@ export function OrbJourney() {
         const isMobile = window.matchMedia("(max-width: 1023px)").matches;
         const to = poseFor(STEPS[i], isMobile);
         const from = i === 0 ? { x: 0.5, y: 0.62, s: 0.25 } : poseFor(STEPS[i - 1], isMobile);
-        const e = smooth(0, TRAVEL, t);
+        // Sur téléphone : trajets plus courts, le contenu arrive plus tôt (moins d'écrans « vides »).
+        const travel = isMobile ? TRAVEL * 0.6 : TRAVEL;
+        const e = smooth(0, travel, t);
         // Trajectoire en arc : l'orbe s'élève au milieu du trajet.
         const lift = Math.sin(Math.PI * e) * (Math.abs(to.x - from.x) > 0.2 ? 0.1 : 0.04);
         pose.current = {
@@ -86,7 +88,7 @@ export function OrbJourney() {
           s: from.s + (to.s - from.s) * e,
           energy: STEPS[i].kind === "chapter" ? 1 : 0.6,
         };
-        const arrived = t > TRAVEL * 0.8;
+        const arrived = t > travel * 0.8;
         setView((v) => (v.step === i && v.arrived === arrived ? v : { step: i, arrived }));
       };
 
@@ -95,11 +97,12 @@ export function OrbJourney() {
         return;
       }
       const state = { p: 0 };
+      const perStep = window.matchMedia("(max-width: 1023px)").matches ? 50 : 70;
       gsap.to(state, {
         p: 1,
         ease: "none",
         onUpdate: () => apply(state.p),
-        scrollTrigger: { trigger: root.current, start: "top top", end: `+=${STEPS.length * 70}%`, pin: true, scrub: 0.6 },
+        scrollTrigger: { trigger: root.current, start: "top top", end: `+=${STEPS.length * perStep}%`, pin: true, scrub: 0.6 },
       });
       apply(0);
     },
