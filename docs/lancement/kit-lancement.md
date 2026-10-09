@@ -199,3 +199,55 @@ Une fois d'accord : envoie le lien **[SITE]#tarifs** → « Choisir Pro » → p
 - [ ] Créer une fiche **Google Business Profile** « Ligne — logiciel » (aide le référencement local)
 - [ ] Publier le post 1 le jour de la mise en ligne
 - [ ] Préparer une liste de 60 restaurants (nom, téléphone, Instagram) pour les 3 premiers jours
+
+---
+
+## 8. Démarchage LinkedIn
+
+### Profil personnel (à faire avant tout message — c'est lui que les prospects regardent)
+
+- **Photo** : visage net, fond neutre. **Bannière** : `linkedin-banniere.png`.
+- **Titre (220 car.)** : Fondateur de Ligne · Le standard téléphonique IA des restaurants · Plus aucun appel manqué au rush, commandes envoyées en cuisine
+- **Infos** : reprendre le texte « À propos » de la page (section 2), à la première personne.
+- **Sélection (Featured)** : épingler le film court (`ligne-court-4x5.mp4`) + le lien de la démo `[SITE]#essai`.
+- **Expérience** : « Fondateur — Ligne » (date du jour), avec 3 lignes sur le produit.
+
+### Qui cibler
+
+Recherche LinkedIn (onglet Personnes), filtre **Lieux** = ta ville + 30 km :
+- `gérant restaurant`, `gérant pizzeria`, `propriétaire snack`, `restaurateur`, `fondateur burger`, `franchisé` (tacos, pizza, burger)
+- Bonus : groupes « Restaurateurs de [ville] », « Entrepreneurs de la restauration ».
+
+Rythme conseillé : **20 invitations par jour max** (au-delà LinkedIn bride le compte), toujours avec une note.
+
+### Note d'invitation (≤ 300 caractères)
+
+> Bonjour [Prénom], je lance Ligne, un standard téléphonique IA pour les restaurants : il décroche au rush, prend la commande et l'envoie en cuisine. J'aimerais beaucoup avoir l'avis d'un restaurateur comme vous. Au plaisir d'échanger !
+
+### Message après acceptation (J0)
+
+> Merci pour l'ajout, [Prénom] !
+> Petite question : au rush de midi ou le soir, il vous arrive de ne pas pouvoir décrocher ?
+> On a construit Ligne pour ça. Le plus parlant, c'est de l'entendre : vous pouvez appeler notre restaurant de démo directement ici → [SITE]#essai (une minute, sans inscription).
+> Je serais curieux d'avoir votre retour, même critique.
+
+### Relance (J+3, si pas de réponse)
+
+> [Prénom], je me permets une relance rapide : avez-vous pu tester la démo ? Si c'est plus simple, je peux vous la montrer en 10 minutes par téléphone, au moment qui vous arrange (hors service, évidemment).
+
+### Si intérêt
+
+> Super ! On l'installe sur votre carte en 24 h. La formule la plus prise est Pro à 99 €/mois + minutes, sans engagement. Je vous envoie le lien pour l'activer, ou vous préférez qu'on s'appelle avant ?
+> → [SITE]#tarifs
+
+### Posts à publier en parallèle (profil perso)
+
+- **J1** : film court + texte « Format court » de `ligne-motion/PUBLICATION.md`.
+- **J3** : post 2 (rush) · **J5** : post 3 (démo) · **J8** : film long · ensuite le calendrier de la section 5.
+- Répondre à chaque commentaire dans l'heure : c'est ce qui fait circuler le post.
+
+### Règles
+
+- Jamais de message copié-collé sans le prénom ni un détail du restaurant (nom, ville, spécialité).
+- Pas de lien dans la note d'invitation (taux d'acceptation plus faible).
+- Noter chaque contact dans un tableau : nom, restaurant, date d'invitation, acceptée, démo testée, relance, statut.
