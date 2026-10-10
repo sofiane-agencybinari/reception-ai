@@ -64,7 +64,7 @@ Créer un fichier `src/content/guides/<slug>.json`, sur le modèle de `combien-c
    - `git commit -m "SEO : guide <titre>"`, avec la ligne `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`
    - `git push origin immersive`
    - `git push origin immersive:main`
-8. Après environ 3 minutes, vérifier en production que `<SITE>/guides/<slug>` répond 200 et figure dans `<SITE>/sitemap.xml`. `<SITE>` correspond à `NEXT_PUBLIC_APP_URL`, ou par défaut https://reception-ai-zeta.vercel.app.
+8. Après environ 3 minutes, vérifier en production que `<SITE>/guides/<slug>` répond 200 et figure dans `<SITE>/sitemap.xml`. `<SITE>` est https://ligne-ai.com.
 9. Ajouter une ligne à `docs/seo/journal.md` (date, slug, mot-clé, statut), puis commit et push de la même façon.
 10. En cas d'échec d'un contrôle :
     - ne rien publier ;

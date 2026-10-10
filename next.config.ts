@@ -13,15 +13,15 @@ const nextConfig: NextConfig = {
     "/api/menu-items/pdf": ["./node_modules/pdfkit/js/data/**/*"],
   },
   async redirects() {
-    if (new URL(SITE_URL).host === LEGACY_HOST) return [];
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: LEGACY_HOST }],
-        destination: `${SITE_URL}/:path*`,
-        permanent: true,
-      },
-    ];
+    const host = new URL(SITE_URL).host;
+    if (host === LEGACY_HOST) return [];
+    // Ancienne adresse Vercel et variante www → domaine officiel (301).
+    return [LEGACY_HOST, `www.${host}`].map((value) => ({
+      source: "/:path*",
+      has: [{ type: "host" as const, value }],
+      destination: `${SITE_URL}/:path*`,
+      permanent: true,
+    }));
   },
 };
 

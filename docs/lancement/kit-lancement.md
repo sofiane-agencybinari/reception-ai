@@ -1,6 +1,6 @@
 # Ligne — kit de lancement (réseaux sociaux + prospection)
 
-> Remplace `[SITE]` par ton adresse définitive (ex. `https://ligne.fr`) une fois le domaine branché.
+> Adresse du site : **https://ligne-ai.com**
 > Visuels prêts dans ce dossier : `linkedin-photo-profil.png`, `linkedin-banniere.png`, `post-carre-appel-manque.png`.
 > Règle d'or : n'annoncer que ce qui est vrai et démontrable. Pas de faux avis, pas de chiffres inventés.
 
@@ -25,7 +25,7 @@
 |---|---|
 | Nom | Ligne |
 | URL LinkedIn | linkedin.com/company/ligne-ia (ou ligne-restaurant si pris) |
-| Site web | [SITE] |
+| Site web | ligne-ai.com |
 | Secteur | Développement de logiciels |
 | Taille | 2-10 employés |
 | Type | Société privée |
@@ -46,11 +46,11 @@
 >
 > Installé en 24 h sur votre carte. Sans engagement.
 >
-> Testez l'agent vous-même, en direct, sur [SITE]
+> Testez l'agent vous-même, en direct, sur ligne-ai.com
 
 **Spécialités :** standard téléphonique IA, prise de commande téléphonique, agent vocal, restauration rapide, snack, pizzeria, intelligence artificielle, SaaS restaurant.
 
-**Bouton d'action :** « Visiter le site web » → [SITE]
+**Bouton d'action :** « Visiter le site web » → ligne-ai.com
 
 ---
 
@@ -60,10 +60,10 @@
 > Le standard téléphonique IA des restaurants 📞
 > Décroche 24h/24 · prend la commande · l'envoie en cuisine
 > 👇 Testez-le en direct
-Lien en bio : [SITE]
+Lien en bio : ligne-ai.com
 
 **Facebook (page) — description courte**
-> Ligne décroche les appels de votre restaurant 24h/24, prend les commandes à la voix et les envoie en cuisine. Testez l'agent en direct sur [SITE].
+> Ligne décroche les appels de votre restaurant 24h/24, prend les commandes à la voix et les envoie en cuisine. Testez l'agent en direct sur ligne-ai.com.
 
 **TikTok**
 > L'IA qui répond au téléphone de ton resto 🍕📞 Teste-la en direct ↓
@@ -84,7 +84,7 @@ Nom d'utilisateur conseillé partout : **@ligne.ia** (ou @ligne.resto si pris). 
 > Ligne est un réceptionniste IA qui décroche à votre place, 24h/24, prend la commande à la voix et l'envoie directement en cuisine.
 >
 > Le mieux, c'est de l'entendre : la démo est en libre accès, vous pouvez l'appeler comme un vrai client.
-> 👉 [SITE]
+> 👉 ligne-ai.com
 
 Visuel : `post-carre-appel-manque.png`
 
@@ -93,13 +93,13 @@ Visuel : `post-carre-appel-manque.png`
 > Vous faites quoi ?
 > — Vous décrochez et vous laissez le comptoir.
 > — Vous laissez sonner et vous perdez la commande.
-> Il y a maintenant une troisième option. [SITE]
+> Il y a maintenant une troisième option. ligne-ai.com
 
 **Post 3 — Démo**
 > On a mis notre agent en accès libre sur le site.
 > Appelez « Le Comptoir », commandez deux burgers, demandez s'il y a des noix dans le brownie, changez d'avis sur la sauce.
 > Il ne sait pas que vous testez. 😉
-> 👉 [SITE] (rubrique Démo)
+> 👉 ligne-ai.com (rubrique Démo)
 
 Visuel : capture de la section « Appelez Ligne. Maintenant. »
 
@@ -123,7 +123,7 @@ Visuel : capture de la section « Appelez Ligne. Maintenant. »
 **Post 8 — Prix**
 > Combien coûte un appel manqué ? Le prix d'une commande, et parfois d'un client fidèle.
 > Ligne démarre à 49 €/mois + les minutes utilisées. Sans engagement, résiliable chaque mois.
-> Détails : [SITE]#tarifs
+> Détails : ligne-ai.com#tarifs
 
 **Post 9 — Installation**
 > « C'est compliqué à mettre en place ? »
@@ -131,7 +131,7 @@ Visuel : capture de la section « Appelez Ligne. Maintenant. »
 
 **Post 10 — Coulisses / fondateur**
 > Pourquoi j'ai créé Ligne : [ton histoire en 3-4 phrases — un resto que tu connais, un rush vécu, une commande perdue].
-> Si vous gérez un snack ou une pizzeria, je serais ravi d'avoir votre avis sur la démo : [SITE]
+> Si vous gérez un snack ou une pizzeria, je serais ravi d'avoir votre avis sur la démo : ligne-ai.com
 
 ---
 
@@ -172,10 +172,10 @@ Astuce : sur LinkedIn, publie **depuis ton profil personnel** et repartage sur l
 > Le plus simple, c'est que vous l'entendiez : je vous envoie le lien par SMS, vous l'appelez comme un client, ça prend une minute. Je vous rappelle demain à la même heure pour avoir votre avis ?
 
 ### SMS après l'appel
-> Bonjour [prénom], c'est [ton prénom] de Ligne. Voici la démo dont on a parlé : [SITE]#essai — appuyez sur « Appeler » et commandez comme un client. Je vous rappelle demain vers 16 h. Bonne fin de service !
+> Bonjour [prénom], c'est [ton prénom] de Ligne. Voici la démo dont on a parlé : ligne-ai.com#essai — appuyez sur « Appeler » et commandez comme un client. Je vous rappelle demain vers 16 h. Bonne fin de service !
 
 ### Message Instagram / Facebook (DM au compte du resto)
-> Bonjour ! J'ai vu votre carte, elle donne faim 😄 Petite question : au rush, il vous arrive de rater des appels ? On a créé Ligne, un assistant IA qui décroche à votre place et envoie la commande en cuisine. Vous pouvez le tester en direct ici : [SITE] — ça prend une minute.
+> Bonjour ! J'ai vu votre carte, elle donne faim 😄 Petite question : au rush, il vous arrive de rater des appels ? On a créé Ligne, un assistant IA qui décroche à votre place et envoie la commande en cuisine. Vous pouvez le tester en direct ici : ligne-ai.com — ça prend une minute.
 
 ### Relance (J+1)
 > Vous avez pu tester la démo ? Qu'est-ce que vous en avez pensé ?
@@ -188,7 +188,7 @@ Astuce : sur LinkedIn, publie **depuis ton profil personnel** et repartage sur l
 - **« Pas le temps »** → « L'installation, c'est nous : vous envoyez votre carte en photo, on s'occupe du reste. »
 
 ### Conclure
-Une fois d'accord : envoie le lien **[SITE]#tarifs** → « Choisir Pro » → paiement Stripe. Il reçoit la confirmation et toi l'e-mail « Nouvel abonné ». Tu l'appelles dans l'heure pour l'installation.
+Une fois d'accord : envoie le lien **ligne-ai.com#tarifs** → « Choisir Pro » → paiement Stripe. Il reçoit la confirmation et toi l'e-mail « Nouvel abonné ». Tu l'appelles dans l'heure pour l'installation.
 
 ---
 
@@ -209,7 +209,7 @@ Une fois d'accord : envoie le lien **[SITE]#tarifs** → « Choisir Pro » → p
 - **Photo** : visage net, fond neutre. **Bannière** : `linkedin-banniere.png`.
 - **Titre (220 car.)** : Fondateur de Ligne · Le standard téléphonique IA des restaurants · Plus aucun appel manqué au rush, commandes envoyées en cuisine
 - **Infos** : reprendre le texte « À propos » de la page (section 2), à la première personne.
-- **Sélection (Featured)** : épingler le film court (`ligne-court-4x5.mp4`) + le lien de la démo `[SITE]#essai`.
+- **Sélection (Featured)** : épingler le film court (`ligne-court-4x5.mp4`) + le lien de la démo `ligne-ai.com#essai`.
 - **Expérience** : « Fondateur — Ligne » (date du jour), avec 3 lignes sur le produit.
 
 ### Qui cibler
@@ -228,7 +228,7 @@ Rythme conseillé : **20 invitations par jour max** (au-delà LinkedIn bride le 
 
 > Merci pour l'ajout, [Prénom] !
 > Petite question : au rush de midi ou le soir, il vous arrive de ne pas pouvoir décrocher ?
-> On a construit Ligne pour ça. Le plus parlant, c'est de l'entendre : vous pouvez appeler notre restaurant de démo directement ici → [SITE]#essai (une minute, sans inscription).
+> On a construit Ligne pour ça. Le plus parlant, c'est de l'entendre : vous pouvez appeler notre restaurant de démo directement ici → ligne-ai.com#essai (une minute, sans inscription).
 > Je serais curieux d'avoir votre retour, même critique.
 
 ### Relance (J+3, si pas de réponse)
@@ -238,7 +238,7 @@ Rythme conseillé : **20 invitations par jour max** (au-delà LinkedIn bride le 
 ### Si intérêt
 
 > Super ! On l'installe sur votre carte en 24 h. La formule la plus prise est Pro à 99 €/mois + minutes, sans engagement. Je vous envoie le lien pour l'activer, ou vous préférez qu'on s'appelle avant ?
-> → [SITE]#tarifs
+> → ligne-ai.com#tarifs
 
 ### Posts à publier en parallèle (profil perso)
 
