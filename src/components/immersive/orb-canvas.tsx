@@ -4,6 +4,7 @@ import { useMemo, useRef, type MutableRefObject } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
+import { useCanvasActive, useMaxDpr } from "./canvas-perf";
 import { FRAGMENT, seeded, VERTEX } from "./voice-orb";
 
 /** Pose cible de l'orbe, en fractions de l'écran (0–1) ; `energy` agite la surface. */
@@ -87,9 +88,14 @@ function TravellingOrb({ pose }: { pose: MutableRefObject<OrbPose> }) {
 
 /** Scène 3D plein écran : l'orbe reste net à toutes les tailles et voyage avec inertie. */
 export default function OrbCanvas({ pose }: { pose: MutableRefObject<OrbPose> }) {
+  const box = useRef<HTMLDivElement>(null);
+  const active = useCanvasActive(box);
+  const dpr = useMaxDpr();
   return (
+    <div ref={box} className="h-full w-full">
     <Canvas
-      dpr={[1, 1.75]}
+      frameloop={active ? "always" : "never"}
+      dpr={dpr}
       camera={{ position: [0, 0, 4.6], fov: 40 }}
       gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
       style={{ pointerEvents: "none" }}
@@ -99,5 +105,6 @@ export default function OrbCanvas({ pose }: { pose: MutableRefObject<OrbPose> })
     >
       <TravellingOrb pose={pose} />
     </Canvas>
+    </div>
   );
 }

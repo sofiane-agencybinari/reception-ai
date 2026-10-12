@@ -4,6 +4,8 @@ import { useMemo, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
+import { useCanvasActive, useMaxDpr } from "./canvas-perf";
+
 /* Bruit simplex 3D (Ashima / Stefan Gustavson, domaine public). */
 const NOISE = /* glsl */ `
 vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}
@@ -148,9 +150,14 @@ function Dust() {
 }
 
 export default function VoiceOrb({ speaking = true }: { speaking?: boolean }) {
+  const box = useRef<HTMLDivElement>(null);
+  const active = useCanvasActive(box);
+  const dpr = useMaxDpr();
   return (
+    <div ref={box} className="h-full w-full">
     <Canvas
-      dpr={[1, 1.75]}
+      frameloop={active ? "always" : "never"}
+      dpr={dpr}
       resize={{ offsetSize: true }}
       camera={{ position: [0, 0, 4.6], fov: 40 }}
       gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
@@ -161,5 +168,6 @@ export default function VoiceOrb({ speaking = true }: { speaking?: boolean }) {
       <Orb speaking={speaking} />
       <Dust />
     </Canvas>
+    </div>
   );
 }

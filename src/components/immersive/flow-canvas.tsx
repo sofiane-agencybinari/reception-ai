@@ -4,6 +4,7 @@ import { useMemo, useRef, type MutableRefObject } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
+import { useCanvasActive, useMaxDpr } from "./canvas-perf";
 import { seeded } from "./voice-orb";
 
 /**
@@ -124,9 +125,14 @@ function Flow({ pose }: { pose: MutableRefObject<FlowPose> }) {
 }
 
 export default function FlowCanvas({ pose }: { pose: MutableRefObject<FlowPose> }) {
+  const box = useRef<HTMLDivElement>(null);
+  const active = useCanvasActive(box);
+  const dpr = useMaxDpr();
   return (
+    <div ref={box} className="h-full w-full">
     <Canvas
-      dpr={[1, 1.75]}
+      frameloop={active ? "always" : "never"}
+      dpr={dpr}
       camera={{ position: [0, 0, 4.6], fov: 40 }}
       gl={{ antialias: false, alpha: true, powerPreference: "high-performance" }}
       style={{ pointerEvents: "none" }}
@@ -134,5 +140,6 @@ export default function FlowCanvas({ pose }: { pose: MutableRefObject<FlowPose> 
     >
       <Flow pose={pose} />
     </Canvas>
+    </div>
   );
 }

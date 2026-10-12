@@ -551,7 +551,7 @@ function OrbitHud({ progress, hidden }: { progress: MotionValue<number>; hidden:
       animate={{ opacity: hidden ? 0 : 1, filter: hidden ? "blur(8px)" : "blur(0px)" }}
       transition={{ duration: 0.5, ease: easeOut }}
     >
-      <div className="absolute inset-x-3 bottom-[calc(12px+100lvh-100svh)] rounded-[20px] border border-[#1a1816]/10 bg-[#ebe6de]/80 p-5 backdrop-blur-xl sm:inset-x-auto sm:bottom-auto sm:left-8 sm:top-[max(5.5rem,11vh)] sm:w-[min(40vw,34rem)] sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:backdrop-blur-none lg:left-12 lg:top-1/2 lg:-translate-y-1/2">
+      <div className="absolute inset-x-3 bottom-[calc(12px+100lvh-100svh)] rounded-[20px] border border-[#1a1816]/10 bg-[#ebe6de]/[0.94] p-5 sm:inset-x-auto sm:bottom-auto sm:left-8 sm:top-[max(5.5rem,11vh)] sm:w-[min(40vw,34rem)] sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:backdrop-blur-none lg:left-12 lg:top-1/2 lg:-translate-y-1/2">
         <p className="font-[family-name:var(--font-geist-mono)] text-[11px] uppercase tracking-[0.22em] text-[#8a8175]">
           <span className="tabular-nums text-[#1a1816]">{String(current + 1).padStart(2, "0")}</span>
           <span className="mx-2 opacity-50">—</span>

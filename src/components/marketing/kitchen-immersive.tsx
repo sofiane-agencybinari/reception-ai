@@ -152,8 +152,11 @@ export function KitchenImmersive() {
         </div>
       </div>
 
-      {/* SMS flottant — commande prête */}
-      <div className="pointer-events-none absolute bottom-5 right-4 z-20 w-[min(100%-2rem,320px)] sm:bottom-8 sm:right-8">
+      {/* SMS flottant — commande prête. Sur téléphone : simple notification en haut, l'écran cuisine reste lisible. */}
+      <div className="pointer-events-none absolute right-3 top-2 z-20 sm:hidden">
+        <SmsReadyChip />
+      </div>
+      <div className="pointer-events-none absolute bottom-8 right-8 z-20 hidden w-[min(100%-2rem,320px)] sm:block">
         <SmsReadyPreview />
       </div>
     </div>
@@ -276,6 +279,20 @@ function TicketCard({
         </div>
       ) : null}
     </article>
+  );
+}
+
+/** Version téléphone : notification compacte d'une ligne. */
+function SmsReadyChip() {
+  return (
+    <div className="flex items-center gap-2 rounded-full border border-white/10 bg-[#1c1c1e]/95 py-1.5 pl-1.5 pr-3 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.8)]">
+      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-[#8b4a58] to-[#3d1a22] text-[9px] font-semibold text-white">
+        LP
+      </span>
+      <span className="text-[11px] text-zinc-200">
+        SMS envoyé : <span className="font-semibold text-emerald-300">commande prête</span>
+      </span>
+    </div>
   );
 }
 

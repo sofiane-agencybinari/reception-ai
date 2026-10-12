@@ -18,7 +18,8 @@ export function DashboardImmersive({ progress, range = [0, 1] }: Props) {
     const el = listRef.current;
     if (!el) return;
     const t = Math.min(1, Math.max(0, (v - range[0]) / (range[1] - range[0])));
-    el.scrollTop = t * (el.scrollHeight - el.clientHeight);
+    const top = Math.round(t * (el.scrollHeight - el.clientHeight));
+    if (el.scrollTop !== top) el.scrollTop = top;
   });
   const bars = [38, 52, 44, 68, 55, 82, 70, 48, 76, 61, 58, 90, 72, 65, 78, 54, 69, 84, 60, 73, 88, 66, 71, 79, 57, 85, 74, 63, 81, 70];
 

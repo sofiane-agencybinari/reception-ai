@@ -177,17 +177,17 @@ export function OrbJourney() {
             exit={{ opacity: 0, x: mobile ? 0 : onLeft ? -20 : 20, filter: "blur(10px)", transition: { duration: 0.3 } }}
             transition={{ duration: 0.7, ease: EASE }}
           >
-            <p className="flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-white/45">
+            <p className="flex items-center gap-2 text-[12px] uppercase tracking-[0.18em] text-[#d9a3b0]">
               {group.label}
-              <span className="tabular-nums text-white/30">
+              <span className="tabular-nums text-white/50">
                 {String((step.kind === "feature" ? step.index : 0) + 1).padStart(2, "0")}/{String(group.features.length).padStart(2, "0")}
               </span>
             </p>
-            <h3 className="mt-2 font-sans text-[clamp(1.6rem,2.4vw,2.2rem)] font-medium leading-tight tracking-[-0.035em]">
+            <h3 className="mt-2 font-sans text-[clamp(1.85rem,2.4vw,2.2rem)] font-medium leading-tight tracking-[-0.035em] [text-shadow:0_2px_24px_rgba(0,0,0,0.6)]">
               <CharReveal text={feature.title} show fromHidden stagger={0.025} />
             </h3>
             <motion.p
-              className="mt-2 text-[14px] leading-relaxed text-white/60"
+              className="mt-2 text-[16px] leading-relaxed text-[#f2efe8]/90 [text-shadow:0_2px_18px_rgba(0,0,0,0.75)] sm:text-[15px] sm:text-white/75"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6, ease: EASE }}

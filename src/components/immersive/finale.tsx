@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion, useInView } from "motion/react";
 
 import { LEGAL_LINKS } from "@/components/legal/legal-page";
 import { SOLUTION_PAGES } from "@/components/seo/solutions-data";
@@ -18,7 +18,10 @@ const SOLUTION_CARDS: Record<string, { title: string; text: string }> = {
   "snack-kebab": { title: "Snacks & kebabs", text: "Menus, sauces, rush de midi." },
 };
 
-/** Signature « LIGNE » : le mot se dessine au fil du défilement, jusqu'en bas de page. */
+/**
+ * Signature « LIGNE » : invisible pendant la descente, elle apparaît d'un coup en bas de page —
+ * les lettres se dévoilent de gauche à droite pendant que le contour se dessine, puis se remplissent.
+ */
 function Wordmark() {
   const ref = useRef<HTMLDivElement>(null);
   const [mobile, setMobile] = useState(false);
@@ -29,50 +32,71 @@ function Wordmark() {
     mq.addEventListener("change", sync);
     return () => mq.removeEventListener("change", sync);
   }, []);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end end"] });
-  const dash = useTransform(scrollYProgress, [0, 0.9], [4000, 0]);
-  const fill = useTransform(scrollYProgress, [0.6, 1], ["rgba(242,239,232,0)", "rgba(242,239,232,0.07)"]);
-  const line = useTransform(scrollYProgress, [0, 0.7], [0, 1]);
+  const shown = useInView(ref, { once: true, amount: 0.6 });
 
   return (
     <div ref={ref} className="mt-12 sm:mt-16">
-    <svg viewBox={mobile ? "150 30 700 175" : "0 0 1000 220"} className="w-full overflow-visible" aria-hidden>
-      {mobile
-        ? null
-        : [110, 890].map((cx, i) => (
-            <motion.circle
-              key={cx}
-              cx={cx}
-              cy={110}
-              r={96}
-              fill="none"
-              stroke="#d9a3b0"
-              strokeOpacity={0.35}
-              strokeWidth={1}
-              initial={{ pathLength: 0 }}
-              whileInView={{ pathLength: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2, delay: 0.2 + i * 0.2, ease: EASE }}
-            />
-          ))}
-      <motion.line x1={0} x2={1000} y1={110} y2={110} stroke="#f2efe8" strokeOpacity={0.12} style={{ pathLength: line }} />
-      <motion.text
-        x={500}
-        y={168}
-        textAnchor="middle"
-        fontFamily="var(--font-dm-sans), system-ui, sans-serif"
-        fontWeight={500}
-        fontSize={210}
-        letterSpacing={-8}
-        stroke="#f2efe8"
-        strokeOpacity={0.6}
-        strokeWidth={mobile ? 1.6 : 1}
-        strokeDasharray={4000}
-        style={{ strokeDashoffset: dash, fill }}
+      <motion.svg
+        viewBox={mobile ? "150 30 700 175" : "0 0 1000 220"}
+        className="w-full overflow-visible"
+        aria-hidden
+        initial={{ opacity: 0, y: 36, filter: "blur(10px)" }}
+        animate={shown ? { opacity: 1, y: 0, filter: "blur(0px)" } : undefined}
+        transition={{ duration: 1.1, ease: EASE }}
       >
-        LIGNE
-      </motion.text>
-    </svg>
+        <defs>
+          <clipPath id="ligne-reveal">
+            <motion.rect
+              x={0}
+              y={0}
+              height={220}
+              initial={{ width: 0 }}
+              animate={shown ? { width: 1000 } : undefined}
+              transition={{ duration: 1.9, delay: 0.15, ease: [0.65, 0, 0.35, 1] }}
+            />
+          </clipPath>
+        </defs>
+        {mobile
+          ? null
+          : [110, 890].map((cx, i) => (
+              <motion.circle
+                key={cx}
+                cx={cx}
+                cy={110}
+                r={96}
+                fill="none"
+                stroke="#d9a3b0"
+                strokeOpacity={0.35}
+                strokeWidth={1}
+                initial={{ pathLength: 0 }}
+                animate={shown ? { pathLength: 1 } : undefined}
+                transition={{ duration: 2, delay: 0.4 + i * 0.25, ease: EASE }}
+              />
+            ))}
+        <g clipPath="url(#ligne-reveal)">
+          <motion.text
+            x={500}
+            y={168}
+            textAnchor="middle"
+            fontFamily="var(--font-dm-sans), system-ui, sans-serif"
+            fontWeight={500}
+            fontSize={210}
+            letterSpacing={-8}
+            stroke="#f2efe8"
+            strokeOpacity={0.7}
+            strokeWidth={mobile ? 1.6 : 1}
+            strokeDasharray={4000}
+            initial={{ strokeDashoffset: 4000, fill: "rgba(242,239,232,0)" }}
+            animate={shown ? { strokeDashoffset: 0, fill: "rgba(242,239,232,0.08)" } : undefined}
+            transition={{
+              strokeDashoffset: { duration: 2.6, delay: 0.15, ease: EASE },
+              fill: { duration: 1.4, delay: 1.9, ease: EASE },
+            }}
+          >
+            LIGNE
+          </motion.text>
+        </g>
+      </motion.svg>
     </div>
   );
 }

@@ -1,11 +1,12 @@
 "use client";
 
-import { Suspense, useRef } from "react";
+import { Suspense, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { ContactShadows, Environment } from "@react-three/drei";
 import { useMotionValueEvent, type MotionValue } from "motion/react";
 import * as THREE from "three";
 
+import { useCanvasActive, useMaxDpr } from "@/components/immersive/canvas-perf";
 import { IPhoneGltfModel } from "@/components/marketing/iphone-gltf-model";
 
 /** Facteur Apple/JS Mastery — le GLB interne est en scale 0.01, il faut ×15–17. */
@@ -31,10 +32,16 @@ export function IPhoneWebGLStage({
   progress,
   className = "",
 }: Props) {
+  const box = useRef<HTMLDivElement>(null);
+  const onScreen = useCanvasActive(box, "10%");
+  const [shown, setShown] = useState(true);
+  useMotionValueEvent(visible, "change", (v) => setShown(v !== "hidden"));
+  const dpr = useMaxDpr();
   return (
-    <div className={`absolute inset-0 ${className}`} aria-hidden>
+    <div ref={box} className={`absolute inset-0 ${className}`} aria-hidden>
       <Canvas
-        dpr={[1, 2]}
+        frameloop={onScreen && shown ? "always" : "never"}
+        dpr={[dpr[0], dpr[1] + 0.25]}
         gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
         camera={{ position: [0, 0, 5.2], fov: 36, near: 0.1, far: 100 }}
         style={{ background: "transparent", width: "100%", height: "100%" }}

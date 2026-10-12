@@ -49,12 +49,22 @@ export function MarketingHeader({ ready = true }: Props) {
         meta.content = tone;
       }
     };
+    // Une seule mesure par image affichée (le défilement peut envoyer des dizaines d'événements).
+    let frame = 0;
+    const schedule = () => {
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        onScroll();
+      });
+    };
     onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("astor:tone", onScroll);
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("astor:tone", schedule);
     return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("astor:tone", onScroll);
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("astor:tone", schedule);
     };
   }, []);
 
