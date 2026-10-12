@@ -8,7 +8,7 @@ import { FEATURE_GROUPS } from "@/components/marketing/marketing-data";
 
 import { CharReveal } from "./char-reveal";
 import { VIGNETTES } from "./feature-vignettes";
-import { gsap, prefersReducedMotion, useGSAP } from "./gsap";
+import { gsap, prefersReducedMotion, swipeStepByStep, useGSAP } from "./gsap";
 import type { OrbPose } from "./orb-canvas";
 import { EASE } from "./reveal";
 
@@ -116,13 +116,15 @@ export function OrbJourney() {
       }
       const state = { p: 0 };
       const perStep = window.matchMedia("(max-width: 1023px)").matches ? 38 : 70;
-      gsap.to(state, {
+      const tween = gsap.to(state, {
         p: 1,
         ease: "none",
         onUpdate: () => apply(state.p),
         scrollTrigger: { trigger: root.current, start: "top top", end: `+=${STEPS.length * perStep}%`, pin: true, scrub: 0.6 },
       });
       apply(0);
+      // Téléphone : un glissement = une étape, pour que chaque capacité ait le temps d'être lue.
+      return swipeStepByStep(tween.scrollTrigger!, STEPS.length);
     },
     { scope: root },
   );
