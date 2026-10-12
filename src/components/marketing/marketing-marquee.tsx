@@ -1,11 +1,11 @@
 "use client";
 
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 
 import { RESTAURANT_TYPES } from "@/components/marketing/marketing-data";
 
 export function MarketingMarquee() {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const items = [...RESTAURANT_TYPES, ...RESTAURANT_TYPES];
 
   return (

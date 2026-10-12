@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
@@ -16,7 +16,7 @@ const TRANSCRIPT = [
  * Purpose: explain product in one glance — phone takes the order, kitchen sees it.
  */
 export function HeroProductStage() {
-  const reduce = useReducedMotion();
+  const reduce = false;
 
   return (
     <div className="relative mx-auto w-full max-w-[540px] lg:max-w-none">
@@ -186,7 +186,7 @@ function CallTimer({ reduce }: { reduce: boolean }) {
 }
 
 function MiniWave() {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const bars = [0.35, 0.55, 0.9, 0.5, 1, 0.65, 0.8, 0.4, 0.7, 0.95, 0.45, 0.6];
 
   return (

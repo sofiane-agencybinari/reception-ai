@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -12,7 +12,7 @@ type Props = {
 };
 
 export function DemoStickyCta({ watchSelector = "#demo-widget" }: Props) {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {

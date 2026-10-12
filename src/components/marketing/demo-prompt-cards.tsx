@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Check, Copy } from "lucide-react";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -16,7 +16,7 @@ type Props = {
 };
 
 export function DemoPromptCards({ prompts }: Props) {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const [active, setActive] = useState<number | null>(null);
   const [copied, setCopied] = useState<number | null>(null);
 

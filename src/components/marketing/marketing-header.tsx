@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 
 import { AstorLogo } from "@/components/astor-logo";
 import { useSubscribe } from "@/components/immersive/subscribe-panel";
@@ -19,7 +19,7 @@ type Props = {
 };
 
 export function MarketingHeader({ ready = true }: Props) {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const [scrolled, setScrolled] = useState(false);
   const [dark, setDark] = useState(false);
   const subscribe = useSubscribe();

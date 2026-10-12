@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import { ArrowRight, Headphones } from "lucide-react";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 
 import { GlowCard } from "@/components/ui/glow-card";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
 export function MarketingCta() {
-  const reduce = useReducedMotion();
+  const reduce = false;
 
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 pb-28 pt-8">

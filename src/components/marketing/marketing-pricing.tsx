@@ -4,7 +4,6 @@ import { useState } from "react";
 import {
   AnimatePresence,
   motion,
-  useReducedMotion,
 } from "motion/react";
 
 import { PRICING_PLANS } from "@/components/marketing/marketing-data";
@@ -23,7 +22,7 @@ const CONCURRENT: Record<string, number> = {
  * Le chiffre héro = appels simultanés ; le prix mute en dessous.
  */
 export function MarketingPricing() {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const defaultIndex = Math.max(
     0,
     PRICING_PLANS.findIndex((p) => p.popular),

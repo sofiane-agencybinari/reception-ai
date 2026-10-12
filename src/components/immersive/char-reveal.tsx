@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 
 import { EASE } from "./reveal";
 
@@ -22,7 +22,7 @@ export function CharReveal({
   /** Joue l'entrée dès le montage (utile quand le composant est remonté via `key`). */
   fromHidden?: boolean;
 }) {
-  const reduce = useReducedMotion();
+  const reduce = false;
   return (
     <span className={className} aria-label={text}>
       {/* Mots insécables : les lignes ne se coupent jamais au milieu d'un mot */}

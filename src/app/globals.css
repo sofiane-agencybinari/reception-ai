@@ -935,20 +935,6 @@ h3,
     50% { opacity: 1; }
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .lx-ai-glow,
-    .lx-ai-glow > span,
-    .lx-drift-a,
-    .lx-drift-b,
-    .lx-drift-c,
-    .lx-pulse-ring,
-    .lx-float,
-    .lx-kenburns,
-    .lx-wave > span,
-    .lx-ring {
-      animation: none;
-    }
-  }
 }
 
 /* Hors couche : doit l'emporter sur la règle globale h1/h2/h3 (Syne) ci-dessus. */

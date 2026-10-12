@@ -43,7 +43,7 @@ export function LuxeFooter() {
               Réceptionniste téléphonique IA pour snacks, pizzerias et restaurants. Hébergé en France.
             </p>
           </div>
-          <nav className="grid grid-cols-2 gap-x-12 gap-y-2.5 text-[13px] sm:grid-cols-4">
+          <nav aria-label="Pied de page" className="grid grid-cols-2 gap-x-8 gap-y-3 text-[14px] sm:grid-cols-4 sm:gap-x-12 sm:gap-y-2.5 sm:text-[13px]">
             {LINKS.map(([href, label]) =>
               href.startsWith("/") ? (
                 <Link key={label} href={href} className="text-white/60 transition-colors hover:text-[#f2efe8]">
@@ -58,7 +58,7 @@ export function LuxeFooter() {
           </nav>
         </div>
         {/* Signature façon plan technique (oryzo) : le mot se dessine trait par trait */}
-        <svg viewBox="0 0 1000 220" className="mt-16 w-full overflow-visible" aria-hidden>
+        <svg viewBox="0 0 1000 220" className="mt-12 w-full overflow-visible sm:mt-16" aria-hidden>
           {[110, 890].map((cx, i) => (
             <motion.circle
               key={cx}
@@ -99,9 +99,9 @@ export function LuxeFooter() {
             stroke="#f2efe8"
             strokeOpacity={0.55}
             strokeWidth={1}
-            strokeDasharray={1400}
-            initial={{ strokeDashoffset: 1400 }}
-            whileInView={{ strokeDashoffset: 0 }}
+            strokeDasharray={4000}
+            initial={{ strokeDashoffset: 4000, fill: "rgba(242,239,232,0)" }}
+            whileInView={{ strokeDashoffset: 0, fill: "rgba(242,239,232,0.06)" }}
             viewport={{ once: true }}
             transition={{ duration: 3, delay: 0.3, ease: EASE }}
           >
@@ -109,28 +109,31 @@ export function LuxeFooter() {
           </motion.text>
         </svg>
 
-        <nav aria-label="Solutions" className="mt-12 flex flex-wrap gap-x-6 gap-y-2 text-[12px] text-white/45">
-          {SOLUTION_PAGES.map((p) => (
-            <Link key={p.slug} href={`/solutions/${p.slug}`} className="transition-colors hover:text-[#f2efe8]">
-              {p.label}
+        <div className="mt-10 border-t border-white/10 pt-8 sm:mt-12 sm:border-0 sm:pt-0">
+          <p className="font-[family-name:var(--font-geist-mono)] text-[10px] uppercase tracking-[0.22em] text-white/35 sm:hidden">Solutions</p>
+          <nav aria-label="Solutions" className="mt-4 grid grid-cols-1 gap-y-2.5 text-[13px] text-white/50 sm:mt-0 sm:flex sm:flex-wrap sm:gap-x-6 sm:gap-y-2 sm:text-[12px] sm:text-white/45">
+            {SOLUTION_PAGES.map((p) => (
+              <Link key={p.slug} href={`/solutions/${p.slug}`} className="transition-colors hover:text-[#f2efe8]">
+                {p.label}
+              </Link>
+            ))}
+            <Link href="/guides" className="transition-colors hover:text-[#f2efe8]">
+              Guides
             </Link>
-          ))}
-          <Link href="/guides" className="transition-colors hover:text-[#f2efe8]">
-            Guides
-          </Link>
-        </nav>
+          </nav>
+        </div>
 
-        <div className="mt-6 flex flex-wrap justify-between gap-3 text-[11px] text-white/40">
-          <span className="flex flex-wrap gap-x-4 gap-y-1">
+        <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-[11px] text-white/40 sm:mt-6 sm:flex-row sm:flex-wrap sm:justify-between sm:gap-3 sm:border-0 sm:pt-0">
+          <span className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#d9a3b0]" /> Paris <ParisClock /> · Ligne répond en ce moment
+          </span>
+          <span className="flex flex-wrap gap-x-4 gap-y-2 sm:order-first">
             <span>© {new Date().getFullYear()} Ligne</span>
             {LEGAL_LINKS.map((l) => (
               <Link key={l.href} href={l.href} className="transition-colors hover:text-[#f2efe8]">
                 {l.label}
               </Link>
             ))}
-          </span>
-          <span className="flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#d9a3b0]" /> Paris <ParisClock /> · Ligne répond en ce moment
           </span>
         </div>
       </div>

@@ -7,7 +7,6 @@ import {
   motion,
   useMotionTemplate,
   useMotionValueEvent,
-  useReducedMotion,
   useScroll,
   useTransform,
   type MotionValue,
@@ -171,7 +170,7 @@ const PHASES: Phase[] = [
 ];
 
 export function MarketingScrollStory() {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const trackRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress: rawProgress } = useScroll({

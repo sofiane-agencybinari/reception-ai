@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { useReducedMotion } from "motion/react";
 
 import { MarketingAmbient } from "@/components/marketing/marketing-ambient";
 import { MarketingHeader } from "@/components/marketing/marketing-header";
@@ -23,7 +22,7 @@ import { SmoothScroll } from "@/components/immersive/smooth-scroll";
  * puis sections sobres et animées : journée type → capacités → avant/avec → tarifs → FAQ → démo vocale en direct.
  */
 export function LandingPage() {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const [ready, setReady] = useState(false);
   const [introGone, setIntroGone] = useState(false);
 

@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
@@ -15,7 +15,7 @@ type Props = {
 };
 
 export function Reveal({ children, className, delay = 0, y = 24, blur = false }: Props) {
-  const reduce = useReducedMotion();
+  const reduce = false;
 
   if (reduce) {
     return <div className={className}>{children}</div>;
@@ -56,7 +56,7 @@ export function RevealStagger({
   delay = 0,
   stagger = 0.055,
 }: StaggerProps) {
-  const reduce = useReducedMotion();
+  const reduce = false;
 
   if (reduce) {
     return <div className={className}>{children}</div>;

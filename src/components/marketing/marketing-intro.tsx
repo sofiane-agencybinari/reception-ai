@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 
 /**
  * Preloader luxe — minimal : marque + barre + %.
@@ -15,7 +15,7 @@ type Props = {
 };
 
 export function MarketingIntro({ onReveal, onComplete }: Props) {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const [progress, setProgress] = useState(0);
   const [exiting, setExiting] = useState(false);
   const [gone, setGone] = useState(false);

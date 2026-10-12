@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import {
   motion,
   useMotionValueEvent,
-  useReducedMotion,
   useScroll,
   useTransform,
   type MotionValue,
@@ -161,7 +160,7 @@ function ReducedCapabilities() {
 }
 
 export function MarketingCapabilities() {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const trackRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: trackRef,

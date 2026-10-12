@@ -12,8 +12,12 @@ if (typeof window !== "undefined") {
 export const EASE_OUT = "expo.out";
 export const EASE_IN_OUT = "power4.inOut";
 
+/**
+ * Le site garde la même expérience animée sur tous les appareils, y compris quand
+ * « Réduire les animations » est activé sur l'iPhone (sinon la page devient une suite d'écrans figés).
+ */
 export function prefersReducedMotion() {
-  return typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  return false;
 }
 
 export { gsap, ScrollTrigger, SplitText, useGSAP };

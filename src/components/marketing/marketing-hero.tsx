@@ -9,7 +9,6 @@ import {
   useScroll,
   useSpring,
   useTransform,
-  useReducedMotion,
 } from "motion/react";
 
 /**
@@ -26,7 +25,7 @@ type Props = {
 };
 
 export function MarketingHero({ ready = true }: Props) {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const go = ready && !reduce;
   const sectionRef = useRef<HTMLElement>(null);
   const wrapRef = useRef<HTMLDivElement>(null);

@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 
 import { FAQ } from "@/components/marketing/marketing-data";
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
 export function MarketingFaq() {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const [active, setActive] = useState(0);
 
   return (

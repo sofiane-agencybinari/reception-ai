@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 
 export const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -17,7 +17,7 @@ export function Reveal({
   y?: number;
   className?: string;
 }) {
-  const reduce = useReducedMotion();
+  const reduce = false;
   return (
     <motion.div
       className={className}

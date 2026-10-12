@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 
 /** Emil ease-out — snappy settle. */
 const ease = [0.23, 1, 0.32, 1] as const;
@@ -80,7 +80,7 @@ const PRODUCTS: Product[] = [
  * Purpose: Explanation (marketing) + State indication on tab change.
  */
 export function MarketingProductShowcase() {
-  const reduce = useReducedMotion();
+  const reduce = false;
   const [active, setActive] = useState<ProductId>("reception");
   const product = PRODUCTS.find((p) => p.id === active)!;
 

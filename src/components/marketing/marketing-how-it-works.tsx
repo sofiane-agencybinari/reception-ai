@@ -1,7 +1,7 @@
 "use client";
 
 import { Phone } from "lucide-react";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 
 import { STEPS } from "@/components/marketing/marketing-data";
 import { Reveal, RevealItem, RevealStagger } from "@/components/marketing/reveal";
@@ -11,7 +11,7 @@ import { SectionHeader } from "@/components/ui/section-header";
 const ease = [0.23, 1, 0.32, 1] as const;
 
 export function MarketingHowItWorks() {
-  const reduce = useReducedMotion();
+  const reduce = false;
 
   return (
     <section id="comment" className="mx-auto max-w-6xl px-6 py-24 sm:py-28">
@@ -65,7 +65,7 @@ export function MarketingHowItWorks() {
 }
 
 function StepVisual({ type }: { type: "calls" | "chat" | "order" }) {
-  const reduce = useReducedMotion();
+  const reduce = false;
 
   if (type === "calls") {
     const calls = [
