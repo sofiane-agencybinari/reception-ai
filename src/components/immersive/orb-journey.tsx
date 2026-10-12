@@ -36,9 +36,18 @@ const PATH = [
   { x: 0.78, y: 0.6, s: 0.95 },
 ];
 
+/** Téléphone : 4 positions, une par capacité du chapitre (l'orbe ne bouge qu'à chaque nouvelle étape). */
+const MOBILE_PATH = [
+  { x: 0.3, y: 0.25, s: 0.62 },
+  { x: 0.7, y: 0.22, s: 0.56 },
+  { x: 0.32, y: 0.28, s: 0.58 },
+  { x: 0.68, y: 0.25, s: 0.62 },
+];
+
 function poseFor(step: Step, mobile: boolean): Omit<OrbPose, "energy"> {
-  if (step.kind === "chapter") return { x: 0.5, y: 0.5, s: mobile ? 1.7 : 2.7 };
-  if (mobile) return { x: step.index % 2 ? 0.7 : 0.3, y: 0.27, s: 0.62 };
+  // Sur téléphone, l'écran de chapitre garde l'orbe à la position de sa première capacité.
+  if (mobile) return MOBILE_PATH[step.kind === "chapter" ? 0 : step.index % MOBILE_PATH.length];
+  if (step.kind === "chapter") return { x: 0.5, y: 0.5, s: 2.7 };
   const base = PATH[step.index % PATH.length];
   // Chaque domaine emprunte un trajet différent : direct, miroir horizontal, miroir vertical.
   if (step.chapter === 1) return { ...base, x: 1 - base.x };
@@ -76,6 +85,13 @@ export function OrbJourney() {
         const t = f - i;
         const isMobile = window.matchMedia("(max-width: 1023px)").matches;
         const to = poseFor(STEPS[i], isMobile);
+        if (isMobile) {
+          // Pas de trajet lié au défilement : l'orbe rejoint sa place d'un seul mouvement (inertie de la scène 3D).
+          pose.current = { ...to, energy: STEPS[i].kind === "chapter" ? 1 : 0.6 };
+          const arrived = t > 0.08;
+          setView((v) => (v.step === i && v.arrived === arrived ? v : { step: i, arrived }));
+          return;
+        }
         // Sur téléphone, l'orbe est déjà en place à l'arrivée : pas d'écran sombre vide.
         const from = i === 0 ? (isMobile ? to : { x: 0.5, y: 0.62, s: 0.25 }) : poseFor(STEPS[i - 1], isMobile);
         // Sur téléphone : trajets plus courts, le contenu arrive plus tôt (moins d'écrans « vides »).

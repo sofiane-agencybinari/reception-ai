@@ -39,10 +39,15 @@ function TravellingOrb({ pose }: { pose: MutableRefObject<OrbPose> }) {
     return g;
   }, []);
 
+  // Écran tactile : le doigt qui fait défiler la page ne doit pas faire pencher l'orbe.
+  const touch = useMemo(() => typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches, []);
+  const still = useMemo(() => new THREE.Vector2(0, 0), []);
+
   useFrame((state, delta) => {
     const g = group.current;
     const uniforms = material.current?.uniforms;
     if (!g || !uniforms) return;
+    const pointer = touch ? still : state.pointer;
     const { width, height } = state.viewport;
     const p = pose.current;
 
@@ -61,15 +66,15 @@ function TravellingOrb({ pose }: { pose: MutableRefObject<OrbPose> }) {
     const voice = 0.5 + Math.abs(Math.sin(t * 5.3) * Math.sin(t * 2.1 + 1.3)) * 0.7;
     const wanted = voice * p.energy + Math.min(1.2, speed * 0.35);
     uniforms.uAmp.value += (wanted - uniforms.uAmp.value) * Math.min(1, delta * 5);
-    (uniforms.uMouse.value as THREE.Vector2).lerp(state.pointer, Math.min(1, delta * 2.5));
+    (uniforms.uMouse.value as THREE.Vector2).lerp(pointer, Math.min(1, delta * 2.5));
 
     if (mesh.current) {
       mesh.current.rotation.y += delta * (0.15 + speed * 0.12);
-      mesh.current.rotation.x = THREE.MathUtils.lerp(mesh.current.rotation.x, state.pointer.y * 0.35, delta * 2);
+      mesh.current.rotation.x = THREE.MathUtils.lerp(mesh.current.rotation.x, pointer.y * 0.35, delta * 2);
     }
     if (dust.current) {
       dust.current.rotation.y -= delta * (0.06 + speed * 0.05);
-      dust.current.rotation.x = 0.35 + state.pointer.y * 0.1;
+      dust.current.rotation.x = 0.35 + pointer.y * 0.1;
     }
   });
 
