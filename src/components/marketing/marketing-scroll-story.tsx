@@ -36,11 +36,11 @@ function lerpRange(v: number, input: number[], output: number[]) {
   return output[output.length - 1];
 }
 
-// Téléphone : l'iPhone pivote peu (on ne voit jamais son dos en plein écran) et reste plus petit,
+// Téléphone : l'iPhone fait la même rotation complète que sur ordinateur, mais reste plus petit
 // pour laisser la place aux légendes en bas de l'écran.
 const ROT_Y_IN = [0.06, 0.14, 0.22, 0.3, 0.38, 0.45, 0.5, 0.56];
 const ROT_Y_DESKTOP = [25, -50, -140, -230, -310, -360, -360, -360];
-const ROT_Y_MOBILE = [12, -14, 10, -12, 8, 0, 0, 0];
+const ROT_Y_MOBILE = ROT_Y_DESKTOP;
 const SCALE_IN = [0, 0.07, 0.095, 0.165, 0.2, 0.45, 0.5, 0.54, 0.58];
 const SCALE_DESKTOP = [0.85, 0.95, 0.78, 0.78, 1, 1, 1.2, 2.1, 3.4];
 const SCALE_MOBILE = [0.72, 0.8, 0.66, 0.66, 0.74, 0.74, 1, 2, 3.4];
@@ -277,7 +277,7 @@ export function MarketingScrollStory() {
     >
       <div className={mobile ? "h-[820vh]" : "h-[1200vh]"}>
         <div
-          className="sticky top-0 h-[100svh]"
+          className="sticky top-0 h-[100lvh]"
           style={{ overflow: "clip", transformStyle: "preserve-3d" }}
         >
           {/* Atmosphère pierre — planche unifiée */}
@@ -399,11 +399,11 @@ export function MarketingScrollStory() {
               }}
             >
               <div className="absolute inset-0 bg-[#0c0c0b]" />
-              <motion.div className="absolute inset-x-0 bottom-[150px] top-[68px] sm:bottom-[96px]" style={{ opacity: kitchenOpacity }}>
+              <motion.div className="absolute inset-x-0 bottom-[calc(150px+100lvh-100svh)] top-[68px] sm:bottom-[96px]" style={{ opacity: kitchenOpacity }}>
                 <KitchenImmersive />
               </motion.div>
-              <motion.div className="absolute inset-x-0 bottom-[150px] top-[68px] sm:bottom-[96px]" style={{ opacity: dashOpacity }}>
-                <DashboardImmersive />
+              <motion.div className="absolute inset-x-0 bottom-[calc(150px+100lvh-100svh)] top-[68px] sm:bottom-[96px]" style={{ opacity: dashOpacity }}>
+                <DashboardImmersive progress={scrollYProgress} range={[0.77, 0.92]} />
               </motion.div>
             </motion.div>
           </div>
@@ -551,7 +551,7 @@ function OrbitHud({ progress, hidden }: { progress: MotionValue<number>; hidden:
       animate={{ opacity: hidden ? 0 : 1, filter: hidden ? "blur(8px)" : "blur(0px)" }}
       transition={{ duration: 0.5, ease: easeOut }}
     >
-      <div className="absolute inset-x-3 bottom-3 rounded-[20px] border border-[#1a1816]/10 bg-[#ebe6de]/80 p-5 backdrop-blur-xl sm:inset-x-auto sm:bottom-auto sm:left-8 sm:top-[max(5.5rem,11vh)] sm:w-[min(40vw,34rem)] sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:backdrop-blur-none lg:left-12 lg:top-1/2 lg:-translate-y-1/2">
+      <div className="absolute inset-x-3 bottom-[calc(12px+100lvh-100svh)] rounded-[20px] border border-[#1a1816]/10 bg-[#ebe6de]/80 p-5 backdrop-blur-xl sm:inset-x-auto sm:bottom-auto sm:left-8 sm:top-[max(5.5rem,11vh)] sm:w-[min(40vw,34rem)] sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:backdrop-blur-none lg:left-12 lg:top-1/2 lg:-translate-y-1/2">
         <p className="font-[family-name:var(--font-geist-mono)] text-[11px] uppercase tracking-[0.22em] text-[#8a8175]">
           <span className="tabular-nums text-[#1a1816]">{String(current + 1).padStart(2, "0")}</span>
           <span className="mx-2 opacity-50">—</span>
@@ -623,7 +623,7 @@ function ImmerseHud({ progress }: { progress: MotionValue<number> }) {
   const phase = immerse[current];
 
   return (
-    <div className="absolute inset-x-0 bottom-0 z-40 h-[150px] border-t border-white/10 bg-[#0c0c0b] sm:h-[96px]">
+    <div className="absolute inset-x-0 bottom-0 z-40 h-[calc(150px+100lvh-100svh)] border-t border-white/10 bg-[#0c0c0b] pb-[calc(100lvh-100svh)] sm:h-[96px] sm:pb-0">
       <div className="mx-auto flex h-full max-w-6xl flex-col justify-center gap-3 px-5 sm:flex-row sm:items-center sm:justify-between sm:gap-10 sm:px-8">
         <div className="relative min-w-0 flex-1">
           <AnimatePresence mode="wait" initial={false}>

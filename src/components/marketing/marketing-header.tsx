@@ -31,7 +31,23 @@ export function MarketingHeader({ ready = true }: Props) {
       // Sombre au-dessus des sections [data-tone="dark"] ou pendant l'immersion du récit.
       const probe = document.elementsFromPoint(window.innerWidth / 2, 72).find((el) => !el.closest("header"));
       const overDark = probe?.closest("[data-tone]")?.getAttribute("data-tone") === "dark";
-      setDark(overDark || document.documentElement.dataset.storyTone === "dark");
+      const isDark = overDark || document.documentElement.dataset.storyTone === "dark";
+      setDark(isDark);
+      // Sur iPhone, les zones autour de la page (barres de Safari, rebond) prennent cette couleur :
+      // plus de bandes blanches au-dessus et en dessous des sections sombres.
+      const tone = isDark ? "#0c0c0b" : "#ebe6de";
+      const root = document.documentElement;
+      if (root.style.backgroundColor !== tone) {
+        root.style.backgroundColor = tone;
+        document.body.style.backgroundColor = tone;
+        let meta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
+        if (!meta) {
+          meta = document.createElement("meta");
+          meta.name = "theme-color";
+          document.head.appendChild(meta);
+        }
+        meta.content = tone;
+      }
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });

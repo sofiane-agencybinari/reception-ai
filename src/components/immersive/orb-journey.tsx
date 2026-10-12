@@ -118,7 +118,7 @@ export function OrbJourney() {
   const Vignette = feature ? VIGNETTES[feature.title] : null;
 
   return (
-    <section ref={root} id="capacites" data-tone="dark" className="relative h-[100svh] overflow-hidden bg-[#120a0c] text-[#f2efe8]">
+    <section ref={root} id="capacites" data-tone="dark" className="relative h-[100lvh] overflow-hidden bg-[#120a0c] text-[#f2efe8]">
       {/* Lumière ambiante qui suit grossièrement l'orbe */}
       <div
         aria-hidden

@@ -1,7 +1,25 @@
 "use client";
 
+import { useRef } from "react";
+import { useMotionValue, useMotionValueEvent, type MotionValue } from "motion/react";
+
+type Props = {
+  /** Progression du récit : sur téléphone, le contenu défile tout seul pour tout montrer. */
+  progress?: MotionValue<number>;
+  /** Plage de progression pendant laquelle le contenu défile de haut en bas. */
+  range?: [number, number];
+};
+
 /** Dashboard client immersif — calque AppShell + Analytics, plein viewport. */
-export function DashboardImmersive() {
+export function DashboardImmersive({ progress, range = [0, 1] }: Props) {
+  const listRef = useRef<HTMLDivElement>(null);
+  const idle = useMotionValue(0);
+  useMotionValueEvent(progress ?? idle, "change", (v) => {
+    const el = listRef.current;
+    if (!el) return;
+    const t = Math.min(1, Math.max(0, (v - range[0]) / (range[1] - range[0])));
+    el.scrollTop = t * (el.scrollHeight - el.clientHeight);
+  });
   const bars = [38, 52, 44, 68, 55, 82, 70, 48, 76, 61, 58, 90, 72, 65, 78, 54, 69, 84, 60, 73, 88, 66, 71, 79, 57, 85, 74, 63, 81, 70];
 
   return (
@@ -35,8 +53,8 @@ export function DashboardImmersive() {
         </div>
       </header>
 
-      <div className="mx-auto flex w-full max-w-6xl flex-1 flex-col overflow-hidden px-5 py-5 sm:px-8 sm:py-7">
-        <div className="mb-5 shrink-0 sm:mb-6">
+      <div className="mx-auto flex w-full max-w-6xl flex-1 flex-col overflow-hidden px-4 py-3 sm:px-8 sm:py-7">
+        <div className="mb-3 shrink-0 sm:mb-6">
           <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-zinc-500">
             Le Palmier
           </p>
@@ -46,7 +64,7 @@ export function DashboardImmersive() {
           <p className="mt-1 text-sm text-zinc-500">CA, volumes, exports — vue temps réel</p>
         </div>
 
-        <div className="min-h-0 flex-1 space-y-4 overflow-y-auto pb-4 sm:space-y-5">
+        <div ref={listRef} className="min-h-0 flex-1 space-y-4 overflow-y-auto pb-4 [scrollbar-width:none] sm:space-y-5 [&::-webkit-scrollbar]:hidden">
           {/* Rapport du jour */}
           <section className="rounded-2xl border border-white/8 bg-white/[0.03] p-4 sm:p-5">
             <div className="flex flex-wrap items-start justify-between gap-4">

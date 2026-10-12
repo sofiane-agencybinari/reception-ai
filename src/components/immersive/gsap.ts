@@ -7,6 +7,8 @@ import { useGSAP } from "@gsap/react";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, SplitText, useGSAP);
+  // iPhone : la barre d'adresse qui apparaît/disparaît ne doit pas décaler les sections épinglées.
+  ScrollTrigger.config({ ignoreMobileResize: true });
 }
 
 export const EASE_OUT = "expo.out";

@@ -240,7 +240,7 @@ export function Compare() {
   const isAfter = view.scene >= SWITCH;
 
   return (
-    <section ref={root} id="avant-apres" data-tone="dark" className="relative h-[100svh] overflow-hidden bg-[#120a0c] text-[#f2efe8]">
+    <section ref={root} id="avant-apres" data-tone="dark" className="relative h-[100lvh] overflow-hidden bg-[#120a0c] text-[#f2efe8]">
       {/* Lumière : froide avant, bordeaux après */}
       <div
         aria-hidden

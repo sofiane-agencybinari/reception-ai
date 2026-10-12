@@ -1,13 +1,81 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 
 import { LEGAL_LINKS } from "@/components/legal/legal-page";
 import { SOLUTION_PAGES } from "@/components/seo/solutions-data";
 
 import { EASE } from "./reveal";
+
+/** Libellés courts du pied de page (le titre complet reste en infobulle pour le référencement). */
+const SOLUTION_CARDS: Record<string, { title: string; text: string }> = {
+  "standard-telephonique-restaurant": { title: "Standard téléphonique", text: "Chaque appel décroché, 24 h/24." },
+  "prise-de-commande-telephone": { title: "Commande par téléphone", text: "Prise à la voix, envoyée en cuisine." },
+  "appels-manques-restaurant": { title: "Appels manqués", text: "Plus aucune commande perdue au rush." },
+  pizzeria: { title: "Pizzerias", text: "Tailles, suppléments, livraison." },
+  "snack-kebab": { title: "Snacks & kebabs", text: "Menus, sauces, rush de midi." },
+};
+
+/** Signature « LIGNE » : le mot se dessine au fil du défilement, jusqu'en bas de page. */
+function Wordmark() {
+  const ref = useRef<HTMLDivElement>(null);
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 639px)");
+    const sync = () => setMobile(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end end"] });
+  const dash = useTransform(scrollYProgress, [0, 0.9], [4000, 0]);
+  const fill = useTransform(scrollYProgress, [0.6, 1], ["rgba(242,239,232,0)", "rgba(242,239,232,0.07)"]);
+  const line = useTransform(scrollYProgress, [0, 0.7], [0, 1]);
+
+  return (
+    <div ref={ref} className="mt-12 sm:mt-16">
+    <svg viewBox={mobile ? "150 30 700 175" : "0 0 1000 220"} className="w-full overflow-visible" aria-hidden>
+      {mobile
+        ? null
+        : [110, 890].map((cx, i) => (
+            <motion.circle
+              key={cx}
+              cx={cx}
+              cy={110}
+              r={96}
+              fill="none"
+              stroke="#d9a3b0"
+              strokeOpacity={0.35}
+              strokeWidth={1}
+              initial={{ pathLength: 0 }}
+              whileInView={{ pathLength: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 2, delay: 0.2 + i * 0.2, ease: EASE }}
+            />
+          ))}
+      <motion.line x1={0} x2={1000} y1={110} y2={110} stroke="#f2efe8" strokeOpacity={0.12} style={{ pathLength: line }} />
+      <motion.text
+        x={500}
+        y={168}
+        textAnchor="middle"
+        fontFamily="var(--font-dm-sans), system-ui, sans-serif"
+        fontWeight={500}
+        fontSize={210}
+        letterSpacing={-8}
+        stroke="#f2efe8"
+        strokeOpacity={0.6}
+        strokeWidth={mobile ? 1.6 : 1}
+        strokeDasharray={4000}
+        style={{ strokeDashoffset: dash, fill }}
+      >
+        LIGNE
+      </motion.text>
+    </svg>
+    </div>
+  );
+}
 
 function ParisClock() {
   const [time, setTime] = useState("");
@@ -57,69 +125,34 @@ export function LuxeFooter() {
             )}
           </nav>
         </div>
-        {/* Signature façon plan technique (oryzo) : le mot se dessine trait par trait */}
-        <svg viewBox="0 0 1000 220" className="mt-12 w-full overflow-visible sm:mt-16" aria-hidden>
-          {[110, 890].map((cx, i) => (
-            <motion.circle
-              key={cx}
-              cx={cx}
-              cy={110}
-              r={96}
-              fill="none"
-              stroke="#d9a3b0"
-              strokeOpacity={0.35}
-              strokeWidth={1}
-              initial={{ pathLength: 0 }}
-              whileInView={{ pathLength: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 2, delay: 0.2 + i * 0.2, ease: EASE }}
-            />
-          ))}
-          <motion.line
-            x1={0}
-            x2={1000}
-            y1={110}
-            y2={110}
-            stroke="#f2efe8"
-            strokeOpacity={0.12}
-            initial={{ pathLength: 0 }}
-            whileInView={{ pathLength: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.6, ease: EASE }}
-          />
-          <motion.text
-            x={500}
-            y={168}
-            textAnchor="middle"
-            fontFamily="var(--font-dm-sans), system-ui, sans-serif"
-            fontWeight={500}
-            fontSize={210}
-            letterSpacing={-8}
-            fill="transparent"
-            stroke="#f2efe8"
-            strokeOpacity={0.55}
-            strokeWidth={1}
-            strokeDasharray={4000}
-            initial={{ strokeDashoffset: 4000, fill: "rgba(242,239,232,0)" }}
-            whileInView={{ strokeDashoffset: 0, fill: "rgba(242,239,232,0.06)" }}
-            viewport={{ once: true }}
-            transition={{ duration: 3, delay: 0.3, ease: EASE }}
-          >
-            LIGNE
-          </motion.text>
-        </svg>
+        {/* Signature façon plan technique : le mot se dessine trait par trait en descendant */}
+        <Wordmark />
 
-        <div className="mt-10 border-t border-white/10 pt-8 sm:mt-12 sm:border-0 sm:pt-0">
-          <p className="font-[family-name:var(--font-geist-mono)] text-[10px] uppercase tracking-[0.22em] text-white/35 sm:hidden">Solutions</p>
-          <nav aria-label="Solutions" className="mt-4 grid grid-cols-1 gap-y-2.5 text-[13px] text-white/50 sm:mt-0 sm:flex sm:flex-wrap sm:gap-x-6 sm:gap-y-2 sm:text-[12px] sm:text-white/45">
-            {SOLUTION_PAGES.map((p) => (
-              <Link key={p.slug} href={`/solutions/${p.slug}`} className="transition-colors hover:text-[#f2efe8]">
-                {p.label}
-              </Link>
-            ))}
-            <Link href="/guides" className="transition-colors hover:text-[#f2efe8]">
-              Guides
+        <div className="mt-12 border-t border-white/10 pt-8">
+          <div className="flex items-baseline justify-between gap-4">
+            <p className="font-[family-name:var(--font-geist-mono)] text-[10px] uppercase tracking-[0.22em] text-white/40">Solutions</p>
+            <Link href="/guides" className="text-[12px] text-white/50 transition-colors hover:text-[#f2efe8]">
+              Guides pour restaurateurs →
             </Link>
+          </div>
+          <nav aria-label="Solutions" className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-5 sm:gap-3">
+            {SOLUTION_PAGES.map((p) => {
+              const card = SOLUTION_CARDS[p.slug] ?? { title: p.label, text: "" };
+              return (
+                <Link
+                  key={p.slug}
+                  href={`/solutions/${p.slug}`}
+                  title={p.label}
+                  className="group rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3.5 transition-colors hover:border-white/25 hover:bg-white/[0.06] last:col-span-2 sm:last:col-span-1"
+                >
+                  <span className="flex items-center justify-between gap-2 text-[13.5px] font-medium text-[#f2efe8]">
+                    {card.title}
+                    <span className="text-white/30 transition-transform group-hover:translate-x-0.5" aria-hidden>→</span>
+                  </span>
+                  <span className="mt-1 block text-[12px] leading-snug text-white/45">{card.text}</span>
+                </Link>
+              );
+            })}
           </nav>
         </div>
 

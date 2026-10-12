@@ -118,7 +118,7 @@ export function DayTimeline() {
   const hours = Array.from({ length: 13 }, (_, i) => 11 + i);
 
   return (
-    <section ref={root} className="relative h-[100svh] overflow-hidden bg-[var(--lx-paper)] text-[var(--lx-ink)]">
+    <section ref={root} className="relative h-[100lvh] overflow-hidden bg-[var(--lx-paper)] text-[var(--lx-ink)]">
       <div className="mx-auto flex h-full max-w-6xl flex-col justify-center gap-6 px-5 pt-20 sm:gap-14 sm:px-10 sm:pt-20">
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <SectionHead
