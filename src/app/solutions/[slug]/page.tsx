@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumb, ContentSections, ContentShell, DemoCta, FaqBlock, faqSchema, LinkList } from "@/components/seo/content-shell";
 import { getSolution, SOLUTION_PAGES } from "@/components/seo/solutions-data";
 import { getGuides } from "@/lib/guides";
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL, TWITTER_IMAGE } from "@/lib/site";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     keywords: page.keywords,
     alternates: { canonical: path },
     openGraph: {
+      images: [OG_IMAGE],
       type: "article",
       locale: "fr_FR",
       siteName: "Ligne",
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       title: `${page.metaTitle} | Ligne`,
       description: page.description,
     },
-    twitter: { card: "summary_large_image", title: `${page.metaTitle} | Ligne`, description: page.description },
+    twitter: { card: "summary_large_image", images: [TWITTER_IMAGE], title: `${page.metaTitle} | Ligne`, description: page.description },
   };
 }
 

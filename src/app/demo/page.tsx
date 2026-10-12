@@ -8,7 +8,7 @@ import { DemoStickyCta } from "@/components/marketing/demo-sticky-cta";
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { MarketingHeader } from "@/components/marketing/marketing-header";
 
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL, TWITTER_IMAGE } from "@/lib/site";
 
 const ELBAHJA_AGENT_ID =
   process.env.NEXT_PUBLIC_ELBAHJA_AGENT_ID ?? "agent_6001m0jmjg8ye0rsrsqfwac6323e";
@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     canonical: "/demo",
   },
   openGraph: {
+    images: [OG_IMAGE],
     title: "Démo vocale LIGNE — Agent IA restaurant",
     description:
       "Parlez avec LIGNE : démo réaliste de prise de commande téléphonique pour restaurant.",
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
   },
   twitter: {
+    images: [TWITTER_IMAGE],
     card: "summary_large_image",
     title: "Démo vocale LIGNE — Agent IA restaurant",
     description: "Essayez le réceptionniste téléphonique IA en temps réel.",

@@ -191,6 +191,10 @@ export const SOLUTION_PAGES: SolutionPage[] = [
         q: "Combien de commandes faut-il récupérer pour rentabiliser Ligne ?",
         a: "Avec un abonnement à partir de 49 € par mois, quelques commandes récupérées au rush suffisent généralement à couvrir le coût. L’abonnement est sans engagement.",
       },
+      {
+        q: "Comment ne plus rater d’appels pendant le rush de midi ?",
+        a: "Désignez un responsable du téléphone, proposez la commande à l’avance avec des créneaux de retrait et, si les appels se chevauchent, confiez la réponse à un agent vocal qui décroche plusieurs appels en même temps. Notre guide détaille sept solutions concrètes.",
+      },
     ],
   },
   {

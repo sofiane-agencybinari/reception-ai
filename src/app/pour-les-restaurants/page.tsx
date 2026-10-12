@@ -6,7 +6,7 @@ import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { MarketingHeader } from "@/components/marketing/marketing-header";
 import { JsonLd } from "@/components/seo/json-ld";
 
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL, TWITTER_IMAGE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Réceptionniste téléphonique IA pour restaurants",
@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     canonical: "/pour-les-restaurants",
   },
   openGraph: {
+    images: [OG_IMAGE],
     title: "Réceptionniste téléphonique IA pour restaurants | Ligne",
     description:
       "Ne ratez plus les appels de commande. Ligne décroche, prend la commande et l’envoie en cuisine — 24h/24.",
@@ -32,6 +33,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
   },
   twitter: {
+    images: [TWITTER_IMAGE],
     card: "summary_large_image",
     title: "Réceptionniste téléphonique IA pour restaurants | Ligne",
     description:

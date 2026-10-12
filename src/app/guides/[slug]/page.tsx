@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumb, ContentSections, ContentShell, DemoCta, FaqBlock, faqSchema, LinkList } from "@/components/seo/content-shell";
 import { SOLUTION_PAGES } from "@/components/seo/solutions-data";
 import { formatDate, getGuide, getGuides } from "@/lib/guides";
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL, TWITTER_IMAGE } from "@/lib/site";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     keywords: guide.keywords,
     alternates: { canonical: path },
     openGraph: {
+      images: [OG_IMAGE],
       type: "article",
       locale: "fr_FR",
       siteName: "Ligne",
@@ -33,7 +34,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       publishedTime: guide.published,
       modifiedTime: guide.updated ?? guide.published,
     },
-    twitter: { card: "summary_large_image", title: `${guide.metaTitle} | Ligne`, description: guide.description },
+    twitter: { card: "summary_large_image", images: [TWITTER_IMAGE], title: `${guide.metaTitle} | Ligne`, description: guide.description },
   };
 }
 
@@ -53,7 +54,7 @@ export default async function GuidePage({ params }: Params) {
       datePublished: guide.published,
       dateModified: guide.updated ?? guide.published,
       mainEntityOfPage: url,
-      image: `${SITE_URL}/opengraph-image.png`,
+      image: `${SITE_URL}${OG_IMAGE.url}`,
       author: { "@type": "Organization", name: "Ligne", url: SITE_URL },
       publisher: { "@type": "Organization", name: "Ligne", url: SITE_URL, logo: { "@type": "ImageObject", url: `${SITE_URL}/ligne-icon.png` } },
     },
@@ -70,7 +71,12 @@ export default async function GuidePage({ params }: Params) {
   if (faq.length) schema.push(faqSchema(faq));
 
   const solutions = SOLUTION_PAGES.filter((p) => guide.related?.includes(p.slug));
-  const others = getGuides().filter((g) => g.slug !== guide.slug).slice(0, 6);
+  // Guides liés aux mêmes pages /solutions d'abord (maillage thématique), puis les plus récents.
+  const shared = (g: { related?: string[] }) => (g.related ?? []).filter((r) => guide.related?.includes(r)).length;
+  const others = getGuides()
+    .filter((g) => g.slug !== guide.slug)
+    .sort((a, b) => shared(b) - shared(a))
+    .slice(0, 6);
 
   return (
     <ContentShell schema={schema}>

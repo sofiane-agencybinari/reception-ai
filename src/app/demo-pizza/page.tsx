@@ -8,7 +8,7 @@ import { DemoStickyCta } from "@/components/marketing/demo-sticky-cta";
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { MarketingHeader } from "@/components/marketing/marketing-header";
 
-import { SITE_URL } from "@/lib/site";
+import { OG_IMAGE, SITE_URL, TWITTER_IMAGE } from "@/lib/site";
 
 const BELLA_NAPOLI_AGENT_ID =
   process.env.NEXT_PUBLIC_BELLA_NAPOLI_AGENT_ID?.trim() ||
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     canonical: "/demo-pizza",
   },
   openGraph: {
+    images: [OG_IMAGE],
     title: "Démo vocale LIGNE — Pizzeria Bella Napoli",
     description:
       "Parlez avec LIGNE : démo réaliste de prise de commande pizza (emporter / livraison).",
@@ -30,6 +31,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
   },
   twitter: {
+    images: [TWITTER_IMAGE],
     card: "summary_large_image",
     title: "Démo vocale LIGNE — Pizzeria Bella Napoli",
     description: "Essayez le réceptionniste IA pizzeria en temps réel.",
