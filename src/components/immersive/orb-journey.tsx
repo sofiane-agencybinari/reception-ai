@@ -76,7 +76,8 @@ export function OrbJourney() {
         const t = f - i;
         const isMobile = window.matchMedia("(max-width: 1023px)").matches;
         const to = poseFor(STEPS[i], isMobile);
-        const from = i === 0 ? { x: 0.5, y: 0.62, s: 0.25 } : poseFor(STEPS[i - 1], isMobile);
+        // Sur téléphone, l'orbe est déjà en place à l'arrivée : pas d'écran sombre vide.
+        const from = i === 0 ? (isMobile ? to : { x: 0.5, y: 0.62, s: 0.25 }) : poseFor(STEPS[i - 1], isMobile);
         // Sur téléphone : trajets plus courts, le contenu arrive plus tôt (moins d'écrans « vides »).
         const travel = isMobile ? TRAVEL * 0.6 : TRAVEL;
         const e = smooth(0, travel, t);
@@ -88,7 +89,7 @@ export function OrbJourney() {
           s: from.s + (to.s - from.s) * e,
           energy: STEPS[i].kind === "chapter" ? 1 : 0.6,
         };
-        const arrived = t > travel * 0.8;
+        const arrived = (isMobile && i === 0) || t > travel * 0.8;
         setView((v) => (v.step === i && v.arrived === arrived ? v : { step: i, arrived }));
       };
 
@@ -97,7 +98,7 @@ export function OrbJourney() {
         return;
       }
       const state = { p: 0 };
-      const perStep = window.matchMedia("(max-width: 1023px)").matches ? 50 : 70;
+      const perStep = window.matchMedia("(max-width: 1023px)").matches ? 38 : 70;
       gsap.to(state, {
         p: 1,
         ease: "none",

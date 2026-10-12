@@ -206,14 +206,16 @@ export function Compare() {
             : sc.pose;
         const to = fit(SCENES[i]);
         const from = fit(SCENES[Math.max(0, i - 1)]);
-        const e = smooth(0, TRAVEL, t);
+        // Téléphone : trajets plus courts, le contenu s'affiche plus tôt (pas d'écran d'étoiles vide).
+        const travel = isMobile ? TRAVEL * 0.5 : TRAVEL;
+        const e = smooth(0, travel, t);
         pose.current = {
           x: from.x + (to.x - from.x) * e,
           y: from.y + (to.y - from.y) * e - Math.sin(Math.PI * e) * (Math.abs(to.x - from.x) > 0.2 ? 0.08 : 0),
           s: from.s + (to.s - from.s) * e,
           mode: to.mode,
         };
-        const arrived = t > TRAVEL * 0.8;
+        const arrived = (isMobile && i === 0) || t > travel * 0.8;
         setView((v) => (v.scene === i && v.arrived === arrived ? v : { scene: i, arrived }));
       };
 
@@ -226,7 +228,7 @@ export function Compare() {
         p: 1,
         ease: "none",
         onUpdate: () => apply(state.p),
-        scrollTrigger: { trigger: root.current, start: "top top", end: `+=${SCENES.length * 75}%`, pin: true, scrub: 0.6 },
+        scrollTrigger: { trigger: root.current, start: "top top", end: `+=${SCENES.length * (window.matchMedia("(max-width: 1023px)").matches ? 50 : 75)}%`, pin: true, scrub: 0.6 },
       });
       apply(0);
     },

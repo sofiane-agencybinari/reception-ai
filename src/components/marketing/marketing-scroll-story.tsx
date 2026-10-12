@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import {
   AnimatePresence,
@@ -24,6 +24,27 @@ import { KitchenImmersive } from "@/components/marketing/kitchen-immersive";
  */
 
 const easeOut = [0.23, 1, 0.32, 1] as const;
+
+/** Interpolation linéaire par morceaux (bornée), pour choisir la courbe mobile ou desktop à chaque image. */
+function lerpRange(v: number, input: number[], output: number[]) {
+  if (v <= input[0]) return output[0];
+  for (let i = 1; i < input.length; i++) {
+    if (v <= input[i]) {
+      const t = (v - input[i - 1]) / (input[i] - input[i - 1] || 1);
+      return output[i - 1] + (output[i] - output[i - 1]) * t;
+    }
+  }
+  return output[output.length - 1];
+}
+
+// Téléphone : l'iPhone pivote peu (on ne voit jamais son dos en plein écran) et reste plus petit,
+// pour laisser la place aux légendes en bas de l'écran.
+const ROT_Y_IN = [0.06, 0.14, 0.22, 0.3, 0.38, 0.45, 0.5, 0.56];
+const ROT_Y_DESKTOP = [25, -50, -140, -230, -310, -360, -360, -360];
+const ROT_Y_MOBILE = [12, -14, 10, -12, 8, 0, 0, 0];
+const SCALE_IN = [0, 0.07, 0.095, 0.165, 0.2, 0.45, 0.5, 0.54, 0.58];
+const SCALE_DESKTOP = [0.85, 0.95, 0.78, 0.78, 1, 1, 1.2, 2.1, 3.4];
+const SCALE_MOBILE = [0.72, 0.8, 0.66, 0.66, 0.74, 0.74, 1, 2, 3.4];
 
 type TitlePart = { t: string; italic?: boolean; caps?: boolean };
 
@@ -162,10 +183,21 @@ export function MarketingScrollStory() {
   // en fin de récit, ex. le fond pierre qui revient en « brouillard » sur le dashboard).
   const scrollYProgress = useTransform(rawProgress, (v) => v);
 
-  const phoneRotateY = useTransform(
-    scrollYProgress,
-    [0.06, 0.14, 0.22, 0.3, 0.38, 0.45, 0.5, 0.56],
-    [25, -50, -140, -230, -310, -360, -360, -360],
+  const mobileRef = useRef(false);
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 1023px)");
+    const sync = () => {
+      mobileRef.current = mq.matches;
+      setMobile(mq.matches);
+    };
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
+
+  const phoneRotateY = useTransform(scrollYProgress, (v) =>
+    lerpRange(v, ROT_Y_IN, mobileRef.current ? ROT_Y_MOBILE : ROT_Y_DESKTOP),
   );
   const phoneRotateX = useTransform(
     scrollYProgress,
@@ -173,10 +205,8 @@ export function MarketingScrollStory() {
     [18, 8, 12, 3, 0, 0],
   );
 
-  const phoneScale = useTransform(
-    scrollYProgress,
-    [0, 0.07, 0.095, 0.165, 0.2, 0.45, 0.5, 0.54, 0.58],
-    [0.85, 0.95, 0.78, 0.78, 1, 1, 1.2, 2.1, 3.4],
+  const phoneScale = useTransform(scrollYProgress, (v) =>
+    lerpRange(v, SCALE_IN, mobileRef.current ? SCALE_MOBILE : SCALE_DESKTOP),
   );
   const phoneBlur = useTransform(scrollYProgress, [0.5, 0.56], [0, 10]);
   const phoneOpacity = useTransform(scrollYProgress, [0.5, 0.54, 0.585], [1, 0.7, 0]);
@@ -198,8 +228,9 @@ export function MarketingScrollStory() {
   const immersionScale = useTransform(scrollYProgress, [0.49, 0.585], [0.94, 1]);
   const immersionTransform = useMotionTemplate`scale(${immersionScale})`;
 
-  const kitchenOpacity = useTransform(scrollYProgress, [0.52, 0.56, 0.7, 0.75], [0, 1, 1, 0]);
-  const dashOpacity = useTransform(scrollYProgress, [0.7, 0.75], [0, 1]);
+  // Enchaînement sans superposition : la cuisine s'efface avant que le tableau de bord apparaisse.
+  const kitchenOpacity = useTransform(scrollYProgress, [0.52, 0.56, 0.7, 0.722], [0, 1, 1, 0]);
+  const dashOpacity = useTransform(scrollYProgress, [0.728, 0.75], [0, 1]);
 
   const stoneFade = useTransform(scrollYProgress, [0.49, 0.6], [1, 0]);
   const blackWash = useTransform(scrollYProgress, [0.5, 0.62], [0, 1]);
@@ -214,13 +245,15 @@ export function MarketingScrollStory() {
   // « Propulsé par l'IA » : lueur sur les bords de l'écran quand Ligne décroche,
   // forte pendant la réponse puis discrète tant que Ligne est en communication.
   const aiGlow = useTransform(scrollYProgress, [0.075, 0.095, 0.165, 0.2, 0.44, 0.49], [0, 1, 1, 0.3, 0.3, 0]);
-  const phoneDrop = useTransform(scrollYProgress, [0.07, 0.095, 0.165, 0.2], ["0%", "12%", "12%", "0%"]);
+  // Sur téléphone, l'iPhone remonte pendant les étapes pour ne pas passer sous les légendes.
+  const phoneDrop = useTransform(scrollYProgress, (v) =>
+    `${lerpRange(v, [0.07, 0.095, 0.165, 0.2, 0.45, 0.5], mobileRef.current ? [0, 8, 8, -9, -9, 0] : [0, 12, 12, 0, 0, 0])}%`,
+  );
   const [aiTitle, setAiTitle] = useState(false);
   useMotionValueEvent(scrollYProgress, "change", (p) => setAiTitle(p > 0.088 && p < 0.172));
-  const phoneShiftX = useTransform(
-    scrollYProgress,
-    [0, 0.07, 0.095, 0.165, 0.2, 0.45, 0.52],
-    ["12%", "14%", "0%", "0%", "14%", "10%", "0%"],
+  // Décalage à droite réservé au desktop (texte à gauche) ; centré sur téléphone.
+  const phoneShiftX = useTransform(scrollYProgress, (v) =>
+    mobileRef.current ? "0%" : `${lerpRange(v, [0, 0.07, 0.095, 0.165, 0.2, 0.45, 0.52], [12, 14, 0, 0, 14, 10, 0])}%`,
   );
 
   const ringsTransform = useMotionTemplate`rotateX(72deg) rotateZ(${ringsRotateY}deg)`;
@@ -243,7 +276,7 @@ export function MarketingScrollStory() {
       className="relative -mt-[25svh] bg-transparent"
       aria-label="Parcours produit LIGNE"
     >
-      <div className="h-[1200vh]">
+      <div className={mobile ? "h-[820vh]" : "h-[1200vh]"}>
         <div
           className="sticky top-0 h-[100svh]"
           style={{ overflow: "clip", transformStyle: "preserve-3d" }}
