@@ -173,15 +173,26 @@ export function MarketingHeader({ ready = true }: Props) {
             <span className="sm:hidden">Tester</span>
             <span className="hidden sm:inline">Tester Ligne</span>
           </a>
-          <button
-            type="button"
-            onClick={() => subscribe.open("pro")}
-            className={`marketing-btn h-9 rounded-full px-4 text-[12px] font-medium transition-colors duration-300 ${
-              !light ? "bg-[#1a1816] text-[#f2efe8] hover:bg-[#5c2a36]" : "bg-[#f2efe8] text-[#1a1816] hover:bg-white"
-            }`}
-          >
-            S’abonner
-          </button>
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => subscribe.open("pro")}
+              className={`marketing-btn h-9 rounded-full px-4 text-[12px] font-medium transition-colors duration-300 ${
+                !light ? "bg-[#1a1816] text-[#f2efe8] hover:bg-[#5c2a36]" : "bg-[#f2efe8] text-[#1a1816] hover:bg-white"
+              }`}
+            >
+              S’abonner
+            </button>
+            {/* Petit onglet sous « S'abonner » : formulaire de contact pour les questions. */}
+            <Link
+              href="/contact"
+              className={`absolute left-1/2 top-full mt-1 -translate-x-1/2 whitespace-nowrap font-serif text-[10.5px] italic tracking-[0.02em] transition ${
+                !light ? "text-[#5c574f] hover:text-[#1a1816]" : "text-[#f2efe8]/60 hover:text-[#f2efe8]"
+              }`}
+            >
+              Nous contacter
+            </Link>
+          </div>
         </div>
       </div>
     </motion.header>

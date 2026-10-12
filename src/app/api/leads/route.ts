@@ -90,7 +90,7 @@ async function postWebhook(lead: LeadPayload): Promise<boolean> {
 
 async function sendResendEmail(lead: LeadPayload): Promise<boolean> {
   const apiKey = process.env.RESEND_API_KEY?.trim();
-  const to = process.env.CONTACT_EMAIL?.trim() || "contact@agencybinari.com";
+  const to = process.env.CONTACT_EMAIL?.trim() || "Ligne.AI@outlook.com";
   if (!apiKey) return false;
 
   const from = process.env.RESEND_FROM_EMAIL?.trim() || "LIGNE Leads <onboarding@resend.dev>";
@@ -211,7 +211,7 @@ export async function POST(req: NextRequest) {
     // Client can offer mailto if nothing was delivered remotely
     mailtoHint: delivered
       ? undefined
-      : `mailto:contact@agencybinari.com?subject=${encodeURIComponent(`Essai LIGNE — ${lead.restaurantName}`)}&body=${encodeURIComponent(
+      : `mailto:Ligne.AI@outlook.com?subject=${encodeURIComponent(`Essai LIGNE — ${lead.restaurantName}`)}&body=${encodeURIComponent(
           `Restaurant: ${lead.restaurantName}\nVille: ${lead.city}\nCuisine: ${lead.cuisineType}\nTél: ${lead.phone}\nEmail: ${lead.email}\n${lead.message ? `Message: ${lead.message}` : ""}`,
         )}`,
   });

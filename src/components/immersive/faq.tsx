@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
@@ -32,9 +34,9 @@ export function Faq() {
             text={
               <>
                 Une autre question ?{" "}
-                <a href="mailto:contact@agencybinari.com" className="text-[#f2efe8] underline underline-offset-4">
+                <Link href="/contact" className="text-[#f2efe8] underline underline-offset-4">
                   Écrivez-nous
-                </a>
+                </Link>
                 .
               </>
             }

@@ -36,17 +36,18 @@ const PATH = [
   { x: 0.78, y: 0.6, s: 0.95 },
 ];
 
-/** Téléphone : 4 positions, une par capacité du chapitre (l'orbe ne bouge qu'à chaque nouvelle étape). */
-const MOBILE_PATH = [
-  { x: 0.3, y: 0.25, s: 0.62 },
-  { x: 0.7, y: 0.22, s: 0.56 },
-  { x: 0.32, y: 0.28, s: 0.58 },
-  { x: 0.68, y: 0.25, s: 0.62 },
+/**
+ * Téléphone : une seule position par chapitre (Téléphone, Opérations, Pilotage).
+ * L'orbe reste immobile pendant les 4 étapes d'un chapitre et ne se déplace qu'au changement de chapitre.
+ */
+const MOBILE_CHAPTER_POSE = [
+  { x: 0.3, y: 0.24, s: 0.6 },
+  { x: 0.7, y: 0.24, s: 0.6 },
+  { x: 0.5, y: 0.22, s: 0.6 },
 ];
 
 function poseFor(step: Step, mobile: boolean): Omit<OrbPose, "energy"> {
-  // Sur téléphone, l'écran de chapitre garde l'orbe à la position de sa première capacité.
-  if (mobile) return MOBILE_PATH[step.kind === "chapter" ? 0 : step.index % MOBILE_PATH.length];
+  if (mobile) return MOBILE_CHAPTER_POSE[step.chapter % MOBILE_CHAPTER_POSE.length];
   if (step.kind === "chapter") return { x: 0.5, y: 0.5, s: 2.7 };
   const base = PATH[step.index % PATH.length];
   // Chaque domaine emprunte un trajet différent : direct, miroir horizontal, miroir vertical.

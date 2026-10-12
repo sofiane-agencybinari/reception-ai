@@ -24,14 +24,14 @@ const COLUMNS = [
   {
     title: "Contact",
     links: [
-      { href: "mailto:contact@agencybinari.com?subject=Support%20Ligne", label: "Support" },
-      { href: "mailto:contact@agencybinari.com?subject=Partenariat%20Ligne", label: "Partenariat" },
+      { href: "mailto:Ligne.AI@outlook.com?subject=Support%20Ligne", label: "Support" },
+      { href: "mailto:Ligne.AI@outlook.com?subject=Partenariat%20Ligne", label: "Partenariat" },
     ],
   },
   {
     title: "Légal",
     links: [
-      { href: "mailto:contact@agencybinari.com?subject=Mentions%20legales", label: "Mentions légales" },
+      { href: "mailto:Ligne.AI@outlook.com?subject=Mentions%20legales", label: "Mentions légales" },
     ],
   },
 ] as const;

@@ -10,7 +10,7 @@ export const LEGAL_LINKS = [
   { href: "/cookies", label: "Cookies" },
 ] as const;
 
-export const CONTACT_EMAIL = "contact@agencybinari.com";
+export const CONTACT_EMAIL = "Ligne.AI@outlook.com";
 
 /** Champ à compléter par l'éditeur : volontairement très visible tant qu'il n'est pas rempli. */
 export function ToFill({ children }: { children: ReactNode }) {

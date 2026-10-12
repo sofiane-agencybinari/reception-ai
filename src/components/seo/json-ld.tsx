@@ -10,7 +10,7 @@ const organization = {
   logo: `${SITE_URL}/ligne-icon.png`,
   description:
     "Réceptionniste téléphonique IA pour restaurants : prise de commandes, réservations et suivi des appels 24h/24.",
-  email: "contact@agencybinari.com",
+  email: "Ligne.AI@outlook.com",
   areaServed: {
     "@type": "Country",
     name: "France",

@@ -121,7 +121,7 @@ const LINKS = [
   ["/demo-pizza", "Démo vocale"],
   ["/pour-les-restaurants", "Pour les restaurants"],
   ["/login", "Connexion"],
-  ["mailto:contact@agencybinari.com", "Contact"],
+  ["/contact", "Contact"],
 ] as const;
 
 export function LuxeFooter() {

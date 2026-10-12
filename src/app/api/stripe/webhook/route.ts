@@ -17,7 +17,7 @@ async function upsertSubscription(row: Record<string, unknown>) {
 async function notify(subject: string, lines: (string | null | undefined)[]) {
   const apiKey = process.env.RESEND_API_KEY?.trim();
   if (!apiKey) return;
-  const to = process.env.CONTACT_EMAIL?.trim() || "contact@agencybinari.com";
+  const to = process.env.CONTACT_EMAIL?.trim() || "Ligne.AI@outlook.com";
   const from = process.env.RESEND_FROM_EMAIL?.trim() || "LIGNE <onboarding@resend.dev>";
   await fetch("https://api.resend.com/emails", {
     method: "POST",

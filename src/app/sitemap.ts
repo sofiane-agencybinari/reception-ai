@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     { url: `${SITE_URL}/guides`, lastModified, changeFrequency: "weekly" as const, priority: 0.7 },
+    { url: `${SITE_URL}/contact`, lastModified, changeFrequency: "yearly" as const, priority: 0.5 },
     ...getGuides().map((g) => ({
       url: `${SITE_URL}/guides/${g.slug}`,
       lastModified: new Date(g.updated ?? g.published),
