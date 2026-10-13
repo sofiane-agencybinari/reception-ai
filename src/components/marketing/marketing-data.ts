@@ -117,7 +117,7 @@ export const FEATURE_GROUPS: FeatureGroup[] = [
       {
         icon: RefreshCw,
         title: "Lien caisse",
-        text: "HubRise, Zelty et connecteurs sur demande pour sync menu et stocks.",
+        text: "Compatible avec la plupart des logiciels de caisse, sur étude de votre installation.",
       },
       {
         icon: MessageSquare,
@@ -265,10 +265,9 @@ export const COMPARISON = [
 ] as const;
 
 export const INTEGRATIONS = [
-  "HubRise",
   "Twilio",
   "ElevenLabs",
   "Supabase",
-  "Zelty",
+  "Stripe",
   "Export CSV",
 ] as const;
