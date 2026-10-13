@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 
 import { sendOrderSummarySms } from "@/lib/notifications";
 import { getSupabaseAdminClient } from "@/lib/supabase";
+import { estimateReadyAt } from "@/lib/wait-time";
 import { webhookOrderSchema } from "@/lib/validators";
 import { isWebhookAuthorized } from "@/lib/webhook-auth";
 
@@ -204,6 +205,13 @@ export async function POST(request: Request) {
   const { pickupTime, noteFragment } = normalizePickupTime(payload.pickupTime);
   const notes = [payload.notes?.trim(), noteFragment].filter(Boolean).join(" | ") || null;
 
+  // Calculé avant d'enregistrer la commande : on compte celles qui la précèdent en cuisine.
+  const { readyAt: estimatedReadyAt, waitMinutes, openOrders } = await estimateReadyAt(
+    supabase,
+    payload.restaurantId,
+    pickupTime,
+  );
+
   const { data: order, error: orderError } = await supabase
     .from("orders")
     .insert({
@@ -249,8 +257,6 @@ export async function POST(request: Request) {
     success: true,
   });
 
-  const prepMinutes = Number(process.env.ORDER_PREP_MINUTES ?? "20");
-  const estimatedReadyAt = new Date(Date.now() + prepMinutes * 60 * 1000);
   const sms = await sendOrderSummarySms({
     orderId: order.id,
     customerPhone: payload.customerPhone,
@@ -268,6 +274,8 @@ export async function POST(request: Request) {
       orderId: order.id,
       orderNumber: `SB-${order.id.slice(0, 8).toUpperCase()}`,
       estimatedReadyAt: estimatedReadyAt.toISOString(),
+      waitMinutes,
+      ordersAhead: openOrders,
       sms,
     },
     { status: 201 },
