@@ -85,12 +85,18 @@ Il y a deux cas.
 **Cas A — sans connexion à la caisse (le plus simple, fonctionne tout de suite).**
 Les commandes arrivent sur l'écran cuisine. L'équipe les prépare directement, puis les encaisse dans sa caisse au moment du retrait, comme une commande prise au comptoir. C'est le fonctionnement de la plupart des restaurants qui démarrent.
 
-**Cas B — avec connexion à la caisse (sur demande, à construire).**
-⚠️ **Aucune connexion à une caisse n'est encore programmée dans Ligne.** C'est à construire au premier client qui en a besoin. Démarche :
-1. Notez **la marque exacte de la caisse** (étape 0).
-2. Regardez si elle est compatible **HubRise** (hubrise.com, liste des applications connectées). HubRise est un service qui relie de nombreuses caisses et plateformes de restauration. Si c'est le cas, Claude programme l'envoi des commandes Ligne vers HubRise, qui les transmet à la caisse. Il faut un compte HubRise au nom du restaurateur (payant chez HubRise).
-3. Sinon, Claude vérifie si l'éditeur de la caisse propose une API (une porte d'entrée pour les logiciels). Certains éditeurs demandent une demande de partenariat ; d'autres n'en ont pas.
-4. Comptez quelques jours de développement et de tests. **Ne promettez pas de date avant la réponse de Claude sur la faisabilité.** En attendant, démarrez en cas A.
+**Cas B — avec connexion à la caisse via HubRise (prêt, à tester avec le premier client).**
+Ligne sait se brancher à HubRise, un service qui relie de nombreux logiciels de caisse (liste : hubrise.com/fr/apps).
+- **Les commandes téléphoniques partent en caisse** : la caisse les reçoit comme les autres et imprime le ticket cuisine.
+- **Le temps d'attente annoncé tient compte des autres commandes en cours** (comptoir, web…) que la caisse transmet à HubRise. Certaines caisses n'envoient à HubRise que les commandes en ligne : à vérifier sur la fiche de la caisse chez HubRise.
+- Si HubRise ne répond pas, la commande est quand même prise et affichée sur l'écran cuisine.
+
+Mise en place :
+1. Vérifiez que **la caisse du restaurant figure sur hubrise.com/fr/apps**. Sinon, demandez à Claude d'étudier l'API de l'éditeur de la caisse, et démarrez en cas A.
+2. Le restaurateur crée son compte HubRise (ou utilise le sien) et y connecte sa caisse en suivant la fiche de sa caisse chez HubRise. HubRise est payant pour le restaurateur selon son offre : vérifiez le tarif avec lui.
+3. **Une seule fois pour Ligne** : dans votre back-office HubRise → **Developer** → **Create an OAuth 2.0 client**, puis mettez `HUBRISE_CLIENT_ID` et `HUBRISE_CLIENT_SECRET` dans `.env.local`. Exécutez aussi `supabase/hubrise.sql` dans Supabase.
+4. Avec le restaurateur : `node scripts/connect-hubrise.mjs <restaurant_id>` → ouvrez le lien affiché, il se connecte à **son** compte HubRise et choisit son point de vente → HubRise affiche un code → `node scripts/connect-hubrise.mjs <restaurant_id> <code>`.
+5. Test : passez une commande à l'agent. Elle doit apparaître dans la caisse et le ticket doit sortir en cuisine.
 
 ## Étape 7 bis — Imprimer les tickets en cuisine
 
@@ -100,7 +106,7 @@ Les commandes arrivent sur l'écran cuisine. L'équipe les prépare directement,
 |---|---|---|---|
 | **1. Impression depuis l'écran cuisine** | Chaque nouvelle commande s'imprime toute seule depuis la tablette ou le PC de la cuisine | Une imprimante ticket (80 mm) reliée à ce PC ou à cette tablette | Le plus rapide à mettre en place (quelques heures). L'écran cuisine doit rester ouvert. Sur tablette, l'impression automatique dépend du modèle d'imprimante : à tester avant de promettre. |
 | **2. Imprimante ticket « cloud »** | L'imprimante va chercher elle-même les nouvelles commandes sur Internet, sans ordinateur | Imprimante compatible impression cloud (par exemple les gammes Star « CloudPRNT » ou Epson « Server Direct Print »), branchée en Wi-Fi ou Ethernet | Le plus fiable au quotidien : pas d'écran à laisser ouvert. Il faut acheter le bon modèle (environ 300 à 450 € selon le modèle ; vérifiez la compatibilité avant l'achat). |
-| **3. Par la caisse** | Les commandes Ligne entrent dans la caisse, qui imprime les tickets comme pour une commande au comptoir | Celui que le restaurant a déjà | Idéal si la caisse le permet (voir étape 7, cas B) : la commande est aussi encaissée dans le bon outil. Dépend de la marque de la caisse ; c'est la plus longue à construire. |
+| **3. Par la caisse** | Les commandes Ligne entrent dans la caisse, qui imprime les tickets comme pour une commande au comptoir | Celui que le restaurant a déjà | **Prêt via HubRise** (étape 7, cas B) si la caisse y est reliée : aucun développement en plus, la commande est aussi encaissée dans le bon outil. |
 
 **Comment choisir avec le restaurateur :**
 - Il a déjà une imprimante cuisine branchée à sa caisse : regardez d'abord la **solution 3**. Si sa caisse n'est pas compatible, la **solution 2**.

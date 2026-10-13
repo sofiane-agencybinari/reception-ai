@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+import { getHubriseConnection, pushOrderToHubrise } from "@/lib/hubrise";
 import { sendOrderSummarySms } from "@/lib/notifications";
 import { getSupabaseAdminClient } from "@/lib/supabase";
 import { estimateReadyAt } from "@/lib/wait-time";
@@ -248,6 +249,24 @@ export async function POST(request: Request) {
       { error: "Commande creee mais items invalides", details: itemsError.message },
       { status: 500 },
     );
+  }
+
+  // Envoi en caisse (ticket cuisine) si le restaurant est relié à HubRise ; n'empêche jamais la commande.
+  const hubrise = await getHubriseConnection(supabase, payload.restaurantId);
+  if (hubrise) {
+    try {
+      const hubriseOrderId = await pushOrderToHubrise(hubrise, {
+        orderId: order.id,
+        items: payload.items,
+        customerName: payload.customerName,
+        customerPhone: payload.customerPhone,
+        notes,
+        readyAt: estimatedReadyAt,
+      });
+      await supabase.from("orders").update({ hubrise_order_id: hubriseOrderId }).eq("id", order.id);
+    } catch (err) {
+      console.error("[from-call] envoi HubRise échoué", order.id, err);
+    }
   }
 
   await supabase.from("call_logs").insert({
