@@ -16,6 +16,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { loadProjectEnv } from "./load-env.mjs";
+import { ensurePronunciationDictionary, SPOKEN_STYLE_PROMPT } from "./pronunciation-fr.mjs";
 
 loadProjectEnv();
 
@@ -43,6 +44,8 @@ Tu es la réceptionniste téléphonique du restaurant « Le Comptoir », un assi
 - Pas de listes lues à voix haute, pas de symboles, pas de markdown. Les prix se disent « neuf euros cinquante ».
 - Si le client hésite, aide-le avec une ou deux propositions concrètes, pas la carte entière.
 - Reste calme et poli en toutes circonstances.
+
+${SPOKEN_STYLE_PROMPT}
 
 # Déroulé d’un appel (toujours dans cet ordre, une seule question à la fois)
 L’accueil est déjà fait par le premier message : ne redis jamais « bonjour ». Si le client donne plusieurs informations d’un coup (« un Bacon BBQ à point avec un Coca »), note tout et saute les étapes déjà répondues. Pour chaque plat, va au bout des étapes 3 à 5 avant de passer au suivant.
@@ -157,6 +160,8 @@ async function api(method, path, body) {
   return data;
 }
 
+const pronunciation = await ensurePronunciationDictionary(apiKey);
+
 const conversationConfig = {
   agent: {
     language: "fr",
@@ -188,6 +193,7 @@ const conversationConfig = {
     stability: 0.6,
     similarity_boost: 0.8,
     optimize_streaming_latency: 4,
+    pronunciation_dictionary_locators: [pronunciation],
   },
   conversation: {
     max_duration_seconds: MAX_CALL_SECONDS,
