@@ -1,4 +1,5 @@
 import { getAppUrl } from "@/lib/app-url";
+import { customerInfoUrl } from "@/lib/customer-link";
 import { parseTwilioApiError } from "@/lib/twilio";
 
 type SmsOrderItem = {
@@ -42,7 +43,10 @@ function buildMessage(input: SmsOrderSummaryInput): string {
 
   const restaurantName = process.env.RESTAURANT_NAME ?? "votre restaurant";
 
-  return `Bonjour ${customer}, votre commande ${orderNumber} est confirmee chez ${restaurantName}. Pret vers ${formatEta(input.estimatedReadyAt)}. Detail: ${itemsLabel}. Merci !`;
+  const infoUrl = customerInfoUrl(input.orderId);
+  const infoLine = infoUrl ? ` Vos infos et nos offres : ${infoUrl}` : "";
+
+  return `Bonjour ${customer}, votre commande ${orderNumber} est confirmee chez ${restaurantName}. Pret vers ${formatEta(input.estimatedReadyAt)}. Detail: ${itemsLabel}. Merci !${infoLine}`;
 }
 
 function canSendSms(phone: string): boolean {

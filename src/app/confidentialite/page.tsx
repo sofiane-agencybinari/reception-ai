@@ -45,6 +45,12 @@ export default function ConfidentialitePage() {
           <strong>Clients du service</strong> (restaurants abonnés) : données de compte, menus, commandes reçues par téléphone et
           numéros des clients finaux nécessaires à l’envoi des SMS de confirmation. Finalité : exécution du contrat d’abonnement.
         </p>
+        <p>
+          <strong>Fiche client complétée après une commande</strong> (lien du SMS de confirmation) : prénom, nom, e-mail, date
+          d’anniversaire et accord pour recevoir des offres, tous facultatifs. Ligne les traite pour le compte du restaurant
+          concerné, qui est seul à les utiliser. Finalités : reconnaître le client à ses prochaines commandes (intérêt légitime) et
+          lui envoyer des offres uniquement s’il a coché la case prévue (consentement, retirable à tout moment).
+        </p>
       </LegalSection>
 
       <LegalSection title="Durées de conservation">
