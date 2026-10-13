@@ -3,11 +3,7 @@
 import { ReactNode, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import {
-  clearRestaurantSession,
-  readRestaurantSession,
-  type RestaurantSession,
-} from "@/lib/auth-accounts";
+import { fetchRestaurantSession, type RestaurantSession } from "@/lib/auth-accounts";
 import { RestaurantProvider } from "@/lib/restaurant-context";
 
 export function AuthGuard({ children }: { children: ReactNode }) {
@@ -15,13 +11,10 @@ export function AuthGuard({ children }: { children: ReactNode }) {
   const [session, setSession] = useState<RestaurantSession | null>(null);
 
   useEffect(() => {
-    const current = readRestaurantSession();
-    if (!current) {
-      clearRestaurantSession();
-      router.replace("/login");
-      return;
-    }
-    setSession(current);
+    fetchRestaurantSession().then((current) => {
+      if (current) setSession(current);
+      else router.replace("/login");
+    });
   }, [router]);
 
   if (!session) {

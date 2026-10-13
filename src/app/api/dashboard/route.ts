@@ -1,8 +1,12 @@
 import { NextResponse } from "next/server";
 
+import { requireRestaurant } from "@/lib/server-auth";
 import { getSupabaseAdminClient } from "@/lib/supabase";
 
-export async function GET(request: Request) {
+export async function GET() {
+  const auth = await requireRestaurant();
+  if ("error" in auth) return auth.error;
+
   const supabase = getSupabaseAdminClient();
   if (!supabase) {
     return NextResponse.json(
@@ -11,8 +15,7 @@ export async function GET(request: Request) {
     );
   }
 
-  const { searchParams } = new URL(request.url);
-  const restaurantId = searchParams.get("restaurantId");
+  const restaurantId = auth.restaurantId;
   if (!restaurantId) {
     return NextResponse.json(
       { error: "restaurantId est obligatoire" },

@@ -7,7 +7,7 @@ import { LogOut } from "lucide-react";
 
 import { AstorLogo } from "@/components/astor-logo";
 
-import { clearRestaurantSession } from "@/lib/auth-accounts";
+import { signOut } from "@/lib/auth-accounts";
 import { useRestaurant } from "@/lib/restaurant-context";
 
 type AppShellProps = {
@@ -29,8 +29,8 @@ export function AppShell({ title, subtitle, children }: AppShellProps) {
   const router = useRouter();
   const restaurant = useRestaurant();
 
-  function logout() {
-    clearRestaurantSession();
+  async function logout() {
+    await signOut();
     router.push("/login");
   }
 

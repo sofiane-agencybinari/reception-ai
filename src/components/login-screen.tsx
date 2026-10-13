@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 import { AstorLogo } from "@/components/astor-logo";
-import { findAccount, toSession, writeRestaurantSession } from "@/lib/auth-accounts";
+import { signIn } from "@/lib/auth-accounts";
 
 export function LoginScreen() {
   const router = useRouter();
@@ -13,16 +13,17 @@ export function LoginScreen() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
 
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+  const [pending, setPending] = useState(false);
 
-    const account = findAccount(identifier, password);
-    if (!account) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setPending(true);
+    const ok = await signIn(identifier, password);
+    setPending(false);
+    if (!ok) {
       setError("Identifiant ou mot de passe incorrect.");
       return;
     }
-
-    writeRestaurantSession(toSession(account));
     router.push("/portal");
   }
 
@@ -75,8 +76,8 @@ export function LoginScreen() {
                 className="cockpit-input mt-1 w-full px-3 py-2.5 text-sm"
               />
             </div>
-            <button type="submit" className="cockpit-btn-primary w-full px-4 py-2.5 text-sm">
-              Acceder au cockpit
+            <button type="submit" disabled={pending} className="cockpit-btn-primary w-full px-4 py-2.5 text-sm disabled:opacity-60">
+              {pending ? "Connexion…" : "Acceder au cockpit"}
             </button>
           </form>
           {error ? <p className="mt-3 text-sm text-rose-400">{error}</p> : null}

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+import { requireRestaurant } from "@/lib/server-auth";
 import { getSupabaseAdminClient } from "@/lib/supabase";
 import { updateOrderStatusSchema } from "@/lib/validators";
 
@@ -7,6 +8,9 @@ export async function PATCH(
   request: Request,
   { params }: { params: Promise<{ id: string }> },
 ) {
+  const auth = await requireRestaurant();
+  if ("error" in auth) return auth.error;
+
   const supabase = getSupabaseAdminClient();
   if (!supabase) {
     return NextResponse.json(
@@ -28,7 +32,8 @@ export async function PATCH(
   const { error } = await supabase
     .from("orders")
     .update({ status: parsed.data.status })
-    .eq("id", routeParams.id);
+    .eq("id", routeParams.id)
+    .eq("restaurant_id", auth.restaurantId);
 
   if (error) {
     return NextResponse.json(

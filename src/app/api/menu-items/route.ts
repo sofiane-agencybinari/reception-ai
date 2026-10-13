@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+import { requireRestaurant } from "@/lib/server-auth";
 import { getSupabaseAdminClient } from "@/lib/supabase";
 import { menuItemSchema } from "@/lib/validators";
 
@@ -38,6 +39,9 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const auth = await requireRestaurant();
+  if ("error" in auth) return auth.error;
+
   const supabase = getSupabaseAdminClient();
   if (!supabase) {
     return NextResponse.json(
@@ -59,7 +63,7 @@ export async function POST(request: Request) {
   const { data, error } = await supabase
     .from("menu_items")
     .insert({
-      restaurant_id: payload.restaurantId,
+      restaurant_id: auth.restaurantId,
       name: payload.name,
       price: payload.price,
       is_available: payload.isAvailable,

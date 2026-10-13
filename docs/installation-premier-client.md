@@ -4,11 +4,11 @@ Tutoriel pas à pas. **Pour chaque étape technique, ouvrez une session Claude C
 
 ---
 
-## ⚠️ Avant le tout premier client : sécuriser l'accès aux données
+## Sécurité des comptes restaurants (en place depuis le 13/10/2026)
 
-Aujourd'hui, la connexion à l'écran cuisine et au tableau de bord se vérifie **dans le navigateur**. Les identifiants sont inclus dans le code du site, et le compte par défaut est `manager` / `1234`. Les pages qui renvoient les commandes et les clients (`/api/orders`, `/api/customers`…) répondent **sans vérifier qui demande**. Pour la démo, ce n'est pas grave. Mais avec un vrai client, les noms et numéros de téléphone de ses clients seraient lisibles par n'importe qui connaissant l'identifiant du restaurant. Le RGPD l'interdit.
+La connexion à l'écran cuisine et au tableau de bord est vérifiée par le serveur : session dans un cookie signé et protégé. Chaque restaurant ne voit que ses propres commandes et clients. Les mots de passe ne sont plus visibles dans le code du site.
 
-**À faire avant la mise en service : demandez à Claude « sécurise la connexion des restaurants ».** Connexion vérifiée côté serveur, un mot de passe par restaurant, et des pages de données réservées au restaurant connecté.
+**Une fois, avant le premier client :** dans Vercel, ajoutez `SESSION_SECRET` (une longue suite de caractères au hasard) et `RESTAURANT_ACCOUNTS` (voir étape 5), puis redéployez. Les anciens comptes (`manager` / `1234`, `elbahja` / `bahja1234`) cessent alors de fonctionner.
 
 ## Étape 0 — Ce qu'il faut récupérer chez le restaurateur (pendant le rendez-vous)
 
@@ -59,7 +59,14 @@ Les clients du restaurant continuent d'appeler **le même numéro**.
 
 ## Étape 5 — L'écran cuisine
 
-1. Claude crée le compte de connexion du restaurant (identifiant et mot de passe). Sur la tablette ou l'ordinateur de la cuisine, ouvrez **ligne-ai.com/kitchen** et connectez-vous.
+1. Créez le compte de connexion du restaurant :
+   - choisissez un mot de passe d'au moins 10 caractères, puis calculez son empreinte : `node scripts/hash-password.mjs "le-mot-de-passe"` ;
+   - ajoutez le restaurant à la variable Vercel `RESTAURANT_ACCOUNTS` (une liste au format JSON) puis redéployez :
+     ```
+     [{"loginId":"nom-du-resto","password":"scrypt:…empreinte…","restaurantId":"…","name":"Nom du restaurant","agentId":"agent_…"}]
+     ```
+   - donnez l'identifiant et le mot de passe au restaurateur, jamais l'empreinte.
+   Ensuite, sur la tablette ou l'ordinateur de la cuisine, ouvrez **ligne-ai.com/kitchen** et connectez-vous. La session reste ouverte 30 jours.
 2. Ajoutez la page à l'écran d'accueil, avec la luminosité au maximum et la mise en veille désactivée.
 3. Montrez le parcours d'une commande : **Nouvelle → Acceptée → En préparation → Prête → Récupérée**.
 
