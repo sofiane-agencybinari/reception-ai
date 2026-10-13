@@ -23,7 +23,7 @@ Ne mettez **que le nom réel de la marque**. Écrire « Ligne – Standard tél�
 
 La catégorie principale pèse le plus lourd dans le classement. Tapez les débuts de mots dans le champ, Google propose ses intitulés exacts.
 
-## 3. Description (750 caractères maximum, ici 735)
+## 3. Description (750 caractères maximum, ici 731)
 
 ```
 Ligne est le standard téléphonique IA des restaurants, snacks, pizzerias, kebabs et fast-foods. Il décroche chaque appel en moins de deux secondes, 24h/24, prend la commande à la voix comme un équipier (options, sauces, suppléments, emporter ou livraison), l'envoie directement sur l'écran cuisine et confirme au client par SMS. Plusieurs appels sont pris en même temps : plus aucun client ne tombe sur une ligne occupée au rush. Vous gardez votre numéro, l'installation se fait en 24 heures et l'abonnement est sans engagement, à partir de 49 € par mois. Un tableau de bord suit les appels et les ventes. Essayez la démo vocale en direct sur ligne-ai.com : appelez et commandez comme un client. Conçu par AOS, à Neuilly-sur-Seine.
