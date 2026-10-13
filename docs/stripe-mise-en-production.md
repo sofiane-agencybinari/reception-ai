@@ -70,8 +70,23 @@ Dans **Paramètres → E-mails clients**, activez : factures payées, paiements 
    - la facture porte bien la mention TVA.
 3. Remboursez-vous et annulez l'abonnement test : Stripe → le paiement → **Rembourser**, puis l'abonnement → **Annuler**.
 
+## Étape 5 — Facturation automatique des minutes d'appel (10 min, une seule fois)
+
+À la fin de chaque appel, ElevenLabs envoie la durée à Ligne, qui la déclare à Stripe sur le compte du restaurant. La minute entamée est due. Les minutes s'ajoutent à la facture mensuelle.
+
+1. **Base de données** : Supabase → **SQL Editor** → collez le contenu de `supabase/billing.sql` → **Run**.
+2. **Webhook ElevenLabs** : ElevenLabs → **Agents → Settings → Post-call webhook** → créez un webhook vers :
+   ```
+   https://ligne-ai.com/api/webhooks/elevenlabs/post-call
+   ```
+   Type « transcription ». ElevenLabs affiche un **secret** : copiez-le.
+3. **Vercel** : ajoutez `ELEVENLABS_WEBHOOK_SECRET` (la valeur copiée) en Production, puis redéployez.
+4. **Pour chaque nouveau client** : `npm run billing:link -- <restaurant_id> <agent_id> <e-mail du client>` (voir `docs/installation-premier-client.md`, étape 6).
+
+Les appels de la démo du site et ceux d'un restaurant non relié ne sont jamais facturés.
+
 ## Si quelque chose bloque
 
 - **« Le paiement en ligne n'est pas encore activé »** sur le site : la clé n'est pas en Production sur Vercel, ou le site n'a pas été redéployé.
 - **Pas d'e-mail « Nouvel abonné »** : vérifiez `STRIPE_WEBHOOK_SECRET`, puis Stripe → Webhooks → l'endpoint → onglet des tentatives (code 400 = mauvais secret).
-- **Les minutes d'appel ne sont pas encore facturées automatiquement** : la fonction existe (`reportCallMinutes`), mais elle n'est pas encore branchée à la fin des appels. À faire avant le premier client réel. Demandez-le à Claude.
+- **Un appel n'apparaît pas dans la facture** : vérifiez qu'il figure dans la table `billed_calls` (colonne `reported_at` remplie). S'il n'y est pas, le restaurant n'est pas relié (`npm run billing:link`) ou `ELEVENLABS_WEBHOOK_SECRET` est faux (ElevenLabs → Webhooks → historique des envois, code 401).

@@ -1,0 +1,125 @@
+# Installer un nouveau client Ligne, de la signature au premier service
+
+Tutoriel pas à pas. **Pour chaque étape technique, ouvrez une session Claude Code sur ce projet et dites : « On installe [nom du restaurant], on en est à l'étape N ».** Claude fait la configuration avec vous. Comptez environ une demi-journée de travail, réparties sur 24 heures.
+
+---
+
+## ⚠️ Avant le tout premier client : sécuriser l'accès aux données
+
+Aujourd'hui, la connexion à l'écran cuisine et au tableau de bord se vérifie **dans le navigateur**. Les identifiants sont inclus dans le code du site, et le compte par défaut est `manager` / `1234`. Les pages qui renvoient les commandes et les clients (`/api/orders`, `/api/customers`…) répondent **sans vérifier qui demande**. Pour la démo, ce n'est pas grave. Mais avec un vrai client, les noms et numéros de téléphone de ses clients seraient lisibles par n'importe qui connaissant l'identifiant du restaurant. Le RGPD l'interdit.
+
+**À faire avant la mise en service : demandez à Claude « sécurise la connexion des restaurants ».** Connexion vérifiée côté serveur, un mot de passe par restaurant, et des pages de données réservées au restaurant connecté.
+
+## Étape 0 — Ce qu'il faut récupérer chez le restaurateur (pendant le rendez-vous)
+
+| Élément | Pourquoi | Format |
+|---|---|---|
+| **La carte complète** avec les prix | L'agent ne propose que ce qui y figure | PDF, photo nette ou Excel |
+| **Options et suppléments** (tailles, bases, sauces, viandes, prix des suppléments) | C'est là que se jouent les erreurs de commande | À noter avec lui, ligne par ligne |
+| **Allergènes** des plats | L'agent répond aux questions des clients | Liste ou fiche allergènes |
+| **Horaires d'ouverture** et jours de fermeture | L'agent informe les clients en dehors des heures d'ouverture | |
+| **Zones et conditions de livraison** (villes, minimum de commande, frais) | | |
+| **Temps de préparation moyen** au rush | Il est annoncé au client dans le SMS | En minutes |
+| **Numéro de téléphone actuel** et **opérateur** (Orange, Free, SFR, Bouygues, standard Ovh…) | Pour le renvoi d'appel | |
+| **La marque de sa caisse** (et de son logiciel de commande en ligne s'il en a un) | Pour savoir si on peut la relier (étape 7) | Nom exact + photo de l'écran |
+| **Un écran pour la cuisine** | Les commandes s'y affichent | Tablette, ordinateur ou écran existant, avec un navigateur |
+| **Le plan choisi** et son **e-mail** | Paiement et facturation | |
+
+Phrase utile : *« Je configure tout de mon côté. Demain, vous aurez juste à activer le renvoi d'appel. »*
+
+## Étape 1 — Paiement
+
+Le client choisit sa formule sur **ligne-ai.com/#tarifs** et paie par carte. Vous recevez l'e-mail « [LIGNE] Nouvel abonné ».
+Le paiement en ligne n'est pas activé ? Suivez d'abord `docs/stripe-mise-en-production.md`.
+
+## Étape 2 — Créer le restaurant et importer la carte (Claude)
+
+1. Claude crée la fiche du restaurant dans la base (nom, téléphone, adresse) et vous donne son **identifiant** (`restaurant_id`).
+2. Importez la carte : **ligne-ai.com/settings/menu** (produits, prix, disponibilité). Claude peut convertir le PDF ou la photo de la carte en tableau pour aller plus vite.
+3. Vérifiez la carte avec le PDF à télécharger depuis la même page (**Télécharger PDF**).
+
+## Étape 3 — Créer l'agent vocal du restaurant (Claude)
+
+Sur le modèle de Bella Napoli (`scripts/bella-napoli-prompt.mjs` et `scripts/configure-bella-napoli-agent.mjs`), Claude écrit :
+- **le texte d'accueil** (« Bonjour, [restaurant], je vous écoute ! ») ;
+- **les consignes de l'agent** : carte, options, suppléments, allergènes, horaires, livraison, une seule suggestion par appel, récapitulatif avant validation ;
+- **l'outil de commande**, qui envoie chaque commande au restaurant sur l'écran cuisine.
+
+Puis il crée l'agent chez ElevenLabs et vous donne son **identifiant** (`agent_…`).
+
+## Étape 4 — Le numéro de téléphone
+
+Les clients du restaurant continuent d'appeler **le même numéro**.
+1. Claude attribue un numéro à l'agent (numéro Twilio importé dans ElevenLabs, `npm run elevenlabs:import-phone`).
+2. Le restaurateur active **le renvoi d'appel** de sa ligne vers ce numéro. Deux options :
+   - **renvoi permanent** : Ligne répond à tous les appels ;
+   - **renvoi sur non-réponse ou sur occupation** (recommandé pour démarrer) : l'équipe décroche quand elle peut, Ligne prend le relais au rush.
+
+   Le réglage se fait dans l'espace client de son opérateur ou depuis le téléphone. Les codes varient selon l'opérateur : cherchez ensemble « renvoi d'appel [opérateur] » sur le site de l'opérateur.
+
+## Étape 5 — L'écran cuisine
+
+1. Claude crée le compte de connexion du restaurant (identifiant et mot de passe). Sur la tablette ou l'ordinateur de la cuisine, ouvrez **ligne-ai.com/kitchen** et connectez-vous.
+2. Ajoutez la page à l'écran d'accueil, avec la luminosité au maximum et la mise en veille désactivée.
+3. Montrez le parcours d'une commande : **Nouvelle → Acceptée → En préparation → Prête → Récupérée**.
+
+## Étape 6 — Relier la facturation des minutes (une commande)
+
+Pour que les minutes d'appel soient facturées automatiquement chaque mois :
+```
+npm run billing:link -- <restaurant_id> <agent_id> <e-mail du client>
+```
+Le message `✅ … Ses minutes d'appel seront facturées.` confirme que c'est fait.
+
+## Étape 7 — La caisse
+
+Il y a deux cas.
+
+**Cas A — sans connexion à la caisse (le plus simple, fonctionne tout de suite).**
+Les commandes arrivent sur l'écran cuisine. L'équipe les prépare directement, puis les encaisse dans sa caisse au moment du retrait, comme une commande prise au comptoir. C'est le fonctionnement de la plupart des restaurants qui démarrent.
+
+**Cas B — avec connexion à la caisse (sur demande, à construire).**
+⚠️ **Aucune connexion à une caisse n'est encore programmée dans Ligne.** C'est à construire au premier client qui en a besoin. Démarche :
+1. Notez **la marque exacte de la caisse** (étape 0).
+2. Regardez si elle est compatible **HubRise** (hubrise.com, liste des applications connectées). HubRise est un service qui relie de nombreuses caisses et plateformes de restauration. Si c'est le cas, Claude programme l'envoi des commandes Ligne vers HubRise, qui les transmet à la caisse. Il faut un compte HubRise au nom du restaurateur (payant chez HubRise).
+3. Sinon, Claude vérifie si l'éditeur de la caisse propose une API (une porte d'entrée pour les logiciels). Certains éditeurs demandent une demande de partenariat ; d'autres n'en ont pas.
+4. Comptez quelques jours de développement et de tests. **Ne promettez pas de date avant la réponse de Claude sur la faisabilité.** En attendant, démarrez en cas A.
+
+## Étape 7 bis — Imprimer les tickets en cuisine
+
+⚠️ **Aujourd'hui, Ligne n'imprime pas** : les commandes s'affichent uniquement sur l'écran cuisine. Si le restaurateur veut un ticket papier à chaque commande, voici les 3 solutions, de la plus simple à la plus complète. Toutes demandent un développement de la part de Claude, de quelques heures à quelques jours.
+
+| Solution | Comment ça marche | Matériel | Avantages / limites |
+|---|---|---|---|
+| **1. Impression depuis l'écran cuisine** | Chaque nouvelle commande s'imprime toute seule depuis la tablette ou le PC de la cuisine | Une imprimante ticket (80 mm) reliée à ce PC ou à cette tablette | Le plus rapide à mettre en place (quelques heures). L'écran cuisine doit rester ouvert. Sur tablette, l'impression automatique dépend du modèle d'imprimante : à tester avant de promettre. |
+| **2. Imprimante ticket « cloud »** | L'imprimante va chercher elle-même les nouvelles commandes sur Internet, sans ordinateur | Imprimante compatible impression cloud (par exemple les gammes Star « CloudPRNT » ou Epson « Server Direct Print »), branchée en Wi-Fi ou Ethernet | Le plus fiable au quotidien : pas d'écran à laisser ouvert. Il faut acheter le bon modèle (environ 300 à 450 € selon le modèle ; vérifiez la compatibilité avant l'achat). |
+| **3. Par la caisse** | Les commandes Ligne entrent dans la caisse, qui imprime les tickets comme pour une commande au comptoir | Celui que le restaurant a déjà | Idéal si la caisse le permet (voir étape 7, cas B) : la commande est aussi encaissée dans le bon outil. Dépend de la marque de la caisse ; c'est la plus longue à construire. |
+
+**Comment choisir avec le restaurateur :**
+- Il a déjà une imprimante cuisine branchée à sa caisse : regardez d'abord la **solution 3**. Si sa caisse n'est pas compatible, la **solution 2**.
+- Il n'a pas d'imprimante cuisine : la **solution 2** (achat d'une imprimante cloud), ou la **solution 1** s'il a déjà un PC en cuisine.
+- Dans tous les cas, l'écran cuisine marche dès le premier jour pendant qu'on prépare l'impression.
+
+**Ce qu'il faut noter au rendez-vous :** marque et modèle de l'imprimante cuisine existante (étiquette au dos ou en dessous), façon dont elle est branchée (câble USB, réseau, Wi-Fi), et marque de la caisse. Envoyez une photo de l'étiquette à Claude : il dira si elle convient à la solution 1 ou 2.
+
+## Étape 8 — Tests avant la mise en service (30 minutes, avec le restaurateur)
+
+- [ ] Appeler l'ancien numéro du restaurant → c'est l'agent qui répond.
+- [ ] Passer **3 commandes** : une simple, une avec suppléments et modifications, une en livraison.
+- [ ] Chaque commande apparaît sur l'écran cuisine, avec les bons produits et les bons prix.
+- [ ] Le SMS de confirmation arrive sur le portable qui a appelé.
+- [ ] Poser une question sur un allergène et sur les horaires → les réponses sont justes.
+- [ ] Appeler en dehors des horaires → l'agent applique la consigne prévue.
+- [ ] Dans les minutes qui suivent : la ligne de l'appel apparaît dans la table `billed_calls` (Claude vérifie).
+
+## Étape 9 — Le premier service
+
+- Soyez **joignable** pendant le premier service, midi ou soir, et passez si possible.
+- Notez chaque erreur de l'agent : produit mal compris, option oubliée, prix. Claude corrige les consignes le soir même.
+- Plan B si l'agent ne répond plus : le restaurateur désactive le renvoi d'appel et prend les appels comme avant.
+
+## Étape 10 — Le suivi
+
+- **J+2** : appel rapide (« Ça se passe comment au rush ? »).
+- **J+7** : bilan avec le tableau de bord (**ligne-ai.com/dashboard**) : nombre de commandes, panier moyen. Si le client est content, demandez-lui un avis Google (le SMS type est dans `docs/visibilite/fiche-google-business.md`).
+- **Fin du 1er mois** : vérifiez la facture Stripe (abonnement + minutes) avant son envoi.

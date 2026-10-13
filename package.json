@@ -22,6 +22,7 @@
     "elevenlabs:configure-bella-napoli": "node scripts/configure-bella-napoli-agent.mjs",
     "elevenlabs:configure-bella-napoli-webhook": "node scripts/configure-bella-napoli-webhook.mjs",
     "elevenlabs:fix-phone": "node scripts/fix-elevenlabs-phone.mjs",
+    "billing:link": "node scripts/link-restaurant-billing.mjs",
     "diagnose:voice": "node scripts/diagnose-voice-call.mjs"
   },
   "dependencies": {
