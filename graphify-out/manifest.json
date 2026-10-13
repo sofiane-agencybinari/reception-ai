@@ -1,8 +1,8 @@
 {
   ".claude/settings.json": {
-    "mtime": 1791878272.7471678,
-    "seen": 1791878276.5765562,
-    "ast_hash": "3b541b9935fcf0831355da956f897645",
+    "mtime": 1791882745.4309726,
+    "seen": 1791886540.1314676,
+    "ast_hash": "bb915d356c0691f86e523e53932085b5",
     "semantic_hash": ""
   },
   ".cursor/mcp.json": {
@@ -138,15 +138,15 @@
     "semantic_hash": ""
   },
   "scripts/setup-stripe.mjs": {
-    "mtime": 1791821925.0504167,
-    "seen": 1791878276.5765965,
-    "ast_hash": "56055f28c5355146a006e42cfbd248ce",
+    "mtime": 1791886414.688012,
+    "seen": 1791886540.1324615,
+    "ast_hash": "2674905bfc06a8c0722c7ea709b3856c",
     "semantic_hash": ""
   },
   "scripts/sync-vercel-env.sh": {
-    "mtime": 1791821925.0504167,
-    "seen": 1791878276.576598,
-    "ast_hash": "d45150328ee4a93923963770e3d29c96",
+    "mtime": 1791886414.6884365,
+    "seen": 1791886540.1324658,
+    "ast_hash": "bb684e5556c45cbde13710e1faf576a1",
     "semantic_hash": ""
   },
   "scripts/test-sms.mjs": {
@@ -264,9 +264,9 @@
     "semantic_hash": ""
   },
   "src/app/cgv/page.tsx": {
-    "mtime": 1791821925.0538108,
-    "seen": 1791878276.576628,
-    "ast_hash": "b038ca38e3f6e8de456ac17560a3f1c2",
+    "mtime": 1791886451.203627,
+    "seen": 1791886540.1335213,
+    "ast_hash": "3e8c5cbda4740fd1e97cefd8ddb005fe",
     "semantic_hash": ""
   },
   "src/app/clients/page.tsx": {
@@ -276,9 +276,9 @@
     "semantic_hash": ""
   },
   "src/app/confidentialite/page.tsx": {
-    "mtime": 1791821925.0538108,
-    "seen": 1791878276.5766308,
-    "ast_hash": "a6cc9ff3491d0cceffa05d64b7008907",
+    "mtime": 1791886401.979761,
+    "seen": 1791886540.1335764,
+    "ast_hash": "22dc78ce6584e048819920d5f5f85a7c",
     "semantic_hash": ""
   },
   "src/app/contact/contact-form.tsx": {
@@ -354,9 +354,9 @@
     "semantic_hash": ""
   },
   "src/app/mentions-legales/page.tsx": {
-    "mtime": 1791821925.05632,
-    "seen": 1791878276.5766487,
-    "ast_hash": "645ccdcd4bd7964570492665d277e770",
+    "mtime": 1791886391.2758706,
+    "seen": 1791886540.1341949,
+    "ast_hash": "18ced6d4e74992edefc2fb7df1016286",
     "semantic_hash": ""
   },
   "src/app/page.tsx": {
@@ -1014,8 +1014,8 @@
     "semantic_hash": ""
   },
   ".claude/CLAUDE.md": {
-    "mtime": 1791878272.7461236,
-    "seen": 1791878276.5767815,
+    "mtime": 1791882368.1869812,
+    "seen": 1791886540.1394475,
     "ast_hash": "9b31786b637be3c13978bec4c2330752",
     "semantic_hash": ""
   },
@@ -1026,8 +1026,8 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1791878272.7468736,
-    "seen": 1791878276.5767856,
+    "mtime": 1791882368.1911767,
+    "seen": 1791886540.1394885,
     "ast_hash": "b873d7bc07ec4a871e249059c9dad999",
     "semantic_hash": ""
   },
@@ -1275,6 +1275,18 @@
     "mtime": 1791821925.0589442,
     "seen": 1791878276.5768363,
     "ast_hash": "510571cf40a66d79be9f742ab9dc193f",
+    "semantic_hash": ""
+  },
+  "docs/stripe-mise-en-production.md": {
+    "mtime": 1791886527.5469453,
+    "seen": 1791886540.1402361,
+    "ast_hash": "42fe58d9bf7efec3f313dd56649b7252",
+    "semantic_hash": ""
+  },
+  "docs/visibilite/fiche-google-business.md": {
+    "mtime": 1791885652.4310682,
+    "seen": 1791886540.1402812,
+    "ast_hash": "a0de91418d651dd452261723620fcfe5",
     "semantic_hash": ""
   }
 }

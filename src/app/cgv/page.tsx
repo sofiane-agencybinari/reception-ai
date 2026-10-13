@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { PRICING_PLANS } from "@/components/marketing/marketing-data";
-import { CONTACT_EMAIL, LegalPage, LegalSection, ToFill } from "@/components/legal/legal-page";
+import { CONTACT_EMAIL, LegalPage, LegalSection } from "@/components/legal/legal-page";
 
 export const metadata: Metadata = {
   title: "Conditions générales d’abonnement",
@@ -14,7 +14,7 @@ export default function CgvPage() {
   return (
     <LegalPage
       title="Conditions générales d’abonnement"
-      updated="7 octobre 2026"
+      updated="13 octobre 2026"
       intro={
         <p>
           Les présentes conditions régissent l’abonnement au service Ligne, réceptionniste téléphonique par intelligence
@@ -24,7 +24,7 @@ export default function CgvPage() {
     >
       <LegalSection title="1. Parties et objet">
         <p>
-          Le service est fourni par <ToFill>raison sociale</ToFill> (« Ligne ») à tout professionnel de la restauration (« le
+          Le service est fourni par Sofiane Aokache, entrepreneur individuel (EI) exerçant sous le nom commercial AOS, 58 boulevard du Général Leclerc, 92200 Neuilly-sur-Seine, RCS Nanterre 131 338 261 (« Ligne »), à tout professionnel de la restauration (« le
           Client ») ayant souscrit une formule. Il comprend la prise d’appels par un agent vocal, la transmission des commandes en
           cuisine, l’envoi de SMS de confirmation et un tableau de bord, selon la formule choisie.
         </p>
@@ -35,8 +35,7 @@ export default function CgvPage() {
         <ul>
           {PRICING_PLANS.map((p) => (
             <li key={p.id}>
-              {p.name} : {p.price} € par mois, plus {eur(p.perMinute)} € par minute d’appel traitée{" "}
-              <ToFill>préciser HT ou TTC</ToFill>.
+              {p.name} : {p.price} € par mois, plus {eur(p.perMinute)} € par minute d’appel traitée (prix nets, TVA non applicable, article 293 B du CGI).
             </li>
           ))}
         </ul>
@@ -45,7 +44,7 @@ export default function CgvPage() {
 
       <LegalSection title="3. Souscription et mise en service">
         <p>
-          La souscription s’effectue via le formulaire du site puis est confirmée par écrit (e-mail) par Ligne. L’installation
+          La souscription s’effectue par paiement en ligne sécurisé sur le site (Stripe) ou via le formulaire de contact ; elle est confirmée par écrit (e-mail) par Ligne. L’installation
           (import de la carte, configuration de l’agent, branchement téléphonique, écran cuisine) intervient en principe sous 24 h
           ouvrées. L’abonnement démarre à la mise en service.
         </p>
@@ -54,7 +53,7 @@ export default function CgvPage() {
       <LegalSection title="4. Facturation et paiement">
         <p>
           L’abonnement est facturé mensuellement, à terme à échoir ; les minutes d’appel sont facturées à terme échu.
-          Modalités de paiement : <ToFill>prélèvement / carte bancaire / virement</ToFill>. Tout retard de paiement entraîne des
+          Paiement par carte bancaire, prélevé automatiquement chaque mois via la plateforme sécurisée Stripe ; les factures sont transmises par e-mail. Tout retard de paiement entraîne des
           pénalités au taux légal et une indemnité forfaitaire de 40 € pour frais de recouvrement.
         </p>
       </LegalSection>
@@ -97,7 +96,7 @@ export default function CgvPage() {
       <LegalSection title="10. Droit applicable">
         <p>
           Les présentes conditions sont soumises au droit français. À défaut d’accord amiable, tout litige relève des tribunaux
-          compétents de <ToFill>ville du siège</ToFill>.
+          compétents du ressort de Nanterre.
         </p>
       </LegalSection>
     </LegalPage>

@@ -11,7 +11,7 @@ export default function ConfidentialitePage() {
   return (
     <LegalPage
       title="Politique de confidentialité"
-      updated="7 octobre 2026"
+      updated="13 octobre 2026"
       intro={
         <p>
           Cette page explique quelles données Ligne traite, pourquoi, combien de temps et comment exercer vos droits, conformément au
@@ -21,7 +21,7 @@ export default function ConfidentialitePage() {
     >
       <LegalSection title="Responsable du traitement">
         <p>
-          <ToFill>raison sociale et adresse</ToFill>, joignable à <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+          Sofiane Aokache, entrepreneur individuel (EI) exerçant sous le nom commercial AOS, 58 boulevard du Général Leclerc, 92200 Neuilly-sur-Seine (RCS Nanterre 131 338 261), joignable à <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
         </p>
       </LegalSection>
 

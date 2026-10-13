@@ -9,24 +9,24 @@ export const metadata: Metadata = {
 
 export default function MentionsLegalesPage() {
   return (
-    <LegalPage title="Mentions légales" updated="7 octobre 2026">
+    <LegalPage title="Mentions légales" updated="13 octobre 2026">
       <LegalSection title="Éditeur du site">
         <p>
-          Le site et le service Ligne sont édités par <ToFill>raison sociale</ToFill>, <ToFill>forme juridique et capital social</ToFill>,
-          dont le siège social est situé <ToFill>adresse complète</ToFill>.
+          Le site et le service Ligne sont édités par Sofiane Aokache, entrepreneur individuel (EI) exerçant sous le nom commercial
+          AOS, domicilié 58 boulevard du Général Leclerc, 92200 Neuilly-sur-Seine.
         </p>
         <ul>
           <li>
-            Immatriculation : <ToFill>RCS ou RNE + numéro SIREN</ToFill>
+            Immatriculation : RCS Nanterre 131 338 261 (SIREN 131 338 261)
           </li>
           <li>
-            Numéro de TVA intracommunautaire : <ToFill>numéro de TVA</ToFill>
+            TVA non applicable, article 293 B du Code général des impôts
           </li>
           <li>
             Contact : <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
           </li>
           <li>
-            Directeur de la publication : <ToFill>nom et qualité</ToFill>
+            Directeur de la publication : Sofiane Aokache, entrepreneur individuel
           </li>
         </ul>
       </LegalSection>

@@ -102,4 +102,31 @@ for (const plan of PLANS) {
   }
 }
 
-console.log("\nCatalogue prêt. Les formules sont retrouvées par lookup_key côté site.\n");
+console.log("\nCatalogue prêt. Les formules sont retrouvées par lookup_key côté site.");
+
+// 3) Webhook (abonnés, résiliations, paiements échoués) → /api/stripe/webhook
+const SITE = (process.env.NEXT_PUBLIC_APP_URL?.trim() || "https://ligne-ai.com").replace(/\/$/, "");
+const WEBHOOK_URL = `${SITE}/api/stripe/webhook`;
+const WEBHOOK_EVENTS = [
+  "checkout.session.completed",
+  "customer.subscription.updated",
+  "customer.subscription.deleted",
+  "invoice.payment_failed",
+];
+const endpoints = await stripe.webhookEndpoints.list({ limit: 100 });
+const existingHook = endpoints.data.find((e) => e.url === WEBHOOK_URL);
+if (existingHook) {
+  await stripe.webhookEndpoints.update(existingHook.id, { enabled_events: WEBHOOK_EVENTS, disabled: false });
+  console.log(`\n♻️  Webhook existant : ${WEBHOOK_URL}`);
+  console.log("   Son secret (whsec_…) est visible dans Stripe → Développeurs → Webhooks → l'endpoint → Clé secrète de signature.");
+} else {
+  const hook = await stripe.webhookEndpoints.create({
+    url: WEBHOOK_URL,
+    enabled_events: WEBHOOK_EVENTS,
+    description: "Ligne — abonnements",
+  });
+  console.log(`\n✅ Webhook créé : ${WEBHOOK_URL}`);
+  console.log(`   STRIPE_WEBHOOK_SECRET=${hook.secret}`);
+  console.log("   ⚠️  Copiez cette valeur maintenant : Stripe ne la réaffiche qu'en cliquant sur l'endpoint dans le tableau de bord.");
+}
+console.log("\nÀ mettre dans Vercel (Settings → Environment Variables, Production) : STRIPE_SECRET_KEY et STRIPE_WEBHOOK_SECRET, puis redéployer.\n");
