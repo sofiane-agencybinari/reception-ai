@@ -35,7 +35,7 @@ export function AppShell({ title, subtitle, children }: AppShellProps) {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="cockpit min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-40 border-b border-white/5 bg-background/95 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
           <Link href="/portal" className="flex items-center gap-3 transition hover:opacity-90">

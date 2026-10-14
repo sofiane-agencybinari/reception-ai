@@ -941,3 +941,30 @@ h3,
 .lx .lx-title {
   font-family: var(--font-instrument), Georgia, serif;
 }
+
+/* ─── Cockpit restaurant (hub, cuisine, analytics, clients, menu, connexion) ───
+   Thème sombre propre à l'espace restaurant : les composants utilisent du texte clair
+   (text-white, text-zinc-*), le fond papier du site les rendait illisibles. */
+.cockpit {
+  --background: #0e0f11;
+  --foreground: #f2efe8;
+  --astor-accent: #2f7f76;
+  --astor-accent-soft: #6fc2b6;
+  --astor-accent-bright: #8fd9cd;
+  --astor-surface: #16181b;
+  --astor-surface-elevated: #1c1f23;
+  --astor-border: rgba(255, 255, 255, 0.09);
+  --astor-muted: #9a958c;
+  background: var(--background);
+  color: var(--foreground);
+  color-scheme: dark;
+}
+
+.cockpit .glass-card {
+  border-color: var(--astor-border);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02));
+}
+
+.cockpit .cockpit-input::placeholder {
+  color: rgba(242, 239, 232, 0.35);
+}

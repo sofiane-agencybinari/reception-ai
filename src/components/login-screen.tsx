@@ -28,7 +28,7 @@ export function LoginScreen() {
   }
 
   return (
-    <main className="relative flex min-h-screen flex-1 items-center justify-center overflow-hidden bg-background px-6 py-12 text-foreground">
+    <main className="cockpit relative flex min-h-screen flex-1 items-center justify-center overflow-hidden bg-background px-6 py-12 text-foreground">
       <div className="marketing-grid pointer-events-none absolute inset-0 opacity-30" />
       <div className="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[600px] -translate-x-1/2 rounded-full bg-astor-accent/8 blur-[100px]" />
 
