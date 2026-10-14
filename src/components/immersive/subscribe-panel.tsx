@@ -39,10 +39,8 @@ export function SubscribeProvider({ children }: { children: ReactNode }) {
   const [showForm, setShowForm] = useState(false);
 
   const open = useCallback((p?: PlanId | null) => {
-    setPlan(p ?? null);
-    setPayError(null);
-    setShowForm(false);
-    setIsOpen(true);
+    // Le tunnel d'abonnement est désormais une page entière (/abonnement) : plus lisible qu'un panneau latéral.
+    window.location.assign(p ? `/abonnement?plan=${p}` : "/abonnement");
   }, []);
 
   /** Redirige vers la page de paiement Stripe Checkout de la formule. */

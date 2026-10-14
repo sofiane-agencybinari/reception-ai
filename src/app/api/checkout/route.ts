@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
       mode: "subscription",
       line_items: [{ price: monthly.id, quantity: 1 }, { price: minutes.id }],
       success_url: `${base}/abonnement/merci?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${base}/#tarifs`,
+      cancel_url: `${base}/abonnement`,
       locale: "fr",
       allow_promotion_codes: true,
       billing_address_collection: "required",

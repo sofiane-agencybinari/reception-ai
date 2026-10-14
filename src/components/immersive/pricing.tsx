@@ -83,14 +83,14 @@ export function Pricing() {
             >
               {hot ? (
                 <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-[#f2efe8] px-2 py-0.5 font-serif text-[10px] italic text-[var(--lx-cherry)] sm:hidden">
-                  le plus choisi
+                  recommandé
                 </span>
               ) : null}
               <div className="flex items-center justify-between">
                 <h3 className="lx-title lx-caps text-[1rem] sm:text-[1.9rem]">{plan.name}</h3>
                 {hot ? (
                   <span className="hidden rounded-full border border-[#f2efe8]/30 px-3 py-1 font-serif text-[13px] italic sm:inline">
-                    le plus choisi
+                    recommandé
                   </span>
                 ) : null}
               </div>
