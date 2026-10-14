@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, BarChart3, ChefHat, Settings, Users } from "lucide-react";
+import { ArrowUpRight, BarChart3, ChefHat, PhoneCall, Settings, Users } from "lucide-react";
 
 import { AuthGuard } from "@/components/auth-guard";
 import { AppShell } from "@/components/app-shell";
@@ -13,6 +13,13 @@ const MODULES = [
     title: "Cuisine",
     description: "Commandes en direct et gestion des statuts.",
     tag: "Live",
+  },
+  {
+    href: "/calls",
+    icon: PhoneCall,
+    title: "Appels",
+    description: "Résumé, conversation et enregistrement de chaque appel.",
+    tag: "Écoute",
   },
   {
     href: "/dashboard",

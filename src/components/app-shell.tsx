@@ -19,6 +19,7 @@ type AppShellProps = {
 const NAV = [
   { href: "/portal", label: "Hub" },
   { href: "/kitchen", label: "Cuisine" },
+  { href: "/calls", label: "Appels" },
   { href: "/dashboard", label: "Analytics" },
   { href: "/clients", label: "Clients" },
   { href: "/settings/menu", label: "Menu" },
