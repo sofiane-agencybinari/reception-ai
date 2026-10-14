@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import type Stripe from "stripe";
 
+import { brandedHtml, OWNER_EMAIL, sendMail } from "@/lib/mail";
+import { SITE_URL } from "@/lib/site";
 import { getStripe } from "@/lib/stripe";
 import { getSupabaseAdminClient } from "@/lib/supabase";
 
@@ -15,15 +17,36 @@ async function upsertSubscription(row: Record<string, unknown>) {
 }
 
 async function notify(subject: string, lines: (string | null | undefined)[]) {
-  const apiKey = process.env.RESEND_API_KEY?.trim();
-  if (!apiKey) return;
-  const to = process.env.CONTACT_EMAIL?.trim() || "Ligne.AI@outlook.com";
-  const from = process.env.RESEND_FROM_EMAIL?.trim() || "LIGNE <onboarding@resend.dev>";
-  await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from, to: [to], subject, text: lines.filter(Boolean).join("\n") }),
-  }).catch((e) => console.error("[stripe-webhook] resend:", e));
+  await sendMail({ to: OWNER_EMAIL(), subject, text: lines.filter(Boolean).join("\n") });
+}
+
+const PLAN_NAMES: Record<string, string> = { essentiel: "Essentiel", pro: "Pro", business: "Business" };
+
+/** E-mail de bienvenue au nouvel abonné, avec le lien vers son formulaire d'installation. */
+async function welcome(email: string, sessionId: string, plan: string | null, restaurant: string | null) {
+  const url = `${SITE_URL}/installation?session_id=${encodeURIComponent(sessionId)}`;
+  const planName = plan ? PLAN_NAMES[plan] ?? plan : "";
+  await sendMail({
+    to: email,
+    replyTo: OWNER_EMAIL(),
+    subject: "Bienvenue dans l’équipe Ligne",
+    text: [
+      "Bonjour,",
+      `Merci de faire partie de l’équipe Ligne${restaurant ? `, et bienvenue à ${restaurant}` : ""} ! Votre abonnement ${planName} est actif.`,
+      `Dernière étape : remplissez votre formulaire d’installation (5 minutes) : ${url}`,
+      "Dès réception, on configure votre agent sur votre carte et votre téléphone est pris en charge sous 24 h, sans rendez-vous.",
+      "Sofiane, fondateur de Ligne · 06 95 84 64 41",
+    ].join("\n\n"),
+    html: brandedHtml({
+      title: "Merci de faire partie de l’équipe Ligne.",
+      paragraphs: [
+        `Votre abonnement ${planName} est actif${restaurant ? ` pour ${restaurant}` : ""}. À partir de maintenant, plus aucun appel ne sonnera dans le vide.`,
+        "Dernière étape : remplissez votre formulaire d’installation. Ça prend 5 minutes : votre carte, vos horaires et votre numéro.",
+        "Dès réception, on configure votre agent et votre téléphone est pris en charge sous 24 h, entièrement à distance.",
+      ],
+      cta: { label: "Remplir mon formulaire d’installation", url },
+    }),
+  });
 }
 
 /**
@@ -67,8 +90,9 @@ export async function POST(req: NextRequest) {
         `Restaurant : ${restaurant}`,
         `E-mail : ${s.customer_details?.email}`,
         `Téléphone : ${s.customer_details?.phone}`,
-        "À faire : planifier l’installation sous 24 h.",
+        "Le client a reçu l’e-mail de bienvenue avec son formulaire d’installation.",
       ]);
+      if (s.customer_details?.email) await welcome(s.customer_details.email, s.id, plan, restaurant);
       break;
     }
     case "customer.subscription.updated":

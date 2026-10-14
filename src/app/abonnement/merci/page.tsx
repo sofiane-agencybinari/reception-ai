@@ -13,9 +13,9 @@ export const metadata: Metadata = {
 const PLAN_NAMES: Record<string, string> = { essentiel: "Essentiel", pro: "Pro", business: "Business" };
 
 const STEPS = [
-  ["Aujourd’hui", "Vous recevez la confirmation et la facture par e-mail."],
-  ["Sous 24 h", "On vous appelle pour importer votre carte et configurer l’agent sur votre restaurant."],
-  ["Jour 1", "Votre numéro est branché, l’écran cuisine installé : Ligne décroche."],
+  ["Maintenant", "Vous remplissez le formulaire d’installation : carte, horaires, numéro (5 minutes)."],
+  ["Sous 24 h", "On configure votre agent à distance et vous recevez votre numéro Ligne et vos accès."],
+  ["Jour 1", "Vous activez le renvoi d’appel en 2 minutes : Ligne décroche."],
 ] as const;
 
 export default async function MerciPage({ searchParams }: { searchParams: Promise<{ session_id?: string }> }) {
@@ -48,7 +48,7 @@ export default async function MerciPage({ searchParams }: { searchParams: Promis
           {paid ? "Paiement confirmé" : "Merci"}
         </p>
         <h1 className="mt-4 font-sans text-[clamp(2.2rem,5vw,3.4rem)] font-medium leading-[1.02] tracking-[-0.045em]">
-          Bienvenue chez Ligne{plan && PLAN_NAMES[plan] ? <span className="text-[#d9a3b0]"> {PLAN_NAMES[plan]}</span> : null}.
+          Bienvenue dans l’équipe Ligne{plan && PLAN_NAMES[plan] ? <span className="text-[#d9a3b0]"> {PLAN_NAMES[plan]}</span> : null}.
         </h1>
         <p className="mt-5 max-w-lg text-[15px] leading-relaxed text-white/65">
           Votre abonnement est actif{email ? ` — la confirmation part à ${email}` : ""}. On s’occupe de tout pour que votre
@@ -64,6 +64,15 @@ export default async function MerciPage({ searchParams }: { searchParams: Promis
             </li>
           ))}
         </ol>
+
+        {paid && session_id ? (
+          <Link
+            href={`/installation?session_id=${encodeURIComponent(session_id)}`}
+            className="mt-12 inline-flex h-14 items-center rounded-full bg-[#f2efe8] px-7 text-[15px] font-medium text-[#120a0c] transition-colors hover:bg-white"
+          >
+            Remplir mon formulaire d’installation →
+          </Link>
+        ) : null}
 
         <p className="mt-14 text-[14px] text-white/55">
           Une question ? <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#f2efe8] underline underline-offset-4">{CONTACT_EMAIL}</a>
