@@ -163,7 +163,7 @@ export function SubscribePage() {
         </ol>
       </header>
 
-      <main className="mx-auto max-w-6xl px-5 pb-28 sm:px-10">
+      <main className="mx-auto max-w-6xl px-5 pb-36 sm:px-10 sm:pb-28">
         {/* Accroche */}
         <motion.section
           initial={{ opacity: 0, y: 24 }}
@@ -385,6 +385,19 @@ export function SubscribePage() {
           </div>
         </section>
       </main>
+
+      {/* Sur téléphone, l'offre choisie et le paiement restent toujours à portée de pouce. */}
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-[#1a1816]/10 bg-[#f3f0ed]/95 px-4 py-3 backdrop-blur sm:hidden">
+        <button
+          type="button"
+          onClick={pay}
+          disabled={paying}
+          className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#5c2a36] text-[15px] font-medium text-[#f2efe8] disabled:opacity-70"
+        >
+          {paying ? <Loader2 className="h-4 w-4 animate-spin" /> : <Lock className="h-4 w-4" />}
+          Activer {selected.name} · {selected.price} € / mois
+        </button>
+      </div>
     </div>
   );
 }
