@@ -17,10 +17,10 @@ const NEXT_STATUS: Record<OrderStatus, OrderStatus | null> = {
 
 const STATUS_LABEL: Record<OrderStatus, string> = {
   new: "Nouvelle",
-  accepted: "Acceptee",
-  preparing: "En preparation",
+  accepted: "Acceptée",
+  preparing: "En préparation",
   ready: "Prete",
-  picked_up: "Recuperee",
+  picked_up: "Récupérée",
   cancelled: "Annulee",
 };
 
@@ -165,7 +165,7 @@ export function KitchenBoard() {
           <div className="flex flex-wrap items-center gap-2">
             <KpiBadge label="Nouvelles" value={newOrders.length} tone="accent" pulse={newOrders.length > 0} />
             <KpiBadge label="En cours" value={inProgressOrders.length} tone="blue" />
-            <KpiBadge label="Traitees" value={handledOrders.length} tone="green" />
+            <KpiBadge label="Traitées" value={handledOrders.length} tone="green" />
           </div>
           <p className="text-xs text-zinc-500">
             Sync{" "}
@@ -177,7 +177,7 @@ export function KitchenBoard() {
       </section>
 
       <section className="grid gap-4 lg:grid-cols-3">
-        <OrderColumn title="Nouvelles commandes" subtitle="A traiter en priorite" accent="accent" highlight={newOrders.length > 0}>
+        <OrderColumn title="Nouvelles commandes" subtitle="À traiter en priorité" accent="accent" highlight={newOrders.length > 0}>
           {newOrders.length === 0 ? (
             <EmptyColumnMessage message="Aucune nouvelle commande." />
           ) : (
@@ -197,7 +197,7 @@ export function KitchenBoard() {
           )}
         </OrderColumn>
 
-        <OrderColumn title="Traitees" subtitle="Historique recent" accent="green">
+        <OrderColumn title="Traitées" subtitle="Historique récent" accent="green">
           {handledOrders.length === 0 ? (
             <EmptyColumnMessage message="Aucune commande traitee." />
           ) : (
@@ -326,7 +326,7 @@ function OrderCard({
             Retrait {pickup}
           </span>
         ) : null}
-        <span className={isLate ? "text-rose-400" : ""}>{elapsed} min</span>
+        <span className={isLate ? "text-rose-400" : ""}>{formatElapsed(elapsed)}</span>
       </div>
 
       {!compact ? (
@@ -338,7 +338,7 @@ function OrderCard({
                   {item.quantity}x {item.item_name}
                 </span>
                 <span className="font-mono text-xs text-zinc-500">
-                  {item.line_total.toFixed(2)} EUR
+                  {Number(item.line_total).toLocaleString("fr-FR", { style: "currency", currency: "EUR" })}
                 </span>
               </li>
             ))}
@@ -358,7 +358,7 @@ function OrderCard({
 
       <div className="mt-3 flex items-center justify-between border-t border-white/5 pt-3">
         <p className="text-sm font-bold text-white">
-          {Number(order.total_amount).toFixed(2)} EUR
+          {Number(order.total_amount).toLocaleString("fr-FR", { style: "currency", currency: "EUR" })}
         </p>
         {nextStatus ? (
           <button
@@ -372,4 +372,11 @@ function OrderCard({
       </div>
     </article>
   );
+}
+
+/** « 12 min », « 2 h 05 », « 3 j » : lisible même pour une commande ancienne. */
+function formatElapsed(minutes: number) {
+  if (minutes < 60) return `${minutes} min`;
+  if (minutes < 24 * 60) return `${Math.floor(minutes / 60)} h ${String(minutes % 60).padStart(2, "0")}`;
+  return `${Math.floor(minutes / 1440)} j`;
 }

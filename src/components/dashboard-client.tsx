@@ -12,6 +12,20 @@ import {
 } from "@/lib/exports";
 import type { DashboardMetrics, Order } from "@/lib/types";
 
+const eur = (value: number) =>
+  Number(value).toLocaleString("fr-FR", { style: "currency", currency: "EUR" });
+
+const STATUS: Record<string, { label: string; className: string }> = {
+  new: { label: "Nouvelle", className: "bg-sky-500/15 text-sky-300" },
+  accepted: { label: "Acceptée", className: "bg-indigo-500/15 text-indigo-300" },
+  preparing: { label: "En préparation", className: "bg-amber-500/15 text-amber-300" },
+  ready: { label: "Prête", className: "bg-emerald-500/15 text-emerald-300" },
+  picked_up: { label: "Récupérée", className: "bg-white/10 text-zinc-300" },
+  cancelled: { label: "Annulée", className: "bg-rose-500/15 text-rose-300" },
+};
+
+const PAGE_SIZE = 20;
+
 const EMPTY_METRICS: DashboardMetrics = {
   totalOrders: 0,
   activeOrders: 0,
@@ -26,6 +40,8 @@ export function DashboardClient() {
   const [orders, setOrders] = useState<Order[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [selectedPeriod, setSelectedPeriod] = useState<"week" | "month" | "year">("month");
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [search, setSearch] = useState("");
   const [selectedFilter, setSelectedFilter] = useState<
     "all" | "active" | "picked_up" | "cancelled"
   >("all");
@@ -59,14 +75,20 @@ export function DashboardClient() {
   }, [loadData]);
 
   const filteredOrders = useMemo(() => {
-    if (selectedFilter === "all") return orders;
-    if (selectedFilter === "active") {
-      return orders.filter((order) =>
-        ["new", "accepted", "preparing", "ready"].includes(order.status),
-      );
-    }
-    return orders.filter((order) => order.status === selectedFilter);
-  }, [orders, selectedFilter]);
+    const byStatus =
+      selectedFilter === "all"
+        ? orders
+        : selectedFilter === "active"
+          ? orders.filter((order) => ["new", "accepted", "preparing", "ready"].includes(order.status))
+          : orders.filter((order) => order.status === selectedFilter);
+    const query = search.trim().toLowerCase().replace(/\s/g, "");
+    if (!query) return byStatus;
+    return byStatus.filter(
+      (order) =>
+        order.customer_phone.replace(/\s/g, "").includes(query) ||
+        (order.customer_name ?? "").toLowerCase().includes(query),
+    );
+  }, [orders, selectedFilter, search]);
 
   const analyticsOrders = useMemo(() => {
     const days = selectedPeriod === "week" ? 7 : selectedPeriod === "month" ? 30 : 365;
@@ -198,16 +220,16 @@ export function DashboardClient() {
               Rapport du jour
             </p>
             <p className="mt-2 text-3xl font-bold text-white">
-              {todayStats.revenue.toFixed(2)} EUR
+              {eur(todayStats.revenue)}
             </p>
             <p className="mt-1 text-sm text-zinc-500">
               {todayStats.orders} commandes · {todayStats.units} produits vendus
             </p>
           </div>
           <div className="text-right">
-            <p className="text-xs uppercase tracking-wider text-zinc-500">CA periode ({periodLabel})</p>
+            <p className="text-xs uppercase tracking-wider text-zinc-500">CA période ({periodLabel})</p>
             <p className="mt-2 text-2xl font-semibold text-astor-accent-soft">
-              {periodRevenue.toFixed(2)} EUR
+              {eur(periodRevenue)}
             </p>
           </div>
         </div>
@@ -243,19 +265,19 @@ export function DashboardClient() {
           onClick={() => setSelectedFilter("active")}
         />
         <MetricCard
-          label="Recuperees"
+          label="Récupérées"
           value={metrics.completedOrders.toString()}
           active={selectedFilter === "picked_up"}
           onClick={() => setSelectedFilter("picked_up")}
         />
         <MetricCard
-          label="Annulees"
+          label="Annulées"
           value={metrics.cancelledOrders.toString()}
           active={selectedFilter === "cancelled"}
           onClick={() => setSelectedFilter("cancelled")}
         />
-        <MetricCard label="Panier moyen" value={`${metrics.avgTicket.toFixed(2)} EUR`} />
-        <MetricCard label={`CA (${periodLabel})`} value={`${periodRevenue.toFixed(2)} EUR`} />
+        <MetricCard label="Panier moyen" value={eur(metrics.avgTicket)} />
+        <MetricCard label={`CA (${periodLabel})`} value={`${eur(periodRevenue)}`} />
       </section>
 
       <section className="rounded-2xl border border-white/8 bg-black/30 p-5 backdrop-blur">
@@ -275,7 +297,7 @@ export function DashboardClient() {
               onClick={() => setSelectedPeriod("month")}
             />
             <PeriodButton
-              label="Annee"
+              label="Année"
               active={selectedPeriod === "year"}
               onClick={() => setSelectedPeriod("year")}
             />
@@ -285,16 +307,16 @@ export function DashboardClient() {
           <article className="glass-card rounded-xl p-4">
             <p className="text-xs uppercase tracking-wide text-zinc-500">Total ({periodLabel})</p>
             <p className="mt-2 text-4xl font-semibold text-white">{totalVolumeForPeriod}</p>
-            <p className="mt-1 text-xs text-zinc-500">Unites produits vendues</p>
+            <p className="mt-1 text-xs text-zinc-500">Unités vendues</p>
           </article>
           <article className="glass-card rounded-xl border-astor-accent/20 p-4">
-            <p className="text-xs uppercase tracking-wide text-zinc-400">Produit le plus commande</p>
+            <p className="text-xs uppercase tracking-wide text-zinc-400">Produit le plus commandé</p>
             <p className="mt-2 text-2xl font-semibold text-astor-accent-bright">
               {featuredProduct?.name ?? "Aucun produit"}
             </p>
             <p className="mt-1 text-sm text-zinc-400">
               {featuredProduct
-                ? `${featuredProduct.quantity} unites | ${featuredProduct.revenue.toFixed(2)} EUR`
+                ? `${featuredProduct.quantity} unités · ${eur(featuredProduct.revenue)}`
                 : "Ajoutez des ventes pour voir les stats"}
             </p>
           </article>
@@ -304,10 +326,10 @@ export function DashboardClient() {
             Volume par jour et par produit ({periodLabel})
           </h3>
           {topProducts.length === 0 ? (
-            <p className="mt-4 text-sm text-zinc-500">Aucune vente enregistree pour le moment.</p>
+            <p className="mt-4 text-sm text-zinc-500">Aucune vente enregistrée pour le moment.</p>
           ) : (
             <>
-              <div className="mt-4 flex h-56 items-end gap-1 overflow-x-auto pb-2">
+              <div className="mt-4 flex h-56 items-stretch gap-1 overflow-x-auto pb-2">
                 {analyticsPoints.map((point) => {
                   const safeTotal = Math.max(point.total, 1);
                   const height = Math.max((point.total / maxDayVolume) * 100, point.total > 0 ? 8 : 2);
@@ -316,7 +338,7 @@ export function DashboardClient() {
                     .join(" | ");
 
                   return (
-                    <div key={point.key} className="group flex min-w-4 flex-1 flex-col items-center justify-end">
+                    <div key={point.key} className="group flex h-full min-w-4 flex-1 flex-col items-center justify-end">
                       <div
                         className="flex w-full flex-col overflow-hidden rounded-sm border border-white/10 bg-black/50"
                         style={{ height: `${height}%` }}
@@ -359,16 +381,16 @@ export function DashboardClient() {
 
       <section className="grid gap-4 lg:grid-cols-2">
         <article className="glass-card rounded-xl p-5">
-          <h2 className="text-lg font-semibold text-white">Top produits commandes ({periodLabel})</h2>
+          <h2 className="text-lg font-semibold text-white">Top produits ({periodLabel})</h2>
           <div className="mt-4 space-y-3">
             {topProducts.length === 0 ? (
-              <p className="text-sm text-zinc-500">Aucune vente enregistree pour la periode.</p>
+              <p className="text-sm text-zinc-500">Aucune vente enregistrée sur la période.</p>
             ) : (
               topProducts.map((product) => (
                 <div key={product.name}>
                   <div className="mb-1 flex items-center justify-between text-sm">
                     <span className="font-medium text-zinc-200">{product.name}</span>
-                    <span className="text-zinc-500">{product.quantity} ventes</span>
+                    <span className="text-zinc-500">{product.quantity} vendus · {eur(product.revenue)}</span>
                   </div>
                 </div>
               ))
@@ -381,16 +403,26 @@ export function DashboardClient() {
         <h2 className="text-lg font-semibold text-white">
           Historique des commandes ({filteredOrders.length})
         </h2>
-        <p className="mt-1 text-sm text-zinc-500">
-          Filtre actif:{" "}
+        <input
+          type="search"
+          value={search}
+          onChange={(event) => {
+            setSearch(event.target.value);
+            setVisibleCount(PAGE_SIZE);
+          }}
+          placeholder="Rechercher un téléphone ou un prénom"
+          className="cockpit-input mt-3 w-full max-w-sm px-3 py-2 text-sm"
+        />
+        <p className="mt-2 text-sm text-zinc-500">
+          Filtre actif :{" "}
           <span className="font-medium text-zinc-300">
             {selectedFilter === "all"
               ? "Toutes"
               : selectedFilter === "active"
                 ? "Actives"
                 : selectedFilter === "picked_up"
-                  ? "Recuperees"
-                  : "Annulees"}
+                  ? "Récupérées"
+                  : "Annulées"}
           </span>
         </p>
         <div className="mt-4 overflow-x-auto">
@@ -398,29 +430,48 @@ export function DashboardClient() {
             <thead className="border-b border-white/10 text-zinc-500">
               <tr>
                 <th className="px-2 py-2 font-medium">Commande</th>
-                <th className="px-2 py-2 font-medium">Telephone</th>
+                <th className="px-2 py-2 font-medium">Client</th>
                 <th className="px-2 py-2 font-medium">Statut</th>
                 <th className="px-2 py-2 font-medium">Produits</th>
                 <th className="px-2 py-2 font-medium">Total</th>
               </tr>
             </thead>
             <tbody>
-              {filteredOrders.map((order) => (
+              {filteredOrders.slice(0, visibleCount).map((order) => (
                 <tr key={order.id} className="border-b border-white/5">
-                  <td className="px-2 py-2">{order.id.slice(0, 8)}</td>
-                  <td className="px-2 py-2">{order.customer_phone}</td>
-                  <td className="px-2 py-2">{order.status}</td>
+                  <td className="px-2 py-2 whitespace-nowrap">
+                    <span className="font-mono text-xs text-zinc-500">#{order.id.slice(0, 6).toUpperCase()}</span>
+                    <span className="block text-xs text-zinc-500">
+                      {new Date(order.created_at).toLocaleString("fr-FR", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}
+                    </span>
+                  </td>
+                  <td className="px-2 py-2">
+                    <span className="block text-zinc-200">{order.customer_name?.trim() || "Client"}</span>
+                    <span className="block text-xs text-zinc-500">{order.customer_phone}</span>
+                  </td>
+                  <td className="px-2 py-2">
+                    <span className={`whitespace-nowrap rounded-full px-2 py-0.5 text-xs font-medium ${STATUS[order.status]?.className ?? "bg-white/10 text-zinc-300"}`}>
+                      {STATUS[order.status]?.label ?? order.status}
+                    </span>
+                  </td>
                   <td className="px-2 py-2">
                     {order.order_items.map((item) => `${item.quantity}x ${item.item_name}`).join(", ")}
                   </td>
-                  <td className="px-2 py-2">
-                    {Number(order.total_amount).toFixed(2)} EUR
-                  </td>
+                  <td className="px-2 py-2 whitespace-nowrap">{eur(order.total_amount)}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+        {filteredOrders.length > visibleCount ? (
+          <button
+            type="button"
+            onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
+            className="cockpit-btn-ghost mt-4 px-4 py-2 text-xs"
+          >
+            Voir plus ({filteredOrders.length - visibleCount} restantes)
+          </button>
+        ) : null}
       </section>
     </div>
   );

@@ -75,7 +75,7 @@ export function AppShell({ title, subtitle, children }: AppShellProps) {
             className="cockpit-btn-ghost flex items-center gap-1.5 px-3 py-1.5 text-xs"
           >
             <LogOut className="h-3.5 w-3.5" />
-            <span className="hidden sm:inline">Deconnexion</span>
+            <span className="hidden sm:inline">Déconnexion</span>
           </button>
         </div>
         <nav className="flex gap-1 overflow-x-auto border-t border-white/5 px-6 py-2 sm:hidden">

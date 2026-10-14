@@ -25,7 +25,7 @@ const MODULES = [
     href: "/clients",
     icon: Users,
     title: "Clients",
-    description: "Historique, fidelite et export CSV.",
+    description: "Historique, fidélité et export CSV.",
     tag: "CRM",
   },
   {

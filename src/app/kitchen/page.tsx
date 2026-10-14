@@ -6,8 +6,8 @@ export default function KitchenPage() {
   return (
     <AuthGuard>
       <AppShell
-        title="Ecran cuisine"
-        subtitle="Commandes en temps reel — validez, preparez, marquez pret."
+        title="Écran cuisine"
+        subtitle="Commandes en temps réel — validez, préparez, marquez prêt."
       >
         <KitchenBoard />
       </AppShell>

@@ -6,8 +6,8 @@ export default function MenuSettingsPage() {
   return (
     <AuthGuard>
       <AppShell
-        title="Parametres menu"
-        subtitle="Carte, prix et disponibilite des produits pour l'agent vocal."
+        title="Paramètres menu"
+        subtitle="Carte, prix et disponibilité des produits pour l'agent vocal."
       >
         <MenuSettings />
       </AppShell>

@@ -7,7 +7,7 @@ export default function ClientsPage() {
     <AuthGuard>
       <AppShell
         title="Suivi clients"
-        subtitle="Historique par telephone, fidelisation et export CSV."
+        subtitle="Historique par téléphone, fidelisation et export CSV."
       >
         <ClientsTracker />
       </AppShell>
