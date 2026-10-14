@@ -203,6 +203,26 @@ export async function POST(request: Request) {
     0,
   );
 
+  // Produits mis en rupture depuis l'espace restaurant : l'agent reçoit le refus et propose autre chose.
+  const { data: soldOut } = await supabase
+    .from("menu_items")
+    .select("name")
+    .eq("restaurant_id", payload.restaurantId)
+    .eq("is_available", false);
+  const soldOutNames = new Set((soldOut ?? []).map((m) => m.name.trim().toLowerCase()));
+  const unavailable = payload.items.filter((item) => soldOutNames.has(item.name.trim().toLowerCase()));
+  if (unavailable.length > 0) {
+    const names = unavailable.map((item) => item.name).join(", ");
+    return NextResponse.json(
+      {
+        error: "produit_en_rupture",
+        unavailable: unavailable.map((item) => item.name),
+        message: `${names} n'est plus disponible pour le moment. Excusez-vous, proposez un autre produit, puis renvoyez la commande sans ce produit.`,
+      },
+      { status: 409 },
+    );
+  }
+
   const { pickupTime, noteFragment } = normalizePickupTime(payload.pickupTime);
   const notes = [payload.notes?.trim(), noteFragment].filter(Boolean).join(" | ") || null;
 

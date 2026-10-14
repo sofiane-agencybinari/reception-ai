@@ -21,10 +21,14 @@ type Metrics = {
   avgTicket: number;
 };
 
+/** Prix de l'offre Essentiel : repère simple pour montrer que l'abonnement est rentabilisé. */
+const BASE_PLAN_PRICE = 49;
+
 export function PortalOverview() {
   const { restaurantId } = useRestaurant();
   const [metrics, setMetrics] = useState<Metrics | null>(null);
   const [todayRevenue, setTodayRevenue] = useState(0);
+  const [ligne, setLigne] = useState({ todayOrders: 0, monthOrders: 0, monthRevenue: 0 });
   const [callLogs, setCallLogs] = useState<CallLog[]>([]);
 
   const load = useCallback(async () => {
@@ -55,6 +59,22 @@ export function PortalOverview() {
       ),
     );
 
+    const monthStart = new Date();
+    monthStart.setDate(1);
+    monthStart.setHours(0, 0, 0, 0);
+    const monthOrders = (ordersData.orders ?? []).filter(
+      (o: { created_at: string; status: string }) =>
+        new Date(o.created_at) >= monthStart && o.status !== "cancelled",
+    );
+    setLigne({
+      todayOrders: todayOrders.length,
+      monthOrders: monthOrders.length,
+      monthRevenue: monthOrders.reduce(
+        (sum: number, o: { total_amount: number }) => sum + Number(o.total_amount),
+        0,
+      ),
+    });
+
     if (logsRes.ok) {
       setCallLogs(logsData.callLogs ?? []);
     }
@@ -66,8 +86,32 @@ export function PortalOverview() {
     return () => clearInterval(interval);
   }, [load]);
 
+  const eur = (value: number) => value.toLocaleString("fr-FR", { style: "currency", currency: "EUR" });
+  const paidBack = Math.floor(ligne.monthRevenue / BASE_PLAN_PRICE);
+
   return (
     <div className="space-y-6">
+      <section className="glass-card rounded-2xl border-astor-accent/30 p-5">
+        <p className="text-xs font-semibold uppercase tracking-wider text-astor-accent-soft">
+          Ce que Ligne vous a rapporté ce mois-ci
+        </p>
+        <div className="mt-3 flex flex-wrap items-end gap-x-10 gap-y-3">
+          <div>
+            <p className="text-4xl font-bold text-white">{eur(ligne.monthRevenue)}</p>
+            <p className="mt-1 text-sm text-zinc-400">de commandes prises au téléphone par Ligne</p>
+          </div>
+          <div>
+            <p className="text-2xl font-semibold text-white">{ligne.monthOrders}</p>
+            <p className="mt-1 text-sm text-zinc-400">commandes ce mois · {ligne.todayOrders} aujourd&apos;hui</p>
+          </div>
+        </div>
+        {paidBack >= 1 ? (
+          <p className="mt-4 inline-block rounded-full bg-emerald-500/15 px-3 py-1 text-sm font-medium text-emerald-300">
+            Soit {paidBack} fois le prix de l&apos;abonnement de base ({BASE_PLAN_PRICE} €)
+          </p>
+        ) : null}
+      </section>
+
       <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <StatTile
           icon={ShoppingBag}
@@ -78,19 +122,19 @@ export function PortalOverview() {
         <StatTile
           icon={TrendingUp}
           label="CA aujourd'hui"
-          value={`${todayRevenue.toFixed(2)} EUR`}
-          hint="Commandes validees"
+          value={eur(todayRevenue)}
+          hint="Commandes validées"
         />
         <StatTile
           icon={Phone}
-          label="Total appels"
+          label="Commandes Ligne"
           value={metrics?.totalOrders?.toString() ?? "—"}
           hint="Depuis le lancement"
         />
         <StatTile
           icon={Clock}
           label="Panier moyen"
-          value={metrics ? `${metrics.avgTicket.toFixed(2)} EUR` : "—"}
+          value={metrics ? eur(metrics.avgTicket) : "—"}
           hint="Par commande"
         />
       </section>
@@ -98,7 +142,7 @@ export function PortalOverview() {
       {callLogs.length > 0 ? (
         <section className="glass-card rounded-2xl p-5">
           <h2 className="text-sm font-semibold uppercase tracking-wider text-zinc-400">
-            Activite recente
+            Activité récente
           </h2>
           <ul className="mt-4 space-y-2">
             {callLogs.map((log) => (
@@ -109,7 +153,7 @@ export function PortalOverview() {
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-astor-accent-soft" />
                 <div className="min-w-0 flex-1">
                   <p className="text-zinc-300">
-                    {log.transcript?.slice(0, 120) ?? "Appel traite — commande enregistree"}
+                    {log.transcript?.slice(0, 120) ?? "Appel traité — commande enregistrée"}
                     {log.transcript && log.transcript.length > 120 ? "…" : ""}
                   </p>
                   <p className="mt-1 text-xs text-zinc-500">

@@ -49,6 +49,20 @@ export function MenuSettings() {
     return () => clearTimeout(firstLoad);
   }, [loadMenu]);
 
+  async function toggleAvailability(item: MenuItem) {
+    const next = !item.is_available;
+    setMenuItems((items) => items.map((i) => (i.id === item.id ? { ...i, is_available: next } : i)));
+    const res = await fetch(`/api/menu-items/${item.id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ isAvailable: next }),
+    });
+    if (!res.ok) {
+      setMenuItems((items) => items.map((i) => (i.id === item.id ? { ...i, is_available: !next } : i)));
+      setError("Impossible de modifier la disponibilité. Réessayez.");
+    }
+  }
+
   const sortedMenuItems = useMemo(
     () =>
       [...menuItems].sort((a, b) =>
@@ -232,8 +246,22 @@ export function MenuSettings() {
                           <span className={item.is_available ? "text-zinc-200" : "text-zinc-500 line-through"}>
                             {item.name}
                           </span>
-                          <span className="font-mono text-sm text-astor-accent-soft/90">
-                            {formatMenuPrice(Number(item.price))}
+                          <span className="flex items-center gap-3">
+                            <span className="font-mono text-sm text-astor-accent-soft/90">
+                              {formatMenuPrice(Number(item.price))}
+                            </span>
+                            <button
+                              type="button"
+                              onClick={() => void toggleAvailability(item)}
+                              className={`rounded-full px-2.5 py-1 text-[11px] font-medium transition ${
+                                item.is_available
+                                  ? "bg-emerald-500/15 text-emerald-300 hover:bg-emerald-500/25"
+                                  : "bg-rose-500/20 text-rose-300 hover:bg-rose-500/30"
+                              }`}
+                              title={item.is_available ? "Mettre en rupture" : "Remettre en vente"}
+                            >
+                              {item.is_available ? "Disponible" : "En rupture"}
+                            </button>
                           </span>
                         </li>
                       ))

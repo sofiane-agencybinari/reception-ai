@@ -1,7 +1,7 @@
 "use client";
 
 import { type ReactNode, useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Bell, Clock, Phone, User } from "lucide-react";
+import { Bell, Clock, Maximize2, Phone, User, Volume2, VolumeX } from "lucide-react";
 
 import { useRestaurant } from "@/lib/restaurant-context";
 import type { Order, OrderStatus } from "@/lib/types";
@@ -19,26 +19,40 @@ const STATUS_LABEL: Record<OrderStatus, string> = {
   new: "Nouvelle",
   accepted: "Acceptée",
   preparing: "En préparation",
-  ready: "Prete",
+  ready: "Prête",
   picked_up: "Récupérée",
-  cancelled: "Annulee",
+  cancelled: "Annulée",
 };
 
-function playNewOrderChime() {
+// Le navigateur n'autorise le son qu'après un clic : le bouton « Activer le son » débloque ce contexte audio.
+let audioCtx: AudioContext | null = null;
+
+function unlockAudio() {
   try {
-    const ctx = new AudioContext();
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-    osc.frequency.value = 880;
-    gain.gain.setValueAtTime(0.15, ctx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.35);
-    osc.start(ctx.currentTime);
-    osc.stop(ctx.currentTime + 0.35);
+    audioCtx ??= new AudioContext();
+    void audioCtx.resume();
+    return true;
   } catch {
-    // Audio non disponible
+    return false;
   }
+}
+
+/** Trois bips nets, audibles dans une cuisine. */
+function playNewOrderChime() {
+  if (!audioCtx) return;
+  const start = audioCtx.currentTime;
+  [0, 0.25, 0.5].forEach((offset, index) => {
+    const osc = audioCtx!.createOscillator();
+    const gain = audioCtx!.createGain();
+    osc.type = "square";
+    osc.frequency.value = index === 2 ? 1175 : 880;
+    osc.connect(gain);
+    gain.connect(audioCtx!.destination);
+    gain.gain.setValueAtTime(0.25, start + offset);
+    gain.gain.exponentialRampToValueAtTime(0.01, start + offset + 0.2);
+    osc.start(start + offset);
+    osc.stop(start + offset + 0.2);
+  });
 }
 
 function formatPickupTime(pickupTime: string | null) {
@@ -55,6 +69,42 @@ export function KitchenBoard() {
   const [error, setError] = useState<string | null>(null);
   const [lastUpdatedAt, setLastUpdatedAt] = useState<Date | null>(null);
   const prevNewCountRef = useRef(0);
+  const [soundOn, setSoundOn] = useState(false);
+
+  function toggleSound() {
+    if (soundOn) {
+      setSoundOn(false);
+      return;
+    }
+    if (unlockAudio()) {
+      setSoundOn(true);
+      playNewOrderChime();
+    }
+  }
+
+  function toggleFullscreen() {
+    if (document.fullscreenElement) void document.exitFullscreen();
+    else void document.documentElement.requestFullscreen?.();
+  }
+
+  const controls = (
+    <div className="flex flex-wrap gap-2">
+      <button
+        type="button"
+        onClick={toggleSound}
+        className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-medium transition ${
+          soundOn ? "bg-emerald-500/15 text-emerald-300" : "bg-amber-500/20 text-amber-200 animate-pulse"
+        }`}
+      >
+        {soundOn ? <Volume2 className="h-3.5 w-3.5" /> : <VolumeX className="h-3.5 w-3.5" />}
+        {soundOn ? "Son activé" : "Activer le son"}
+      </button>
+      <button type="button" onClick={toggleFullscreen} className="cockpit-btn-ghost flex items-center gap-1.5 px-3 py-1.5 text-xs">
+        <Maximize2 className="h-3.5 w-3.5" />
+        Plein écran
+      </button>
+    </div>
+  );
 
   const loadOrders = useCallback(async () => {
     try {
@@ -111,11 +161,11 @@ export function KitchenBoard() {
 
   useEffect(() => {
     if (loading) return;
-    if (newOrders.length > prevNewCountRef.current) {
+    if (soundOn && newOrders.length > prevNewCountRef.current) {
       playNewOrderChime();
     }
     prevNewCountRef.current = newOrders.length;
-  }, [newOrders.length, loading]);
+  }, [newOrders.length, loading, soundOn]);
 
   async function moveStatus(order: Order) {
     const next = NEXT_STATUS[order.status];
@@ -148,12 +198,15 @@ export function KitchenBoard() {
 
   if (sortedOrders.length === 0) {
     return (
-      <div className="glass-card rounded-2xl p-10 text-center">
-        <Bell className="mx-auto h-10 w-10 text-zinc-600" />
-        <p className="mt-4 text-lg font-medium text-white">Cuisine prete</p>
-        <p className="mt-1 text-sm text-zinc-500">
-          Les commandes telephoniques apparaitront ici en temps reel.
-        </p>
+      <div className="space-y-5">
+        <div className="flex justify-end">{controls}</div>
+        <div className="glass-card rounded-2xl p-10 text-center">
+          <Bell className="mx-auto h-10 w-10 text-zinc-600" />
+          <p className="mt-4 text-lg font-medium text-white">Cuisine prête</p>
+          <p className="mt-1 text-sm text-zinc-500">
+            Les commandes téléphoniques apparaîtront ici en temps réel.
+          </p>
+        </div>
       </div>
     );
   }
@@ -167,6 +220,7 @@ export function KitchenBoard() {
             <KpiBadge label="En cours" value={inProgressOrders.length} tone="blue" />
             <KpiBadge label="Traitées" value={handledOrders.length} tone="green" />
           </div>
+          {controls}
           <p className="text-xs text-zinc-500">
             Sync{" "}
             <span className="font-mono text-zinc-400">
