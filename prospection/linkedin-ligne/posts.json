@@ -1,0 +1,68 @@
+{
+ "maj": "2026-10-20",
+ "posts": [
+  {
+   "id": "p1",
+   "titre": "Lancement",
+   "texte": "On lance Ligne. 📞\n\nLe constat est simple : dans un snack ou une pizzeria, le téléphone sonne toujours au pire moment. Midi pile, 19 h 30, la plaque pleine. Personne ne peut décrocher.\n\nChaque appel manqué, c'est une commande qui part ailleurs.\n\nLigne est un réceptionniste IA qui décroche à votre place, 24h/24, prend la commande à la voix et l'envoie directement en cuisine.\n\nLe mieux, c'est de l'entendre : la démo est en libre accès, vous pouvez l'appeler comme un vrai client.\n👉 ligne-ai.com",
+   "visuel": "post-carre-appel-manque.png",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "p2",
+   "titre": "Le problème (rush)",
+   "texte": "12 h 15. Trois personnes au comptoir, deux commandes en cuisson, et le téléphone qui sonne.\nVous faites quoi ?\n— Vous décrochez et vous laissez le comptoir.\n— Vous laissez sonner et vous perdez la commande.\nIl y a maintenant une troisième option. ligne-ai.com",
+   "visuel": "",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "p3",
+   "titre": "Démo",
+   "texte": "On a mis notre agent en accès libre sur le site.\nAppelez « Le Comptoir », commandez deux burgers, demandez s'il y a des noix dans le brownie, changez d'avis sur la sauce.\nIl ne sait pas que vous testez. 😉\n👉 ligne-ai.com (rubrique Démo)",
+   "visuel": "",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "p4",
+   "titre": "Plusieurs appels",
+   "texte": "Une ligne téléphonique classique = un appel à la fois.\nLigne = jusqu'à 10 appels en même temps, chacun pris en moins de deux secondes.\nLe soir de match, ça change tout.",
+   "visuel": "",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "p5",
+   "titre": "Zéro ressaisie",
+   "texte": "Le post-it « 2 tacos ?? sauce… 06 12… », tout le monde connaît.\nAvec Ligne, la commande arrive directement sur l'écran cuisine dès que le client raccroche. Le client reçoit un SMS de confirmation. Plus rien à recopier.",
+   "visuel": "",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "p6",
+   "titre": "Suggestion",
+   "texte": "Un bon employé propose une boisson au bon moment. Une fois. Sans forcer.\nC'est exactement ce que fait Ligne à chaque appel.",
+   "visuel": "",
+   "date": "2026-11-02"
+  },
+  {
+   "id": "p7",
+   "titre": "Allergies",
+   "texte": "« Il y a des noix dedans ? »\nLigne répond à partir de votre carte : ingrédients, allergènes, risque de traces. Il n'invente jamais un produit ni un prix.",
+   "visuel": "",
+   "date": "2026-11-04"
+  },
+  {
+   "id": "p8",
+   "titre": "Prix",
+   "texte": "Combien coûte un appel manqué ? Le prix d'une commande, et parfois d'un client fidèle.\nLigne démarre à 49 €/mois + les minutes utilisées. Sans engagement, résiliable chaque mois.\nDétails : ligne-ai.com#tarifs",
+   "visuel": "",
+   "date": "2026-11-06"
+  },
+  {
+   "id": "p9",
+   "titre": "Installation",
+   "texte": "« C'est compliqué à mettre en place ? »\nNon. Vous envoyez votre carte (PDF ou Excel), on configure l'agent et on branche votre numéro. Ligne décroche le lendemain.",
+   "visuel": "",
+   "date": "2026-11-09"
+  }
+ ]
+}

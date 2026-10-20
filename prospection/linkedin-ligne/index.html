@@ -1,0 +1,91 @@
+<title>Page LinkedIn Ligne</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout : 1) réglages de la page à copier, 2) file de posts datés avec visuel et bouton copier */
+:root{
+  --bg:#f4f6f5; --surface:#ffffff; --fg:#141a18; --muted:#5d6763; --line:#dde3e0;
+  --accent:#2f7f76; --accent-soft:#e2f0ee; --ok:#2f6b4f;
+  --display:"Bricolage Grotesque",system-ui,sans-serif; --body:"Source Sans 3",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e0f11; --surface:#17191c; --fg:#f2efe8; --muted:#9aa29f; --line:#2a2e31; --accent:#6fc2b6; --accent-soft:#16302d; --ok:#7fc4a0; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e0f11; --surface:#17191c; --fg:#f2efe8; --muted:#9aa29f; --line:#2a2e31; --accent:#6fc2b6; --accent-soft:#16302d; --ok:#7fc4a0; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px}
+.wrap{max-width:760px;margin:0 auto;display:grid;gap:22px}
+h1{font-family:var(--display);font-size:2rem;margin:0;color:var(--accent)}
+h2{font-family:var(--display);font-size:1.3rem;margin:8px 0 0}
+p{margin:0}.muted{color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:10px}
+.field{display:grid;gap:6px;border-top:1px solid var(--line);padding-top:10px}
+.field:first-of-type{border-top:0;padding-top:0}
+.lbl{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.val{white-space:pre-wrap;background:var(--bg);border-radius:8px;padding:10px 12px;margin:0;font-family:var(--body);overflow-wrap:anywhere;min-width:0}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button{font:inherit;font-size:.9rem;font-weight:600;border-radius:8px;padding:7px 14px;cursor:pointer;border:1px solid var(--accent);background:var(--accent);color:var(--surface)}
+button.ghost{background:transparent;color:var(--accent)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+img.banner{width:100%;border-radius:8px;border:1px solid var(--line)}
+img.logo{width:96px;height:96px;border-radius:12px;border:1px solid var(--line)}
+img.visuel{width:min(100%,320px);border-radius:8px;border:1px solid var(--line)}
+.posts{display:grid;gap:14px}
+.date{font-weight:600;color:var(--accent)}
+.post.fait{opacity:.5}
+label.chk{display:flex;gap:6px;align-items:center;color:var(--muted);margin-left:auto;font-size:.92rem}
+.steps{margin:0;padding-left:20px;display:grid;gap:4px}
+</style>
+
+<div class="wrap">
+  <h1>Page LinkedIn Ligne</h1>
+  <p class="muted">Tout pour la page entreprise Ligne : les réglages à remplir une seule fois, puis les posts à publier (lundi, mercredi, vendredi). Les posts Ligne vont sur la page Ligne, jamais sur AOS.</p>
+
+  <h2>1. Réglages de la page (une seule fois)</h2>
+  <div class="card">
+    <ol class="steps">
+      <li>Sur LinkedIn, ouvre la page Ligne en mode administrateur, puis « Modifier la page ».</li>
+      <li>Logo et bannière : appui long (téléphone) ou clic droit (PC) sur l'image, « Enregistrer l'image », puis importe-la.</li>
+      <li>Copie chaque champ ci-dessous dans le champ du même nom.</li>
+    </ol>
+    <div class="field"><span class="lbl">Logo</span><img class="logo" src="linkedin-photo-profil.png" alt="Logo Ligne"></div>
+    <div class="field"><span class="lbl">Bannière</span><img class="banner" src="linkedin-banniere.png" alt="Bannière Ligne"></div>
+    <div id="champs"></div>
+  </div>
+
+  <h2>2. Posts à publier</h2>
+  <p class="muted" id="maj"></p>
+  <div class="posts" id="posts"></div>
+</div>
+
+<script>
+const CHAMPS=[
+ ["Slogan (120 caractères)","Le standard téléphonique IA des restaurants : chaque appel décroché, chaque commande envoyée en cuisine."],
+ ["Site web","https://ligne-ai.com"],
+ ["Secteur","Développement de logiciels"],
+ ["Taille de l'entreprise","2-10 employés"],
+ ["Bouton d'action","Visiter le site web → https://ligne-ai.com"],
+ ["À propos","Au rush de midi, le téléphone sonne pendant que toute l'équipe est en cuisine. Résultat : une ligne occupée, des clients qui raccrochent et des commandes qui partent chez le concurrent.\n\nLigne est un réceptionniste téléphonique propulsé par l'intelligence artificielle, conçu pour les snacks, pizzerias, kebabs, burgers et restaurants qui prennent des commandes par téléphone.\n\n— Il décroche en moins de deux secondes, 24h/24, jusqu'à 10 appels en même temps.\n— Il prend la commande à la voix comme un employé : quantités, options, allergies, emporter ou livraison.\n— Il envoie la commande directement sur l'écran cuisine et confirme au client par SMS.\n— Vous suivez vos ventes dans un tableau de bord.\n\nInstallé en 24 h sur votre carte. Sans engagement.\n\nTestez l'agent vous-même, en direct, sur ligne-ai.com"],
+ ["Spécialités","standard téléphonique IA, prise de commande téléphonique, agent vocal, restauration rapide, snack, pizzeria, intelligence artificielle, SaaS restaurant"],
+];
+function copyBtn(text,label){const b=document.createElement("button");b.type="button";b.textContent=label||"Copier";
+  b.addEventListener("click",()=>{const done=()=>{const t=b.textContent;b.textContent="Copié ✓";setTimeout(()=>b.textContent=label||"Copier",1500)};
+    try{navigator.clipboard.writeText(text).then(done,()=>{b.textContent="Sélectionne et copie à la main"})}catch(e){b.textContent="Sélectionne et copie à la main"}});return b}
+const ch=document.getElementById("champs");
+CHAMPS.forEach(([l,v])=>{const f=document.createElement("div");f.className="field";
+  f.innerHTML='<span class="lbl"></span><pre class="val"></pre><div class="row"></div>';
+  f.querySelector(".lbl").textContent=l;f.querySelector(".val").textContent=v;f.querySelector(".row").appendChild(copyBtn(v));ch.appendChild(f)});
+const KEY="ligne-posts-faits";let st={};try{st=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
+function fmt(d){try{return new Date(d+"T12:00:00").toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long"})}catch(e){return d}}
+fetch("posts.json",{cache:"no-store"}).then(r=>r.json()).then(data=>{
+  document.getElementById("maj").textContent="Liste mise à jour le "+fmt(data.maj)+". Publie depuis la page Ligne, puis repartage-le sur ton profil personnel.";
+  const box=document.getElementById("posts");
+  data.posts.forEach(p=>{const c=document.createElement("article");c.className="card post"+(st[p.id]?" fait":"");
+    c.innerHTML='<div class="row"><span class="date"></span><span class="muted"></span><label class="chk"><input type="checkbox"> Publié</label></div><pre class="val"></pre><div class="vis"></div><div class="row act"></div>';
+    c.querySelector(".date").textContent=fmt(p.date);c.querySelector(".muted").textContent=p.titre;c.querySelector(".val").textContent=p.texte;
+    if(p.visuel){const i=document.createElement("img");i.className="visuel";i.src=p.visuel;i.alt="Visuel du post";c.querySelector(".vis").appendChild(i)}
+    c.querySelector(".act").appendChild(copyBtn(p.texte,"Copier le texte"));
+    const cb=c.querySelector("input");cb.id="pub-"+p.id;cb.checked=!!st[p.id];cb.addEventListener("change",()=>{st[p.id]=cb.checked;c.classList.toggle("fait",cb.checked);save()});
+    box.appendChild(c)});
+}).catch(()=>{document.getElementById("maj").textContent="La liste des posts n'a pas pu être chargée. Recharge la page."});
+</script>
