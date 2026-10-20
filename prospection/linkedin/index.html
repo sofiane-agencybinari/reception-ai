@@ -1,0 +1,107 @@
+<title>Messages LinkedIn AOS</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout : file d'attente quotidienne, une fiche par dirigeant en 2 étapes (inviter, puis message) */
+:root{
+  --bg:#f7f4f2; --surface:#ffffff; --fg:#1d1a19; --muted:#6b625e; --line:#e4dcd7;
+  --accent:#5c2a36; --accent-soft:#f1e6e8; --ok:#2f6b4f; --ok-soft:#e3f0e9;
+  --display:"Fraunces",Georgia,serif; --body:"Source Sans 3",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#171314; --surface:#221c1d; --fg:#f1ebe8; --muted:#a99c97; --line:#3a3032;
+  --accent:#d99aa8; --accent-soft:#3a2328; --ok:#7fc4a0; --ok-soft:#1f3329; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#171314; --surface:#221c1d; --fg:#f1ebe8; --muted:#a99c97; --line:#3a3032;
+  --accent:#d99aa8; --accent-soft:#3a2328; --ok:#7fc4a0; --ok-soft:#1f3329; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px}
+.wrap{max-width:720px;margin:0 auto;display:grid;gap:18px}
+h1{font-family:var(--display);font-weight:600;font-size:1.9rem;margin:0;text-wrap:balance;color:var(--accent)}
+h2{font-size:.82rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:8px 0 0}
+.intro{color:var(--muted);margin:0}
+.tips{background:var(--accent-soft);border-radius:10px;padding:14px 16px;display:grid;gap:6px;font-size:.95rem}
+.tips b{color:var(--accent)}
+.stats{display:flex;flex-wrap:wrap;gap:8px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.88rem;font-variant-numeric:tabular-nums}
+.list{display:grid;gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:12px}
+.card.fini{opacity:.5}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline}
+.name{font-weight:600;font-size:1.05rem}
+.role{color:var(--muted);font-size:.92rem}
+.tag{font-size:.75rem;letter-spacing:.04em;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:600}
+.step{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:10px}
+.step-t{font-weight:600;font-size:.92rem}
+.step-t span{color:var(--muted);font-weight:400}
+.msg{white-space:pre-wrap;background:var(--bg);border-radius:8px;padding:12px;margin:0;font-family:var(--body);font-size:.95rem;min-width:0;overflow-wrap:anywhere}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button,a.btn{font:inherit;font-size:.92rem;font-weight:600;border-radius:8px;padding:8px 14px;cursor:pointer;text-decoration:none;border:1px solid var(--accent)}
+button.copy{background:var(--accent);color:var(--surface)}
+a.btn{background:transparent;color:var(--accent)}
+label.chk{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:.92rem;margin-left:auto}
+.done-pill{color:var(--ok);background:var(--ok-soft);border-radius:999px;padding:2px 10px;font-size:.8rem;font-weight:600}
+button:focus-visible,a.btn:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.empty{color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <h1>Messages LinkedIn à envoyer</h1>
+  <p class="intro" id="maj">Chargement de la liste…</p>
+  <div class="tips">
+    <div><b>Étape 1, inviter :</b> ouvre le profil, clique « Se connecter » puis « Envoyer sans note ». Coche « Invitation envoyée ».</div>
+    <div><b>Étape 2, quand il a accepté :</b> copie le message, colle-le dans « Message », envoie. Coche « Message envoyé ».</div>
+    <div><b>Rythme :</b> invite tous les nouveaux du jour. LinkedIn bloque au-delà d'environ 100 invitations par semaine.</div>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div id="sections"></div>
+</div>
+
+<script>
+const KEY="aos-linkedin-etat-v2";
+let st={};try{st=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
+function fmt(d){try{return new Date(d+"T12:00:00").toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long"})}catch(e){return d}}
+function stats(C){
+  const inv=C.filter(c=>st[c.id]?.inv).length, msg=C.filter(c=>st[c.id]?.msg).length;
+  document.getElementById("stats").innerHTML="";
+  [[C.length,"dirigeants"],[C.length-inv,"à inviter"],[inv-msg,"en attente d'acceptation"],[msg,"messages envoyés"]].forEach(([n,l])=>{
+    const s=document.createElement("span");s.className="stat";s.textContent=n+" "+l;document.getElementById("stats").appendChild(s)});
+}
+function card(c,C){
+  const s=st[c.id]||(st[c.id]={});
+  const el=document.createElement("article");el.className="card"+(s.msg?" fini":"");
+  el.innerHTML=`<div class="head"><div><div class="name"></div><div class="role"></div></div><span class="tag"></span></div>
+  <div class="step"><div class="step-t">1. Inviter <span>(sans note)</span></div>
+    <div class="row"><a class="btn" target="_blank" rel="noopener">Ouvrir son profil</a>
+    <label class="chk"><input type="checkbox" id="inv-${c.id}"> Invitation envoyée</label></div></div>
+  <div class="step"><div class="step-t">2. Message <span>(une fois l'invitation acceptée)</span></div>
+    <pre class="msg"></pre>
+    <div class="row"><button class="copy" type="button">Copier le message</button>
+    <label class="chk"><input type="checkbox" id="msg-${c.id}"> Message envoyé</label></div></div>`;
+  el.querySelector(".name").textContent=c.n;el.querySelector(".role").textContent=c.r;
+  const tag=el.querySelector(".tag");if(c.t){tag.textContent=c.t}else{tag.remove()}
+  el.querySelector("a.btn").href=c.u;
+  const pre=el.querySelector(".msg");pre.textContent=c.m;
+  const b=el.querySelector("button.copy");
+  b.addEventListener("click",()=>{const ok=()=>{b.textContent="Copié ✓";setTimeout(()=>b.textContent="Copier le message",1600)};
+    const sel=()=>{const r=document.createRange();r.selectNodeContents(pre);const g=getSelection();g.removeAllRanges();g.addRange(r);b.textContent="Texte sélectionné, fais Copier"};
+    try{navigator.clipboard.writeText(c.m).then(ok,sel)}catch(e){sel()}});
+  const i1=el.querySelector(`#inv-${c.id}`),i2=el.querySelector(`#msg-${c.id}`);
+  i1.checked=!!s.inv;i2.checked=!!s.msg;
+  i1.addEventListener("change",()=>{s.inv=i1.checked;save();stats(C)});
+  i2.addEventListener("change",()=>{s.msg=i2.checked;if(i2.checked){s.inv=true;i1.checked=true}el.classList.toggle("fini",i2.checked);save();stats(C)});
+  return el;
+}
+fetch("contacts.json",{cache:"no-store"}).then(r=>r.json()).then(data=>{
+  const C=data.contacts||[];
+  document.getElementById("maj").textContent="Liste mise à jour le "+fmt(data.maj)+". Les nouveaux dirigeants s'ajoutent chaque matin.";
+  const byDate={};C.forEach(c=>(byDate[c.date]=byDate[c.date]||[]).push(c));
+  const secs=document.getElementById("sections");
+  Object.keys(byDate).sort().reverse().forEach(d=>{
+    const h=document.createElement("h2");h.textContent="Ajoutés "+fmt(d)+" ("+byDate[d].length+")";secs.appendChild(h);
+    const l=document.createElement("div");l.className="list";byDate[d].forEach(c=>l.appendChild(card(c,C)));secs.appendChild(l);
+  });
+  stats(C);
+}).catch(()=>{document.getElementById("maj").textContent="La liste n'a pas pu être chargée. Recharge la page."});
+</script>
