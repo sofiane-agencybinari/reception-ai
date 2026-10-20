@@ -72,6 +72,186 @@
    "m": "Bonjour Thibault, je mène des entretiens avec des DOP de groupes hôteliers : quels outils ne se parlent pas d'un hôtel à l'autre, et que devrait faire en premier un outil unique ? 10 min de votre avis ? Sofiane (AOS)",
    "t": "",
    "date": "2026-10-20"
+  },
+  {
+   "id": "adrien-gloaguen",
+   "n": "Adrien Gloaguen",
+   "r": "Fondateur, Touriste (Paris)",
+   "u": "https://www.linkedin.com/in/adriengloaguen/",
+   "m": "Bonjour Adrien, je mène des entretiens avec des fondateurs de groupes hôteliers. Avec 6 hôtels Touriste à Paris, quels outils ne se parlent pas d'un hôtel à l'autre ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "6 boutique-hôtels",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "cecile-rosset-pietri",
+   "n": "Cécile Rosset Pietri",
+   "r": "Cofondatrice & DG, Korner Hotels (Paris)",
+   "u": "https://www.linkedin.com/in/c%C3%A9cile-rosset-pietri/",
+   "m": "Bonjour Cécile, félicitations pour la 13e adresse Korner. Je mène des entretiens avec des dirigeants hôteliers : à chaque ouverture, quels outils faut-il mettre en place et lesquels ne se parlent pas ? 10 min ? Sofiane (AOS)",
+   "t": "13 hôtels",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "maxime-letessier",
+   "n": "Maxime Letessier",
+   "r": "Cofondateur & DOP, Korner Hotels (Paris)",
+   "u": "https://www.linkedin.com/in/maxime-letessier-b8373971/",
+   "m": "Bonjour Maxime, je mène des entretiens avec des directeurs des opérations. Avec des hôtels pilotés par vos Hôtes Korner, quelles tâches répétitives leur prennent le plus de temps ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Groupe",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "elodie-moussie",
+   "n": "Elodie Moussié",
+   "r": "Copropriétaire, Hôtel Providence & L'Eldorado (Paris)",
+   "u": "https://www.linkedin.com/in/elodie-moussi%C3%A9-14a633221/",
+   "m": "Bonjour Elodie, je mène des entretiens avec des propriétaires d'hôtels indépendants. Entre Providence et L'Eldorado, hôtel et restaurant, combien de logiciels jonglez-vous au quotidien ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Hôtel + restaurant",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "emilien-jaltier",
+   "n": "Emilien Jaltier",
+   "r": "DG, Hôtel Balzac & Hôtel Norman (Paris 8e)",
+   "u": "https://www.linkedin.com/in/emilien-jaltier-7a3bb013/",
+   "m": "Bonjour Emilien, je mène des entretiens avec des DG d'hôtels indépendants. En dirigeant le Balzac et le Norman, qu'est-ce qui est encore ressaisi à la main entre vos outils ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Deux 5★",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "rony-bou-rached",
+   "n": "Rony Bou Rached",
+   "r": "DOP, Emeraude Hotels (Paris)",
+   "u": "https://www.linkedin.com/in/rony-bou-rached-846684123/",
+   "m": "Bonjour Rony, je mène des entretiens avec des directeurs des opérations. Sur la dizaine d'hôtels Emeraude, quelle tâche fait perdre le plus de temps aux équipes chaque semaine ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "~10 hôtels",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "bertrand-mignard",
+   "n": "Bertrand Mignard",
+   "r": "Directeur, Hôtel Moderniste (Paris 15e)",
+   "u": "https://www.linkedin.com/in/bertrand-mignard-529a7a34b/",
+   "m": "Bonjour Bertrand, félicitations pour la réouverture du Moderniste. Je mène des entretiens avec des directeurs d'hôtels : quels outils avez-vous choisis, et lesquels ne se parlent pas ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Réouverture",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "brice-de-puymorin",
+   "n": "Brice de Puymorin",
+   "r": "Cofondateur, Ginto Hotels (Paris)",
+   "u": "https://www.linkedin.com/in/brice-de-puymorin-376a021b/",
+   "m": "Bonjour Brice, je mène des entretiens avec des fondateurs de groupes hôteliers. Avec 8 hôtels Ginto entre Paris et le Sud, qu'est-ce qui est ressaisi à la main d'un outil à l'autre ? 10 min ? Sofiane (AOS)",
+   "t": "8 hôtels",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "julien-kiefer",
+   "n": "Julien Kiefer",
+   "r": "DG & cofondateur, Ginto Hotels (Paris)",
+   "u": "https://www.linkedin.com/in/julien-kiefer-4ba4535/",
+   "m": "Bonjour Julien, je mène des entretiens avec des dirigeants hôteliers. Quand Ginto reprend un hôtel comme le Pilgrim, quels outils faut-il connecter et qu'est-ce qui coince ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Groupe",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "jeremie-de-fombelle",
+   "n": "Jérémie de Fombelle",
+   "r": "DG, Esprit de France (Paris)",
+   "u": "https://www.linkedin.com/in/jeremie-de-fombelle-34b69a20/",
+   "m": "Bonjour Jérémie, je mène des entretiens avec des dirigeants de groupes hôteliers. Sur vos 9 hôtels parisiens, quelle tâche répétitive aimeriez-vous retirer à vos équipes ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "9 hôtels",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "jacques-letertre",
+   "n": "Jacques Letertre",
+   "r": "Fondateur & Président, Hôtels Littéraires",
+   "u": "https://www.linkedin.com/in/jacques-letertre-217a26159/",
+   "m": "Bonjour Monsieur Letertre, je mène des entretiens avec des fondateurs hôteliers. Avec 7 Hôtels Littéraires, quels logiciels vos équipes utilisent-elles, et lesquels ne se parlent pas ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "7 hôtels",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "nach-barale",
+   "n": "Nach Barale",
+   "r": "DG, Card Hôtel (Paris 17e)",
+   "u": "https://www.linkedin.com/in/nach-barale-271bbb227/",
+   "m": "Bonjour Nach, je mène des entretiens avec des DG d'hôtels indépendants. Au Card Hôtel, quelle tâche fait perdre le plus de temps à la réception chaque semaine ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Batignolles",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "philippe-monnin",
+   "n": "Philippe Monnin",
+   "r": "Associé fondateur, Millésime (Bordeaux)",
+   "u": "https://www.linkedin.com/in/philippe-monnin-1154a0187/",
+   "m": "Bonjour Philippe, je mène des entretiens avec des fondateurs hôteliers. Avec 11 maisons Millésime, hôtels et restaurants, combien d'outils différents vos équipes utilisent-elles ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "11 maisons",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "gilles-bontems",
+   "n": "Gilles Bontems",
+   "r": "DG, Brach Paris (Paris 16e)",
+   "u": "https://www.linkedin.com/in/gilles-bontems-b17b6473/",
+   "m": "Bonjour Gilles, félicitations pour votre arrivée au Brach. Je mène des entretiens avec des DG d'hôtels : en prenant un nouveau poste, quels outils vous ont le plus freiné ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Nouveau poste",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "fabienne-ardouin",
+   "n": "Fabienne Ardouin",
+   "r": "Dirigeante, Les Hôtels du 9ème (Paris)",
+   "u": "https://www.linkedin.com/in/fabienne-ardouin-44053471/",
+   "m": "Bonjour Fabienne, je mène des entretiens avec des hôteliers indépendants. Avec votre regard au GHR Paris, quelle tâche pèse le plus sur les petits hôtels aujourd'hui ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "GHR Paris",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "louis-quentin-mauroy",
+   "n": "Louis Quentin-Mauroy",
+   "r": "DG, 9Hotel Collection (Paris)",
+   "u": "https://www.linkedin.com/in/louis-quentin-mauroy-20b506b4/",
+   "m": "Bonjour Louis, je mène des entretiens avec des dirigeants de groupes hôteliers. Avec 11 hôtels dans 6 capitales, quels outils ne se parlent pas d'un pays à l'autre ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "11 hôtels",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "carole-roma",
+   "n": "Carole Roma",
+   "r": "DGA, 9Hotel Collection (Paris)",
+   "u": "https://www.linkedin.com/in/carole-roma-04ba9064/",
+   "m": "Bonjour Carole, félicitations pour votre nomination. Je mène des entretiens avec des dirigeants hôteliers : quelles tâches répétitives freinent le plus la croissance d'un groupe ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Groupe",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "pierre-charles-cros",
+   "n": "Pierre-Charles Cros",
+   "r": "CEO & Fondateur, Experimental Group (Paris)",
+   "u": "https://www.linkedin.com/in/pierre-charles-cros-25210714/",
+   "m": "Bonjour Pierre-Charles, je mène des entretiens avec des fondateurs hôteliers. Entre hôtels, bars et restaurants, combien d'outils différents vos équipes jonglent-elles ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Hôtels + bars",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "matthieu-evrard",
+   "n": "Matthieu Evrard",
+   "r": "Président, Les Hôtels (Très) Particuliers",
+   "u": "https://www.linkedin.com/in/matthieu-evrard-08339148/",
+   "m": "Bonjour Matthieu, je mène des entretiens avec des dirigeants de groupes hôteliers. Sur vos 7 hôtels, qu'est-ce qui est encore ressaisi à la main d'un outil à l'autre ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "7 hôtels",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "caroline-redregoo",
+   "n": "Caroline Redregoo",
+   "r": "Directrice d'exploitation, Clarance Hotel (Lille)",
+   "u": "https://www.linkedin.com/in/caroline-redregoo-78187310/",
+   "m": "Bonjour Caroline, je mène des entretiens avec des directeurs d'exploitation. Au Clarance, quelle tâche répétitive aimeriez-vous retirer à vos équipes ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "5★ Lille",
+   "date": "2026-10-20"
   }
  ]
 }
