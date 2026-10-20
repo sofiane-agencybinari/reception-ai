@@ -16,3 +16,12 @@ Entretiens de découverte au nom d'AOS : comprendre les problèmes des hôtelier
 - Signaux chauds en priorité : vues du profil LinkedIn, réseaux/prescripteurs (Cercle LC-2400 Hôtels).
 - Test de la semaine : objet « Prénom, 10 minutes de votre avis sur <Établissement> ? » + possibilité de répondre à 1-2 questions par mail.
 - Réponses reçues → prospection/entretiens.md (matière pour construire le logiciel).
+
+## Réflexe obligatoire pour CHAQUE prospect (demande de Sofiane, 20/10)
+Dès qu'un prospect est cité, sans attendre qu'on le demande :
+1. Identifier le vrai décideur (propriétaire / directeur / groupe), via Pappers/societe.com et les mentions légales.
+2. Trouver son LinkedIn et son e-mail direct (publié, sinon format du domaine, marqué « déduit »).
+3. Lister les autres hôtels du même propriétaire ou groupe.
+4. Lire les avis clients (Google, Booking, TripAdvisor) pour repérer les faiblesses récurrentes, et vérifier si la direction y répond.
+5. Détecter les logiciels utilisés (moteur de réservation du site, offres d'emploi).
+6. Écrire d'abord au décideur. Si son adresse est introuvable, écrire à l'accueil en demandant 10 minutes avec le directeur.
