@@ -53,6 +53,11 @@ button:focus-visible,a.btn:focus-visible,input:focus-visible{outline:2px solid v
     <div><b>Étape 2, quand il a accepté :</b> copie le message, colle-le dans « Message », envoie. Coche « Message envoyé ».</div>
     <div><b>Rythme :</b> invite tous les nouveaux du jour. LinkedIn bloque au-delà d'environ 100 invitations par semaine.</div>
   </div>
+  <h2>Post AOS à publier (page AOS uniquement)</h2>
+  <div class="list" id="postsAos"></div>
+  <h2>Groupes à rejoindre (5 max par jour)</h2>
+  <div class="card"><p class="intro">Ouvre chaque recherche, rejoins les groupes de plus de 1 000 membres et actifs. Une fois membre, tu peux inviter les dirigeants du groupe sans être en relation.</p><div class="row" id="groupes"></div></div>
+  <h2>Invitations et messages</h2>
   <div class="stats" id="stats"></div>
   <div id="sections"></div>
 </div>
@@ -93,6 +98,15 @@ function card(c,C){
   i2.addEventListener("change",()=>{s.msg=i2.checked;if(i2.checked){s.inv=true;i1.checked=true}el.classList.toggle("fini",i2.checked);save();stats(C)});
   return el;
 }
+fetch("extras.json",{cache:"no-store"}).then(r=>r.json()).then(x=>{
+  const box=document.getElementById("postsAos");
+  (x.posts||[]).forEach(p=>{const s=st["post-"+p.id]||(st["post-"+p.id]={});const el=document.createElement("article");el.className="card"+(s.pub?" fini":"");
+    el.innerHTML='<div class="head"><div class="name"></div><span class="tag"></span></div><pre class="msg"></pre><div class="row"><button class="copy" type="button">Copier le post</button><label class="chk"><input type="checkbox"> Publié</label></div>';
+    el.querySelector(".name").textContent=p.titre;el.querySelector(".tag").textContent=fmt(p.date);el.querySelector(".msg").textContent=p.texte;
+    const b=el.querySelector("button");b.addEventListener("click",()=>{try{navigator.clipboard.writeText(p.texte).then(()=>{b.textContent="Copié ✓";setTimeout(()=>b.textContent="Copier le post",1600)})}catch(e){}});
+    const cb=el.querySelector("input");cb.checked=!!s.pub;cb.addEventListener("change",()=>{s.pub=cb.checked;el.classList.toggle("fini",cb.checked);save()});box.appendChild(el)});
+  const g=document.getElementById("groupes");(x.groupes||[]).forEach(o=>{const a=document.createElement("a");a.className="btn";a.target="_blank";a.rel="noopener";a.href=o.u;a.textContent=o.n;g.appendChild(a)});
+}).catch(()=>{});
 fetch("contacts.json",{cache:"no-store"}).then(r=>r.json()).then(data=>{
   const C=data.contacts||[];
   document.getElementById("maj").textContent="Liste mise à jour le "+fmt(data.maj)+". Les nouveaux dirigeants s'ajoutent chaque matin.";
