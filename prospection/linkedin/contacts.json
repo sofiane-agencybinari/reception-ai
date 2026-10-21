@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-20",
+ "maj": "2026-10-21",
  "contacts": [
   {
    "id": "oliver",
@@ -252,6 +252,186 @@
    "m": "Bonjour Caroline, je mène des entretiens avec des directeurs d'exploitation. Au Clarance, quelle tâche répétitive aimeriez-vous retirer à vos équipes ? 10 min de votre avis ? Sofiane (AOS)",
    "t": "5★ Lille",
    "date": "2026-10-20"
+  },
+  {
+   "id": "nicolas-saltiel",
+   "n": "Nicolas Saltiel",
+   "r": "Fondateur, Chapitre Six (Paris)",
+   "u": "https://www.linkedin.com/in/nicolas-saltiel-59a56227a/",
+   "m": "Bonjour Nicolas, félicitations pour les 10 ans de Chapitre Six et le projet de Courchevel. Je mène des entretiens avec des fondateurs hôteliers : à chaque ouverture, quels outils faut-il connecter ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Déjà écrit par mail",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "patrick-hayat",
+   "n": "Patrick Hayat",
+   "r": "Fondateur, Patrick Hayat Hôtels (Paris)",
+   "u": "https://www.linkedin.com/in/patrick-hayat-39882a1b5/",
+   "m": "Bonjour Monsieur Hayat, je mène des entretiens avec des fondateurs de groupes hôteliers. Sur vos 6 hôtels parisiens, quelle tâche répétitive aimeriez-vous retirer à vos équipes ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "6 hôtels",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "pierre-pasquet",
+   "n": "Pierre Pasquet",
+   "r": "Directeur, Hôtel du Théâtre (Paris)",
+   "u": "https://www.linkedin.com/in/pierre-pasquet-51aaba28/",
+   "m": "Bonjour Pierre, je mène des entretiens avec des directeurs d'hôtels. À l'Hôtel du Théâtre, qu'est-ce qui est encore ressaisi à la main entre vos outils ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Groupe Hayat",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "eric-colin",
+   "n": "Eric Colin",
+   "r": "Directeur, Trinité Haussmann & The Five (Paris)",
+   "u": "https://www.linkedin.com/in/eric-colin-3b0a9996/",
+   "m": "Bonjour Eric, je mène des entretiens avec des directeurs d'hôtels. En dirigeant deux hôtels à la fois, quels outils ne se parlent pas entre le Trinité Haussmann et The Five ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "2 hôtels",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "gregoire-berthelot",
+   "n": "Grégoire Berthelot",
+   "r": "Directeur, Hôtel Eiffel Capitol (Paris)",
+   "u": "https://www.linkedin.com/in/gregoire-berthelot-b3b06115/",
+   "m": "Bonjour Grégoire, je mène des entretiens avec des directeurs d'hôtels indépendants. À l'Eiffel Capitol, quelle tâche fait perdre le plus de temps à la réception chaque semaine ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Paris 15e",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "vanessa-scoffier",
+   "n": "Vanessa Scoffier",
+   "r": "Fondatrice, Hôtel Henriette (Paris 5e)",
+   "u": "https://fr.linkedin.com/in/vanessa-scoffier-b53b48164",
+   "m": "Bonjour Vanessa, je mène des entretiens avec des fondateurs d'hôtels indépendants. À l'Henriette, combien de logiciels utilisez-vous au quotidien, et lesquels ne se parlent pas ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "32 chambres",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "karim-massoud",
+   "n": "Karim Massoud",
+   "r": "Fondateur, KM Hôtels Collection (Paris)",
+   "u": "https://www.linkedin.com/in/karim-massoud-7582321b/",
+   "m": "Bonjour Karim, félicitations pour l'ouverture du 6 Tiquetonne. Je mène des entretiens avec des fondateurs hôteliers : d'un hôtel KM à l'autre, qu'est-ce qui est ressaisi à la main ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Petit groupe",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "rolf-sagemuller",
+   "n": "Rolf Sagemuller",
+   "r": "Directeur, Hôtel Le Six (Paris 6e)",
+   "u": "https://www.linkedin.com/in/rolf-sagemuller-84654815/",
+   "m": "Bonjour Rolf, je mène des entretiens avec des directeurs d'hôtels. Entre l'hôtel et le spa du Six, combien d'outils différents vos équipes jonglent-elles ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Hôtel + spa",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "mickael-abitbol",
+   "n": "Mickael Abitbol",
+   "r": "Dirigeant, Moriss Immobilier – hôtels (Paris)",
+   "u": "https://www.linkedin.com/in/mickael-abitbol-7b4876105/",
+   "m": "Bonjour Mickael, je mène des entretiens avec des investisseurs hôteliers. En développant vos hôtels à Paris, quels outils faut-il mettre en place à chaque acquisition ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Titre à vérifier",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "stephanie-marquez",
+   "n": "Stéphanie Marquez",
+   "r": "Co-fondatrice, MiHotel (Lyon)",
+   "u": "https://www.linkedin.com/in/stephanie-marquez-37419720/",
+   "m": "Bonjour Stéphanie, MiHotel est un bel exemple de parcours 100 % digital. Je mène des entretiens avec des fondateurs hôteliers : qu'est-ce qui reste manuel chez vous ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "100 % digital",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "julien-schruoffeneger",
+   "n": "Julien Schruoffeneger",
+   "r": "Directeur, Fourvière Hôtel (Lyon)",
+   "u": "https://www.linkedin.com/in/julien-schruoffeneger-15538ab/",
+   "m": "Bonjour Julien, je mène des entretiens avec des directeurs d'hôtels. Au Fourvière Hôtel, quelle tâche répétitive aimeriez-vous retirer à vos équipes ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "À vérifier",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "mederic-demelle",
+   "n": "Médéric Demelle",
+   "r": "Dirigeant, Villas Foch (Bordeaux)",
+   "u": "https://fr.linkedin.com/in/m%C3%A9d%C3%A9ric-demelle",
+   "m": "Bonjour Médéric, je vous ai écrit par mail pendant votre absence. Je mène des entretiens avec des dirigeants hôteliers : aux Villas Foch, quels outils ne se parlent pas ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Déjà écrit par mail",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "laurence-boucard",
+   "n": "Laurence Boucard",
+   "r": "Directrice, Le Boutique Hôtel & Spa (Bordeaux)",
+   "u": "https://fr.linkedin.com/in/laurence-boucard",
+   "m": "Bonjour Laurence, je mène des entretiens avec des directeurs d'hôtels. Au Boutique Hôtel, entre hôtel et spa, qu'est-ce qui est encore ressaisi à la main ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "5★",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "valery-grego",
+   "n": "Valéry Grégo",
+   "r": "Fondateur, Perseus (Nice / Paris)",
+   "u": "https://www.linkedin.com/in/val%C3%A9ry-gr%C3%A9go-a78173/",
+   "m": "Bonjour Valéry, bravo pour l'Hôtel du Couvent. Je mène des entretiens avec des fondateurs hôteliers : sur un projet de cette ampleur, quels outils ne se parlent pas ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Hôtel du Couvent",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "baptiste-do-paco",
+   "n": "Baptiste Do Paço",
+   "r": "Directeur, Hôtel Helvétique – AMMI (Nice)",
+   "u": "https://www.linkedin.com/in/baptiste-do-pa%C3%A7o-75318671/",
+   "m": "Bonjour Baptiste, je mène des entretiens avec des directeurs d'hôtels. En reprenant l'Helvétique, quels outils avez-vous dû mettre en place ou connecter ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Reprise récente",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "jasmine-motaib",
+   "n": "Jasmine Motaïb",
+   "r": "GM, Nice Pam Hotel (Nice)",
+   "u": "https://fr.linkedin.com/in/jasmine-mota%C3%AFb",
+   "m": "Bonjour Jasmine, félicitations pour la première année du Pam. Je mène des entretiens avec des directeurs d'hôtels : quelle tâche fait perdre le plus de temps à vos équipes ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Turenne",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "thomas-lelieur",
+   "n": "Thomas Lelieur",
+   "r": "DG, Hotels de Lille (Lille)",
+   "u": "https://www.linkedin.com/in/thomas-lelieur-abab0677/",
+   "m": "Bonjour Thomas, je mène des entretiens avec des dirigeants de groupes hôteliers. Sur vos 6 hôtels et 3 restaurants à Lille, quels outils ne se parlent pas ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "6 hôtels",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "aurelie-vermesse",
+   "n": "Aurélie Vermesse",
+   "r": "Propriétaire, Clarance Hotel (Lille)",
+   "u": "https://www.linkedin.com/in/aur%C3%A9lie-vermesse-1302913a/",
+   "m": "Bonjour Aurélie, je mène des entretiens avec des propriétaires d'hôtels indépendants. Au Clarance, quelle tâche répétitive aimeriez-vous retirer à vos équipes ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "CCI Grand Lille",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "boris-roques-rogery",
+   "n": "Boris Roques Rogery",
+   "r": "Président, Alfred Hotels",
+   "u": "https://www.linkedin.com/in/boris-roques-rogery-67829616/",
+   "m": "Bonjour Boris, je mène des entretiens avec des fondateurs hôteliers. Avec Alfred Hotels dans 4 villes et de nouvelles ouvertures, qu'est-ce qui coince à chaque lancement ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "4 villes",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "eric-meyssonnier",
+   "n": "Eric Meyssonnier",
+   "r": "Directeur multisite, Le Bristol & L'Abri (Le Puy)",
+   "u": "https://www.linkedin.com/in/eric-meyssonnier-75060712b/",
+   "m": "Bonjour Eric, je mène des entretiens avec des directeurs multisites. Entre deux hôtels-restaurants, combien d'outils différents vos équipes utilisent-elles ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "2 hôtels-restos",
+   "date": "2026-10-21"
   }
  ]
 }
