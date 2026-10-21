@@ -25,3 +25,27 @@ Dès qu'un prospect est cité, sans attendre qu'on le demande :
 4. Lire les avis clients (Google, Booking, TripAdvisor) pour repérer les faiblesses récurrentes, et vérifier si la direction y répond.
 5. Détecter les logiciels utilisés (moteur de réservation du site, offres d'emploi).
 6. Écrire d'abord au décideur. Si son adresse est introuvable, écrire à l'accueil en demandant 10 minutes avec le directeur.
+
+## Méthode chiffrée — OBLIGATOIRE à partir du 21/10 (hôtels ET restaurants, demande de Sofiane)
+
+Fini les mails « 10 minutes de votre avis » sans chiffres. Chaque mail à un prospect doit :
+
+1. **Viser la bonne personne** : celle qui décide de l'outil (DG, COO, directeur des opérations ou du développement). Ne plus demander à quelqu'un de « transmettre » à son patron.
+2. **Citer 2-3 faiblesses réelles** relevées sur le prospect (avis clients, nombre de maisons, recrutements, ouvertures, écarts de notes entre établissements).
+3. **Chiffrer chaque faiblesse en euros par an**, avec des hypothèses prudentes et visibles (chambres × prix moyen × occupation). Toujours ajouter : « Estimations à partir de données publiques et d'hypothèses prudentes, à confirmer pendant l'audit. »
+4. **Donner un total** (« autour de X € par an à récupérer »).
+5. **Proposer une solution chiffrée** : ce qu'AOS (ou Ligne) fait concrètement et ce que ça fait gagner.
+6. **Dire qu'on connaît le secteur** : « un hôtel, c'est énormément de gestion et de soucis au quotidien, et beaucoup de choses finissent négligées faute de temps ».
+7. **Offrir un audit approfondi, gratuit et sans engagement**, avec 2 créneaux en semaine entre 15 h et 17 h 30.
+8. **Absents (réponse automatique)** : relancer le jour de leur retour, avec la même méthode.
+
+### Repères de calcul hôtels
+- Commissions des plateformes : 15 à 18 % ; chaque tranche de 5 % de nuits ramenées en réservation directe = CA chambres × 5 % × 17 %.
+- Ressaisie entre outils : 1 à 2 h par jour et par hôtel × 25-30 € de coût horaire chargé × 365.
+- Notes clients : étude Cornell (2012), +1 point sur 5 ≈ +11 % de prix possible sans perte d'occupation.
+- Chambres hors service : nuits bloquées × prix moyen.
+
+### Repères de calcul restaurants (Ligne)
+- Appels manqués au rush : nombre d'appels manqués par service × panier moyen × jours d'ouverture (ex. 5 appels × 25 € × 26 soirs ≈ 3 250 € par mois).
+- Temps au téléphone : minutes par commande × commandes par jour × coût horaire.
+- Toujours comparer au prix de Ligne (49 / 99 / 199 € par mois + minutes) pour montrer le retour sur investissement.
