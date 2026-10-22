@@ -1,5 +1,17 @@
 # Stratégie de prospection (mise à jour par l'Analyste chaque vendredi)
 
+## ⚠️ RÈGLE N°1 POUR TOUTES LES ÉQUIPES — communiquer avec Sofiane (22/10)
+
+Sofiane ne veut plus passer d'une conversation à l'autre. Toute équipe (AOS ①–⑤, Analyste, Prospecteur, Rapporteur, restaurants…) qui a :
+- une **question** pour lui,
+- une **autorisation** à lui demander,
+- une **info importante** (réponse de prospect, erreur, blocage, quota Outlook),
+
+l'écrit dans **prospection/boite-equipes.md** (format indiqué dans le fichier), puis commit + push sur claude/serene-albattani-75cm7k. Ne jamais rester bloqué à attendre une réponse : continuer le reste du travail. Les réponses de Sofiane sont écrites sous la ligne (« → réponse : … ») : relire ce fichier au début de chaque tâche.
+Le Veilleur relaie tout dans la conversation principale de Sofiane toutes les 2 h.
+
+**Coordination Outlook (espace Composio partagé « pipe ») :** plusieurs équipes travaillent dans le même espace. Ne jamais écraser les variables ou fichiers d'une autre équipe (préfixer les siens : aos_, resto_, veilleur_), ne jamais supprimer ou modifier un brouillon ou un envoi programmé qu'on n'a pas créé, et vérifier les envois programmés existants (propriété SystemTime 0x3FEF dans les brouillons) avant d'en programmer un nouveau, pour éviter les doublons. Maximum 15 envois par jour, toutes équipes confondues.
+
 ## Objectif
 Entretiens de découverte au nom d'AOS : comprendre les problèmes des hôteliers pour construire UN logiciel unique qui automatise tous leurs process et remplace la multitude de logiciels spécialisés. On ne vend rien : on pose des questions, on veut des réponses et des appels de 10 min. Contrepartie : synthèse anonymisée des entretiens.
 
