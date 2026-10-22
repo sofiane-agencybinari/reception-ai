@@ -20,6 +20,16 @@ Le Veilleur relaie tout dans la conversation principale de Sofiane toutes les 2 
 - **③ Veille** : surveille les réponses. **④ Analyste** : mesure ce qui marche. **⑤ Compte rendu** : résume pour Sofiane.
 - Avant toute recherche ou tout mail, vérifier dans suivi.csv que le prospect n'a pas déjà été traité. Exemple : **Hôtel Saint-Cyr Étoile a déjà reçu son mail le 21/10 à 12 h 27** (après la visite de Sofiane) : ne pas refaire l'étude ni renvoyer de mail, seulement une relance le 28/10 sans réponse.
 
+## ⚠️ RÈGLE N°3 — la ronde : on ne s'arrête jamais (demande de Sofiane, 22/10)
+
+L'équipe avance sans attendre les consignes de Sofiane, s'améliore chaque jour et lui apporte des idées. Quota du jour atteint ne veut pas dire fin de journée :
+- **Prospecteur** : quota fait → il prépare les jours suivants dans `prospection/reserve-prospects.md` (toujours 30 prospects prêts d'avance), cherche de meilleures sources et de nouveaux segments, et signale à l'Analyste ce qu'il observe (adresses qui rebondissent, types de groupes qui répondent).
+- **Diagnostiqueur** : chiffre d'avance les prospects de la réserve, affine ses hypothèses avec chaque vraie donnée trouvée (prix réels, logiciels, avis).
+- **Analyste** : lit chaque jour ce que font le Prospecteur et le Diagnostiqueur et les résultats (réponses, rebonds, refus), écrit dans `prospection/retours-analyste.md` ce qui marche et la consigne pour le lendemain. Les autres l'appliquent dès leur tâche suivante.
+- **Cerveau** : orchestre la ronde, vérifie que chacun a appliqué les retours de la veille, relance l'équipe qui stagne.
+- **Tout le monde** : au moins une idée nouvelle par jour dans `prospection/idees.md` (segment, offre, angle, partenariat, événement, outil). Le Standard présente les meilleures à Sofiane.
+- Rien n'est envoyé à un prospect sans les règles habituelles (15 mails/jour max, méthode chiffrée, pas de doublon).
+
 ## Objectif
 Entretiens de découverte au nom d'AOS : comprendre les problèmes des hôteliers pour construire UN logiciel unique qui automatise tous leurs process et remplace la multitude de logiciels spécialisés. On ne vend rien : on pose des questions, on veut des réponses et des appels de 10 min. Contrepartie : synthèse anonymisée des entretiens.
 
