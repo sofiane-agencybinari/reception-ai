@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-21",
+ "maj": "2026-10-22",
  "contacts": [
   {
    "id": "oliver",
@@ -432,6 +432,177 @@
    "m": "Bonjour Eric, je mène des entretiens avec des directeurs multisites. Entre deux hôtels-restaurants, combien d'outils différents vos équipes utilisent-elles ? 10 min de votre avis ? Sofiane (AOS)",
    "t": "2 hôtels-restos",
    "date": "2026-10-21"
+  },
+  {
+   "n": "Lionel Servant",
+   "r": "Directeur général et associé, Hôtel Le Negresco (Nice)",
+   "u": "https://www.linkedin.com/in/lionel-servant-74a5b016/",
+   "m": "Bonjour Lionel, avec la rénovation du Negresco et N le Spa en route vers le statut de palace, quelle tâche répétitive prend le plus de temps à vos équipes de réception ou de réservation ? J'aimerais 10 min pour comprendre votre organisation. Sofiane (AOS)",
+   "t": "Nice, 5★",
+   "id": "servant22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Laurent Jaumes",
+   "r": "Propriétaire et directeur général, Hôtel Le Roosevelt (Lyon)",
+   "u": "https://fr.linkedin.com/in/laurent-jaumes-5aa5b732",
+   "m": "Bonjour Laurent, le Roosevelt fête ses 50 ans avec une rénovation complète de ses chambres. Pendant ces travaux, quelle tâche administrative ou quel logiciel vous fait perdre le plus de temps ? J'aimerais en parler 10 min avec vous. Sofiane (AOS)",
+   "t": "Lyon",
+   "id": "jaumes22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Yohann Benhamou",
+   "r": "Directeur général, Malone Hotels (Paris)",
+   "u": "https://www.linkedin.com/in/yohann-benhamou-02996513/",
+   "m": "Bonjour Yohann, Malone prépare l'ouverture du Daline Eiffel (27 chambres, rue Malar). En ouvrant un nouvel hôtel, quelles tâches répétitives aimeriez-vous ne pas reproduire d'un site à l'autre ? Auriez-vous 10 min pour en parler ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "id": "benhamou22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Gérald Passedat",
+   "r": "Chef et propriétaire, Le Petit Nice Passedat (Marseille)",
+   "u": "https://www.linkedin.com/in/g%C3%A9rald-passedat-33499a54/",
+   "m": "Bonjour Gérald, au Petit Nice, entre la table 3 étoiles et l'hôtel, qui gère les appels et les réservations, et combien de temps cela prend-il chaque jour ? J'aimerais 10 min pour comprendre votre quotidien. Sofiane (AOS)",
+   "t": "Marseille, 5★",
+   "id": "passedat22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Jérôme Anna",
+   "r": "Propriétaire, Hôtel Hannong & Wine Bar (Strasbourg)",
+   "u": "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-anna-0ba1256/",
+   "m": "Bonjour Jérôme, avec 72 chambres et un wine bar au Hannong, quelle tâche répétitive (appels, réservations, relances) pèse le plus sur votre équipe ? J'aimerais 10 min pour comprendre comment vous vous organisez. Sofiane (AOS)",
+   "t": "Strasbourg",
+   "id": "anna22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Charlotte Gayet-Ghanem",
+   "r": "Co-propriétaire et exploitante, Hôtel Chamar (Paris 9e)",
+   "u": "https://www.linkedin.com/in/charlottegayetghanem/",
+   "m": "Bonjour Charlotte, vous tenez le Chamar à deux, avec 24 chambres rue La Bruyère. Quelle tâche du quotidien (appels, mails, réservations) vous prend le plus de temps ? Auriez-vous 10 min pour m'en parler ? Sofiane (AOS)",
+   "t": "Paris",
+   "id": "gayetghanem22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Anne Jousse",
+   "r": "Présidente, B Signature Hotels & Resorts (Paris)",
+   "u": "https://www.linkedin.com/in/anne-jousse/",
+   "m": "Bonjour Anne, avec 7 établissements entre Paris, le sud de la Bretagne et Saint-Barth, quels logiciels ou tâches font perdre le plus de temps à vos équipes ? Auriez-vous 10 min pour un échange de découverte ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "id": "jousse22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Emilie Arabyan",
+   "r": "Codirigeante, Biografy (Paris)",
+   "u": "https://www.linkedin.com/in/emilie-arabyan-a72b789b/",
+   "m": "Bonjour Emilie, Biografy est l'un des rares groupes hôteliers parisiens tenus par la 5e génération d'une même famille. Quelle tâche répétitive aimeriez-vous retirer à vos équipes de réception ? Auriez-vous 10 min pour en parler ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "id": "arabyan22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Nicolas Vinuales",
+   "r": "Co-gérant, Hôtels Vinuales (Toulouse / Lourdes)",
+   "u": "https://www.linkedin.com/in/nicolas-vinuales-a52a0638/",
+   "m": "Bonjour Nicolas, avec des hôtels à Toulouse (dont l'Hôtel de Brienne) et à Lourdes, quelle tâche ou quel logiciel fait perdre le plus de temps à vos directeurs ? J'aimerais 10 min pour comprendre votre organisation. Sofiane (AOS)",
+   "t": "Toulouse, Groupe",
+   "id": "vinuales22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Solenne Ojea-Devys",
+   "r": "Directrice générale, OKKO Hotels (Paris)",
+   "u": "https://www.linkedin.com/in/solenne-ojea-devys-8ab00525/",
+   "m": "Bonjour Solenne, bravo pour le prix Leader du tourisme 2026. Chez OKKO, quelle tâche répétitive reste la plus chronophage pour les équipes d'accueil d'un hôtel à l'autre ? Auriez-vous 10 min pour un échange de découverte ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "id": "ojeadevys22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Séverine Maisonneuve",
+   "r": "Directrice, Villa Maïa (Lyon)",
+   "u": "https://www.linkedin.com/in/s%C3%A9verine-maisonneuve-villamaia/",
+   "m": "Bonjour Séverine, avec 37 clés et une table étoilée à la Villa Maïa, quelle tâche répétitive (appels, demandes, réservations) occupe le plus votre réception ? J'aimerais 10 min pour comprendre votre quotidien. Sofiane (AOS)",
+   "t": "Lyon, 5★",
+   "id": "maisonneuve22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Lucas Beguinot",
+   "r": "Développement des hôtels parisiens, Lignée Hôtels (Paris)",
+   "u": "https://www.linkedin.com/in/lucas-beguinot/",
+   "m": "Bonjour Lucas, de la Maison Favart au Narcisse Blanc, Lignée réunit plusieurs maisons à Paris, Bordeaux et Londres. Quel logiciel ou quelle tâche ralentit le plus vos équipes ? Auriez-vous 10 min pour en parler ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "id": "beguinot22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Philippe Dalaudière",
+   "r": "Dirigeant, Groupe DALOFI (Lyon)",
+   "u": "https://www.linkedin.com/in/philippe-dalaudiere-25743b11/",
+   "m": "Bonjour Philippe, avec le Grand Hôtel des Terreaux, DALOFI passe de 2 à 5 hôtels à Lyon. En intégrant ces hôtels, quelles tâches répétitives vous coûtent le plus de temps ? Auriez-vous 10 min pour un échange ? Sofiane (AOS)",
+   "t": "Lyon, Groupe",
+   "id": "dalaudiere22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Marianne Borthayre",
+   "r": "Présidente et cofondatrice, èhôtels-Collection (Lyon)",
+   "u": "https://www.linkedin.com/in/marianne-borthayre-586b6811/",
+   "m": "Bonjour Marianne, entre le Collège Hôtel, L'Ermitage et L'Eautel à Toulon, quelles tâches répétitives pèsent le plus sur vos équipes d'accueil ? J'aimerais 10 min pour comprendre votre organisation. Sofiane (AOS)",
+   "t": "Lyon, Groupe",
+   "id": "borthayre22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Eric Giorgi",
+   "r": "PDG, Arteloge Hôtels & Restaurants (Lyon)",
+   "u": "https://fr.linkedin.com/in/eric-giorgi-1686a0139",
+   "m": "Bonjour Eric, avec l'arrivée de Spark by Hilton à Lyon, Arteloge reste propriétaire-exploitant de ses hôtels. Quelles tâches répétitives aimeriez-vous automatiser en priorité ? Auriez-vous 10 min pour en parler ? Sofiane (AOS)",
+   "t": "Lyon, Groupe",
+   "id": "giorgi22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Léonard Bouler",
+   "r": "Directeur hôtel-restaurant, Le Lieu Dit (Nantes)",
+   "u": "https://www.linkedin.com/in/l%C3%A9onard-bouler-a600a3110/",
+   "m": "Bonjour Léonard, au Lieu Dit vous gérez 31 chambres, la pizzeria Gasparelli, un bar et une épicerie. Quelle tâche répétitive vous prend le plus de temps ? J'aimerais 10 min pour comprendre votre quotidien. Sofiane (AOS)",
+   "t": "Nantes",
+   "id": "bouler22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Yohan Macias-Detoux",
+   "r": "Directeur, Hôtel des Quinconces (Bordeaux)",
+   "u": "https://fr.linkedin.com/in/yohan-macias-detoux-0132a9aa",
+   "m": "Bonjour Yohan, aux Quinconces, 9 chambres dans un hôtel particulier de 1834 : avec une petite équipe, quelle tâche (appels, mails, réservations) vous fait perdre le plus de temps ? Auriez-vous 10 min pour en parler ? Sofiane (AOS)",
+   "t": "Bordeaux",
+   "id": "maciasdetoux22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Julie Marang",
+   "r": "Codirigeante, Paristory (Paris)",
+   "u": "https://www.linkedin.com/in/julie-marang-47a08837/",
+   "m": "Bonjour Julie, Paristory compte 85 % de clients étrangers dans ses boutique-hôtels parisiens. Quelle tâche répétitive (demandes, appels, mails) pèse le plus sur vos réceptions ? Auriez-vous 10 min pour un échange ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "id": "marang22",
+   "date": "2026-10-22"
+  },
+  {
+   "n": "Laurent Taïeb",
+   "r": "Président-directeur général, UTOPIK Collection (Paris)",
+   "u": "https://www.linkedin.com/in/laurentaieb/",
+   "m": "Bonjour Laurent, après le TOO et Madame Rêve, vous avez ouvert la Villa Colette, premier 5 étoiles du Cap Ferret. En ouvrant un hôtel, quelle tâche répétitive aimeriez-vous éviter à vos équipes ? Auriez-vous 10 min ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "id": "taieb22",
+   "date": "2026-10-22"
   }
  ]
 }
