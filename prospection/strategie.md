@@ -12,6 +12,14 @@ Le Veilleur relaie tout dans la conversation principale de Sofiane toutes les 2 
 
 **Coordination Outlook (espace Composio partagé « pipe ») :** plusieurs équipes travaillent dans le même espace. Ne jamais écraser les variables ou fichiers d'une autre équipe (préfixer les siens : aos_, resto_, veilleur_), ne jamais supprimer ou modifier un brouillon ou un envoi programmé qu'on n'a pas créé, et vérifier les envois programmés existants (propriété SystemTime 0x3FEF dans les brouillons) avant d'en programmer un nouveau, pour éviter les doublons. Maximum 15 envois par jour, toutes équipes confondues.
 
+## ⚠️ RÈGLE N°2 — chacun son rôle (demande de Sofiane, 22/10)
+
+- **① Cerveau** : COORDONNE. Il décide du plan du jour, répartit le travail, vérifie le compteur (15 mails/jour) et ce qui attend Sofiane. Il ne fait PAS lui-même les recherches sur un prospect (site, Booking, avis, coordonnées) : il les confie au Prospecteur ou au Diagnostiqueur.
+- **② Prospecteur** : trouve les prospects, le décideur, son e-mail, et fait les recherches (site, Booking, Google, LinkedIn, Pappers, logiciels).
+- **②bis Diagnostiqueur** : chiffre les pertes (méthode chiffrée) et rédige le mail.
+- **③ Veille** : surveille les réponses. **④ Analyste** : mesure ce qui marche. **⑤ Compte rendu** : résume pour Sofiane.
+- Avant toute recherche ou tout mail, vérifier dans suivi.csv que le prospect n'a pas déjà été traité. Exemple : **Hôtel Saint-Cyr Étoile a déjà reçu son mail le 21/10 à 12 h 27** (après la visite de Sofiane) : ne pas refaire l'étude ni renvoyer de mail, seulement une relance le 28/10 sans réponse.
+
 ## Objectif
 Entretiens de découverte au nom d'AOS : comprendre les problèmes des hôteliers pour construire UN logiciel unique qui automatise tous leurs process et remplace la multitude de logiciels spécialisés. On ne vend rien : on pose des questions, on veut des réponses et des appels de 10 min. Contrepartie : synthèse anonymisée des entretiens.
 
