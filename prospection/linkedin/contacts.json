@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-22",
+ "maj": "2026-10-23",
  "contacts": [
   {
    "id": "oliver",
@@ -603,6 +603,168 @@
    "t": "Paris, Groupe",
    "id": "taieb22",
    "date": "2026-10-22"
+  },
+  {
+   "id": "foulon23",
+   "n": "Loïc Foulon",
+   "r": "Directeur général, Bleu Hôtel & Spa (Carry-le-Rouet / Côte Bleue, Marseille)",
+   "u": "https://www.linkedin.com/in/lo%C3%AFc-foulon/",
+   "m": "Bonjour Loïc, félicitations pour la direction du Bleu Hôtel & Spa, avec L'Oursin étoilé. J'interroge des hôteliers indépendants : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Marseille, Indépendant",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "gerber23",
+   "n": "Anne Gerber",
+   "r": "Directrice générale, Hôtel Cour du Corbeau – Stay Collection (Strasbourg)",
+   "u": "https://www.linkedin.com/in/gerber-anne-5931036b/",
+   "m": "Bonjour Anne, la Cour du Corbeau dans sa maison de 1528, labellisée Clé Verte 2025 : bel équilibre. J'interroge des hôteliers : quel logiciel ou quelle tâche répétitive vous fait perdre le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Strasbourg, Groupe",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "teil23",
+   "n": "Stéphane Teil",
+   "r": "Dirigeant (famille propriétaire), Hôtel Au Manoir Saint-Germain-des-Prés (Paris 6e)",
+   "u": "https://www.linkedin.com/in/stephane-teil-0057753/",
+   "m": "Bonjour Stéphane, 28 chambres boulevard Saint-Germain tenues par votre famille depuis 1995 : rare. J'interroge des hôteliers indépendants : quelle tâche répétitive vous prend le plus de temps au quotidien ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Indépendant",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "tsenova23",
+   "n": "Liliya Tsenova",
+   "r": "General Manager, Hôtel Le Florence (Nice)",
+   "u": "https://fr.linkedin.com/in/liliya-tsenova-15251061",
+   "m": "Bonjour Liliya, je vois que vous répondez vous-même aux avis du Florence et de ses 52 chambres rénovées. J'interroge des hôteliers : combien de temps vous prennent avis, mails et résas chaque semaine ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Nice, Indépendant",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "esclapez23",
+   "n": "Nicolas Esclapez",
+   "r": "Président, Nouvelle Vague Hospitality (Nice / Cannes)",
+   "u": "https://www.linkedin.com/in/nicolasesclapez/",
+   "m": "Bonjour Nicolas, l'expo de 63 œuvres au Canopy Cannes montre l'ADN de Nouvelle Vague Hospitality. J'interroge des groupes hôteliers : quelle tâche répétitive entre vos hôtels coûte le plus de temps aux équipes ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Nice, Groupe",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "monstiers23",
+   "n": "Maxime des Monstiers",
+   "r": "Associé fondateur, Capital Hospitality Europe (Paris)",
+   "u": "https://www.linkedin.com/in/maxmonstiers/",
+   "m": "Bonjour Maxime, bravo pour l'Antin Saint-Georges (36 ch., Paris 9e) et son repositionnement boutique. J'interroge des opérateurs : quelles tâches répétitives voulez-vous supprimer des process de vos hôtels ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "malandit23",
+   "n": "Sacha Malandit",
+   "r": "Directeur, Hôtel Aiglon (Paris 14e)",
+   "u": "https://www.linkedin.com/in/sachamalandit/",
+   "m": "Bonjour Sacha, l'Aiglon et ses 46 chambres Art déco boulevard Raspail ont un vrai cachet. J'interroge des hôteliers indépendants : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Indépendant",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "eshak23",
+   "n": "Agathe Eshak",
+   "r": "Directrice d'hôtel, Élysée Montmartre Hôtel (Paris 18e)",
+   "u": "https://www.linkedin.com/in/agathe-eshak-591565180/",
+   "m": "Bonjour Agathe, 16 chambres et une salle de projection Laserdisc à l'Élysée Montmartre Hôtel : concept original. J'interroge des hôteliers : quelle tâche répétitive vous fait perdre le plus de temps chaque semaine ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Indépendant",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "cachan23",
+   "n": "Serge Cachan",
+   "r": "Président, Astotel (Paris)",
+   "u": "https://www.linkedin.com/in/serge-cachan-700a6516b/",
+   "m": "Bonjour Serge, de l'Astra Opéra en 1961 aux 17 hôtels Astotel, belle histoire familiale. J'interroge des groupes indépendants : quel logiciel ou quelle tâche répétitive coûte le plus de temps à vos équipes ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "trian23",
+   "n": "Carole Trian",
+   "r": "Directrice générale, Hôtel Élysées Mermoz (Paris 8e)",
+   "u": "https://fr.linkedin.com/in/carole-trian-826170139",
+   "m": "Bonjour Carole, 27 chambres et une galerie d'art à l'Élysées Mermoz : belle signature. J'interroge des hôteliers indépendants : quelle tâche répétitive (mails, résas, avis) vous prend le plus de temps chaque semaine ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Indépendant",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "myon23",
+   "n": "Thibault Myon",
+   "r": "Co-gérant, Lyo Hôtel (Lyon 2e)",
+   "u": "https://www.linkedin.com/in/thibault-myon-138209136/",
+   "m": "Bonjour Thibault, la reprise de l'Hôtel de la Marne devenu Lyo Hôtel à Perrache est un beau projet. J'interroge des hôteliers indépendants : quelle tâche répétitive vous prend le plus de temps au quotidien ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Lyon, Indépendant",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "redolfi23",
+   "n": "Odile Redolfi-Payen",
+   "r": "General Manager, Le WindsoR Jungle Art Hotel (Nice)",
+   "u": "https://www.linkedin.com/in/odile-redolfi-payen-03012a17/",
+   "m": "Bonjour Odile, chambres d'artistes et festival OVNi : le WindsoR est unique à Nice. J'interroge des hôteliers indépendants : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Nice, Indépendant",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "beurotte23",
+   "n": "Florence Beurotte",
+   "r": "PDG, Hôtel Brueghel (Lille)",
+   "u": "https://www.linkedin.com/in/florence-beurotte-831b1a29/",
+   "m": "Bonjour Florence, le Brueghel, son ascenseur années 30 et sa vue sur Saint-Maurice : une adresse lilloise. J'interroge des hôteliers indépendants : quelle tâche répétitive vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Lille, Indépendant",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "parisot23",
+   "n": "Géraldine Parisot",
+   "r": "Directrice, Hôtel Bleu de Grenelle (Paris 15e)",
+   "u": "https://www.linkedin.com/in/g%C3%A9raldine-parisot-54147292/",
+   "m": "Bonjour Géraldine, 57 chambres dont certaines avec vue Tour Eiffel au Bleu de Grenelle, ouvert en 2021. J'interroge des hôteliers : quelle tâche répétitive (mails, résas, avis) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Indépendant",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "ruault23",
+   "n": "Maud Ruault",
+   "r": "Directrice, Les Plumes Hôtel – Cie Hôtelière de Bagatelle (Paris)",
+   "u": "https://www.linkedin.com/in/les-plumes-hotel-2a7455111/",
+   "m": "Bonjour Maud, Les Plumes et ses 35 chambres, dans un groupe qui vient de s'étendre à Nice avec La Pérouse. J'interroge des hôteliers : quelle tâche répétitive vous fait perdre le plus de temps chaque semaine ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "mancuso23",
+   "n": "Raphaël Mancuso",
+   "r": "Directeur des opérations, Compagnie Hôtelière de Bagatelle (Paris)",
+   "u": "https://www.linkedin.com/in/rapha%C3%ABl-mancuso-78421820/",
+   "m": "Bonjour Raphaël, avec La Pérouse à Nice, Bagatelle sort de Paris pour la 1re fois. J'interroge des groupes indépendants : sur vos 8 hôtels, quelle tâche répétitive ou quel logiciel fait perdre le plus de temps aux directeurs ? 10 min ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "meunier23",
+   "n": "Franck Meunier",
+   "r": "PDG, Faktory – Hôtel Madame C (Strasbourg)",
+   "u": "https://fr.linkedin.com/in/franck-meunier-76a074114",
+   "m": "Bonjour Franck, bravo pour Madame C, 12 chambres dans une maison de 1437, primée aux Icon Awards. J'interroge des hôteliers : entre hôtel, bars et restos Faktory, quelle tâche répétitive coûte le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Strasbourg, Groupe",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "frere23",
+   "n": "Caroline Frère",
+   "r": "Directrice, Hôtel Le Lumière – Groupe Desfossey Hôtellerie (Lyon 8e)",
+   "u": "https://www.linkedin.com/in/carolinefrere/",
+   "m": "Bonjour Caroline, Le Lumière rénové à Monplaisir, avec sa déco ciné : clin d'œil réussi aux frères Lumière. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Lyon, Groupe",
+   "date": "2026-10-23"
   }
  ]
 }
