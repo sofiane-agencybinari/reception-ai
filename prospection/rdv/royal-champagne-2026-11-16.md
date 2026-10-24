@@ -46,6 +46,6 @@
    - l'offre de groupe Champagne Hospitality si d'autres maisons existent (à vérifier avant le RDV).
 
 ## À faire avant le RDV
-- Vérifier quelles autres maisons font partie de Champagne Hospitality.
+- ✅ Champagne Hospitality (fondée par Denise Dupré et Mark Nunnelly) : Royal Champagne, Le 25 Bis by Leclerc Briant (Épernay), Villa des Trois Clochers (Villers-Allerand), Château de la Commaraine (Pommard), Le Barthélemy Hotel & Spa + Le Barth Villas (Saint-Barth). → 5 maisons : après un pilote réussi au Royal, proposer l'offre groupe à M. Parinaud.
 - Relire les 20 derniers avis Google et TripAdvisor pour citer 2 exemples précis.
 - Envoyer un mail de confirmation la semaine du 9/11, avec le lien de la maquette.
