@@ -69,3 +69,48 @@ On connaît bien la restauration : il y a beaucoup de gestion, et beaucoup de so
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
+
+---
+
+## 4. Pizza Cosy (groupe Le Grand Feu) — Ligne
+**À :** florent.mercier@legrandfeu.fr *(format prenom.nom@legrandfeu.fr confirmé par une adresse publiée, fabrice.silvan@legrandfeu.fr)*
+**Objet :** Florent, environ 260 000 € par mois d'appels manqués sur le réseau Pizza Cosy ?
+
+Bonjour Monsieur Mercier,
+
+Plus de 70 Pizza Cosy, 6 ouvertures depuis juin (Castres, Bonson, Hyères, Perpignan…) : à chaque ouverture, une nouvelle ligne de téléphone qui sonne pendant le rush.
+
+Notre estimation (hypothèses : 5 appels manqués par soir et par restaurant, panier moyen de 25 €) :
+- **Environ 3 750 € par mois et par restaurant**, soit **environ 260 000 € par mois** à l'échelle du réseau.
+
+Ligne est un réceptionniste vocal qui :
+- décroche en moins de 2 secondes, 24h/24 ;
+- prend jusqu'à 10 appels en même temps ;
+- prend la commande à la voix, l'envoie sur l'écran cuisine et confirme au client par SMS.
+
+Il s'installe en 24 h, sans engagement, à partir de 49 €/mois + les minutes utilisées. Démo libre sur ligne-ai.com.
+
+On connaît bien la restauration : il y a beaucoup de gestion, et beaucoup de soucis négligés faute de temps. Je vous propose un **audit gratuit et sans engagement**, avec un pilote sur 3 restaurants (pourquoi pas les dernières ouvertures) : mardi 27/10 à 16 h 30 ou jeudi 29/10 à 15 h.
+
+Bien cordialement,
+Sofiane Aokache — Ligne — 06 95 84 64 41
+
+---
+
+## 5. La Boîte à Pizza — Ligne
+**À :** flallement@groupeflfinance.com *(format {initiale}{nom}@groupeflfinance.com relevé, adresse non publiée : envoyer en dernier et surveiller un éventuel rebond)*
+**Objet :** Monsieur Lallement, environ 130 000 € par mois d'appels manqués sur les 35 Boîte à Pizza ?
+
+Bonjour Monsieur Lallement,
+
+Dans les avis Google des Boîte à Pizza, une remarque revient souvent : « difficile à joindre par téléphone ». Sur 35 points de vente, chaque appel sans réponse est une commande qui part chez un concurrent.
+
+Notre estimation (hypothèses : 5 appels manqués par soir et par restaurant, panier moyen de 25 €) :
+- **Environ 3 750 € par mois et par restaurant**, soit **environ 130 000 € par mois** sur le réseau.
+
+Ligne décroche en moins de 2 secondes, 24h/24, prend jusqu'à 10 appels en même temps, prend la commande à la voix et l'envoie sur l'écran cuisine, avec un SMS de confirmation au client. Installation en 24 h, sans engagement, à partir de 49 €/mois + les minutes utilisées. Démo libre sur ligne-ai.com.
+
+On connaît bien la restauration : il y a beaucoup de gestion, et beaucoup de soucis négligés faute de temps. Je vous propose un **audit gratuit et sans engagement**, avec un pilote sur 3 restaurants : mardi 27/10 à 15 h ou mercredi 28/10 à 16 h 30.
+
+Bien cordialement,
+Sofiane Aokache — Ligne — 06 95 84 64 41
