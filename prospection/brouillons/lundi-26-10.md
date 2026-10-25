@@ -114,3 +114,8 @@ On connaît bien la restauration : il y a beaucoup de gestion, et beaucoup de so
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
+
+---
+
+### P.S. optionnel à ajouter aux mails AOS (Harvey, CAJA, Alfred) si Sofiane va à EquipHotel
+« P.S. Je serai à EquipHotel (Paris Expo Porte de Versailles) du 2 au 5 novembre. Si vous y passez, 15 minutes sur place suffisent pour vous montrer la maquette sur tablette. »
