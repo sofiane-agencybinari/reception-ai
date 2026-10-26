@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-23",
+ "maj": "2026-10-26",
  "contacts": [
   {
    "id": "oliver",
@@ -765,6 +765,132 @@
    "m": "Bonjour Caroline, Le Lumière rénové à Monplaisir, avec sa déco ciné : clin d'œil réussi aux frères Lumière. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
    "t": "Lyon, Groupe",
    "date": "2026-10-23"
+  },
+  {
+   "id": "legal26",
+   "n": "Pierre-Yves Le Gal",
+   "r": "Fondateur & DG, Arzel Hôtels (Nantes)",
+   "u": "https://www.linkedin.com/in/pierre-yves-le-gal-89b4a810/",
+   "m": "Bonjour Pierre-Yves, Arzel qui reprend le Chantecler au Mans, premier pas hors de Nantes après Oldegar : belle trajectoire. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps sur 4 sites ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Nantes, Arzel Hôtels",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "zudaire26",
+   "n": "Sophie Zudaire",
+   "r": "Directrice, Hôtel de Silhouette (Biarritz)",
+   "u": "https://www.linkedin.com/in/sophie-zudaire-05944710a/",
+   "m": "Bonjour Sophie, Maison Silhouette et ses 6 chambres dans l'ancienne Maison Garnier, face à l'Hôtel de Silhouette : joli prolongement. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Biarritz",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "everaere26",
+   "n": "Chloé Everaere",
+   "r": "Directrice, Le Relais Saint-Honoré (Paris)",
+   "u": "https://www.linkedin.com/in/chlo%C3%A9-everaere-b9b3665a/",
+   "m": "Bonjour Chloé, Le Relais Saint-Honoré décroche sa 4e étoile dans une bâtisse du XVIIe : bravo pour ce cap. J'interroge des hôteliers : sur un petit hôtel, quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "morazzani26",
+   "n": "Yann Morazzani",
+   "r": "Directeur, Hôtel Paris Bastille (Paris)",
+   "u": "https://www.linkedin.com/in/yann-morazzani-2147601b/",
+   "m": "Bonjour Yann, 18 à 29 % d'énergie économisée à l'Hôtel Paris Bastille avec AGRID : résultat impressionnant. J'interroge des hôteliers : côté logiciels, quelle tâche répétitive (résas, mails, planning) vous prend encore le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "hilaire26",
+   "n": "Emmanuel Hilaire",
+   "r": "Co-directeur, Hôtel Albert 1er (Toulouse)",
+   "u": "https://www.linkedin.com/in/emmanuel-hilaire-b8b38496/",
+   "m": "Bonjour Emmanuel, l'Albert 1er tenu par la 3e génération et le rachat de l'Hôtel d'Orsay près de Matabiau : belle histoire familiale. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Toulouse",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "charbit26",
+   "n": "Salomé Charbit",
+   "r": "Directrice, Hôtel de Fleurie & Hôtel La Folie des Prés (Paris)",
+   "u": "https://www.linkedin.com/in/salome-charbit/",
+   "m": "Bonjour Salomé, deux hôtels à Saint-Germain plus le coffee shop Clode ouvert en 2025 : sacré trio à piloter. J'interroge des hôteliers : entre les sites, quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "guipet26",
+   "n": "Nicolas Guipet",
+   "r": "Directeur général, Hôtel d'Aubusson (Paris)",
+   "u": "https://fr.linkedin.com/in/nicolasguipet",
+   "m": "Bonjour Nicolas, l'Hôtel d'Aubusson qui rouvre après un an de travaux avec 44 chambres et suites : belle renaissance. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps à la reprise ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "lebaud26",
+   "n": "Ludovic Le Baud",
+   "r": "Directeur, Maison Bauchart (Paris)",
+   "u": "https://fr.linkedin.com/in/ludovic-le-baud/en",
+   "m": "Bonjour Ludovic, Maison Bauchart et ses dix suites ouvertes fin 2025 dans le 8e : une adresse confidentielle réussie. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, demandes clients) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "sterckx26",
+   "n": "Louis Sterckx",
+   "r": "Directeur, Hôtel du Théâtre (Lyon)",
+   "u": "https://fr.linkedin.com/in/louis-sterckx-a4b915175",
+   "m": "Bonjour Louis, 24 chambres dont plus de la moitié face aux Célestins et à Fourvière : l'Hôtel du Théâtre a la plus belle vue. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Lyon",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "bruneel26",
+   "n": "Joris Bruneel",
+   "r": "Dirigeant, Groupe MyHotels / Babel (Paris, Lille)",
+   "u": "https://www.linkedin.com/in/joris-bruneel-38b5a267/",
+   "m": "Bonjour Joris, Babel Belleville, 1er hôtel indépendant société à mission, puis Babel Lille et ses 71 chambres : beau parcours. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Groupe MyHotels",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "renart26",
+   "n": "Loïc Renart",
+   "r": "Président, Les Aubergistes Lyonnais / G&C (Lyon)",
+   "u": "https://www.linkedin.com/in/lo%C3%AFc-renart-144a3240/",
+   "m": "Bonjour Loïc, du Globe et Cecil familial depuis 1966 au Simplon et au Phénix : 3 hôtels lyonnais, joli développement. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps sur plusieurs sites ? 10 min d'échange ? Sofiane (AOS)",
+   "t": "Lyon, Les Aubergistes Lyonnais",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "bellamy26",
+   "n": "Margot Bellamy",
+   "r": "Directrice générale, Hôtel Toujours & Spa (Paris)",
+   "u": "https://www.linkedin.com/in/margotbellamy-hospitality/",
+   "m": "Bonjour Margot, la certification Green Globe pour l'Hôtel Toujours, dans son bâtiment de 1860 : bel engagement. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps au quotidien ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "guilloux26",
+   "n": "Laurence Guilloux",
+   "r": "Directrice, Hôtel des Roys & Hôtel Versailles Chantiers (Versailles)",
+   "u": "https://www.linkedin.com/in/laurence-guilloux-0a865345/",
+   "m": "Bonjour Laurence, l'Hôtel des Roys dans une demeure du XVIIIe à deux pas du Château, plus Versailles Chantiers : deux beaux hôtels. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange ? Sofiane (AOS)",
+   "t": "Versailles",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "droux26",
+   "n": "Véronique Droux",
+   "r": "Directrice et copropriétaire, Hôtel Les Trésoms (Annecy)",
+   "u": "https://www.linkedin.com/in/v%C3%A9ronique-droux-a86392129/",
+   "m": "Bonjour Véronique, Les Trésoms monté en gamme depuis votre reprise en 1998, jusqu'au 4 étoiles avec spa et deux restaurants : bravo. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange ? Sofiane (AOS)",
+   "t": "Annecy",
+   "date": "2026-10-26"
   }
  ]
 }
