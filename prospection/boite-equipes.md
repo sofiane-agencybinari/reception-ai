@@ -14,3 +14,4 @@ Format : une ligne par message, la plus récente en bas, puis commit + push sur 
 Quand Sofiane répond, la réponse est écrite sous la ligne avec `→ réponse :` et le statut passe à `traité`.
 
 ## Messages
+- [2026-10-27 12h30] [terrain Sofiane] [INFO] Honotel / HappyCulture : Sofiane est passé à l'Étoile Saint-Ferdinand (17e) — les directeurs d'hôtel HappyCulture ne décident de rien, tout se décide au siège Honotel (18 rue Treilhard, 8e). Déjà 2 mails partis à la DG/président sans réponse : prochaine approche = Antoine Foujols (directeur des opérations), puis Gaëtan Le Pogam (commercial & marketing), angle « passage à l'Étoile Saint-Ferdinand » + audit pilote gratuit. Détails dans reserve-prospects.md. Équipe LinkedIn : ajouter Foujols et Le Pogam. Étoile Saint-Ferdinand ajouté à prochaine-tournee.md — statut: ouvert
