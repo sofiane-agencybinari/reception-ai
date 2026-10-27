@@ -49,3 +49,8 @@
 - ✅ Champagne Hospitality (fondée par Denise Dupré et Mark Nunnelly) : Royal Champagne, Le 25 Bis by Leclerc Briant (Épernay), Villa des Trois Clochers (Villers-Allerand), Château de la Commaraine (Pommard), Le Barthélemy Hotel & Spa + Le Barth Villas (Saint-Barth). → 5 maisons : après un pilote réussi au Royal, proposer l'offre groupe à M. Parinaud.
 - Relire les 20 derniers avis Google et TripAdvisor pour citer 2 exemples précis.
 - Envoyer un mail de confirmation la semaine du 9/11, avec le lien de la maquette.
+
+## Mise à jour 27/10
+- Format : **visio Google Meet, ~30 min** (et non sur place) — lien envoyé par Sofiane le 27/10 à 14h24 : https://meet.google.com/dwj-nugb-oiz
+- Céline Risso a confirmé le 27/10 à 14h37 : « C'est entendu merci. »
+- Adapter l'ordre du jour de 45 à 30 min : 5 min contexte, 15 min les 3 chiffres (≈ 190 k€/an), 10 min proposition de pilote 30 jours.
