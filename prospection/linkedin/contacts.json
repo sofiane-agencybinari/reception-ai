@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-26",
+ "maj": "2026-10-27",
  "contacts": [
   {
    "id": "oliver",
@@ -891,6 +891,132 @@
    "m": "Bonjour Véronique, Les Trésoms monté en gamme depuis votre reprise en 1998, jusqu'au 4 étoiles avec spa et deux restaurants : bravo. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange ? Sofiane (AOS)",
    "t": "Annecy",
    "date": "2026-10-26"
+  },
+  {
+   "id": "contamin27",
+   "n": "Sabine Contamin",
+   "r": "Directrice générale, Hôtel Verneuil Saint-Germain (Paris 7e)",
+   "u": "https://www.linkedin.com/in/sabine-contamin-74bab43/",
+   "m": "Bonjour Sabine, L'Hôtel Verneuil et ses 26 chambres dans une maison du XVIIe, rue de Verneuil : un Saint-Germain intime. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "hery27",
+   "n": "Marie José Hery",
+   "r": "Directrice, Hôtel des Grands Hommes (Paris 5e)",
+   "u": "https://www.linkedin.com/in/marie-jos%C3%A9-hery-85085b105/",
+   "m": "Bonjour Marie José, Diriger l'hôtel où Breton et Soupault ont écrit Les Champs magnétiques, face au Panthéon : quel décor ! J'interroge des hôteliers : quel logiciel ou quelle tâche répétitive vous fait perdre le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Hôtels Paris Rive Gauche",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "harrault27",
+   "n": "Sylvia Harrault",
+   "r": "Directrice générale, Hôtel Baume (Paris 6e)",
+   "u": "https://www.linkedin.com/in/sylvia-harrault-b0357210/",
+   "m": "Bonjour Sylvia, Diriger l'Hôtel Baume et présider le jury national MOF réceptionniste : l'accueil, vous connaissez ! J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) pèse le plus sur vos équipes ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Hôtels Paris Rive Gauche",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "heguy27",
+   "n": "Jean-Pierre Héguy",
+   "r": "Directeur général, Hôtel Windsor & La Suite (Biarritz)",
+   "u": "https://fr.linkedin.com/in/jean-pierre-heguy-6b25971b7",
+   "m": "Bonjour Jean-Pierre, Après le Windsor, l'ex-Bellevue renaît en La Suite (19 chambres) sur la Grande Plage : bel élan familial. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Biarritz",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "desbois27",
+   "n": "Lydia Desbois",
+   "r": "Directrice générale, Empreinte Hôtel & Spa (Orléans)",
+   "u": "https://www.linkedin.com/in/lydia-desbois-41188a170/",
+   "m": "Bonjour Lydia, Empreinte Hôtel, 32 chambres et un spa dans une ancienne demeure aristocratique du quai du Châtelet, face à la Loire : superbe. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Orléans",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "georgeslhenoret27",
+   "n": "Zeina Georges-L'Hénoret",
+   "r": "Propriétaire & Managing Director, Hôtel San Régis (Paris 8e)",
+   "u": "https://www.linkedin.com/in/zeina-georges-l-h%C3%A9noret-b1100313/",
+   "m": "Bonjour Zeina, Le San Régis, maison familiale de la rue Jean-Goujon, désormais certifié Green Globe : bravo à vous et Sarah. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "okda27",
+   "n": "Khair Okda",
+   "r": "Directeur, Hôtel Le Grand Balcon (Toulouse)",
+   "u": "https://www.linkedin.com/in/khair-okda-a912022b/",
+   "m": "Bonjour Khair, Le Grand Balcon et la chambre 32 de Saint-Exupéry, inscrite aux monuments historiques : quelle mémoire de l'Aéropostale ! J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Toulouse",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "temimia27",
+   "n": "Aziz Temimi",
+   "r": "Fondateur, Maison Mère (Paris 9e)",
+   "u": "https://www.linkedin.com/in/aziz-temimi-9135681a/",
+   "m": "Bonjour Aziz, Maison Mère et son coworking ouvert gratuitement aux habitants du 9e : une vraie idée d'hôtel de quartier. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Moon Hospitality",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "temimiw27",
+   "n": "Walid Temimi",
+   "r": "Copropriétaire, Joli Môme Batignolles & DG, Hôtel Le Belmont (Paris)",
+   "u": "https://www.linkedin.com/in/walid-temimi-70a20151/",
+   "m": "Bonjour Walid, Joli Môme aux Batignolles, l'ex-B Square devenu maison urbaine de 31 chambres : joli cadet pour Maison Mère. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Moon Hospitality",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "nicoletti27",
+   "n": "Etienne Nicoletti",
+   "r": "Directeur général, Soniho (Nice)",
+   "u": "https://www.linkedin.com/in/etiennenicoletti/",
+   "m": "Bonjour Etienne, Soniho qui quitte la franchise pour sa propre marque, avec des hôtels lieux de vie comme le Pin à Nice Port : beau virage. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Nice, Soniho",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "comble27",
+   "n": "Emmanuel Comble",
+   "r": "Président, Timhotel (Paris)",
+   "u": "https://www.linkedin.com/in/emmanuel-comble-bb6624/",
+   "m": "Bonjour Emmanuel, Le rachat de La Lanterne & Spa (42 chambres) près de Notre-Dame : joli 4* pour Timhotel. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) fait perdre le plus de temps à vos équipes ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Paris, Timhotel",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "denerolle27",
+   "n": "Jean Denerolle",
+   "r": "COO / dirigeant, Pavillon Henri IV (Saint-Germain-en-Laye)",
+   "u": "https://www.linkedin.com/in/jean-denerolle/",
+   "m": "Bonjour Jean, Le Pavillon Henri IV, où naquit Louis XIV et où fut créée la sauce béarnaise : rare patrimoine ! J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Saint-Germain-en-Laye, Groupe CEH",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "jung27",
+   "n": "Deborah Jung",
+   "r": "Directrice générale & propriétaire, Le Bouclier d'Or Hôtel & Spa (Strasbourg)",
+   "u": "https://www.linkedin.com/in/deborah-jung-08b42ab7/",
+   "m": "Bonjour Deborah, Le Bouclier d'Or, demeure de la Petite France rénovée par votre famille et ouverte en 2012 : un bel écrin. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Strasbourg",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "janvier27",
+   "n": "Cédric Janvier",
+   "r": "Propriétaire & directeur général, Hôtel de Sèze (Bordeaux)",
+   "u": "https://fr.linkedin.com/in/cedric-janvier-71b9804",
+   "m": "Bonjour Cédric, L'Hôtel de Sèze, 55 chambres dans un immeuble du XVIIIe et même un golf à Carignan : rare combinaison. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
+   "t": "Bordeaux",
+   "date": "2026-10-27"
   }
  ]
 }
