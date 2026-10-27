@@ -69,6 +69,11 @@ Fini les mails « 10 minutes de votre avis » sans chiffres. Chaque mail à un p
 7. **Offrir un audit approfondi, gratuit et sans engagement**, avec 2 créneaux en semaine entre 15 h et 17 h 30.
 8. **Absents (réponse automatique)** : relancer le jour de leur retour, avec la même méthode.
 
+### Règle réceptionniste IA (décision de Sofiane, 27/10) — OBLIGATOIRE pour les hôtels
+- Ne JAMAIS présenter le réceptionniste IA en premier. Ordre de l'offre : 1) logiciels connectés entre eux / fin des ressaisies, 2) messages automatiques avant et après le séjour, 3) seulement ensuite le réceptionniste IA.
+- Toujours le présenter comme un complément utilisé à leur convenance, jamais comme un remplacement de la réception : par exemple un numéro qu'on donne aux clients pendant leur séjour pour leurs questions et demandes (serviettes, horaires, taxi, infos quartier), ou la nuit, ou en débordement pendant les pics. Aucun hôtel n'acceptera de passer 100 % de son accueil par une IA.
+- Formulation type : « et, si vous le souhaitez, un assistant IA que vous utilisez à votre convenance, par exemple un numéro donné à vos clients pendant leur séjour pour leurs questions et demandes, pendant que votre équipe reste à l'accueil. »
+
 ### Repères de calcul hôtels
 - Commissions des plateformes : 15 à 18 % ; chaque tranche de 5 % de nuits ramenées en réservation directe = CA chambres × 5 % × 17 %.
 - Ressaisie entre outils : 1 à 2 h par jour et par hôtel × 25-30 € de coût horaire chargé × 365.
