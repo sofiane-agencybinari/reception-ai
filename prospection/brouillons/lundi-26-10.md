@@ -1,4 +1,4 @@
-# 3 mails chiffrés prêts pour lundi 26/10 (adresses publiées → aucun risque de rebond)
+# 5 mails chiffrés à envoyer mercredi 28/10 entre 8 h 30 et 10 h (créneaux remis à jour le 27/10)
 À envoyer à la main depuis Outlook web entre 8 h 30 et 10 h, avec la signature habituelle (AOS pour les hôtels, Ligne pour Planet Sushi). Avant d'envoyer, vérifier que le nom n'est pas dans les éléments envoyés.
 
 ---
@@ -19,7 +19,7 @@ Nous avons estimé ce que cela représente chez vous (hypothèses : environ 40 c
 
 On connaît bien le secteur : il y a beaucoup de gestion, et beaucoup de soucis négligés faute de temps. AOS relie vos outils et prend en charge ces tâches répétitives pour vos équipes.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mardi 27/10 à 16 h ou jeudi 29/10 à 15 h 30.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 29/10 à 15 h 30 ou vendredi 30/10 à 16 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -40,7 +40,7 @@ Notre estimation (hypothèse : 1,5 h par jour et par hôtel de ressaisie entre l
 
 On connaît bien le secteur : il y a beaucoup de gestion, et beaucoup de soucis négligés faute de temps. AOS relie les outils de chaque hôtel dès le rachat, et l'équipe démarre avec les tâches répétitives déjà prises en charge.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mardi 27/10 à 15 h ou jeudi 29/10 à 16 h 30.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 29/10 à 16 h 30 ou vendredi 30/10 à 15 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -65,7 +65,7 @@ Ligne est un réceptionniste vocal qui :
 
 Il s'installe en 24 h, sans engagement, à partir de 49 €/mois + les minutes utilisées. Vous pouvez tester la démo vous-même sur ligne-ai.com.
 
-On connaît bien la restauration : il y a beaucoup de gestion, et beaucoup de soucis négligés faute de temps. Je vous propose un **audit gratuit et sans engagement**, avec un pilote sur 3 succursales : mardi 27/10 à 15 h 30 ou mercredi 28/10 à 16 h.
+On connaît bien la restauration : il y a beaucoup de gestion, et beaucoup de soucis négligés faute de temps. Je vous propose un **audit gratuit et sans engagement**, avec un pilote sur 3 succursales : jeudi 29/10 à 15 h ou vendredi 30/10 à 16 h 30.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -90,7 +90,7 @@ Ligne est un réceptionniste vocal qui :
 
 Il s'installe en 24 h, sans engagement, à partir de 49 €/mois + les minutes utilisées. Démo libre sur ligne-ai.com.
 
-On connaît bien la restauration : il y a beaucoup de gestion, et beaucoup de soucis négligés faute de temps. Je vous propose un **audit gratuit et sans engagement**, avec un pilote sur 3 restaurants (pourquoi pas les dernières ouvertures) : mardi 27/10 à 16 h 30 ou jeudi 29/10 à 15 h.
+On connaît bien la restauration : il y a beaucoup de gestion, et beaucoup de soucis négligés faute de temps. Je vous propose un **audit gratuit et sans engagement**, avec un pilote sur 3 restaurants (pourquoi pas les dernières ouvertures) : jeudi 29/10 à 17 h ou vendredi 30/10 à 15 h 30.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -110,7 +110,7 @@ Notre estimation (hypothèses : 5 appels manqués par soir et par restaurant, pa
 
 Ligne décroche en moins de 2 secondes, 24h/24, prend jusqu'à 10 appels en même temps, prend la commande à la voix et l'envoie sur l'écran cuisine, avec un SMS de confirmation au client. Installation en 24 h, sans engagement, à partir de 49 €/mois + les minutes utilisées. Démo libre sur ligne-ai.com.
 
-On connaît bien la restauration : il y a beaucoup de gestion, et beaucoup de soucis négligés faute de temps. Je vous propose un **audit gratuit et sans engagement**, avec un pilote sur 3 restaurants : mardi 27/10 à 15 h ou mercredi 28/10 à 16 h 30.
+On connaît bien la restauration : il y a beaucoup de gestion, et beaucoup de soucis négligés faute de temps. Je vous propose un **audit gratuit et sans engagement**, avec un pilote sur 3 restaurants : vendredi 30/10 à 15 h ou lundi 2/11 à 16 h.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
