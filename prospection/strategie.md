@@ -79,3 +79,8 @@ Fini les mails « 10 minutes de votre avis » sans chiffres. Chaque mail à un p
 - Appels manqués au rush : nombre d'appels manqués par service × panier moyen × jours d'ouverture (ex. 5 appels × 25 € × 26 soirs ≈ 3 250 € par mois).
 - Temps au téléphone : minutes par commande × commandes par jour × coût horaire.
 - Toujours comparer au prix de Ligne (49 / 99 / 199 € par mois + minutes) pour montrer le retour sur investissement.
+
+
+## Rythme d'envoi (décision de Sofiane, 27/10)
+- Domaine aos-ai.fr neuf : **5 mails/jour max du 28/10 au 1/11**, 10/jour la semaine du 2/11, 15/jour ensuite. Rien après 15 mails le même jour, toutes équipes et tous comptes confondus (Outlook Ligne + Gmail aos-ai.fr).
+- Vérifier le compteur du jour dans suivi.csv avant chaque envoi.
