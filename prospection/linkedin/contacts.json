@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-27",
+ "maj": "2026-10-28",
  "contacts": [
   {
    "id": "oliver",
@@ -1017,6 +1017,132 @@
    "m": "Bonjour Cédric, L'Hôtel de Sèze, 55 chambres dans un immeuble du XVIIIe et même un golf à Carignan : rare combinaison. J'interroge des hôteliers : quelle tâche répétitive (résas, mails, planning) vous prend le plus de temps ? 10 min d'échange possible ? Sofiane (AOS)",
    "t": "Bordeaux",
    "date": "2026-10-27"
+  },
+  {
+   "id": "darde28",
+   "n": "Henri-Georges Darde",
+   "r": "Directeur, Hôtel Palladia (Toulouse)",
+   "u": "https://www.linkedin.com/in/henri-georges-darde-93168148/",
+   "m": "Bonjour Henri-Georges, avec plus de 1 200 événements privés par an au Palladia, quelle tâche répétitive (devis, relances, réservations) vous prend le plus de temps ? J'aimerais en discuter 10 min, simple échange, rien à vendre. Sofiane (AOS)",
+   "t": "Toulouse",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "lahondes28",
+   "n": "Romain Lahondès",
+   "r": "Codirigeant, Hôtel États-Unis Opéra (Paris 2e)",
+   "u": "https://www.linkedin.com/in/romain-lahond%C3%A8s-40762b18a/",
+   "m": "Bonjour Romain, 3e génération à la tête de l'États-Unis Opéra depuis 1947 : sur vos 45 chambres, quel logiciel ou quelle tâche répétitive vous fait perdre le plus de temps ? Auriez-vous 10 min pour en parler, sans démarche commerciale ? Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "graff28",
+   "n": "Margaux Graff",
+   "r": "Directrice, Hôtel Saint-Marc (Paris 2e)",
+   "u": "https://www.linkedin.com/in/margaux-graff-2bb12887/",
+   "m": "Bonjour Margaux, vous avez repris le Saint-Marc à 25 ans, dans son écrin Dimore Studio. Quelle tâche du quotidien vous fait perdre le plus de temps aujourd'hui ? J'aimerais en échanger 10 min, sans rien vous vendre. Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "campion28",
+   "n": "Carole Campion",
+   "r": "Directrice, Hôtel de Nemours & Hôtel Lanjuinais (Rennes)",
+   "u": "https://fr.linkedin.com/in/carole-campion-6955a0169",
+   "m": "Bonjour Carole, entre le Nemours et le Lanjuinais (38 chambres rénovées fin 2018), quelle tâche répétitive vous coûte le plus de temps à gérer sur deux hôtels ? Auriez-vous 10 min pour un échange, sans vente ? Sofiane (AOS)",
+   "t": "Rennes",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "makara28",
+   "n": "Solène Makara",
+   "r": "Directrice, Hôtel La Zoologie (Bordeaux)",
+   "u": "https://www.linkedin.com/in/sol%C3%A8ne-makara-513704254/",
+   "m": "Bonjour Solène, diriger La Zoologie, ancien institut devenu 4 étoiles, ce n'est pas banal. Quel outil ou quelle tâche répétitive vous fait perdre le plus de temps au quotidien ? J'aimerais en parler 10 min, sans vente. Sofiane (AOS)",
+   "t": "Bordeaux",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "wanner28",
+   "n": "Jonathan Wanner",
+   "r": "Directeur, Hôtel Diana Dauphine (Strasbourg)",
+   "u": "https://www.linkedin.com/in/jonathan-wanner-7a2573b3/",
+   "m": "Bonjour Jonathan, au Diana Dauphine, 46 chambres à deux pas de la cathédrale, quelle tâche répétitive (mails, réservations, planning) vous prend le plus de temps ? Auriez-vous 10 min pour en parler, sans vente ? Sofiane (AOS)",
+   "t": "Strasbourg, Diana Hotels Collection",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "marciano28",
+   "n": "Samy Marciano",
+   "r": "Propriétaire, La Clé Group – Hôtel Bachaumont & Hôtel National des Arts et Métiers (Paris)",
+   "u": "https://www.linkedin.com/in/samymarciano/",
+   "m": "Bonjour Samy, de Rodier au Bachaumont puis au National des Arts et Métiers : avec trois hôtels, quel logiciel ou quelle tâche répétitive fait perdre le plus de temps à vos équipes ? J'aimerais en échanger 10 min, sans vente. Sofiane (AOS)",
+   "t": "Paris, La Clé Group",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "debordas28",
+   "n": "Alain de Bordas",
+   "r": "Propriétaire, Baudon de Mauny (Montpellier)",
+   "u": "https://www.linkedin.com/in/alain-de-bordas-a0719229/",
+   "m": "Bonjour Alain, faire vivre l'hôtel particulier de 1777 de votre famille avec 8 chambres demande du temps. Quelle tâche répétitive vous en prend le plus (réservations, mails, factures) ? J'aimerais en parler 10 min, sans vente. Sofiane (AOS)",
+   "t": "Montpellier",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "lenoir28",
+   "n": "Jacques Lenoir",
+   "r": "Directeur général, Hôtel des Arts Bastille (Paris 11e)",
+   "u": "https://www.linkedin.com/in/jacques-lenoir-8480a213a/",
+   "m": "Bonjour Jacques, à l'Hôtel des Arts Bastille, 35 chambres sur six étages, quelle tâche répétitive ou quel logiciel vous fait perdre le plus de temps ? Auriez-vous 10 min pour un échange, sans rien à vendre ? Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "frot28",
+   "n": "Richard Frot",
+   "r": "Directeur général, Belinda Hôtel & Spa (Paris 16e)",
+   "u": "https://www.linkedin.com/in/richard-frot/",
+   "m": "Bonjour Richard, Belinda a ouvert à l'été 2025 avec son décor seventies et son spa Sothys. Après ce lancement, quelle tâche répétitive vous prend le plus de temps ? J'aimerais en discuter 10 min, sans vente. Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "meyer28",
+   "n": "Nathan Meyer",
+   "r": "Directeur, Hôtel Le Bellechasse Saint-Germain (Paris 7e)",
+   "u": "https://www.linkedin.com/in/nathan-meyer-109402206/",
+   "m": "Bonjour Nathan, au Bellechasse, avec ses chambres signées Christian Lacroix, quelle tâche répétitive ou quel logiciel vous fait perdre le plus de temps au quotidien ? Auriez-vous 10 min pour en parler, sans vente ? Sofiane (AOS)",
+   "t": "Paris, Exclusive Hotels",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "brault28",
+   "n": "Antoine Brault",
+   "r": "Copropriétaire, Hôtel Jules & Jim (Paris 3e)",
+   "u": "https://www.linkedin.com/in/antoine-brault-38101112b/",
+   "m": "Bonjour Antoine, le Jules & Jim, ancienne fabrique de métaux précieux devenue hôtel de 23 chambres, a une vraie âme. Quelle tâche répétitive vous fait perdre le plus de temps ? J'aimerais en échanger 10 min, sans vente. Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "berdah28",
+   "n": "Sophie Berdah",
+   "r": "Propriétaire, Le Citizen Hotel (Paris 10e)",
+   "u": "https://www.linkedin.com/in/sophie-berdah-7a619910/",
+   "m": "Bonjour Sophie, avec 12 chambres face au canal Saint-Martin, Le Citizen tourne avec une petite équipe. Quelle tâche répétitive vous fait perdre le plus de temps ? Auriez-vous 10 min pour en parler, sans démarche commerciale ? Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-28"
+  },
+  {
+   "id": "poulard28",
+   "n": "Yannick Poulard",
+   "r": "Directeur, Hôtel Le Versailles (Versailles)",
+   "u": "https://www.linkedin.com/in/yannickpoulard/",
+   "m": "Bonjour Yannick, au Versailles, 46 chambres à une minute du château, quelle tâche répétitive ou quel logiciel vous fait perdre le plus de temps en haute saison ? Auriez-vous 10 min pour un échange, sans vente ? Sofiane (AOS)",
+   "t": "Versailles",
+   "date": "2026-10-28"
   }
  ]
 }
