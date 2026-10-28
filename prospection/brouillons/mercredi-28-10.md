@@ -1,4 +1,4 @@
-# 5 mails blindés : mercredi 28/10, entre 8 h 30 et 10 h (vérifiés le 27/10 au soir)
+# 5 mails blindés : à envoyer JEUDI 29/10 entre 8 h 30 et 10 h (décalés du 28/10, créneaux remis à jour)
 
 Domaine aos-ai.fr neuf : **5 envois maximum aujourd'hui**, tous comptes confondus (Gmail aos-ai.fr + Outlook Ligne), Harvey compris. Envoi à la main, un mail toutes les 10 à 15 minutes, avec la signature habituelle (AOS pour les hôtels, Ligne pour les restaurants). Avant chaque envoi, chercher l'adresse dans les éléments envoyés : aucun de ces destinataires ne figure dans suivi.csv, sauf Harvey (1er mail le 22/10, d'où la relance).
 
@@ -35,7 +35,7 @@ Estimations à partir de données publiques et d'hypothèses prudentes, à confi
 
 AOS ajuste vos prix, prépare factures et réponses aux clients, et tient le planning du ménage. Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 29/10 à 16 h ou vendredi 30/10 à 15 h 30.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : vendredi 30/10 à 15 h 30 ou jeudi 5/11 à 16 h 15.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -64,7 +64,7 @@ Estimations à partir de données publiques et d'hypothèses prudentes, à confi
 
 AOS relie les outils de vos six hôtels et supprime ces ressaisies. Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 29/10 à 15 h 30 ou vendredi 30/10 à 16 h.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : vendredi 30/10 à 16 h ou jeudi 5/11 à 15 h 45.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -91,7 +91,7 @@ Estimations à partir de données publiques et d'hypothèses prudentes, à confi
 
 AOS relie les outils de chaque hôtel dès le rachat et supprime ces ressaisies. Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 29/10 à 16 h 30 ou vendredi 30/10 à 15 h.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : vendredi 30/10 à 15 h ou jeudi 5/11 à 16 h 45.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -118,7 +118,7 @@ Estimations à partir de données publiques et d'hypothèses prudentes, à confi
 
 Ligne décroche en moins de 2 secondes, 24h/24, jusqu'à 10 appels à la fois, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. Installé en 24 h, sans engagement, de 49 à 199 € par mois + minutes. Démo sur ligne-ai.com.
 
-La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 29/10 à 15 h ou vendredi 30/10 à 16 h 30.
+La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 5/11 à 15 h 15 ou vendredi 30/10 à 16 h 30.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -145,7 +145,7 @@ Estimations à partir de données publiques et d'hypothèses prudentes, à confi
 
 Ligne décroche en moins de 2 secondes, 24h/24, jusqu'à 10 appels à la fois, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. Installé en 24 h, sans engagement, de 49 à 199 € par mois + minutes. Démo sur ligne-ai.com.
 
-La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 29/10 à 17 h ou vendredi 30/10 à 15 h 30.
+La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 5/11 à 17 h 15 ou vendredi 30/10 à 15 h 30.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
