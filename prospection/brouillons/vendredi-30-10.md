@@ -1,6 +1,6 @@
-# 5 mails chiffrés à envoyer vendredi 30/10 entre 8 h 30 et 10 h
+# 5 mails chiffrés à envoyer vendredi 30/10 entre 8 h 30 et 10 h (1re moitié du lot de 10 du 30/10, avec lundi-02-11.md — voir PLANNING.md)
 
-À envoyer à la main (pas d'envoi différé), avec la signature habituelle : AOS pour les hôtels, Ligne pour les restaurants. Quota : 5 mails ce jour-là, toutes équipes confondues (domaine aos-ai.fr neuf). Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés. Contrôle du 27/10 : aucun de ces 5 prospects n'est dans suivi.csv.
+À envoyer à la main (pas d'envoi différé), avec la signature habituelle : AOS pour les hôtels, Ligne pour les restaurants. Quota : **10 mails le 30/10** (ce fichier + lundi-02-11.md), toutes équipes confondues (rythme accéléré du 29/10). Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés. Contrôle du 27/10 : aucun de ces 5 prospects n'est dans suivi.csv.
 
 ## Ordre d'envoi conseillé
 1. **8 h 30 — Easy Sushi** (dirigeant@, adresse du dirigeant publiée dans les mentions légales : la plus sûre).
@@ -29,7 +29,7 @@ Sur 7 restaurants :
 
 Ligne décroche en moins de 2 s, 24h/24, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. Dès 49 €/mois par restaurant + minutes (343 € pour 7), installé en 24 h, sans engagement. Démo : ligne-ai.com.
 
-La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 3/11 à 15 h ou mercredi 4/11 à 16 h.
+La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 3/11 à 15 h 15 ou mercredi 4/11 à 16 h.
 
 Cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -55,7 +55,7 @@ Un avis salue « la dame qui prend notes des commandes au téléphone toujours a
 
 Ligne décroche en moins de 2 s, 24h/24, deux appels simultanés, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. 49 €/mois par restaurant + minutes (98 € pour 2), installé en 24 h, sans engagement. Démo : ligne-ai.com.
 
-La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 3/11 à 17 h ou mercredi 4/11 à 17 h.
+La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 3/11 à 17 h 15 ou mercredi 4/11 à 17 h.
 
 Cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -83,7 +83,7 @@ Hypothèses : 120 € la nuit, 65 % d'occupation, 55 % des nuits via les platefo
 
 AOS relie vos outils et répond à ces demandes : la moitié récupérée, c'est déjà 12 000 €/an.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 3/11 à 15 h 30 ou mercredi 4/11 à 16 h 30.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 3/11 à 15 h 45 ou mercredi 4/11 à 16 h 30.
 
 Cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -110,7 +110,7 @@ Sur les 6 adresses :
 
 Ligne décroche en moins de 2 s, 24h/24, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. Dès 49 €/mois par restaurant + minutes (294 € pour 6), installé en 24 h, sans engagement. Démo : ligne-ai.com.
 
-La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 3/11 à 16 h 30 ou mercredi 4/11 à 15 h 30.
+La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 3/11 à 16 h 45 ou mercredi 4/11 à 15 h 30.
 
 Cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -138,7 +138,7 @@ Hypothèses : 55 chambres, 140 € la nuit, 65 % d'occupation, moitié des nuits
 
 AOS relie vos outils et traite ces demandes : la moitié récupérée, c'est déjà 15 000 €/an.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 3/11 à 16 h ou mercredi 4/11 à 15 h.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 3/11 à 16 h 15 ou mercredi 4/11 à 15 h.
 
 Cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41

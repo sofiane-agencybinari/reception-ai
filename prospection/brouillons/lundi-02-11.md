@@ -1,14 +1,14 @@
-# 5 mails chiffrés à envoyer lundi 2/11 entre 8 h 30 et 10 h
+# 5 mails chiffrés à envoyer vendredi 30/10 entre 9 h 45 et 11 h (2e moitié du lot de 10 du 30/10, après vendredi-30-10.md — voir PLANNING.md ; nom de fichier conservé)
 
-À envoyer à la main (pas d'envoi différé), avec la signature habituelle : AOS pour les hôtels, Ligne pour les restaurants. Quota : **5 mails ce jour-là**, toutes équipes et tous comptes confondus (domaine aos-ai.fr neuf). Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés des 7 derniers jours. Contrôle du 27/10 : aucun de ces 5 prospects (ni leur domaine) n'est dans suivi.csv, ni dans un brouillon précédent.
+À envoyer à la main (pas d'envoi différé), avec la signature habituelle : AOS pour les hôtels, Ligne pour les restaurants. Quota : **10 mails le 30/10** (vendredi-30-10.md + ce fichier), toutes équipes et tous comptes confondus (rythme accéléré du 29/10). Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés des 7 derniers jours. Contrôle du 27/10 : aucun de ces 5 prospects (ni leur domaine) n'est dans suivi.csv, ni dans un brouillon précédent.
 
 ## Ordre d'envoi conseillé
 
-1. **8 h 30, Hôtel de la Tour (Libourne)** : adresse Gmail des propriétaires, publiée dans les mentions légales. C'est la boîte que lisent Manon et Alexis Valette.
-2. **8 h 45, Esprit Pizza (Nort-sur-Erdre, Nantes)** : adresse orange.fr publiée sur la page Facebook de l'enseigne. Petite maison : c'est sans doute le patron qui la lit.
-3. **9 h, Aux Trois Goûts (Bas-Rhin)** : adresse Gmail publiée sur le site et sur chaque page restaurant.
-4. **9 h 15, Hôtel Vauban (Brest)** : contact@, générique. « Monsieur Muzy » en première ligne.
-5. **9 h 30, Les Hôtels Saint-Louis (Paris)**, à envoyer en dernier : marais@ est la réception du premier hôtel du groupe, pas la boîte du dirigeant. C'est le plus gros montant du lot, mais l'adresse la moins directe. En cas de rebond, ne rien renvoyer ce jour-là et passer par LinkedIn.
+1. **9 h 45, Hôtel de la Tour (Libourne)** : adresse Gmail des propriétaires, publiée dans les mentions légales. C'est la boîte que lisent Manon et Alexis Valette.
+2. **10 h, Esprit Pizza (Nort-sur-Erdre, Nantes)** : adresse orange.fr publiée sur la page Facebook de l'enseigne. Petite maison : c'est sans doute le patron qui la lit.
+3. **10 h 15, Aux Trois Goûts (Bas-Rhin)** : adresse Gmail publiée sur le site et sur chaque page restaurant.
+4. **10 h 30, Hôtel Vauban (Brest)** : contact@, générique. « Monsieur Muzy » en première ligne.
+5. **10 h 45, Les Hôtels Saint-Louis (Paris)**, à envoyer en dernier : marais@ est la réception du premier hôtel du groupe, pas la boîte du dirigeant. C'est le plus gros montant du lot, mais l'adresse la moins directe. En cas de rebond, ne rien renvoyer ce jour-là et passer par LinkedIn.
 
 **Écartés après vérification :**
 - **Astotel** : sergecachan@ est déduit, et le format prenomnom@ n'est confirmé par aucun exemple réel. La seule adresse trouvée est customer.service@astotel.com (Trustpilot, 2024), une boîte de service client.
@@ -39,7 +39,7 @@ Notre estimation (90 € la nuit, 60 % d'occupation, 55 % des nuits via les plat
 
 AOS relie vos outils et prend ces tâches en charge. On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 17 h 15 ou jeudi 5/11 à 15 h.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mardi 3/11 à 17 h 30 ou mercredi 4/11 à 17 h 15.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -67,7 +67,7 @@ Estimation (panier de 25 €, 26 soirs/mois) :
 
 Ligne décroche en moins de 2 secondes, 24h/24, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. Dès 49 €/mois par restaurant + minutes (2 appels simultanés), installation en 24 h, sans engagement. Démo : ligne-ai.com.
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 5/11 à 15 h 30 ou vendredi 6/11 à 15 h.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 15 h 15 ou jeudi 5/11 à 15 h 30.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -95,7 +95,7 @@ Sur 3 restaurants (panier de 25 €, 26 soirs/mois) :
 
 Ligne décroche en moins de 2 secondes, 24h/24, gère jusqu'à 10 appels simultanés, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. Dès 49 €/mois par restaurant + minutes, installation en 24 h, sans engagement. Démo : ligne-ai.com.
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 5/11 à 16 h ou vendredi 6/11 à 15 h 30.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 15 h 45 ou jeudi 5/11 à 16 h.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -124,7 +124,7 @@ Notre estimation (70 € la nuit, 65 % d'occupation, 55 % des nuits via les plat
 
 AOS relie vos outils et prend ces tâches en charge. On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 5/11 à 16 h 30 ou vendredi 6/11 à 16 h.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 16 h 15 ou jeudi 5/11 à 16 h 30.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -153,7 +153,7 @@ Estimation (18 chambres en moyenne, 170 € la nuit, 80 % d'occupation, 55 % via
 
 AOS relie vos outils et prend ces tâches en charge. On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : jeudi 5/11 à 17 h ou vendredi 6/11 à 16 h 30.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 16 h 45 ou jeudi 5/11 à 17 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41

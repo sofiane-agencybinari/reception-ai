@@ -1,4 +1,4 @@
-# 4 mails chiffrés à envoyer mardi 3/11 entre 8 h 30 et 9 h 30
+# 4 mails chiffrés à envoyer lundi 2/11 entre 8 h 30 et 9 h 30 (lot de 15 du 2/11, avec mercredi-04-11.md — voir PLANNING.md ; nom de fichier conservé)
 
 À envoyer à la main (pas d'envoi différé), avec la signature habituelle : AOS pour les hôtels, Ligne pour Pizza Gabriel / Nenni Ma Foi. Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés. Contrôle du 27/10 : aucun des 4 n'est dans suivi.csv, reserve-noms.txt, exclus.txt ni reserve-prospects.md.
 
@@ -11,7 +11,7 @@
 3. **9 h, Dina Morgabine (La Réunion)** : direction@, publiée dans l'annuaire Qualité Tourisme (fiche Saint-Denis). Il est 12 h à La Réunion (+3 h).
 4. **9 h 15, Pizza Gabriel / Nenni Ma Foi (Belfort)** : Gmail de la société, publié dans les mentions légales. Ce n'est pas une adresse nominative, mais c'est la seule publiée.
 
-**Créneaux** (vérifiés dans lundi-02-11.md, qui prend ven 6/11 à 15 h, 15 h 30, 16 h et 16 h 30, et dans suivi.csv, où Hôtel Belfast a déjà ven 6/11 à 15 h) : ven 6/11 à 17 h et 17 h 30 ; lun 9/11 à 15 h, 15 h 30, 16 h, 16 h 30, 17 h et 17 h 30. Les 8 créneaux sont tous différents et ne se chevauchent pas. Il ne restait que deux créneaux libres le vendredi, d'où l'usage de 17 h 30, la limite haute de la plage.
+**Créneaux** (refaits le 29/10 pour l'envoi du lundi 2/11, uniques sur tous les brouillons et les mails déjà envoyés : voir PLANNING.md) : jeu 5/11 à 17 h 30 ; mer 4/11 à 17 h 30 ; ven 6/11 à 15 h 15, 16 h, 16 h 30 et 17 h ; lun 9/11 à 15 h et 16 h 30. Les créneaux de Dina Morgabine restent en début de plage (La Réunion : +3 h).
 
 ---
 
@@ -33,7 +33,7 @@ Estimation (130 €/nuit, 65 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 17 h ou lundi 9/11 à 16 h.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : jeudi 5/11 à 17 h 30 ou vendredi 6/11 à 16 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -62,7 +62,7 @@ Estimation (85 €/nuit, 60 % d'occupation, 55 % des nuits via les plateformes) 
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 17 h 30 ou lundi 9/11 à 16 h 30.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : mercredi 4/11 à 17 h 30 ou vendredi 6/11 à 16 h 30.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -91,7 +91,7 @@ Estimation (Saint-Denis : 80 chambres, 100 €, 70 % d'occupation, 55 % via plat
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : lundi 9/11 à 15 h ou 15 h 30 (18 h ou 18 h 30 chez vous).
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 15 h 15 ou lundi 9/11 à 15 h (18 h 15 ou 18 h chez vous).
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -119,7 +119,7 @@ Deux adresses, panier de 22 €, 22 soirs/mois :
 
 Ligne décroche en moins de 2 secondes, 24h/24, jusqu'à 4 appels simultanés, prend la commande à la voix, l'envoie sur l'écran cuisine, confirme par SMS, avec tableau de bord. Installation en 24 h, sans engagement, dès 49 €/mois + minutes. Démo : ligne-ai.com.
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : lundi 9/11 à 17 h ou 17 h 30.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 17 h ou lundi 9/11 à 16 h 30.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41

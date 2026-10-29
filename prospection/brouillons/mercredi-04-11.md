@@ -1,4 +1,4 @@
-# 3 mails chiffrés à envoyer mercredi 4/11 entre 8 h 30 et 9 h 15
+# 3 mails chiffrés à envoyer lundi 2/11 entre 9 h 30 et 10 h 15 (lot de 15 du 2/11, après mardi-03-11.md — voir PLANNING.md ; nom de fichier conservé)
 
 À envoyer à la main (pas d'envoi différé), avec la signature AOS habituelle. Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés. Contrôle du 28/10 : aucun des 3 n'est dans reserve-noms.txt, suivi.csv, reserve-prospects.md, exclus.txt ni dans les autres brouillons.
 
@@ -6,11 +6,11 @@
 
 ## Ordre d'envoi conseillé
 
-1. **8 h 30, 6717 Nature Hôtel & Spa – Le Clos des Délices (Ottrott)** : adresse nominative nicole@, publiée dans l'annuaire officiel Qualité Tourisme pour Nicole Schaetzel, directrice générale.
-2. **8 h 45, Hôtel Le Saint-Pierre (La Réunion)** : direction@, publiée au même annuaire (référente : Marie-Claude Calteau). Il sera 11 h 45 à La Réunion (+3 h).
-3. **9 h, Groupe La Mère Poulard / Le Saint Aubert (Mont-Saint-Michel)** : adresse **déduite** frederic.vincent@merepoulard.fr. Le format prenom.nom@merepoulard.fr est vu sur william.delpoux@merepoulard.fr, adresse publiée dans l'annuaire Qualité Tourisme. Si le mail rebondit, renvoyer le même texte à william.delpoux@merepoulard.fr en lui demandant de le transmettre à M. Vincent.
+1. **9 h 30, 6717 Nature Hôtel & Spa – Le Clos des Délices (Ottrott)** : adresse nominative nicole@, publiée dans l'annuaire officiel Qualité Tourisme pour Nicole Schaetzel, directrice générale.
+2. **9 h 45, Hôtel Le Saint-Pierre (La Réunion)** : direction@, publiée au même annuaire (référente : Marie-Claude Calteau). Il sera 12 h 45 à La Réunion (+3 h).
+3. **10 h, Groupe La Mère Poulard / Le Saint Aubert (Mont-Saint-Michel)** : adresse **déduite** frederic.vincent@merepoulard.fr. Le format prenom.nom@merepoulard.fr est vu sur william.delpoux@merepoulard.fr, adresse publiée dans l'annuaire Qualité Tourisme. Si le mail rebondit, renvoyer le même texte à william.delpoux@merepoulard.fr en lui demandant de le transmettre à M. Vincent.
 
-**Créneaux** : j'ai vérifié qu'aucun créneau du mardi 10/11 ni du jeudi 12/11 n'est déjà pris dans les brouillons/ ni dans suivi.csv. Les six créneaux proposés sont tous différents : mar 10/11 à 15 h, 15 h 30 et 16 h, et jeu 12/11 à 15 h, 15 h 30 et 16 h.
+**Créneaux** (refaits le 29/10 pour l'envoi du lundi 2/11, uniques sur tous les brouillons et les mails déjà envoyés : voir PLANNING.md) : ven 6/11 à 15 h 30, 15 h 45 et 16 h 15 ; lun 9/11 à 15 h 15, 16 h et 17 h. Le Saint-Pierre (La Réunion, +3 h) garde des créneaux en début de plage.
 
 ---
 
@@ -32,7 +32,7 @@ Estimation (190 €/nuit, 60 % d'occupation, 55 % via plateformes) :
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : mardi 10/11 à 15 h ou jeudi 12/11 à 15 h.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 15 h 45 ou lundi 9/11 à 16 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -61,7 +61,7 @@ Estimation (115 €/nuit, 70 % d'occupation, 55 % via plateformes) :
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : mardi 10/11 ou jeudi 12/11 à 15 h 30 (18 h 30 chez vous).
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 15 h 30 ou lundi 9/11 à 15 h 15 (18 h 30 ou 18 h 15 chez vous).
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -90,7 +90,7 @@ Estimation (Saint Aubert : 27 chambres, 100 €, 65 % d'occupation, 55 % via pla
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : mardi 10/11 à 16 h ou jeudi 12/11 à 16 h.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 16 h 15 ou lundi 9/11 à 17 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
