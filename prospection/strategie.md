@@ -86,6 +86,7 @@ Fini les mails « 10 minutes de votre avis » sans chiffres. Chaque mail à un p
 - Toujours comparer au prix de Ligne (49 / 99 / 199 € par mois + minutes) pour montrer le retour sur investissement.
 
 
-## Rythme d'envoi (décision de Sofiane, 27/10)
-- Domaine aos-ai.fr neuf : **5 mails/jour max du 28/10 au 1/11**, 10/jour la semaine du 2/11, 15/jour ensuite. Rien après 15 mails le même jour, toutes équipes et tous comptes confondus (Outlook Ligne + Gmail aos-ai.fr).
+## Rythme d'envoi (décision de Sofiane, 27/10 — ACCÉLÉRÉ le 29/10)
+- **29/10 : Sofiane veut accélérer.** Nouveau rythme : **10 mails/jour (jours ouvrés) jusqu'au 1/11, puis 15/jour à partir du 2/11.** Le 29/10 : 10 mails envoyés (rattrapage du 28/10 + lot du 29/10). Les équipes Cowork comptent dans ce total.
+- (ancienne règle, remplacée) - Domaine aos-ai.fr neuf : **5 mails/jour max du 28/10 au 1/11**, 10/jour la semaine du 2/11, 15/jour ensuite. Rien après 15 mails le même jour, toutes équipes et tous comptes confondus (Outlook Ligne + Gmail aos-ai.fr).
 - Vérifier le compteur du jour dans suivi.csv avant chaque envoi.
