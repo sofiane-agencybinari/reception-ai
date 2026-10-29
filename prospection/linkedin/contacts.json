@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-28",
+ "maj": "2026-10-29",
  "contacts": [
   {
    "id": "oliver",
@@ -1143,6 +1143,132 @@
    "m": "Bonjour Yannick, au Versailles, 46 chambres à une minute du château, quelle tâche répétitive ou quel logiciel vous fait perdre le plus de temps en haute saison ? Auriez-vous 10 min pour un échange, sans vente ? Sofiane (AOS)",
    "t": "Versailles",
    "date": "2026-10-28"
+  },
+  {
+   "id": "costa29",
+   "n": "Sebastian Costa",
+   "r": "Directeur général, Hôtel des Vosges – La Tour Collection (Strasbourg)",
+   "u": "https://fr.linkedin.com/in/sebastian-costa-530493357",
+   "m": "Bonjour Sebastian, vous avez repris la direction de l'Hôtel des Vosges après une phase de transition en 2021. Quel logiciel ou quelle tâche répétitive vous fait perdre le plus de temps au quotidien ? Auriez-vous 10 min pour en échanger, sans vente ? Sofiane (AOS)",
+   "t": "Strasbourg, La Tour Collection",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "rath29",
+   "n": "Claude Rath",
+   "r": "Directeur général, Hôtel Napoléon (Paris 8e)",
+   "u": "https://www.linkedin.com/in/claude-rath-1661ba11/",
+   "m": "Bonjour Claude, diriger un 5★ indépendant comme l'Hôtel Napoléon, à deux pas de l'Arc de Triomphe, demande beaucoup de coordination. Quelle tâche répétitive vous coûte le plus de temps chaque semaine ? Auriez-vous 10 min pour un échange, sans vente ? Sofiane (AOS)",
+   "t": "Paris, 5★",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "dufour29",
+   "n": "Charles-Henri Dufour",
+   "r": "Directeur multisites, Belaroïa (Montpellier)",
+   "u": "https://www.linkedin.com/in/charles-henri-dufour-54610221/",
+   "m": "Bonjour Charles-Henri, j'ai lu que Belaroïa avait internalisé sa blanchisserie : belle démarche d'optimisation. Côté logiciels, quelle tâche vous fait encore perdre le plus de temps ? Auriez-vous 10 min pour en parler, sans démarche commerciale ? Sofiane (AOS)",
+   "t": "Montpellier",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "giroguy29",
+   "n": "Delphine Giroguy",
+   "r": "Directrice générale, Hôtel La Pérouse – SIH Hôtels (Nantes)",
+   "u": "https://www.linkedin.com/in/delphinegiroguy/",
+   "m": "Bonjour Delphine, à La Pérouse, 4★ près du château des Ducs, vous suivez de près les avis clients. Quelle tâche répétitive ou quel outil vous prend le plus de temps ? Auriez-vous 10 min pour un échange, sans vente ? Sofiane (AOS)",
+   "t": "Nantes, SIH Hôtels",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "dedieu29",
+   "n": "Adrien Dedieu",
+   "r": "Président & directeur général, Hôtel Madame (Bordeaux)",
+   "u": "https://www.linkedin.com/in/adedieu/",
+   "m": "Bonjour Adrien, tenir à deux les 18 chambres de l'Hôtel Madame, rue Bouffard, c'est beaucoup de casquettes. Quelle tâche répétitive vous prend le plus de temps ? Auriez-vous 10 min pour en échanger, sans démarche commerciale ? Sofiane (AOS)",
+   "t": "Bordeaux",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "mari29",
+   "n": "Angel Mari",
+   "r": "Co-propriétaire & directeur général, Le Damantin Hôtel & Spa (Paris)",
+   "u": "https://www.linkedin.com/in/angel-mari-523a57156/",
+   "m": "Bonjour Angel, depuis l'ouverture du Damantin en 2019 et le rachat de la part du fonds en 2023, vous pilotez tout en direct. Quel logiciel ou quelle tâche vous fait perdre le plus de temps ? Auriez-vous 10 min, sans vente ? Sofiane (AOS)",
+   "t": "Paris, 5★",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "ferreiraleal29",
+   "n": "Pierre Ferreira-Leal",
+   "r": "Directeur général, Maison Nô (Lyon)",
+   "u": "https://www.linkedin.com/in/pierre-ferreira-leal-8b092699/",
+   "m": "Bonjour Pierre, prendre la direction de Maison Nô, ancienne banque devenue 4★ sur la Presqu'île, après son rachat, c'est un vrai chantier. Quelle tâche répétitive vous prend le plus de temps ? Auriez-vous 10 min pour un échange, sans vente ? Sofiane (AOS)",
+   "t": "Lyon, Younight Hospitality",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "gowhari29",
+   "n": "Romain Gowhari",
+   "r": "Associé fondateur & Président, Younight Hospitality (Marty Hôtel Bordeaux, Maison Nô Lyon)",
+   "u": "https://www.linkedin.com/in/romain-gowhari-98808911/",
+   "m": "Bonjour Romain, avec Younight Hospitality qui opère le Marty à Bordeaux et désormais Maison Nô à Lyon, quels outils ou tâches répétitives freinent le plus vos équipes ? Auriez-vous 10 min pour en échanger, sans démarche commerciale ? Sofiane (AOS)",
+   "t": "Bordeaux, Groupe",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "fredet29",
+   "n": "Pascal Fredet",
+   "r": "Directeur des opérations, Les Hôtels de Bordeaux",
+   "u": "https://www.linkedin.com/in/pascalfredet/",
+   "m": "Bonjour Pascal, piloter les opérations de 8 hôtels et plus de 500 chambres autour de Bordeaux, c'est beaucoup d'outils à faire cohabiter. Lequel vous fait perdre le plus de temps ? Auriez-vous 10 min pour un échange, sans vente ? Sofiane (AOS)",
+   "t": "Bordeaux, Groupe",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "fumiere29",
+   "n": "Nicolas Fumiere",
+   "r": "Propriétaire & directeur général, Palm Hotel (Nice)",
+   "u": "https://www.linkedin.com/in/nicolas-fumiere-25333837/",
+   "m": "Bonjour Nicolas, depuis la reprise du Palm Hotel en 2020, 16 chambres et un bar à rhum au Carré d'Or, quelle tâche répétitive vous prend le plus de temps ? Auriez-vous 10 min pour en parler, sans démarche commerciale ? Sofiane (AOS)",
+   "t": "Nice",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "delloye29",
+   "n": "Michel Delloye",
+   "r": "Cofondateur & gérant, Les Hôteliers Impertinents (Paris)",
+   "u": "https://www.linkedin.com/in/michel-delloye-6a72a61/",
+   "m": "Bonjour Michel, entre vos hôtels parisiens et La Mission ouverte à l'Île d'Yeu en 2024, la gestion se démultiplie. Quel logiciel ou quelle tâche vous fait perdre le plus de temps ? Auriez-vous 10 min pour un échange, sans vente ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "peyron29",
+   "n": "Éole Peyron",
+   "r": "Cofondatrice & directrice artistique, Hôtel Massé (Paris 9e)",
+   "u": "https://www.linkedin.com/in/peyroneole3068686/",
+   "m": "Bonjour Éole, l'Hôtel Massé a fêté sa première année à Pigalle, avec Le Trente juste à côté. Au quotidien, quelle tâche répétitive ou quel outil vous prend le plus de temps ? Auriez-vous 10 min pour en échanger, sans vente ? Sofiane (AOS)",
+   "t": "Paris",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "potierfaya29",
+   "n": "Myriam Potier-Faya",
+   "r": "Cofondatrice, Groupe Hotelo (Lyon)",
+   "u": "https://www.linkedin.com/in/myriam-potier-faya-73154615/",
+   "m": "Bonjour Myriam, de votre rencontre à Vatel jusqu'au groupe Hotelo à Lyon, vous avez bâti des boutique-hôtels très humains. Quelle tâche répétitive vous fait perdre le plus de temps ? Auriez-vous 10 min pour un échange, sans démarche commerciale ? Sofiane (AOS)",
+   "t": "Lyon, Groupe",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "goullet29",
+   "n": "Grégoire Goullet",
+   "r": "Directeur général, Roussillhotel – Grand Hôtel du Midi (Montpellier)",
+   "u": "https://www.linkedin.com/in/gr%C3%A9goire-goullet-ba0b9811/",
+   "m": "Bonjour Grégoire, avec Roussillhotel qui a repris le Grand Hôtel du Midi à Montpellier puis Le Madeloc à Collioure, quels outils ou tâches répétitives pèsent le plus sur vos équipes ? Auriez-vous 10 min, sans vente ? Sofiane (AOS)",
+   "t": "Montpellier, Groupe",
+   "date": "2026-10-29"
   }
  ]
 }
