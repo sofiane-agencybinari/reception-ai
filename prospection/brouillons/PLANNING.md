@@ -12,7 +12,8 @@ Les noms de fichiers sont conservés : c'est la **ligne de titre** de chaque fic
 | **lun 2/11** (15) | mardi-03-11.md (8 h 30 → 9 h 15) | Le Grand Hôtel (Sète) → l.dubois@legrandhotelsete.com · Grand Hôtel de l'Europe (Morlaix) → gpellerinhoteldeleurope@orange.fr · Dina Morgabine → direction@dinamorgabine.com · Pizza Gabriel / Nenni Ma Foi → pizzagabrielpro@gmail.com |
 | | mercredi-04-11.md (9 h 30 → 10 h) | 6717 Nature Hôtel – Le Clos des Délices → nicole@leclosdesdelices.com · Hôtel Le Saint-Pierre → direction@hotellesaintpierre.fr · La Mère Poulard / Le Saint Aubert → frederic.vincent@merepoulard.fr (**déduite**) |
 | | *à produire par la Ronde (8 mails)* | 8 brouillons manquent pour atteindre 15 le 2/11 : prendre les créneaux de la réserve « lun 2/11 » ci-dessous |
-| **mar 3/11** (10) | lot-mardi-03-11.md | voir ce fichier (5 hôtels AOS + 5 restaurants Ligne) |
+| **mar 3/11** (10) | lot-mardi-03-11.md (8 h 30 → 9 h 30) | Le Grand Hôtel (Tours) → pmdebroglie@legrandhoteltours.com · Hôtel de JoBo → xavier@holding-crouzet.com · Le Marianne → fneveu@lemarianne.com · Le Petit Beaumarchais → louise.chelly@gmail.com · Diana Hotels Collection → thomas.baly@dianacollection.com (**déduite**, format confirmé) |
+| | *à produire (5 restaurants Ligne)* | aucune mini-chaîne fiable trouvée depuis le cloud le 29/10 : à chercher depuis le PC (Cowork) |
 
 ## Créneaux d'audit (30 min) — règle
 
@@ -27,7 +28,8 @@ En semaine, entre 15 h et 17 h 30, au moins 2 jours ouvrés après l'envoi, **ja
 - mercredi-04-11.md : Clos des Délices ven 6/11 15 h 45 / lun 9/11 16 h · Le Saint-Pierre ven 6/11 15 h 30 / lun 9/11 15 h 15 · Mère Poulard ven 6/11 16 h 15 / lun 9/11 17 h
 
 **Réservés** :
-- lot-mardi-03-11.md (envoi 3/11) : ven 6/11 16 h 45, 17 h 15, 17 h 30 · lun 9/11 15 h 30, 15 h 45, 16 h 15, 16 h 45, 17 h 15, 17 h 30 · mar 10/11 15 h → 17 h 30 (tous) · jeu 12/11 15 h.
+- lot-mardi-03-11.md (envoi 3/11), pris par les 5 hôtels : Grand Hôtel Tours lun 9/11 16 h 15 / mar 10/11 16 h 30 · JoBo ven 6/11 16 h 45 / mar 10/11 15 h · Le Marianne ven 6/11 17 h 15 / mar 10/11 15 h 30 · Petit Beaumarchais lun 9/11 15 h 30 / mar 10/11 16 h · Diana lun 9/11 15 h 45 / mar 10/11 17 h.
+- Réservés aux 5 restaurants du 3/11 (à produire) : ven 6/11 17 h 30 · lun 9/11 16 h 45, 17 h 15, 17 h 30 · mar 10/11 15 h 15, 15 h 45, 16 h 15, 16 h 45, 17 h 15, 17 h 30 · jeu 12/11 15 h.
 - 8 brouillons à produire pour le lun 2/11 : jeu 12/11 15 h 15 → 17 h 30 et ven 13/11 15 h → 16 h 45 (2 par mail).
 - Lots suivants (envoi à partir du mer 4/11) : à partir de ven 13/11 17 h, puis lun 16/11 (sauf 15 h).
 
