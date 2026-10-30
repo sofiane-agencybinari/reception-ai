@@ -1,4 +1,4 @@
-# 4 mails chiffrés à envoyer lundi 2/11 entre 8 h 30 et 9 h 30 (lot de 15 du 2/11, avec mercredi-04-11.md — voir PLANNING.md ; nom de fichier conservé)
+# 4 mails chiffrés : n° 1 (Sète) à envoyer lundi 2/11 à 11 h, n° 2-4 à envoyer mardi 3/11 entre 8 h 30 et 9 h (décalés d'un jour, voir PLANNING.md ; nom de fichier conservé)
 
 À envoyer à la main (pas d'envoi différé), avec la signature habituelle : AOS pour les hôtels, Ligne pour Pizza Gabriel / Nenni Ma Foi. Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés. Contrôle du 27/10 : aucun des 4 n'est dans suivi.csv, reserve-noms.txt, exclus.txt ni reserve-prospects.md.
 
@@ -6,16 +6,16 @@
 
 ## Ordre d'envoi conseillé
 
-1. **8 h 30, Le Grand Hôtel (Sète)** : adresse nominative l.dubois@, publiée dans l'annuaire officiel Qualité Tourisme pour Lydie Dubois, la PDG. Vérif du 30/10 : c'est bien elle qui dirige (présidente du CA, référente Qualité Tourisme, citée par l'office de tourisme) ; Thomas Dubois n'est que responsable de la publication du site. « Madame Dubois » conservé.
-2. **8 h 45, Grand Hôtel de l'Europe (Morlaix)** : contact@hoteleurope-morlaix.com, adresse générale de l'hôtel publiée par l'Office de tourisme Baie de Morlaix et des annuaires pros (domaine du site de l'hôtel). Réécrit le 30/10 pour Elena et Jean de Kertanguy, repreneurs en 2023 : l'ancienne adresse de Guillaume Pellerin (orange.fr) **ne doit pas être utilisée**.
-3. **9 h, Dina Morgabine (La Réunion)** : direction@, publiée dans l'annuaire Qualité Tourisme (fiche Saint-Denis). Il est 12 h à La Réunion (+3 h).
-4. **9 h 15, Pizza Gabriel / Nenni Ma Foi (Belfort)** : Gmail de la société, publié dans les mentions légales. Ce n'est pas une adresse nominative, mais c'est la seule publiée.
+1. **Lundi 2/11, 11 h, Le Grand Hôtel (Sète)** : adresse nominative l.dubois@, publiée dans l'annuaire officiel Qualité Tourisme pour Lydie Dubois, la PDG. Vérif du 30/10 : c'est bien elle qui dirige (présidente du CA, référente Qualité Tourisme, citée par l'office de tourisme) ; Thomas Dubois n'est que responsable de la publication du site. « Madame Dubois » conservé.
+2. **Mardi 3/11, 8 h 30, Grand Hôtel de l'Europe (Morlaix)** : contact@hoteleurope-morlaix.com, adresse générale de l'hôtel publiée par l'Office de tourisme Baie de Morlaix et des annuaires pros (domaine du site de l'hôtel). Réécrit le 30/10 pour Elena et Jean de Kertanguy, repreneurs en 2023 : l'ancienne adresse de Guillaume Pellerin (orange.fr) **ne doit pas être utilisée**.
+3. **Mardi 3/11, 8 h 45, Dina Morgabine (La Réunion)** : direction@, publiée dans l'annuaire Qualité Tourisme (fiche Saint-Denis). Il est 11 h 45 à La Réunion (+3 h).
+4. **Mardi 3/11, 9 h, Pizza Gabriel / Nenni Ma Foi (Belfort)** : Gmail de la société, publié dans les mentions légales. Ce n'est pas une adresse nominative, mais c'est la seule publiée.
 
-**Créneaux** (refaits le 29/10 pour l'envoi du lundi 2/11, uniques sur tous les brouillons et les mails déjà envoyés : voir PLANNING.md) : jeu 5/11 à 17 h 30 ; mer 4/11 à 17 h 30 ; ven 6/11 à 15 h 15, 16 h, 16 h 30 et 17 h ; lun 9/11 à 15 h et 16 h 30. Les créneaux de Dina Morgabine restent en début de plage (La Réunion : +3 h).
+**Créneaux** (refaits le 30/10 après le décalage d'un jour, uniques sur tous les brouillons et les mails déjà envoyés, au moins 2 jours ouvrés après l'envoi : voir PLANNING.md) : Sète mer 4/11 17 h 30 / jeu 12/11 15 h 45 ; Morlaix jeu 5/11 17 h 30 / jeu 12/11 17 h ; Dina Morgabine ven 6/11 15 h 15 / ven 13/11 15 h ; Pizza Gabriel ven 6/11 15 h 30 / ven 13/11 15 h 15. Les créneaux de Dina Morgabine restent en début de plage (La Réunion : +3 h).
 
 ---
 
-## 1. Le Grand Hôtel (Sète) — AOS
+## 1. Le Grand Hôtel (Sète) — AOS — envoi lundi 2/11, 11 h
 
 **À :** l.dubois@legrandhotelsete.com
 **Objet :** Le Grand Hôtel de Sète : environ 31 000 € par an à récupérer ?
@@ -33,7 +33,7 @@ Estimation (130 €/nuit, 65 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : jeudi 5/11 à 17 h 30 ou vendredi 6/11 à 16 h.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : mercredi 4/11 à 17 h 30 ou jeudi 12/11 à 15 h 45.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -44,7 +44,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Grand Hôtel de l'Europe (Morlaix) — AOS
+## 2. Grand Hôtel de l'Europe (Morlaix) — AOS — envoi mardi 3/11, 8 h 30
 
 **À :** contact@hoteleurope-morlaix.com
 **Objet :** Grand Hôtel de l'Europe : environ 25 000 € par an à récupérer ?
@@ -62,7 +62,7 @@ Estimation (85 €/nuit, 60 % d'occupation, 55 % des nuits via les plateformes) 
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : mercredi 4/11 à 17 h 30 ou vendredi 6/11 à 16 h 30.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : jeudi 5/11 à 17 h 30 ou jeudi 12/11 à 17 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -75,7 +75,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Dina Morgabine (La Réunion, 5 hôtels) — AOS
+## 3. Dina Morgabine (La Réunion, 5 hôtels) — AOS — envoi mardi 3/11, 8 h 45
 
 **À :** direction@dinamorgabine.com
 **Objet :** Dina Morgabine : environ 64 000 € par an à récupérer ?
@@ -93,7 +93,7 @@ Estimation (Saint-Denis : 80 chambres, 100 €, 70 % d'occupation, 55 % via plat
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 15 h 15 ou lundi 9/11 à 15 h (18 h 15 ou 18 h chez vous).
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 15 h 15 ou vendredi 13/11 à 15 h (18 h 15 ou 18 h chez vous).
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -104,7 +104,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Pizza Gabriel + Nenni Ma Foi (Danjoutin / Belfort) — Ligne
+## 4. Pizza Gabriel + Nenni Ma Foi (Danjoutin / Belfort) — Ligne — envoi mardi 3/11, 9 h
 
 **À :** pizzagabrielpro@gmail.com
 **Objet :** Nenni Ma Foi et Pizza Gabriel : 3 300 € par mois d'appels manqués ?
@@ -121,7 +121,7 @@ Deux adresses, panier de 22 €, 22 soirs/mois :
 
 Ligne décroche en moins de 2 secondes, 24h/24, jusqu'à 4 appels simultanés, prend la commande à la voix, l'envoie sur l'écran cuisine, confirme par SMS, avec tableau de bord. Installation en 24 h, sans engagement, dès 49 €/mois + minutes. Démo : ligne-ai.com.
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 17 h ou lundi 9/11 à 16 h 30.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 15 h 30 ou vendredi 13/11 à 15 h 15.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41

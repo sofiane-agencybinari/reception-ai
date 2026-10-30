@@ -1,6 +1,6 @@
-# 5 mails chiffrés à envoyer mardi 3/11 entre 8 h 30 et 9 h 30 (lot du 3/11 — voir PLANNING.md)
+# 5 mails chiffrés à envoyer mardi 3/11 entre 11 h et 12 h (après les 10 mails décalés du 2/11 — voir PLANNING.md)
 
-À envoyer à la main (pas d'envoi différé), avec la signature AOS habituelle. Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés des 7 derniers jours. Contrôle du 29/10 : aucun des 5 n'est dans suivi.csv, reserve-prospects.md, linkedin/contacts.json ni dans les autres brouillons.
+À envoyer à la main (pas d'envoi différé), avec la signature AOS habituelle. Ce lot part **après** les 10 mails décalés du lun 2/11 au mar 3/11 (le 3/11 compte 15 mails sur 15) ; date d'envoi inchangée, créneaux conservés et revérifiés par `node scripts/check-creneaux.mjs` le 30/10. Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés des 7 derniers jours. Contrôle du 29/10 : aucun des 5 n'est dans suivi.csv, reserve-prospects.md, linkedin/contacts.json ni dans les autres brouillons.
 
 **5 mails sur les 10 prévus : 5 hôtels, 0 restaurant.** Je n'ai trouvé aucune mini-chaîne de restaurants qui réponde aux règles (plusieurs adresses vérifiées, décideur nommé, adresse publiée, si possible nominative, société active). Pistes écartées le 29/10 : Lady Sushi (seulement serviceclient@, fondateur non confirmé), Pizzeria Gaetano (formulaire de contact seulement, pas d'e-mail publié), Sushi K (contact@, statut de la société introuvable), Pizza Plus Martinique (une seule adresse), Il Ristorante (restaurants assis, l'adresse nominative est celle d'une salariée), Pizza Sprint (réseau racheté par Domino's). Depuis le cloud, seuls les extraits de recherche sont lisibles : sites, Pappers et BODACC sont bloqués, Firecrawl n'a plus de crédits. **Les 5 restaurants restent à trouver depuis le PC (Cowork, navigateur réel).** Leurs créneaux sont réservés dans PLANNING.md.
 
@@ -8,17 +8,17 @@ Les 4 premières adresses viennent de l'annuaire officiel Qualité Tourisme (mnt
 
 ## Ordre d'envoi conseillé
 
-1. **8 h 30, Le Grand Hôtel (Tours)** : adresse nominative pmdebroglie@, publiée dans l'annuaire Qualité Tourisme pour le gérant, Philippe-Maurice de Broglie.
-2. **8 h 45, Hôtel de JoBo (Paris 4e)** : adresse nominative xavier@holding-crouzet.com, publiée dans l'annuaire Qualité Tourisme pour Xavier Crouzet, directeur de la publication du site.
-3. **9 h, Le Marianne (Paris 8e)** : adresse nominative fneveu@lemarianne.com, publiée dans l'annuaire Qualité Tourisme pour Franck Neveu, qui signe « directeur général » sur Tripadvisor.
-4. **9 h 15, Le Petit Beaumarchais (Paris 11e)** : Gmail personnel de la présidente, Louise Chelly, publié dans l'annuaire Qualité Tourisme.
-5. **9 h 30, Diana Hotels Collection (Alsace)**, en dernier : adresse **déduite** thomas.baly@dianacollection.com. Le format prenom.nom@dianacollection.com est confirmé par vanessa.turlin@dianacollection.com, publiée dans l'annuaire Qualité Tourisme (Hôtel Gutenberg). En cas de rebond, ne rien renvoyer ce jour-là et passer par LinkedIn (profil de Thomas Baly).
+1. **11 h, Le Grand Hôtel (Tours)** : adresse nominative pmdebroglie@, publiée dans l'annuaire Qualité Tourisme pour le gérant, Philippe-Maurice de Broglie.
+2. **11 h 15, Hôtel de JoBo (Paris 4e)** : adresse nominative xavier@holding-crouzet.com, publiée dans l'annuaire Qualité Tourisme pour Xavier Crouzet, directeur de la publication du site.
+3. **11 h 30, Le Marianne (Paris 8e)** : adresse nominative fneveu@lemarianne.com, publiée dans l'annuaire Qualité Tourisme pour Franck Neveu, qui signe « directeur général » sur Tripadvisor.
+4. **11 h 45, Le Petit Beaumarchais (Paris 11e)** : Gmail personnel de la présidente, Louise Chelly, publié dans l'annuaire Qualité Tourisme.
+5. **12 h, Diana Hotels Collection (Alsace)**, en dernier : adresse **déduite** thomas.baly@dianacollection.com. Le format prenom.nom@dianacollection.com est confirmé par vanessa.turlin@dianacollection.com, publiée dans l'annuaire Qualité Tourisme (Hôtel Gutenberg). En cas de rebond, ne rien renvoyer ce jour-là et passer par LinkedIn (profil de Thomas Baly).
 
 **Créneaux** (uniques sur tous les brouillons et les mails déjà envoyés, tous au moins 2 jours ouvrés après le 3/11 : voir PLANNING.md) : ven 6/11 à 16 h 45 et 17 h 15 ; lun 9/11 à 15 h 30, 15 h 45 et 16 h 15 ; mar 10/11 à 15 h, 15 h 30, 16 h, 16 h 30 et 17 h.
 
 ---
 
-## 1. Le Grand Hôtel (Tours) — AOS
+## 1. Le Grand Hôtel (Tours) — AOS — envoi mardi 3/11, 11 h
 
 **À :** pmdebroglie@legrandhoteltours.com
 **Objet :** Le Grand Hôtel de Tours : environ 38 000 € par an à récupérer ?
@@ -47,7 +47,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Hôtel de JoBo (Paris 4e) — AOS
+## 2. Hôtel de JoBo (Paris 4e) — AOS — envoi mardi 3/11, 11 h 15
 
 **À :** xavier@holding-crouzet.com
 **Objet :** Xavier, environ 26 000 € par an à récupérer à l'Hôtel de JoBo ?
@@ -76,7 +76,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Le Marianne (Paris 8e) — AOS
+## 3. Le Marianne (Paris 8e) — AOS — envoi mardi 3/11, 11 h 30
 
 **À :** fneveu@lemarianne.com
 **Objet :** Franck, environ 29 000 € par an à récupérer au Marianne ?
@@ -105,7 +105,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Le Petit Beaumarchais Hotel & Spa (Paris 11e) — AOS
+## 4. Le Petit Beaumarchais Hotel & Spa (Paris 11e) — AOS — envoi mardi 3/11, 11 h 45
 
 **À :** louise.chelly@gmail.com
 **Objet :** Louise, environ 29 000 € par an à récupérer au Petit Beaumarchais ?
@@ -134,7 +134,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Diana Hotels Collection (Alsace, 14 hôtels) — AOS — envoyer en dernier
+## 5. Diana Hotels Collection (Alsace, 14 hôtels) — AOS — envoyer en dernier — envoi mardi 3/11, 12 h
 
 **À :** thomas.baly@dianacollection.com *(déduite : format prenom.nom@dianacollection.com vu sur vanessa.turlin@dianacollection.com, publiée dans l'annuaire Qualité Tourisme)*
 **Objet :** Thomas, environ 144 000 € par an sur les hôtels Diana ?

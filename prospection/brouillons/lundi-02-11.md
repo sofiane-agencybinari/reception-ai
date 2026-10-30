@@ -1,6 +1,6 @@
-# 5 mails chiffrés à envoyer vendredi 30/10 entre 9 h 45 et 11 h (2e moitié du lot de 10 du 30/10, après vendredi-30-10.md — voir PLANNING.md ; nom de fichier conservé)
+# 5 mails chiffrés à envoyer lundi 2/11 entre 9 h 45 et 10 h 45 (décalés du ven 30/10, non envoyé ; après vendredi-30-10.md — voir PLANNING.md ; nom de fichier conservé)
 
-À envoyer à la main (pas d'envoi différé), avec la signature habituelle : AOS pour les hôtels, Ligne pour les restaurants. Quota : **10 mails le 30/10** (vendredi-30-10.md + ce fichier), toutes équipes et tous comptes confondus (rythme accéléré du 29/10). Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés des 7 derniers jours. Contrôle du 27/10 : aucun de ces 5 prospects (ni leur domaine) n'est dans suivi.csv, ni dans un brouillon précédent.
+À envoyer à la main (pas d'envoi différé), avec la signature habituelle : AOS pour les hôtels, Ligne pour les restaurants. Quota : **15 mails le lun 2/11** (vendredi-30-10.md + ce fichier + 5 mails nominatifs du lot du 2/11), toutes équipes et tous comptes confondus. Décalé d'un jour ouvré le 30/10 (le lot du ven 30/10 n'est pas parti) ; créneaux refaits et revérifiés par `node scripts/check-creneaux.mjs` (0 collision). Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés des 7 derniers jours. Contrôle du 27/10 : aucun de ces 5 prospects (ni leur domaine) n'est dans suivi.csv, ni dans un brouillon précédent.
 
 ## Ordre d'envoi conseillé
 
@@ -21,7 +21,7 @@ Limites de cette recherche : depuis le cloud, les sites des établissements, Pap
 
 ---
 
-## 1. Le MA – Hôtel de la Tour (Libourne) — AOS
+## 1. Le MA – Hôtel de la Tour (Libourne) — AOS — envoi lundi 2/11, 9 h 45
 
 **À :** hoteldelatour.libourne@gmail.com
 **Objet :** Le MA : environ 16 200 € par an à récupérer ?
@@ -39,7 +39,7 @@ Notre estimation (90 € la nuit, 60 % d'occupation, 55 % des nuits via les plat
 
 AOS relie vos outils et prend ces tâches en charge. On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mardi 3/11 à 17 h 30 ou mercredi 4/11 à 17 h 15.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 16 h 15 ou mardi 10/11 à 16 h 45.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -52,7 +52,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Esprit Pizza (Nort-sur-Erdre, Nantes) — Ligne
+## 2. Esprit Pizza (Nort-sur-Erdre, Nantes) — Ligne — envoi lundi 2/11, 10 h
 
 **À :** espritpizza@orange.fr
 **Objet :** Esprit Pizza : environ 4 400 € par mois d'appels manqués ?
@@ -69,7 +69,7 @@ Estimation (panier de 25 €, 26 soirs/mois) :
 
 Ligne décroche en moins de 2 secondes, 24h/24, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. Dès 49 €/mois par restaurant + minutes (2 appels simultanés), installation en 24 h, sans engagement. Démo : ligne-ai.com.
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 15 h 15 ou jeudi 5/11 à 15 h 30.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 16 h 30 ou mardi 10/11 à 17 h 15.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -80,7 +80,7 @@ Sofiane Aokache — Ligne — 06 95 84 64 41
 
 ---
 
-## 3. Aux Trois Goûts (Strasbourg-Cronenbourg, Eckbolsheim, Wasselonne) — Ligne
+## 3. Aux Trois Goûts (Strasbourg-Cronenbourg, Eckbolsheim, Wasselonne) — Ligne — envoi lundi 2/11, 10 h 15
 
 **À :** 3gouts@gmail.com
 **Objet :** Aux Trois Goûts : environ 6 600 € par mois d'appels manqués ?
@@ -97,7 +97,7 @@ Sur 3 restaurants (panier de 25 €, 26 soirs/mois) :
 
 Ligne décroche en moins de 2 secondes, 24h/24, gère jusqu'à 10 appels simultanés, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. Dès 49 €/mois par restaurant + minutes, installation en 24 h, sans engagement. Démo : ligne-ai.com.
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 15 h 45 ou jeudi 5/11 à 16 h.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 16 h 45 ou jeudi 12/11 à 15 h.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -108,7 +108,7 @@ Sofiane Aokache — Ligne — 06 95 84 64 41
 
 ---
 
-## 4. Hôtel Vauban (Brest) — AOS
+## 4. Hôtel Vauban (Brest) — AOS — envoi lundi 2/11, 10 h 30
 
 **À :** contact@hotelvauban.fr
 **Objet :** Hôtel Vauban : environ 23 400 € par an à récupérer ?
@@ -126,7 +126,7 @@ Notre estimation (70 € la nuit, 65 % d'occupation, 55 % des nuits via les plat
 
 AOS relie vos outils et prend ces tâches en charge. On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 16 h 15 ou jeudi 5/11 à 16 h 30.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 17 h ou jeudi 12/11 à 15 h 15.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -137,7 +137,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Les Hôtels Saint-Louis (Paris) — AOS — envoyer en dernier
+## 5. Les Hôtels Saint-Louis (Paris) — AOS — envoyer en dernier — envoi lundi 2/11, 10 h 45
 
 **À :** marais@saintlouis-hotels.com
 **Objet :** Hôtels Saint-Louis : environ 173 000 € par an à récupérer ?
@@ -155,7 +155,7 @@ Estimation (18 chambres en moyenne, 170 € la nuit, 80 % d'occupation, 55 % via
 
 AOS relie vos outils et prend ces tâches en charge. On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 16 h 45 ou jeudi 5/11 à 17 h.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 4/11 à 17 h 15 ou jeudi 12/11 à 15 h 30.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41

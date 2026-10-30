@@ -1,6 +1,6 @@
-# 8 mails chiffrés (hôtels) à envoyer mercredi 4/11 entre 8 h 30 et 10 h 15 (lot du 4/11 — voir PLANNING.md)
+# 8 mails chiffrés (hôtels) à envoyer mercredi 4/11 entre 9 h 45 et 11 h 30 (après lot-complement-02-03-11.md n° 4-8 — voir PLANNING.md)
 
-À envoyer à la main (pas d'envoi différé), avec la signature AOS habituelle. Avant chaque envoi, vérifier le compteur du jour dans suivi.csv (ce lot porte le 4/11 à 8 mails sur 15) et l'absence du nom dans les éléments envoyés des 7 derniers jours. Contrôle du 29/10 : aucun des 8 n'est dans suivi.csv, reserve-prospects.md, linkedin/contacts.json ni dans les autres brouillons (les mentions « Ducs » et « Vougeot » de contacts.json concernent d'autres établissements) ; ils sont ajoutés à reserve-prospects.md.
+À envoyer à la main (pas d'envoi différé), avec la signature AOS habituelle. Avant chaque envoi, vérifier le compteur du jour dans suivi.csv (avec lot-complement-02-03-11.md n° 4-8, envoyés avant, le 4/11 compte 13 mails sur 15 ; date d'envoi inchangée, créneaux conservés et revérifiés par `node scripts/check-creneaux.mjs` le 30/10) et l'absence du nom dans les éléments envoyés des 7 derniers jours. Contrôle du 29/10 : aucun des 8 n'est dans suivi.csv, reserve-prospects.md, linkedin/contacts.json ni dans les autres brouillons (les mentions « Ducs » et « Vougeot » de contacts.json concernent d'autres établissements) ; ils sont ajoutés à reserve-prospects.md.
 
 **8 hôtels, pas 10.** Les 8 viennent de l'annuaire officiel Qualité Tourisme (mnt.entreprises.gouv.fr), lu via les extraits de recherche (l'annuaire, les sites des hôtels, Pappers et BODACC ne sont pas lisibles depuis le cloud, Firecrawl n'a plus de crédits). Ce label s'arrête le 31/12/2026, donc une fiche peut dater. **1 seule adresse est nominative (Le Roof), 1 est fonctionnelle (communication@ du Château de Saulon, publiée pour la correspondante nommée), 6 sont des adresses générales de petits hôtels** : l'annuaire n'en publiait pas de meilleure. Aucune procédure collective vue dans les extraits, mais BODACC n'est pas lisible : à revérifier avant envoi. Les « pistes de réserve » listées le 29/10 (Cozy Hotel, Le Normandy, Hôtel de Normandie, Grand Sully, Périgord Vert, COTO, Citotel de France, Aux Vendanges de Bourgogne, Arts et Terroirs) n'ont jamais été notées avec une adresse ni un nom : je ne les ai pas reprises, faute de faits vérifiés.
 
@@ -8,20 +8,20 @@ Pistes écartées le 29/10 : Manoir de la Roche Torin et Hôtel Libéra Caen (d�
 
 ## Ordre d'envoi conseillé
 
-1. **8 h 30, Best Western Plus Le Roof (Vannes)** : adresse **nominative** m.mancel@le-roof.com, publiée dans l'annuaire Qualité Tourisme pour Matthieu Mancel-Jegat, correspondant. Sa fonction exacte n'est pas confirmée.
-2. **8 h 45, Château de Saulon (Saulon-la-Rue, 21)** : communication@chateau-saulon.com, publiée pour Stéphanie Tropet-Billet, correspondante Qualité Tourisme. Adresse **fonctionnelle**, pas nominative.
-3. **9 h, Hôtel Aguado (Dieppe)** : aguado@hotelsdieppe.com, publiée pour Christine Bert-Hevers, référente ; « Christine Bert », directrice et 3e génération, selon Batiweb. Adresse générale.
-4. **9 h 15, Hôtel Le Saint-Aubin (Saint-Aubin-sur-Mer, 14)** : hotelsaintaubin@orange.fr, publiée pour Vincent Bonnin, référent. Adresse générale ; le Logis nomme Vincent et Valérie Bonnin à l'accueil.
-5. **9 h 30, Hôtel Spa Le Relais des Moines (Villersexel, 70)** : relaisdesmoines-spa@orange.fr, publiée pour Pierre-Yves Chauvey, correspondant. Adresse générale.
-6. **9 h 45, Ambassadeur Hôtel (Cherbourg)** : ambassadeur.hotel@wanadoo.fr, publiée pour Ludovic Hamel, référent. Adresse générale.
-7. **10 h, Hôtel des Ducs (Dijon)** : contact@hoteldesducs.com, publiée pour Laurent Clement, référent. Adresse générale.
-8. **10 h 15, Le Floréal (Vence)** : contact@florealvence.com, publiée pour Nathalie Razzini, correspondante et référente. Adresse générale.
+1. **9 h 45, Best Western Plus Le Roof (Vannes)** : adresse **nominative** m.mancel@le-roof.com, publiée dans l'annuaire Qualité Tourisme pour Matthieu Mancel-Jegat, correspondant. Sa fonction exacte n'est pas confirmée.
+2. **10 h, Château de Saulon (Saulon-la-Rue, 21)** : communication@chateau-saulon.com, publiée pour Stéphanie Tropet-Billet, correspondante Qualité Tourisme. Adresse **fonctionnelle**, pas nominative.
+3. **10 h 15, Hôtel Aguado (Dieppe)** : aguado@hotelsdieppe.com, publiée pour Christine Bert-Hevers, référente ; « Christine Bert », directrice et 3e génération, selon Batiweb. Adresse générale.
+4. **10 h 30, Hôtel Le Saint-Aubin (Saint-Aubin-sur-Mer, 14)** : hotelsaintaubin@orange.fr, publiée pour Vincent Bonnin, référent. Adresse générale ; le Logis nomme Vincent et Valérie Bonnin à l'accueil.
+5. **10 h 45, Hôtel Spa Le Relais des Moines (Villersexel, 70)** : relaisdesmoines-spa@orange.fr, publiée pour Pierre-Yves Chauvey, correspondant. Adresse générale.
+6. **11 h, Ambassadeur Hôtel (Cherbourg)** : ambassadeur.hotel@wanadoo.fr, publiée pour Ludovic Hamel, référent. Adresse générale.
+7. **11 h 15, Hôtel des Ducs (Dijon)** : contact@hoteldesducs.com, publiée pour Laurent Clement, référent. Adresse générale.
+8. **11 h 30, Le Floréal (Vence)** : contact@florealvence.com, publiée pour Nathalie Razzini, correspondante et référente. Adresse générale.
 
 **Créneaux** (uniques sur tous les brouillons et les mails déjà envoyés, au moins 2 jours ouvrés après le 4/11, pas le 11/11) : d'abord les créneaux restés libres de PLANNING.md (mar 10/11 17 h 30 ; jeu 12/11 17 h 15 et 17 h 30), puis la réserve des « lots suivants » (ven 13/11 17 h, 17 h 15, 17 h 30 ; lun 16/11 de 16 h à 17 h 30), puis mar 17/11 15 h et 15 h 15, et mer 18/11 15 h. **Lun 16/11 15 h 15 → 15 h 45 laissés libres** : le RDV Royal Champagne commence à 15 h et peut déborder.
 
 ---
 
-## 1. Best Western Plus Le Roof (Vannes) — AOS — envoi mercredi 4/11, 8 h 30
+## 1. Best Western Plus Le Roof (Vannes) — AOS — envoi mercredi 4/11, 9 h 45
 
 **À :** m.mancel@le-roof.com
 **Objet :** Le Roof : environ 30 000 € par an à récupérer ?
@@ -50,7 +50,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Château de Saulon (Saulon-la-Rue, 21) — AOS — envoi mercredi 4/11, 8 h 45
+## 2. Château de Saulon (Saulon-la-Rue, 21) — AOS — envoi mercredi 4/11, 10 h
 
 **À :** communication@chateau-saulon.com *(publiée dans l'annuaire Qualité Tourisme pour Stéphanie Tropet-Billet, correspondante ; adresse fonctionnelle)*
 **Objet :** Château de Saulon : environ 31 000 € par an à récupérer ?
@@ -79,7 +79,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Hôtel Aguado (Dieppe) — AOS — envoi mercredi 4/11, 9 h
+## 3. Hôtel Aguado (Dieppe) — AOS — envoi mercredi 4/11, 10 h 15
 
 **À :** aguado@hotelsdieppe.com
 **Objet :** Hôtel Aguado : environ 27 000 € par an à récupérer ?
@@ -108,7 +108,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Hôtel Le Saint-Aubin (Saint-Aubin-sur-Mer, 14) — AOS — envoi mercredi 4/11, 9 h 15
+## 4. Hôtel Le Saint-Aubin (Saint-Aubin-sur-Mer, 14) — AOS — envoi mercredi 4/11, 10 h 30
 
 **À :** hotelsaintaubin@orange.fr
 **Objet :** Hôtel Le Saint-Aubin : environ 22 000 € par an à récupérer ?
@@ -137,7 +137,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Hôtel Spa Le Relais des Moines (Villersexel, 70) — AOS — envoi mercredi 4/11, 9 h 30
+## 5. Hôtel Spa Le Relais des Moines (Villersexel, 70) — AOS — envoi mercredi 4/11, 10 h 45
 
 **À :** relaisdesmoines-spa@orange.fr
 **Objet :** Relais des Moines : environ 21 000 € par an à récupérer ?
@@ -166,7 +166,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 6. Ambassadeur Hôtel (Cherbourg) — AOS — envoi mercredi 4/11, 9 h 45
+## 6. Ambassadeur Hôtel (Cherbourg) — AOS — envoi mercredi 4/11, 11 h
 
 **À :** ambassadeur.hotel@wanadoo.fr
 **Objet :** Ambassadeur Hôtel : environ 19 000 € par an à récupérer ?
@@ -195,7 +195,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 7. Hôtel des Ducs (Dijon) — AOS — envoi mercredi 4/11, 10 h
+## 7. Hôtel des Ducs (Dijon) — AOS — envoi mercredi 4/11, 11 h 15
 
 **À :** contact@hoteldesducs.com
 **Objet :** Hôtel des Ducs : environ 19 000 € par an à récupérer ?
@@ -224,7 +224,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 8. Le Floréal (Vence) — AOS — envoi mercredi 4/11, 10 h 15
+## 8. Le Floréal (Vence) — AOS — envoi mercredi 4/11, 11 h 30
 
 **À :** contact@florealvence.com
 **Objet :** Le Floréal : environ 19 000 € par an à récupérer ?

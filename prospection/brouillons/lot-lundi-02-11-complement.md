@@ -1,6 +1,6 @@
-# 5 mails chiffrés à envoyer lundi 2/11 entre 10 h 15 et 11 h 15 (complément du lot du 2/11 — voir PLANNING.md)
+# 5 mails chiffrés : n° 1 et 3 à envoyer lundi 2/11 (11 h 30, 11 h 45), n° 2, 4 et 5 à envoyer mardi 3/11 entre 9 h 45 et 10 h 15 (décalés d'un jour, voir PLANNING.md)
 
-À envoyer à la main (pas d'envoi différé), avec la signature AOS habituelle, **après** mardi-03-11.md (8 h 30 → 9 h 15) et mercredi-04-11.md (9 h 30 → 10 h). Avant chaque envoi, vérifier le compteur du jour dans suivi.csv (ce lot porte le 2/11 à 12 mails sur 15) et l'absence du nom dans les éléments envoyés des 7 derniers jours. Contrôle du 29/10 : aucun des 5 n'est dans suivi.csv, linkedin/contacts.json ni dans les autres brouillons ; ils sont ajoutés à reserve-prospects.md.
+À envoyer à la main (pas d'envoi différé), avec la signature AOS habituelle, dans l'ordre de PLANNING.md (n° 1 et 3 le lun 2/11, n° 2, 4 et 5 le mar 3/11). Décalé d'un jour ouvré le 30/10 (le lot du ven 30/10 n'est pas parti) ; créneaux refaits et revérifiés par `node scripts/check-creneaux.mjs` (0 collision). Avant chaque envoi, vérifier le compteur du jour dans suivi.csv (15 max par jour) et l'absence du nom dans les éléments envoyés des 7 derniers jours. Contrôle du 29/10 : aucun des 5 n'est dans suivi.csv, linkedin/contacts.json ni dans les autres brouillons ; ils sont ajoutés à reserve-prospects.md.
 
 **5 mails sur les 8 prévus : 5 hôtels.** La réserve n'avait plus d'hôtel « prêt » avec une adresse publiée (GHP, B Signature, SOWELL : e-mail à trouver ; Maranatha et Astotel : adresses déduites, Maranatha avec une procédure collective dans le groupe ; Mona Collection : « à vérifier »). Les 5 viennent donc de l'annuaire officiel Qualité Tourisme (mnt.entreprises.gouv.fr), lu via les extraits de recherche (sites, Pappers et BODACC ne sont pas lisibles depuis le cloud, Firecrawl n'a plus de crédits). Ce label s'arrête le 31/12/2026, donc une fiche peut dater. **3 adresses sont nominatives, 2 sont des adresses « direction@ » de petits hôtels.**
 
@@ -8,17 +8,17 @@ Pistes écartées le 29/10 : Manoir de la Roche Torin (gauloism@gmail.com publi�
 
 ## Ordre d'envoi conseillé
 
-1. **10 h 15, Best Western Plus Villa Saint Antoine (Clisson)** : adresse nominative s.botty@, publiée dans l'annuaire Qualité Tourisme pour Stéphanie Botty, correspondante et référente. Sa fonction exacte n'est pas confirmée.
-2. **10 h 30, Platine Hotel (Paris 15e)** : direction@platinehotel.fr, publiée dans l'annuaire Qualité Tourisme. Adresse de direction, pas nominative. Le correspondant de la fiche a quitté l'hôtel en 05/2022 (LinkedIn, vérif du 30/10) : mail adressé « Madame, Monsieur », sans nom.
-3. **10 h 45, Hôtel-Restaurant Au Cygne (Eschau)** : Gmail personnel de Frédérique Bouyoud, publié dans l'annuaire Qualité Tourisme (référente et correspondante). Famille Bouyoud, exploitante depuis 1984.
-4. **11 h, Auberge Frankenbourg (La Vancelle)** : g.buecher@gmail.com, publiée dans l'annuaire Qualité Tourisme comme adresse de contact (pas de référent nommé). « g. » = Guillaume Buecher **déduit** (DG de la société, en salle selon le Michelin).
-5. **11 h 15, Hôtel Le Quatorze (Figeac)** : direction@le-quatorze.fr, publiée dans l'annuaire Qualité Tourisme. Petit hôtel de 14 chambres tenu par ses deux gérants : l'adresse de direction arrive chez eux.
+1. **Lundi 2/11, 11 h 30, Best Western Plus Villa Saint Antoine (Clisson)** : adresse nominative s.botty@, publiée dans l'annuaire Qualité Tourisme pour Stéphanie Botty, correspondante et référente. Sa fonction exacte n'est pas confirmée.
+2. **Mardi 3/11, 9 h 45, Platine Hotel (Paris 15e)** : direction@platinehotel.fr, publiée dans l'annuaire Qualité Tourisme. Adresse de direction, pas nominative. Le correspondant de la fiche a quitté l'hôtel en 05/2022 (LinkedIn, vérif du 30/10) : mail adressé « Madame, Monsieur », sans nom.
+3. **Lundi 2/11, 11 h 45, Hôtel-Restaurant Au Cygne (Eschau)** : Gmail personnel de Frédérique Bouyoud, publié dans l'annuaire Qualité Tourisme (référente et correspondante). Famille Bouyoud, exploitante depuis 1984.
+4. **Mardi 3/11, 10 h, Auberge Frankenbourg (La Vancelle)** : g.buecher@gmail.com, publiée dans l'annuaire Qualité Tourisme comme adresse de contact (pas de référent nommé). « g. » = Guillaume Buecher **déduit** (DG de la société, en salle selon le Michelin).
+5. **Mardi 3/11, 10 h 15, Hôtel Le Quatorze (Figeac)** : direction@le-quatorze.fr, publiée dans l'annuaire Qualité Tourisme. Petit hôtel de 14 chambres tenu par ses deux gérants : l'adresse de direction arrive chez eux.
 
-**Créneaux** (pris dans la réserve du 2/11 de PLANNING.md, uniques sur tous les brouillons et mails déjà envoyés, au moins 2 jours ouvrés après le 2/11) : jeu 12/11 à 15 h 15, 15 h 30, 15 h 45, 16 h et 16 h 15 ; ven 13/11 à 15 h, 15 h 15, 15 h 30, 15 h 45 et 16 h. Restent libres pour les 3 mails manquants : jeu 12/11 16 h 30 → 17 h 30 et ven 13/11 16 h 15 → 16 h 45.
+**Créneaux** (refaits le 30/10 après le décalage d'un jour, uniques sur tous les brouillons et mails déjà envoyés, au moins 2 jours ouvrés après l'envoi) : Villa Saint Antoine jeu 5/11 16 h / jeu 12/11 16 h 15 ; Au Cygne jeu 5/11 16 h 30 / jeu 12/11 16 h 30 ; Platine ven 6/11 16 h / ven 13/11 16 h ; Frankenbourg ven 6/11 16 h 15 / ven 13/11 16 h 15 ; Le Quatorze ven 6/11 16 h 30 / ven 13/11 16 h 30.
 
 ---
 
-## 1. Best Western Plus Villa Saint Antoine Hôtel & Spa (Clisson) — AOS
+## 1. Best Western Plus Villa Saint Antoine Hôtel & Spa (Clisson) — AOS — envoi lundi 2/11, 11 h 30
 
 **À :** s.botty@hotel-villa-saint-antoine.com
 **Objet :** Villa Saint Antoine : environ 25 000 € par an à récupérer ?
@@ -36,7 +36,7 @@ Estimation (120 €/nuit, 65 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 12/11 à 15 h 15 ou vendredi 13/11 à 15 h.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 5/11 à 16 h ou jeudi 12/11 à 16 h 15.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -47,7 +47,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Platine Hotel (Paris 15e) — AOS
+## 2. Platine Hotel (Paris 15e) — AOS — envoi mardi 3/11, 9 h 45
 
 **À :** direction@platinehotel.fr
 **Objet :** Platine Hotel : environ 29 000 € par an à récupérer ?
@@ -65,7 +65,7 @@ Estimation (150 €/nuit, 80 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 12/11 à 15 h 30 ou vendredi 13/11 à 15 h 15.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 6/11 à 16 h ou vendredi 13/11 à 16 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -76,7 +76,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Hôtel-Restaurant Au Cygne (Eschau, 67) — AOS
+## 3. Hôtel-Restaurant Au Cygne (Eschau, 67) — AOS — envoi lundi 2/11, 11 h 45
 
 **À :** fbouyoud@gmail.com
 **Objet :** Frédérique, environ 22 000 € par an à récupérer au Cygne ?
@@ -94,7 +94,7 @@ Estimation (100 €/nuit, 65 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 12/11 à 15 h 45 ou vendredi 13/11 à 15 h 30.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 5/11 à 16 h 30 ou jeudi 12/11 à 16 h 30.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -105,7 +105,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Auberge Frankenbourg (La Vancelle, 67) — AOS
+## 4. Auberge Frankenbourg (La Vancelle, 67) — AOS — envoi mardi 3/11, 10 h
 
 **À :** g.buecher@gmail.com *(publiée dans l'annuaire Qualité Tourisme comme adresse de contact ; « Guillaume » **déduit** de l'initiale)*
 **Objet :** Auberge Frankenbourg : environ 16 000 € par an à récupérer ?
@@ -123,7 +123,7 @@ Estimation (140 €/nuit, 60 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 12/11 à 16 h ou vendredi 13/11 à 15 h 45.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 6/11 à 16 h 15 ou vendredi 13/11 à 16 h 15.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -134,7 +134,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Hôtel Le Quatorze (Figeac, 46) — AOS
+## 5. Hôtel Le Quatorze (Figeac, 46) — AOS — envoi mardi 3/11, 10 h 15
 
 **À :** direction@le-quatorze.fr
 **Objet :** Hôtel Le Quatorze : environ 16 000 € par an à récupérer ?
@@ -152,7 +152,7 @@ Estimation (95 €/nuit, 70 % d'occupation, 55 % des nuits via les plateformes) 
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que vous restez à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 12/11 à 16 h 15 ou vendredi 13/11 à 16 h.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 6/11 à 16 h 30 ou vendredi 13/11 à 16 h 30.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41

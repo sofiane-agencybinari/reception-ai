@@ -1,32 +1,35 @@
-# 8 mails chiffrés (hôtels) : 3 à envoyer lundi 2/11 entre 11 h 30 et 12 h, 5 à envoyer mardi 3/11 entre 9 h 45 et 10 h 45 (compléments des lots du 2/11 et du 3/11 — voir PLANNING.md)
+# 8 mails chiffrés (hôtels) : n° 1 à envoyer lundi 2/11 à 12 h, n° 2-3 mardi 3/11 entre 10 h 30 et 10 h 45, n° 4-8 mercredi 4/11 entre 8 h 30 et 9 h 30 (décalés d'un jour, voir PLANNING.md)
 
-À envoyer à la main (pas d'envoi différé), avec la signature AOS habituelle. **Lundi 2/11** : ces 3 mails partent **après** lot-lundi-02-11-complement.md (10 h 15 → 11 h 15) et portent le 2/11 à 15 mails sur 15. **Mardi 3/11** : ces 5 mails partent **après** lot-mardi-03-11.md (8 h 30 → 9 h 30) et portent le 3/11 à 10 mails sur 10 ; ils remplacent les 5 restaurants introuvables depuis le cloud. Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés des 7 derniers jours. Contrôle du 29/10 : aucun des 8 n'est dans suivi.csv, reserve-prospects.md, linkedin/contacts.json ni dans les autres brouillons (le « Neveu » du Marianne, Franck, n'est pas le Christophe Neveu de l'Hostellerie du Forez) ; ils sont ajoutés à reserve-prospects.md.
+À envoyer à la main (pas d'envoi différé), avec la signature AOS habituelle. **Lundi 2/11** : n° 1, dernier des 15 mails du jour. **Mardi 3/11** : n° 2-3, avant lot-mardi-03-11.md. **Mercredi 4/11** : n° 4-8 (ils remplacent les 5 restaurants introuvables depuis le cloud), avant lot-mercredi-04-11.md. Décalé d'un jour ouvré le 30/10 (le lot du ven 30/10 n'est pas parti) ; créneaux refaits et revérifiés par `node scripts/check-creneaux.mjs` (0 collision). Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés des 7 derniers jours. Contrôle du 29/10 : aucun des 8 n'est dans suivi.csv, reserve-prospects.md, linkedin/contacts.json ni dans les autres brouillons (le « Neveu » du Marianne, Franck, n'est pas le Christophe Neveu de l'Hostellerie du Forez) ; ils sont ajoutés à reserve-prospects.md.
 
-**8 hôtels, 0 restaurant.** Les 8 viennent de l'annuaire officiel Qualité Tourisme (mnt.entreprises.gouv.fr), lu via les extraits de recherche (l'annuaire, Pappers, BODACC et data.gouv.fr ne sont pas lisibles depuis le cloud). Ce label s'arrête le 31/12/2026, donc une fiche peut dater. **3 adresses sont nominatives (lundi), 5 sont des adresses générales de petits hôtels tenus par leurs propriétaires (mardi)** : l'annuaire n'en publiait pas de meilleure. Aucune procédure collective vue dans les extraits, mais BODACC n'est pas lisible : à revérifier avant envoi.
+**8 hôtels, 0 restaurant.** Les 8 viennent de l'annuaire officiel Qualité Tourisme (mnt.entreprises.gouv.fr), lu via les extraits de recherche (l'annuaire, Pappers, BODACC et data.gouv.fr ne sont pas lisibles depuis le cloud). Ce label s'arrête le 31/12/2026, donc une fiche peut dater. **3 adresses sont nominatives (n° 1-3), 5 sont des adresses générales de petits hôtels tenus par leurs propriétaires (n° 4-8)** : l'annuaire n'en publiait pas de meilleure. Aucune procédure collective vue dans les extraits, mais BODACC n'est pas lisible : à revérifier avant envoi.
 
 Pistes écartées le 29/10 : Hôtel Spa du Béryl (b.reveille@joa.fr, mais l'hôtel appartient au groupe de casinos JOA, pas un petit groupe), Hôtel La Diligence (Riquewihr, référent François Baly : famille Baly = Diana Hotels Collection, déjà dans lot-mardi-03-11.md), Hotel de France Restaurant le Tastevin (Beaune : fonds vendu en 2024, déjà écarté dans lot-lundi-02-11-complement.md), Le Palacio (Lourdes : restaurant, pas un hôtel), Hôtel du Manoir (Tours) et Le Manoir les Minimes (Amboise) (référents nommés mais aucune adresse e-mail dans les extraits), Saint Michel (Dinard) (fiche non retrouvée), Kyriad Prestige Saint-Malo, Citotel de France (Rochefort), Cozy Hotel, Le Normandy (Fécamp), Hôtel de Normandie (Conches), COTO Hôtel (Beaune), Hôtel de Londres (Saumur), Hostellerie du Grand Sully, Hostellerie du Périgord Vert, Aux Vendanges de Bourgogne, Arts et Terroirs (Gevrey) : seulement contact@ ou une adresse générale, gardés en réserve si besoin.
 
 ## Ordre d'envoi conseillé
 
-**Lundi 2/11 (après le lot de 10 h 15 → 11 h 15)**
-1. **11 h 30, Grand Hôtel d'Orléans (Toulouse)** : adresse nominative brigitte.hugounet@, publiée dans l'annuaire Qualité Tourisme. La fiche nomme Céline Hugounet comme référente, mais l'adresse est celle de Brigitte : les deux sœurs dirigent l'hôtel, d'où « Madame Hugounet ».
-2. **11 h 45, Empreinte Hôtel & Spa (Orléans)** : adresse nominative pascal.desbois@, publiée dans l'annuaire Qualité Tourisme pour Pascal Desbois, référent. Sa fonction exacte n'est pas confirmée.
-3. **12 h, Hôtel du Lion d'Argent et des Tanneries (La Châtre)** : pma7@leliondargent.com, publiée pour Pierre Marie Audebert, référent. Initiales du référent : adresse **nominative probable** (déduit).
+**Lundi 2/11 (dernier mail du jour)**
+1. **12 h, Grand Hôtel d'Orléans (Toulouse)** : adresse nominative brigitte.hugounet@, publiée dans l'annuaire Qualité Tourisme. La fiche nomme Céline Hugounet comme référente, mais l'adresse est celle de Brigitte : les deux sœurs dirigent l'hôtel, d'où « Madame Hugounet ».
 
-**Mardi 3/11 (après le lot de 8 h 30 → 9 h 30)**
-4. **9 h 45, Hôtel Le Manoir (La Rochelle)** : contact@lemanoirlarochelle.com, publiée dans l'annuaire Qualité Tourisme pour Antoine et Cécile Faye. 18 chambres : l'adresse générale arrive chez eux.
-5. **10 h, Hôtel François 1er (La Rochelle)** : information@hotelfrancois1er.fr, publiée pour M. et Mme Mahé, référents.
-6. **10 h 15, Hostellerie du Forez (Saint-Galmier)** : contact@hostellerieduforez.com, publiée pour Christophe Neveu, correspondant et référent.
-7. **10 h 30, James Boutique Hôtel (Colmar)** : contact@james-hotel.com, publiée pour Julie Armindo, référente.
-8. **10 h 45, Hôtel de la Place (Polliat)** : hoteldelaplacepolliat@orange.fr, publiée pour Philippe Tejerina, correspondant et référent (gérant selon l'arrêté préfectoral de 2015).
+**Mardi 3/11 (après lot-lundi-02-11-complement.md n° 2, 4, 5)**
+2. **10 h 30, Empreinte Hôtel & Spa (Orléans)** : adresse nominative pascal.desbois@, publiée dans l'annuaire Qualité Tourisme pour Pascal Desbois, référent. Sa fonction exacte n'est pas confirmée.
+3. **10 h 45, Hôtel du Lion d'Argent et des Tanneries (La Châtre)** : pma7@leliondargent.com, publiée pour Pierre Marie Audebert, référent. Initiales du référent : adresse **nominative probable** (déduit).
 
-**Créneaux** (uniques sur tous les brouillons et mails déjà envoyés, au moins 2 jours ouvrés après l'envoi, pas le 11/11) :
-- Lundi 2/11, pris dans la réserve du 2/11 : jeu 12/11 à 16 h 30, 16 h 45 et 17 h ; ven 13/11 à 16 h 15, 16 h 30 et 16 h 45. Libérés : jeu 12/11 17 h 15 et 17 h 30.
-- Mardi 3/11, pris dans la réserve des « 5 restaurants du 3/11 » : ven 6/11 17 h 30 ; lun 9/11 16 h 45, 17 h 15, 17 h 30 ; mar 10/11 15 h 15, 15 h 45, 16 h 15, 16 h 45, 17 h 15 ; jeu 12/11 15 h. Libéré : mar 10/11 17 h 30.
+**Mercredi 4/11 (avant lot-mercredi-04-11.md)**
+4. **8 h 30, Hôtel Le Manoir (La Rochelle)** : contact@lemanoirlarochelle.com, publiée dans l'annuaire Qualité Tourisme pour Antoine et Cécile Faye. 18 chambres : l'adresse générale arrive chez eux.
+5. **8 h 45, Hôtel François 1er (La Rochelle)** : information@hotelfrancois1er.fr, publiée pour M. et Mme Mahé, référents.
+6. **9 h, Hostellerie du Forez (Saint-Galmier)** : contact@hostellerieduforez.com, publiée pour Christophe Neveu, correspondant et référent.
+7. **9 h 15, James Boutique Hôtel (Colmar)** : contact@james-hotel.com, publiée pour Julie Armindo, référente.
+8. **9 h 30, Hôtel de la Place (Polliat)** : hoteldelaplacepolliat@orange.fr, publiée pour Philippe Tejerina, correspondant et référent (gérant selon l'arrêté préfectoral de 2015).
+
+**Créneaux** (refaits le 30/10 après le décalage d'un jour ; uniques sur tous les brouillons et mails déjà envoyés, au moins 2 jours ouvrés après l'envoi, pas le 11/11) :
+- Lundi 2/11 : Grand Hôtel d'Orléans jeu 5/11 17 h / jeu 12/11 16 h 45.
+- Mardi 3/11 : Empreinte ven 6/11 17 h / ven 13/11 16 h 45 ; Lion d'Argent ven 6/11 17 h 30 / mar 17/11 15 h 30.
+- Mercredi 4/11 : Le Manoir lun 9/11 15 h 15 / mar 17/11 15 h 45 ; François 1er lun 9/11 16 h / mar 17/11 16 h ; Forez lun 9/11 16 h 30 / mar 17/11 16 h 15 ; James lun 9/11 16 h 45 / mar 17/11 16 h 30 ; Hôtel de la Place lun 9/11 17 h / mar 17/11 16 h 45.
 
 ---
 
-## 1. Grand Hôtel d'Orléans (Toulouse) — AOS — envoi lundi 2/11, 11 h 30
+## 1. Grand Hôtel d'Orléans (Toulouse) — AOS — envoi lundi 2/11, 12 h
 
 **À :** brigitte.hugounet@grand-hotel-orleans.fr
 **Objet :** Grand Hôtel d'Orléans : environ 26 000 € par an à récupérer ?
@@ -44,7 +47,7 @@ Estimation (95 €/nuit, 75 % d'occupation, 55 % des nuits via les plateformes) 
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 12/11 à 16 h 30 ou vendredi 13/11 à 16 h 15.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 5/11 à 17 h ou jeudi 12/11 à 16 h 45.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -55,7 +58,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Empreinte Hôtel & Spa (Orléans) — AOS — envoi lundi 2/11, 11 h 45
+## 2. Empreinte Hôtel & Spa (Orléans) — AOS — envoi mardi 3/11, 10 h 30
 
 **À :** pascal.desbois@empreintehotel.com
 **Objet :** Empreinte Hôtel : environ 25 000 € par an à récupérer ?
@@ -73,7 +76,7 @@ Estimation (140 €/nuit, 70 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 12/11 à 16 h 45 ou vendredi 13/11 à 16 h 30.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 6/11 à 17 h ou vendredi 13/11 à 16 h 45.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -84,7 +87,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Hôtel du Lion d'Argent et des Tanneries (La Châtre, 36) — AOS — envoi lundi 2/11, 12 h
+## 3. Hôtel du Lion d'Argent et des Tanneries (La Châtre, 36) — AOS — envoi mardi 3/11, 10 h 45
 
 **À :** pma7@leliondargent.com *(publiée dans l'annuaire Qualité Tourisme pour Pierre Marie Audebert ; « pma » = ses initiales, **déduit**)*
 **Objet :** Lion d'Argent : environ 22 000 € par an à récupérer ?
@@ -102,7 +105,7 @@ Estimation (80 €/nuit, 60 % d'occupation, 55 % des nuits via les plateformes) 
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 12/11 à 17 h ou vendredi 13/11 à 16 h 45.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 6/11 à 17 h 30 ou mardi 17/11 à 15 h 30.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -113,7 +116,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Hôtel Le Manoir (La Rochelle) — AOS — envoi mardi 3/11, 9 h 45
+## 4. Hôtel Le Manoir (La Rochelle) — AOS — envoi mercredi 4/11, 8 h 30
 
 **À :** contact@lemanoirlarochelle.com
 **Objet :** Hôtel Le Manoir : environ 17 000 € par an à récupérer ?
@@ -131,7 +134,7 @@ Estimation (120 €/nuit, 70 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que vous restez à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 6/11 à 17 h 30 ou mardi 10/11 à 15 h 15.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 9/11 à 15 h 15 ou mardi 17/11 à 15 h 45.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -142,7 +145,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Hôtel François 1er (La Rochelle) — AOS — envoi mardi 3/11, 10 h
+## 5. Hôtel François 1er (La Rochelle) — AOS — envoi mercredi 4/11, 8 h 45
 
 **À :** information@hotelfrancois1er.fr
 **Objet :** Hôtel François 1er : environ 19 000 € par an à récupérer ?
@@ -160,7 +163,7 @@ Estimation (95 €/nuit, 70 % d'occupation, 55 % des nuits via les plateformes) 
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 9/11 à 16 h 45 ou mardi 10/11 à 15 h 45.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 9/11 à 16 h ou mardi 17/11 à 16 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -171,7 +174,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 6. Hostellerie du Forez (Saint-Galmier, 42) — AOS — envoi mardi 3/11, 10 h 15
+## 6. Hostellerie du Forez (Saint-Galmier, 42) — AOS — envoi mercredi 4/11, 9 h
 
 **À :** contact@hostellerieduforez.com
 **Objet :** Hostellerie du Forez : environ 23 000 € par an à récupérer ?
@@ -189,7 +192,7 @@ Estimation (110 €/nuit, 65 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 9/11 à 17 h 15 ou mardi 10/11 à 16 h 15.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 9/11 à 16 h 30 ou mardi 17/11 à 16 h 15.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -200,7 +203,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 7. James Boutique Hôtel (Colmar) — AOS — envoi mardi 3/11, 10 h 30
+## 7. James Boutique Hôtel (Colmar) — AOS — envoi mercredi 4/11, 9 h 15
 
 **À :** contact@james-hotel.com
 **Objet :** James Boutique Hôtel : environ 25 000 € par an à récupérer ?
@@ -218,7 +221,7 @@ Estimation (140 €/nuit, 75 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 9/11 à 17 h 30 ou mardi 10/11 à 16 h 45.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 9/11 à 16 h 45 ou mardi 17/11 à 16 h 30.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -229,7 +232,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 8. Hôtel de la Place — Téjérina (Polliat, 01) — AOS — envoi mardi 3/11, 10 h 45
+## 8. Hôtel de la Place — Téjérina (Polliat, 01) — AOS — envoi mercredi 4/11, 9 h 30
 
 **À :** hoteldelaplacepolliat@orange.fr
 **Objet :** Hôtel de la Place : environ 15 000 € par an à récupérer ?
@@ -247,7 +250,7 @@ Estimation (80 €/nuit, 60 % d'occupation, 55 % des nuits via les plateformes) 
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que vous restez en cuisine.
 
-Un hôtel-restaurant, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : mardi 10/11 à 17 h 15 ou jeudi 12/11 à 15 h.
+Un hôtel-restaurant, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 9/11 à 17 h ou mardi 17/11 à 16 h 45.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41

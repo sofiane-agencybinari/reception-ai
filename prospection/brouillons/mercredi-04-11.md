@@ -1,4 +1,4 @@
-# 3 mails chiffrés à envoyer lundi 2/11 entre 9 h 30 et 10 h 15 (lot de 15 du 2/11, après mardi-03-11.md — voir PLANNING.md ; nom de fichier conservé)
+# 3 mails chiffrés : n° 1 (Clos des Délices) à envoyer lundi 2/11 à 11 h 15, n° 2-3 à envoyer mardi 3/11 entre 9 h 15 et 9 h 30 (décalés d'un jour, voir PLANNING.md ; nom de fichier conservé)
 
 À envoyer à la main (pas d'envoi différé), avec la signature AOS habituelle. Avant chaque envoi, vérifier le compteur du jour dans suivi.csv et l'absence du nom dans les éléments envoyés. Contrôle du 28/10 : aucun des 3 n'est dans reserve-noms.txt, suivi.csv, reserve-prospects.md, exclus.txt ni dans les autres brouillons.
 
@@ -6,15 +6,15 @@
 
 ## Ordre d'envoi conseillé
 
-1. **9 h 30, 6717 Nature Hôtel & Spa – Le Clos des Délices (Ottrott)** : adresse nominative nicole@, publiée dans l'annuaire officiel Qualité Tourisme pour Nicole Schaetzel, directrice générale.
-2. **9 h 45, Hôtel Le Saint-Pierre (La Réunion)** : direction@, publiée au même annuaire (référente : Marie-Claude Calteau). Il sera 12 h 45 à La Réunion (+3 h).
-3. **10 h, Groupe La Mère Poulard / Le Saint Aubert (Mont-Saint-Michel)** : adresse **déduite** frederic.vincent@merepoulard.fr. Le format prenom.nom@merepoulard.fr est vu sur william.delpoux@merepoulard.fr, adresse publiée dans l'annuaire Qualité Tourisme. Si le mail rebondit, renvoyer le même texte à william.delpoux@merepoulard.fr en lui demandant de le transmettre à M. Vincent. Vérif du 30/10 : Frédéric Vincent est **confirmé DG du groupe** (La Tribune de l'Hôtellerie, Tendance Ouest : DG depuis avril 2024 ; Forbes France ; France 3 sur la cession de la biscuiterie, oct. 2025) — le mail reste à son nom. Seule l'adresse reste **déduite**. La fonction de William Delpoux n'est confirmée nulle part (aucun résultat en dehors de l'annuaire) : le repli ne sert qu'en cas de rebond, comme simple relais.
+1. **Lundi 2/11, 11 h 15, 6717 Nature Hôtel & Spa – Le Clos des Délices (Ottrott)** : adresse nominative nicole@, publiée dans l'annuaire officiel Qualité Tourisme pour Nicole Schaetzel, directrice générale.
+2. **Mardi 3/11, 9 h 15, Hôtel Le Saint-Pierre (La Réunion)** : direction@, publiée au même annuaire (référente : Marie-Claude Calteau). Il sera 12 h 15 à La Réunion (+3 h).
+3. **Mardi 3/11, 9 h 30, Groupe La Mère Poulard / Le Saint Aubert (Mont-Saint-Michel)** : adresse **déduite** frederic.vincent@merepoulard.fr. Le format prenom.nom@merepoulard.fr est vu sur william.delpoux@merepoulard.fr, adresse publiée dans l'annuaire Qualité Tourisme. Si le mail rebondit, renvoyer le même texte à william.delpoux@merepoulard.fr en lui demandant de le transmettre à M. Vincent. Vérif du 30/10 : Frédéric Vincent est **confirmé DG du groupe** (La Tribune de l'Hôtellerie, Tendance Ouest : DG depuis avril 2024 ; Forbes France ; France 3 sur la cession de la biscuiterie, oct. 2025) — le mail reste à son nom. Seule l'adresse reste **déduite**. La fonction de William Delpoux n'est confirmée nulle part (aucun résultat en dehors de l'annuaire) : le repli ne sert qu'en cas de rebond, comme simple relais.
 
-**Créneaux** (refaits le 29/10 pour l'envoi du lundi 2/11, uniques sur tous les brouillons et les mails déjà envoyés : voir PLANNING.md) : ven 6/11 à 15 h 30, 15 h 45 et 16 h 15 ; lun 9/11 à 15 h 15, 16 h et 17 h. Le Saint-Pierre (La Réunion, +3 h) garde des créneaux en début de plage.
+**Créneaux** (refaits le 30/10 après le décalage d'un jour, uniques sur tous les brouillons et les mails déjà envoyés, au moins 2 jours ouvrés après l'envoi : voir PLANNING.md) : Clos des Délices jeu 5/11 15 h 30 / jeu 12/11 16 h ; Le Saint-Pierre lun 9/11 15 h / ven 13/11 15 h 30 ; Mère Poulard ven 6/11 15 h 45 / ven 13/11 15 h 45. Le Saint-Pierre (La Réunion, +3 h) garde des créneaux en début de plage.
 
 ---
 
-## 1. 6717 Nature Hôtel & Spa – Le Clos des Délices (Ottrott) — AOS
+## 1. 6717 Nature Hôtel & Spa – Le Clos des Délices (Ottrott) — AOS — envoi lundi 2/11, 11 h 15
 
 **À :** nicole@leclosdesdelices.com
 **Objet :** Clos des Délices : environ 31 000 € par an à récupérer ?
@@ -32,7 +32,7 @@ Estimation (190 €/nuit, 60 % d'occupation, 55 % via plateformes) :
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 15 h 45 ou lundi 9/11 à 16 h.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : jeudi 5/11 à 15 h 30 ou jeudi 12/11 à 16 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -43,7 +43,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Hôtel Le Saint-Pierre (Saint-Pierre, La Réunion) — AOS
+## 2. Hôtel Le Saint-Pierre (Saint-Pierre, La Réunion) — AOS — envoi mardi 3/11, 9 h 15
 
 **À :** direction@hotellesaintpierre.fr
 **Objet :** Hôtel Le Saint-Pierre : environ 27 000 € par an à récupérer ?
@@ -61,7 +61,7 @@ Estimation (115 €/nuit, 70 % d'occupation, 55 % via plateformes) :
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 15 h 30 ou lundi 9/11 à 15 h 15 (18 h 30 ou 18 h 15 chez vous).
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : lundi 9/11 à 15 h ou vendredi 13/11 à 15 h 30 (18 h ou 18 h 30 chez vous).
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -72,7 +72,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Groupe La Mère Poulard / Le Saint Aubert (Mont-Saint-Michel) — AOS
+## 3. Groupe La Mère Poulard / Le Saint Aubert (Mont-Saint-Michel) — AOS — envoi mardi 3/11, 9 h 30
 
 **À :** frederic.vincent@merepoulard.fr *(déduite : format vu sur william.delpoux@merepoulard.fr, publiée dans l'annuaire Qualité Tourisme)*
 **Objet :** La Mère Poulard : environ 67 000 € par an à récupérer ?
@@ -90,7 +90,7 @@ Estimation (Saint Aubert : 27 chambres, 100 €, 65 % d'occupation, 55 % via pla
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 16 h 15 ou lundi 9/11 à 17 h.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 15 h 45 ou vendredi 13/11 à 15 h 45.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
