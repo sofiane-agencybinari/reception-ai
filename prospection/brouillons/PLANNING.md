@@ -38,3 +38,10 @@ En semaine, entre 15 h et 17 h 30, au moins 2 jours ouvrés après l'envoi, **ja
 - Lots suivants (7 mails manquants du 4/11, puis envoi à partir du jeu 5/11) : à partir de mar 17/11 15 h 30, puis mer 18/11 (sauf 15 h) et jeu 19/11.
 
 Si un jour d'envoi saute, décaler tout le planning d'un jour ouvré **et** refaire les créneaux (règle de l'Analyste du 28/10).
+
+## ⚠️ Alertes du 30/10 (vérif LinkedIn) — à traiter AVANT envoi
+- **Hôtel de la Tour (Libourne)** — lot du **ven 30/10** : l'hôtel a été repris et rebaptisé « Le MA » par Manon et Alexis Valette (post CIVB). **Ne pas envoyer tel quel** : réécrire pour « Le MA » / M. et Mme Valette, ou retirer du lot (envoi du jour = 9).
+- **Grand Hôtel de l'Europe (Morlaix)** — lot du lun 2/11 : Guillaume Pellerin a **vendu** l'hôtel à Elena et Jean de Kertanguy (Ouest-France, Le Télégramme). Mauvais destinataire → réécrire pour les Kertanguy ou retirer.
+- **Platine Hotel (Paris 15e)** — lun 2/11 : Maxime Ottogalli y était de 11/2016 à 05/2022 d'après LinkedIn → mail à adresser « Madame, Monsieur » (direction@) sans son nom.
+- **Mère Poulard** — lun 2/11 : Frédéric Vincent (adresse déduite) n'apparaît dans le groupe qu'en 2024 → confirmer le DG actuel ou envoyer à william.delpoux@ (repli noté).
+- **Le Grand Hôtel (Sète)** — lun 2/11 : mail à Lydie Dubois ; profil trouvé = Thomas Dubois. Vérifier qui dirige.
