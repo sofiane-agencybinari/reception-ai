@@ -1,5 +1,5 @@
 {
- "maj": "2026-10-29",
+ "maj": "2026-10-30",
  "contacts": [
   {
    "id": "oliver",
@@ -1764,6 +1764,150 @@
    "m": "Bonjour Guy, je vous ai écrit la semaine dernière au sujet de Brit Hotel. Une question : côté hôtels du réseau, quelle tâche répétitive ou quelle ressaisie pèse le plus ? Auriez-vous 10 min pour un échange, sans démarche commerciale ? Sofiane (AOS)",
    "t": "Bretagne, Groupe · mailé le 20/10",
    "date": "2026-10-29"
+  },
+  {
+   "id": "bouyer30",
+   "n": "Vincent Bouyer",
+   "r": "Gérant, Hôtel de France (Angers)",
+   "u": "https://fr.linkedin.com/in/vincent-bouyer-3843484a",
+   "m": "Bonjour Vincent, je mène des entretiens avec des hôteliers indépendants. À l'Hôtel de France, dont vous êtes la 4e génération, quelle tâche répétitive prend le plus de temps à vos équipes ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Angers, 4★ · mail prévu le 30/10",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "bomo30",
+   "n": "Alexandre Bomo",
+   "r": "Directeur général, Hostellerie Le Maréchal (Colmar)",
+   "u": "https://fr.linkedin.com/in/alexandre-bomo-89683044",
+   "m": "Bonjour Alexandre, je mène des entretiens avec des hôteliers indépendants. Au Maréchal, entre l'hôtel et L'Échevin, quels logiciels ne se parlent pas et obligent à ressaisir ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Colmar, Hôtel + restaurant · mail prévu le 30/10",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "boyerjc30",
+   "n": "Jean-Claude Boyer",
+   "r": "Fondateur, Dina Morgabine Hospitality (La Réunion)",
+   "u": "https://re.linkedin.com/in/jean-claude-boyer-61878b38",
+   "m": "Bonjour Jean-Claude, je mène des entretiens avec des dirigeants de groupes hôteliers. D'un hôtel Dina Morgabine à l'autre, quelle tâche répétitive ou quelle ressaisie entre logiciels coûte le plus de temps ? 10 min ? Sofiane (AOS)",
+   "t": "La Réunion, Groupe · mail prévu le 2/11",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "duboist30",
+   "n": "Thomas Dubois",
+   "r": "Hôtelier, Le Grand Hôtel (Sète)",
+   "u": "https://fr.linkedin.com/in/thomas-dubois-17a972370",
+   "m": "Bonjour Thomas, je mène des entretiens avec des hôteliers indépendants. Au Grand Hôtel de Sète, sur le quai face au canal, quelle tâche répétitive fait perdre le plus de temps à l'équipe ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Sète, 3★ · mail prévu le 2/11 (à Lydie Dubois)",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "schaetzel30",
+   "n": "Nicole Schaetzel",
+   "r": "Directrice générale, 6717 Nature Hôtel & Spa (Ottrott)",
+   "u": "https://fr.linkedin.com/in/nicole-schaetzel-46318a221",
+   "m": "Bonjour Nicole, je mène des entretiens avec des hôteliers indépendants. Au 6717, entre l'hôtel, le spa et le restaurant, quels logiciels ne se parlent pas et obligent à ressaisir ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Alsace, 4★ · mail prévu le 2/11",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "botty30",
+   "n": "Stéphanie Botty",
+   "r": "Directrice d'exploitation, Best Western Plus Villa Saint Antoine (Clisson)",
+   "u": "https://fr.linkedin.com/in/st%C3%A9phanie-botty-711331174",
+   "m": "Bonjour Stéphanie, je mène des entretiens avec des directeurs d'exploitation. À la Villa Saint Antoine, entre l'hôtel, le spa et le restaurant, quelle tâche répétitive prend le plus de temps ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Clisson, Hôtel & spa · mail prévu le 2/11",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "buecher30",
+   "n": "Guillaume Buecher",
+   "r": "Directeur, Auberge Frankenbourg (La Vancelle)",
+   "u": "https://fr.linkedin.com/in/guillaume-buecher-5b98b3184",
+   "m": "Bonjour Guillaume, je mène des entretiens avec des hôteliers-restaurateurs. Au Frankenbourg, où vous tenez la salle, quelle tâche répétitive vous prend le plus de temps chaque semaine ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Alsace, 1★ Michelin · mail prévu le 2/11",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "hugounet30",
+   "n": "Brigitte Hugounet",
+   "r": "Directrice, Grand Hôtel d'Orléans (Toulouse)",
+   "u": "https://fr.linkedin.com/in/brigitte-hugounet-b7725a2b",
+   "m": "Bonjour Brigitte, je mène des entretiens avec des hôteliers indépendants. Au Grand Hôtel d'Orléans, entre l'hôtel et La Ripaille, quels logiciels ne se parlent pas et obligent à ressaisir ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Toulouse, 3★ · mail prévu le 2/11",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "desboisp30",
+   "n": "Pascal Desbois",
+   "r": "Dirigeant, Empreinte Hôtel & Spa (Orléans)",
+   "u": "https://fr.linkedin.com/in/pascal-desbois-67639a1bb",
+   "m": "Bonjour Pascal, je mène des entretiens avec des hôteliers indépendants. À l'Empreinte, en bord de Loire, quelle tâche répétitive prend le plus de temps à vos équipes, entre hôtel et spa ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Orléans, 4★ · mail prévu le 2/11",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "broglie30",
+   "n": "Philippe-Maurice de Broglie",
+   "r": "Gérant, Le Grand Hôtel (Tours)",
+   "u": "https://fr.linkedin.com/in/philippe-maurice-de-broglie-34940347",
+   "m": "Bonjour Philippe-Maurice, je mène des entretiens avec des hôteliers indépendants. Depuis votre reprise du Grand Hôtel de Tours en 2004, quelle tâche répétitive pèse le plus sur vos équipes ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Tours, 3★ · mail prévu le 3/11",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "crouzet30",
+   "n": "Xavier Crouzet",
+   "r": "Dirigeant, Hôtel de JoBo (Paris 4e)",
+   "u": "https://fr.linkedin.com/in/xaviercrouzet",
+   "m": "Bonjour Xavier, je mène des entretiens avec des hôteliers indépendants à Paris. Au JoBo, hôtel inspiré de Joséphine Bonaparte, quels logiciels ne se parlent pas et obligent vos équipes à ressaisir ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Paris, 4★ · mail prévu le 3/11",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "neveuf30",
+   "n": "Franck Neveu",
+   "r": "Directeur, Le Marianne (Paris 8e)",
+   "u": "https://fr.linkedin.com/in/franckneveu",
+   "m": "Bonjour Franck, vous formez aussi de futurs managers au MBA de l'ESG. Au Marianne, quelle tâche répétitive prend encore le plus de temps à vos équipes ? Je mène des entretiens avec des directeurs d'hôtels, 10 min ? Sofiane (AOS)",
+   "t": "Paris, 4★ · mail prévu le 3/11",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "chelly30",
+   "n": "Louise Chelly",
+   "r": "Associée, Les Petits Hôtels – Petit Beaumarchais (Paris 11e)",
+   "u": "https://fr.linkedin.com/in/louise-chelly-aa095a29",
+   "m": "Bonjour Louise, je mène des entretiens avec des dirigeants d'hôtels indépendants. Entre le Petit Beaumarchais et vos autres Petits Hôtels, quelle ressaisie entre logiciels coûte le plus de temps ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Paris, Groupe · mail prévu le 3/11",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "baly30",
+   "n": "Thomas Baly",
+   "r": "Directeur général France, Diana Hotels Collection",
+   "u": "https://fr.linkedin.com/in/thomas-baly-20733418",
+   "m": "Bonjour Thomas, je mène des entretiens avec des dirigeants de groupes hôteliers familiaux. Chez Diana, d'un hôtel à l'autre, quelle tâche répétitive ou quelle ressaisie pèse le plus sur les équipes ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Alsace, Groupe · mail prévu le 3/11",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "teyssier30",
+   "n": "Matthieu Teyssier d'Orfeuil",
+   "r": "Directeur, Paristory (boutique-hôtels, Paris)",
+   "u": "https://fr.linkedin.com/in/matthieu1teyssierdorfeuil/en",
+   "m": "Bonjour Matthieu, je mène des entretiens avec des directeurs des opérations. Sur les boutique-hôtels Paristory, quels outils ne se parlent pas d'un hôtel à l'autre et obligent à ressaisir ? 10 min de votre avis ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "jaouen30",
+   "n": "Delphine Jaouen Despretz",
+   "r": "Directrice générale, 2L Collection (Paris)",
+   "u": "https://fr.linkedin.com/in/delphine-jaouen-despretz-09886911",
+   "m": "Bonjour Delphine, je mène des entretiens avec des dirigeants de collections hôtelières. Après Esprit de France, chez 2L Collection, quelle tâche répétitive pèse le plus sur les équipes d'un hôtel à l'autre ? 10 min ? Sofiane (AOS)",
+   "t": "Paris, Groupe",
+   "date": "2026-10-30"
   }
  ]
 }
