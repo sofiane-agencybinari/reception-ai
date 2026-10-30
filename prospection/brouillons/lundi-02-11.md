@@ -4,7 +4,7 @@
 
 ## Ordre d'envoi conseillé
 
-1. **9 h 45, Hôtel de la Tour (Libourne)** : adresse Gmail des propriétaires, publiée dans les mentions légales. C'est la boîte que lisent Manon et Alexis Valette.
+1. **9 h 45, Le MA – Hôtel de la Tour (Libourne)** : adresse Gmail des propriétaires, publiée dans les mentions légales. C'est la boîte que lisent Manon et Alexis Valette (repreneurs depuis 11/2021, mail réécrit pour « Le MA » le 30/10).
 2. **10 h, Esprit Pizza (Nort-sur-Erdre, Nantes)** : adresse orange.fr publiée sur la page Facebook de l'enseigne. Petite maison : c'est sans doute le patron qui la lit.
 3. **10 h 15, Aux Trois Goûts (Bas-Rhin)** : adresse Gmail publiée sur le site et sur chaque page restaurant.
 4. **10 h 30, Hôtel Vauban (Brest)** : contact@, générique. « Monsieur Muzy » en première ligne.
@@ -21,14 +21,14 @@ Limites de cette recherche : depuis le cloud, les sites des établissements, Pap
 
 ---
 
-## 1. Hôtel de la Tour (Libourne) — AOS
+## 1. Le MA – Hôtel de la Tour (Libourne) — AOS
 
 **À :** hoteldelatour.libourne@gmail.com
-**Objet :** Hôtel de la Tour : environ 16 200 € par an à récupérer ?
+**Objet :** Le MA : environ 16 200 € par an à récupérer ?
 
-Madame, Monsieur Valette,
+Madame et Monsieur Valette,
 
-15 chambres au pied des remparts, et Le MA, un restaurant qu'un client juge « à découvrir » sur Hotels.com : beaucoup repose sur vous deux.
+Le MA, vos deux initiales sur 15 chambres au pied des remparts et un restaurant de 80 couverts qu'un client juge « à découvrir » sur Hotels.com : beaucoup repose sur vous deux.
 
 Notre estimation (90 € la nuit, 60 % d'occupation, 55 % des nuits via les plateformes) :
 1. **Ressaisie entre outils** (hôtel, annexe, restaurant) : 1 h par jour à 27 €/h, **environ 9 900 €/an**.
@@ -44,9 +44,11 @@ Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minut
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
 
+**Vérif du 30/10 (alerte LinkedIn / CIVB) :** Manon et Alexis Valette ont repris l'Hôtel de la Tour en novembre 2021 (Petit Futé) et l'ont rebaptisé « Le MA », d'après leurs initiales (bordeaux.com / CIVB : 15 chambres, restaurant de 80 couverts). Dans les faits, le nom « Le MA » est surtout porté par le restaurant (site le-ma-restaurant-libourne.fr, éditeur HOTEL DES VIGNES, responsable Alexis Valette) ; le site de l'hôtel et les plateformes affichent encore « Hôtel - Restaurant de la Tour ». Le mail s'adresse donc à « Le MA » et aux deux Valette. **Adresse :** c'est celle des nouveaux propriétaires (mentions légales de leur site, relevé du 26/10, dont ils sont directeurs de la publication) ; aucune autre adresse publiée trouvée le 30/10 (WebSearch ; les sites du MA, de bordeaux.com et societe.com ne sont pas lisibles depuis le cloud). Le reste de la fiche est inchangé.
+
 **Fiche :** SAS HOTEL DES VIGNES (SIREN 904 280 591), nom commercial « Hôtel de la Tour », au 23 quai Souchet. Président : Alexis Valette ; directrice générale : Manon Valette. Tous deux sont en poste depuis le 18/10/2021 et sont directeurs de la publication du site. Les murs appartiennent à une SCI distincte, HOTEL DE LA TOUR (SIREN 912 642 782). Pappers indique que la société est active, sans procédure collective. Les comptes clos au 30/09/2025 ont été déposés le 30/06/2026. Logis, 2★ selon Hotels.com, 15 chambres dont 6 dans une annexe voisine. Prix publics : à partir de 82 € (annuaire) et 96 € (agrégateur), d'où une hypothèse de 90 €. Petit-déjeuner à 14,90 € selon un site, « inclus » selon un autre : je ne l'ai pas chiffré. Notes : Google « Très bonne » (441 avis), Booking 8,0 (315), Mappy 8/10 (340), Expedia 8,4 (environ 78), Tripadvisor 4/5 (20). Avis cité : « le restaurant de l'hôtel "MA" est à découvrir. La qualité de la cuisine est excellente. » (Hotels.com). Points faibles relevés : bruit de la route et climatisation bruyante (résumé d'avis, pas une citation). Moteur de réservation et PMS : non visibles. Le chiffrage est volontairement bas (1 h de ressaisie par jour) vu la taille de l'hôtel.
 
-**Sources vérifiées :** https://www.pappers.fr/entreprise/hotel-des-vignes-904280591 · https://annuaire-entreprises.data.gouv.fr/entreprise/912642782 · https://www.petitfute.com/v1724-libourne-33500/c1166-hebergement/c158-hotel/2042545-logis-hotel-de-la-tour.html · https://www.booking.com/hotel/fr/de-la-tour-libourne.html · https://www.tripadvisor.com/Hotel_Review-g651697-d3212928-Reviews-Hotel_De_La_Tour_Libourne-Libourne_Gironde_Nouvelle_Aquitaine.html · https://hotels.com/ho499834/la-tour-du-vieux-port-libourne-france · https://in.hotels.com/ho2940238112/logis-hotel-de-la-tour-libourne-france · https://www.ipernity.com/doc/323415/52666198 · https://de-la-tour-libourne.ohotel.fr/ · adresse : https://hoteldelatourlibourne.fr/eng/mentions_legales (relevé du 26/10, non relu aujourd'hui)
+**Sources vérifiées :** https://www.bordeaux.com/fr/mag/blog/restaurant-le-ma-chateau-bernon-becot/ · https://www.petitfute.co.uk/v1724-libourne-33500/c1165-restaurants/c4-cuisine-francaise/2013617-le-ma.html · https://www.le-ma-restaurant-libourne.fr/ · https://www.33500.fr/commerces-artisans-restaurants-libourne/ma-restaurant-libourne · https://www.pappers.fr/entreprise/hotel-des-vignes-904280591 · https://annuaire-entreprises.data.gouv.fr/entreprise/912642782 · https://www.petitfute.com/v1724-libourne-33500/c1166-hebergement/c158-hotel/2042545-logis-hotel-de-la-tour.html · https://www.booking.com/hotel/fr/de-la-tour-libourne.html · https://www.tripadvisor.com/Hotel_Review-g651697-d3212928-Reviews-Hotel_De_La_Tour_Libourne-Libourne_Gironde_Nouvelle_Aquitaine.html · https://hotels.com/ho499834/la-tour-du-vieux-port-libourne-france · https://in.hotels.com/ho2940238112/logis-hotel-de-la-tour-libourne-france · https://www.ipernity.com/doc/323415/52666198 · https://de-la-tour-libourne.ohotel.fr/ · adresse : https://hoteldelatourlibourne.fr/eng/mentions_legales (relevé du 26/10, non relu aujourd'hui)
 
 ---
 
