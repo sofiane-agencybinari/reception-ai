@@ -21,7 +21,7 @@ Pistes écartées le 29/10 : Manoir de la Roche Torin et Hôtel Libéra Caen (d�
 
 ---
 
-## 1. Best Western Plus Le Roof (Vannes) — AOS — envoi mercredi 4/11, 9 h 45
+## 1. Best Western Plus Le Roof (Vannes) — AOS — envoi jeudi 5/11, 9 h 45
 
 **À :** m.mancel@le-roof.com
 **Objet :** Le Roof : environ 30 000 € par an à récupérer ?
@@ -50,7 +50,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Château de Saulon (Saulon-la-Rue, 21) — AOS — envoi mercredi 4/11, 10 h
+## 2. Château de Saulon (Saulon-la-Rue, 21) — AOS — envoi jeudi 5/11, 10 h
 
 **À :** communication@chateau-saulon.com *(publiée dans l'annuaire Qualité Tourisme pour Stéphanie Tropet-Billet, correspondante ; adresse fonctionnelle)*
 **Objet :** Château de Saulon : environ 31 000 € par an à récupérer ?
@@ -79,7 +79,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Hôtel Aguado (Dieppe) — AOS — envoi mercredi 4/11, 10 h 15
+## 3. Hôtel Aguado (Dieppe) — AOS — envoi jeudi 5/11, 10 h 15
 
 **À :** aguado@hotelsdieppe.com
 **Objet :** Hôtel Aguado : environ 27 000 € par an à récupérer ?
@@ -108,7 +108,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Hôtel Le Saint-Aubin (Saint-Aubin-sur-Mer, 14) — AOS — envoi mercredi 4/11, 10 h 30
+## 4. Hôtel Le Saint-Aubin (Saint-Aubin-sur-Mer, 14) — AOS — envoi jeudi 5/11, 10 h 30
 
 **À :** hotelsaintaubin@orange.fr
 **Objet :** Hôtel Le Saint-Aubin : environ 22 000 € par an à récupérer ?
@@ -137,7 +137,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Hôtel Spa Le Relais des Moines (Villersexel, 70) — AOS — envoi mercredi 4/11, 10 h 45
+## 5. Hôtel Spa Le Relais des Moines (Villersexel, 70) — AOS — envoi jeudi 5/11, 10 h 45
 
 **À :** relaisdesmoines-spa@orange.fr
 **Objet :** Relais des Moines : environ 21 000 € par an à récupérer ?
@@ -166,7 +166,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 6. Ambassadeur Hôtel (Cherbourg) — AOS — envoi mercredi 4/11, 11 h
+## 6. Ambassadeur Hôtel (Cherbourg) — AOS — envoi jeudi 5/11, 11 h
 
 **À :** ambassadeur.hotel@wanadoo.fr
 **Objet :** Ambassadeur Hôtel : environ 19 000 € par an à récupérer ?
@@ -195,7 +195,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 7. Hôtel des Ducs (Dijon) — AOS — envoi mercredi 4/11, 11 h 15
+## 7. Hôtel des Ducs (Dijon) — AOS — envoi jeudi 5/11, 11 h 15
 
 **À :** contact@hoteldesducs.com
 **Objet :** Hôtel des Ducs : environ 19 000 € par an à récupérer ?
@@ -224,7 +224,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 8. Le Floréal (Vence) — AOS — envoi mercredi 4/11, 11 h 30
+## 8. Le Floréal (Vence) — AOS — envoi jeudi 5/11, 11 h 30
 
 **À :** contact@florealvence.com
 **Objet :** Le Floréal : environ 19 000 € par an à récupérer ?

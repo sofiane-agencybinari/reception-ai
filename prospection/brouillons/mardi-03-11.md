@@ -15,7 +15,7 @@
 
 ---
 
-## 1. Le Grand Hôtel (Sète) — AOS — envoi lundi 2/11, 11 h
+## 1. Le Grand Hôtel (Sète) — AOS — envoi mardi 3/11, 11 h
 
 **À :** l.dubois@legrandhotelsete.com
 **Objet :** Le Grand Hôtel de Sète : environ 31 000 € par an à récupérer ?
@@ -33,7 +33,7 @@ Estimation (130 €/nuit, 65 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : mercredi 4/11 à 17 h 30 ou jeudi 12/11 à 15 h 45.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : mercredi 18/11 à 17 h ou jeudi 12/11 à 15 h 45.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -44,7 +44,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Grand Hôtel de l'Europe (Morlaix) — AOS — envoi mardi 3/11, 8 h 30
+## 2. Grand Hôtel de l'Europe (Morlaix) — AOS — envoi mercredi 4/11, 8 h 30
 
 **À :** contact@hoteleurope-morlaix.com
 **Objet :** Grand Hôtel de l'Europe : environ 25 000 € par an à récupérer ?
@@ -62,7 +62,7 @@ Estimation (85 €/nuit, 60 % d'occupation, 55 % des nuits via les plateformes) 
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : jeudi 5/11 à 17 h 30 ou jeudi 12/11 à 17 h.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : mardi 17/11 à 17 h ou jeudi 12/11 à 17 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -75,7 +75,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Dina Morgabine (La Réunion, 5 hôtels) — AOS — envoi mardi 3/11, 8 h 45
+## 3. Dina Morgabine (La Réunion, 5 hôtels) — AOS — envoi mercredi 4/11, 8 h 45
 
 **À :** direction@dinamorgabine.com
 **Objet :** Dina Morgabine : environ 64 000 € par an à récupérer ?
@@ -104,7 +104,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Pizza Gabriel + Nenni Ma Foi (Danjoutin / Belfort) — Ligne — envoi mardi 3/11, 9 h
+## 4. Pizza Gabriel + Nenni Ma Foi (Danjoutin / Belfort) — Ligne — envoi mercredi 4/11, 9 h
 
 **À :** pizzagabrielpro@gmail.com
 **Objet :** Nenni Ma Foi et Pizza Gabriel : 3 300 € par mois d'appels manqués ?

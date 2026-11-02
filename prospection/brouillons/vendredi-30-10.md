@@ -13,7 +13,7 @@ Aucun prospect n'a été remplacé : les 5 restent fiables (sociétés actives, 
 
 ---
 
-## 1. Easy Sushi — Ligne — envoi lundi 2/11, 8 h 30
+## 1. Easy Sushi — Ligne — envoi mardi 3/11, 8 h 30
 **À :** dirigeant@easysushi.org
 **Objet :** Vincent, environ 17 600 € par mois d'appels perdus chez Easy Sushi ?
 
@@ -29,7 +29,7 @@ Sur 7 restaurants :
 
 Ligne décroche en moins de 2 s, 24h/24, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. Dès 49 €/mois par restaurant + minutes (343 € pour 7), installé en 24 h, sans engagement. Démo : ligne-ai.com.
 
-La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mercredi 4/11 à 15 h ou lundi 9/11 à 17 h 15.
+La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : jeudi 5/11 à 15 h 30 ou lundi 9/11 à 17 h 15.
 
 Cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -40,7 +40,7 @@ Sources vérifiées : https://www.easysushi.fr/en/legal-notices · https://www.e
 
 ---
 
-## 2. Mamma Pizza — Ligne — envoi lundi 2/11, 8 h 45
+## 2. Mamma Pizza — Ligne — envoi mardi 3/11, 8 h 45
 **À :** commandes@mammapizzagroup.fr
 **Objet :** Giacomo, environ 6 700 € par mois d'appels perdus chez Mamma Pizza ?
 
@@ -55,7 +55,7 @@ Un avis salue « la dame qui prend notes des commandes au téléphone toujours a
 
 Ligne décroche en moins de 2 s, 24h/24, deux appels simultanés, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. 49 €/mois par restaurant + minutes (98 € pour 2), installé en 24 h, sans engagement. Démo : ligne-ai.com.
 
-La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mercredi 4/11 à 15 h 15 ou lundi 9/11 à 17 h 30.
+La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : jeudi 12/11 à 16 h ou lundi 9/11 à 17 h 30.
 
 Cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -66,7 +66,7 @@ Sources vérifiées : https://mammapizzagroup.fr/mentions-legales · https://mam
 
 ---
 
-## 3. Hostellerie Le Maréchal — AOS — envoi lundi 2/11, 9 h
+## 3. Hostellerie Le Maréchal — AOS — envoi mardi 3/11, 9 h
 **À :** info@le-marechal.com
 **Objet :** Le Maréchal : environ 23 700 € par an à récupérer, Monsieur Bomo ?
 
@@ -83,7 +83,7 @@ Hypothèses : 120 € la nuit, 65 % d'occupation, 55 % des nuits via les platefo
 
 AOS relie vos outils et répond à ces demandes : la moitié récupérée, c'est déjà 12 000 €/an.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mercredi 4/11 à 15 h 30 ou mardi 10/11 à 15 h 15.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 17/11 à 17 h 15 ou mardi 10/11 à 15 h 15.
 
 Cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -94,7 +94,7 @@ Sources vérifiées : https://www.romantikhotels.com/en/hotels/le-marechal/ · h
 
 ---
 
-## 4. YOU Sushi — Ligne — envoi lundi 2/11, 9 h 15
+## 4. YOU Sushi — Ligne — envoi mardi 3/11, 9 h 15
 **À :** contact@yousushi.fr
 **Objet :** YOU Sushi : environ 14 800 € par mois d'appels perdus sur 6 adresses
 
@@ -110,7 +110,7 @@ Sur les 6 adresses :
 
 Ligne décroche en moins de 2 s, 24h/24, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. Dès 49 €/mois par restaurant + minutes (294 € pour 6), installé en 24 h, sans engagement. Démo : ligne-ai.com.
 
-La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mercredi 4/11 à 15 h 45 ou mardi 10/11 à 15 h 45.
+La restauration, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 17/11 à 17 h 30 ou mardi 10/11 à 15 h 45.
 
 Cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -121,7 +121,7 @@ Sources vérifiées : https://www.vie-economique.com/actualites/you-sushi-change
 
 ---
 
-## 5. Hôtel de France (Angers) — AOS — envoyer en dernier — envoi lundi 2/11, 9 h 30
+## 5. Hôtel de France (Angers) — AOS — envoyer en dernier — envoi mardi 3/11, 9 h 30
 **À :** direction@hoteldefrance-angers.com
 **Objet :** Vincent, environ 30 000 € par an à récupérer à l'Hôtel de France ?
 
@@ -138,7 +138,7 @@ Hypothèses : 55 chambres, 140 € la nuit, 65 % d'occupation, moitié des nuits
 
 AOS relie vos outils et traite ces demandes : la moitié récupérée, c'est déjà 15 000 €/an.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mercredi 4/11 à 16 h ou mardi 10/11 à 16 h 15.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mercredi 18/11 à 15 h 15 ou mardi 10/11 à 16 h 15.
 
 Cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
