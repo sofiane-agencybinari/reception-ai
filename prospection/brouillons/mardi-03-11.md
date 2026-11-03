@@ -15,7 +15,7 @@
 
 ---
 
-## 1. Le Grand Hôtel (Sète) — AOS — envoi mardi 3/11, 11 h
+## 1. Le Grand Hôtel (Sète) — AOS — envoi mercredi 4/11, 11 h
 
 **À :** l.dubois@legrandhotelsete.com
 **Objet :** Le Grand Hôtel de Sète : environ 31 000 € par an à récupérer ?
@@ -44,7 +44,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Grand Hôtel de l'Europe (Morlaix) — AOS — envoi mercredi 4/11, 8 h 30
+## 2. Grand Hôtel de l'Europe (Morlaix) — AOS — envoi jeudi 5/11, 8 h 30
 
 **À :** contact@hoteleurope-morlaix.com
 **Objet :** Grand Hôtel de l'Europe : environ 25 000 € par an à récupérer ?
@@ -75,7 +75,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Dina Morgabine (La Réunion, 5 hôtels) — AOS — envoi mercredi 4/11, 8 h 45
+## 3. Dina Morgabine (La Réunion, 5 hôtels) — AOS — envoi jeudi 5/11, 8 h 45
 
 **À :** direction@dinamorgabine.com
 **Objet :** Dina Morgabine : environ 64 000 € par an à récupérer ?
@@ -93,7 +93,7 @@ Estimation (Saint-Denis : 80 chambres, 100 €, 70 % d'occupation, 55 % via plat
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 15 h 15 ou vendredi 13/11 à 15 h (18 h 15 ou 18 h chez vous).
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : lundi 23/11 à 15 h ou vendredi 13/11 à 15 h (18 h 15 ou 18 h chez vous).
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -104,7 +104,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Pizza Gabriel + Nenni Ma Foi (Danjoutin / Belfort) — Ligne — envoi mercredi 4/11, 9 h
+## 4. Pizza Gabriel + Nenni Ma Foi (Danjoutin / Belfort) — Ligne — envoi jeudi 5/11, 9 h
 
 **À :** pizzagabrielpro@gmail.com
 **Objet :** Nenni Ma Foi et Pizza Gabriel : 3 300 € par mois d'appels manqués ?
@@ -121,7 +121,7 @@ Deux adresses, panier de 22 €, 22 soirs/mois :
 
 Ligne décroche en moins de 2 secondes, 24h/24, jusqu'à 4 appels simultanés, prend la commande à la voix, l'envoie sur l'écran cuisine, confirme par SMS, avec tableau de bord. Installation en 24 h, sans engagement, dès 49 €/mois + minutes. Démo : ligne-ai.com.
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 6/11 à 15 h 30 ou vendredi 13/11 à 15 h 15.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : vendredi 20/11 à 15 h 45 ou vendredi 13/11 à 15 h 15.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41

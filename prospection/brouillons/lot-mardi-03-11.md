@@ -18,7 +18,7 @@ Les 4 premières adresses viennent de l'annuaire officiel Qualité Tourisme (mnt
 
 ---
 
-## 1. Le Grand Hôtel (Tours) — AOS — envoi mercredi 4/11, 11 h
+## 1. Le Grand Hôtel (Tours) — AOS — envoi jeudi 5/11, 11 h
 
 **À :** pmdebroglie@legrandhoteltours.com
 **Objet :** Le Grand Hôtel de Tours : environ 38 000 € par an à récupérer ?
@@ -47,7 +47,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Hôtel de JoBo (Paris 4e) — AOS — envoi mercredi 4/11, 11 h 15
+## 2. Hôtel de JoBo (Paris 4e) — AOS — envoi jeudi 5/11, 11 h 15
 
 **À :** xavier@holding-crouzet.com
 **Objet :** Xavier, environ 26 000 € par an à récupérer à l'Hôtel de JoBo ?
@@ -65,7 +65,7 @@ Estimation (200 €/nuit, 80 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 6/11 à 16 h 45 ou mardi 10/11 à 15 h.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 20/11 à 15 h 15 ou mardi 10/11 à 15 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -76,7 +76,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Le Marianne (Paris 8e) — AOS — envoi mercredi 4/11, 11 h 30
+## 3. Le Marianne (Paris 8e) — AOS — envoi jeudi 5/11, 11 h 30
 
 **À :** fneveu@lemarianne.com
 **Objet :** Franck, environ 29 000 € par an à récupérer au Marianne ?
@@ -94,7 +94,7 @@ Estimation (220 €/nuit, 80 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 6/11 à 17 h 15 ou mardi 10/11 à 15 h 30.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 20/11 à 15 h 30 ou mardi 10/11 à 15 h 30.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -105,7 +105,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Le Petit Beaumarchais Hotel & Spa (Paris 11e) — AOS — envoi mercredi 4/11, 11 h 45
+## 4. Le Petit Beaumarchais Hotel & Spa (Paris 11e) — AOS — envoi jeudi 5/11, 11 h 45
 
 **À :** louise.chelly@gmail.com
 **Objet :** Louise, environ 29 000 € par an à récupérer au Petit Beaumarchais ?
@@ -134,7 +134,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Diana Hotels Collection (Alsace, 14 hôtels) — AOS — envoyer en dernier — envoi mercredi 4/11, 12 h
+## 5. Diana Hotels Collection (Alsace, 14 hôtels) — AOS — envoyer en dernier — envoi jeudi 5/11, 12 h
 
 **À :** thomas.baly@dianacollection.com *(déduite : format prenom.nom@dianacollection.com vu sur vanessa.turlin@dianacollection.com, publiée dans l'annuaire Qualité Tourisme)*
 **Objet :** Thomas, environ 144 000 € par an sur les hôtels Diana ?
