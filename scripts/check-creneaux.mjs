@@ -26,8 +26,6 @@ const FIXED = [
   ["16/11", "15:00", "RDV Royal Champagne"],
   ["18/11", "16:00", "OKKO HOTELS (brouillon Gmail du 2/11, réponse à S. Adam / T. Carrié)"],
   ["19/11", "15:30", "OKKO HOTELS (brouillon Gmail du 2/11, réponse à S. Adam / T. Carrié)"],
-  ["5/11", "16:30", "Le Bristol (visio proposée, brouillon Gmail du 3/11)"],
-  ["6/11", "16:00", "Le Bristol (visio proposée, brouillon Gmail du 3/11)"],
 ];
 const BLOCKED = [["16/11", ["15:15", "15:30", "15:45"], "marge du RDV Royal Champagne"]];
 
