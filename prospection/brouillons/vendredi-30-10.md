@@ -13,7 +13,7 @@ Aucun prospect n'a été remplacé : les 5 restent fiables (sociétés actives, 
 
 ---
 
-## 1. Easy Sushi — Ligne — envoi mercredi 4/11, 8 h 30
+## 1. Easy Sushi — Ligne — envoi jeudi 5/11, 8 h 30
 **À :** dirigeant@easysushi.org
 **Objet :** Vincent, environ 17 600 € par mois d'appels perdus chez Easy Sushi ?
 
@@ -40,7 +40,7 @@ Sources vérifiées : https://www.easysushi.fr/en/legal-notices · https://www.e
 
 ---
 
-## 2. Mamma Pizza — Ligne — envoi mercredi 4/11, 8 h 45
+## 2. Mamma Pizza — Ligne — envoi jeudi 5/11, 8 h 45
 **À :** commandes@mammapizzagroup.fr
 **Objet :** Giacomo, environ 6 700 € par mois d'appels perdus chez Mamma Pizza ?
 
@@ -66,7 +66,7 @@ Sources vérifiées : https://mammapizzagroup.fr/mentions-legales · https://mam
 
 ---
 
-## 3. Hostellerie Le Maréchal — AOS — envoi mercredi 4/11, 9 h
+## 3. Hostellerie Le Maréchal — AOS — envoi jeudi 5/11, 9 h
 **À :** info@le-marechal.com
 **Objet :** Le Maréchal : environ 23 700 € par an à récupérer, Monsieur Bomo ?
 
@@ -94,7 +94,7 @@ Sources vérifiées : https://www.romantikhotels.com/en/hotels/le-marechal/ · h
 
 ---
 
-## 4. YOU Sushi — Ligne — envoi mercredi 4/11, 9 h 15
+## 4. YOU Sushi — Ligne — envoi jeudi 5/11, 9 h 15
 **À :** contact@yousushi.fr
 **Objet :** YOU Sushi : environ 14 800 € par mois d'appels perdus sur 6 adresses
 
@@ -121,7 +121,7 @@ Sources vérifiées : https://www.vie-economique.com/actualites/you-sushi-change
 
 ---
 
-## 5. Hôtel de France (Angers) — AOS — envoyer en dernier — envoi mercredi 4/11, 9 h 30
+## 5. Hôtel de France (Angers) — AOS — envoyer en dernier — envoi jeudi 5/11, 9 h 30
 **À :** direction@hoteldefrance-angers.com
 **Objet :** Vincent, environ 30 000 € par an à récupérer à l'Hôtel de France ?
 

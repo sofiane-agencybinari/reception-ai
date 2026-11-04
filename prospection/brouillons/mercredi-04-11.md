@@ -43,7 +43,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Hôtel Le Saint-Pierre (Saint-Pierre, La Réunion) — AOS — envoi jeudi 5/11, 9 h 15
+## 2. Hôtel Le Saint-Pierre (Saint-Pierre, La Réunion) — AOS — envoi vendredi 6/11, 9 h 15
 
 **À :** direction@hotellesaintpierre.fr
 **Objet :** Hôtel Le Saint-Pierre : environ 27 000 € par an à récupérer ?
@@ -61,7 +61,7 @@ Estimation (115 €/nuit, 70 % d'occupation, 55 % via plateformes) :
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA (un numéro pour vos clients pendant leur séjour).
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : lundi 9/11 à 15 h ou vendredi 13/11 à 15 h 30 (18 h ou 18 h 30 chez vous).
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. **Audit gratuit et sans engagement** de 30 min : lundi 23/11 à 15 h 15 ou vendredi 13/11 à 15 h 30 (18 h ou 18 h 30 chez vous).
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -72,7 +72,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Groupe La Mère Poulard / Le Saint Aubert (Mont-Saint-Michel) — AOS — envoi jeudi 5/11, 9 h 30
+## 3. Groupe La Mère Poulard / Le Saint Aubert (Mont-Saint-Michel) — AOS — envoi vendredi 6/11, 9 h 30
 
 **À :** frederic.vincent@merepoulard.fr *(déduite : format vu sur william.delpoux@merepoulard.fr, publiée dans l'annuaire Qualité Tourisme)*
 **Objet :** La Mère Poulard : environ 67 000 € par an à récupérer ?

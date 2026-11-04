@@ -21,7 +21,7 @@ Limites de cette recherche : depuis le cloud, les sites des établissements, Pap
 
 ---
 
-## 1. Le MA – Hôtel de la Tour (Libourne) — AOS — envoi mercredi 4/11, 9 h 45
+## 1. Le MA – Hôtel de la Tour (Libourne) — AOS — envoi jeudi 5/11, 9 h 45
 
 **À :** hoteldelatour.libourne@gmail.com
 **Objet :** Le MA : environ 16 200 € par an à récupérer ?
@@ -52,7 +52,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Esprit Pizza (Nort-sur-Erdre, Nantes) — Ligne — envoi mercredi 4/11, 10 h
+## 2. Esprit Pizza (Nort-sur-Erdre, Nantes) — Ligne — envoi jeudi 5/11, 10 h
 
 **À :** espritpizza@orange.fr
 **Objet :** Esprit Pizza : environ 4 400 € par mois d'appels manqués ?
@@ -80,7 +80,7 @@ Sofiane Aokache — Ligne — 06 95 84 64 41
 
 ---
 
-## 3. Aux Trois Goûts (Strasbourg-Cronenbourg, Eckbolsheim, Wasselonne) — Ligne — envoi mercredi 4/11, 10 h 15
+## 3. Aux Trois Goûts (Strasbourg-Cronenbourg, Eckbolsheim, Wasselonne) — Ligne — envoi jeudi 5/11, 10 h 15
 
 **À :** 3gouts@gmail.com
 **Objet :** Aux Trois Goûts : environ 6 600 € par mois d'appels manqués ?
@@ -108,7 +108,7 @@ Sofiane Aokache — Ligne — 06 95 84 64 41
 
 ---
 
-## 4. Hôtel Vauban (Brest) — AOS — envoi mercredi 4/11, 10 h 30
+## 4. Hôtel Vauban (Brest) — AOS — envoi jeudi 5/11, 10 h 30
 
 **À :** contact@hotelvauban.fr
 **Objet :** Hôtel Vauban : environ 23 400 € par an à récupérer ?
@@ -137,7 +137,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Les Hôtels Saint-Louis (Paris) — AOS — envoyer en dernier — envoi mercredi 4/11, 10 h 45
+## 5. Les Hôtels Saint-Louis (Paris) — AOS — envoyer en dernier — envoi jeudi 5/11, 10 h 45
 
 **À :** marais@saintlouis-hotels.com
 **Objet :** Hôtels Saint-Louis : environ 173 000 € par an à récupérer ?
