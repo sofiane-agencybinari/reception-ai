@@ -15,7 +15,7 @@
 
 ---
 
-## 1. Le Grand Hôtel (Sète) — AOS — envoi jeudi 5/11, 11 h
+## 1. Le Grand Hôtel (Sète) — AOS — envoi vendredi 6/11, 11 h
 
 **À :** l.dubois@legrandhotelsete.com
 **Objet :** Le Grand Hôtel de Sète : environ 31 000 € par an à récupérer ?
@@ -44,7 +44,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Grand Hôtel de l'Europe (Morlaix) — AOS — envoi vendredi 6/11, 8 h 30
+## 2. Grand Hôtel de l'Europe (Morlaix) — AOS — envoi lundi 9/11, 8 h 30
 
 **À :** contact@hoteleurope-morlaix.com
 **Objet :** Grand Hôtel de l'Europe : environ 25 000 € par an à récupérer ?
@@ -75,7 +75,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Dina Morgabine (La Réunion, 5 hôtels) — AOS — envoi vendredi 6/11, 8 h 45
+## 3. Dina Morgabine (La Réunion, 5 hôtels) — AOS — envoi lundi 9/11, 8 h 45
 
 **À :** direction@dinamorgabine.com
 **Objet :** Dina Morgabine : environ 64 000 € par an à récupérer ?
@@ -104,7 +104,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Pizza Gabriel + Nenni Ma Foi (Danjoutin / Belfort) — Ligne — envoi vendredi 6/11, 9 h
+## 4. Pizza Gabriel + Nenni Ma Foi (Danjoutin / Belfort) — Ligne — envoi lundi 9/11, 9 h
 
 **À :** pizzagabrielpro@gmail.com
 **Objet :** Nenni Ma Foi et Pizza Gabriel : 3 300 € par mois d'appels manqués ?

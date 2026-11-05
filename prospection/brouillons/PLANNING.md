@@ -4,6 +4,8 @@ Rythme : **15 mails/jour maximum (jours ouvrés)**, toutes équipes et tous comp
 
 **30/10 : le lot du vendredi n'est pas parti** (aucune ligne datée 2026-10-30 dans suivi.csv pour ces 10 prospects ; les 4 lignes du 30/10 sont des mails « diagnostic » d'une autre série). Tout le planning est donc **décalé d'un jour ouvré**, plafond 15/jour, ordre conservé ; les 5 places libres du lun 2/11 vont aux 5 premières adresses **nominatives** de l'ancien lot du 2/11.
 
+**5/11 (Ronde 17h40) : le lot du jeudi n'est pas parti** (5 envois Cowork ce jour-là). Nouveau décalage d'un jour ouvré : **ven 6/11 (14)**, **lun 9/11 (15)**, **mar 10/11 (13)**. Créneaux trop proches refaits automatiquement, 0 collision.
+
 **4/11 (Ronde 19h40) : le lot du mercredi n'est pas parti.** Ce jour-là, l'équipe Cowork a envoyé 3 mails, et Sofiane a répondu au Bristol. Nouveau décalage d'un jour ouvré : **jeu 5/11 (14)**, **ven 6/11 (15)**, **lun 9/11 (13)**. Les créneaux trop proches de l'envoi ont été refaits automatiquement. Contrôle : 0 collision.
 
 **3/11 (Ronde 17h40) : le lot du mardi n'est pas parti non plus.** Ce jour-là, l'équipe Cowork a envoyé 10 mails « diagnostic ». Nouveau décalage d'un jour ouvré : **mer 4/11 (14)**, **jeu 5/11 (15)** et **ven 6/11 (13)**. Les tags « — envoi … » sont à jour. **19 créneaux refaits** (calculés automatiquement, au plus tôt 2 jours ouvrés après l'envoi, jamais le même jour que le 2e créneau du même mail). Ils tombent du mer 18/11 au lun 23/11. Contrôle : 0 collision. Ce jour-là, le plafond est **15 moins les envois Cowork du jour**.
