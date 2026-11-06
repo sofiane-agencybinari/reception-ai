@@ -1,6 +1,6 @@
 # Visio Le Bristol Paris — fiche de préparation (Ronde, 4/11)
 
-**Statut :** Sofiane a répondu le 4/11 à 15h12 : visio de 30 min proposée le mar 10/11, le jeu 12/11 ou le ven 13/11, entre 9h et 12h. On attend le choix de Manon Naël (Assistante Marketing & e-Commerce). En copie : T. Mattei, A. Dumas et F. Moizan (PDG). Sofiane invite aussi la personne qui gère le moteur de réservation et la distribution.
+**Statut : ✅ RDV FIXÉ mardi 10/11 de 10h30 à 11h00 sur Teams** (« CALL LBP x AOS », invitation envoyée par Manon Naël le 6/11). Participants côté Bristol : Manon Naël (Marketing & e-Commerce), Thomas Mattei, Ambre Dumas, Alexis Canneva. Le lien et le code sont dans l'invitation Gmail du 6/11.
 
 **Interlocuteurs :** équipe Marketing & e-Commerce, donc on parle réservation directe, prix affiché sur Google et parcours client en ligne. Pas d'exploitation pure.
 
