@@ -18,7 +18,7 @@ Pistes écartées le 29/10 : Manoir de la Roche Torin (gauloism@gmail.com publi�
 
 ---
 
-## 1. Best Western Plus Villa Saint Antoine Hôtel & Spa (Clisson) — AOS — envoi vendredi 6/11, 11 h 30
+## 1. Best Western Plus Villa Saint Antoine Hôtel & Spa (Clisson) — AOS — envoi lundi 9/11, 11 h 30
 
 **À :** s.botty@hotel-villa-saint-antoine.com
 **Objet :** Villa Saint Antoine : environ 25 000 € par an à récupérer ?
@@ -47,7 +47,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Platine Hotel (Paris 15e) — AOS — envoi lundi 9/11, 9 h 45
+## 2. Platine Hotel (Paris 15e) — AOS — envoi mardi 10/11, 9 h 45
 
 **À :** direction@platinehotel.fr
 **Objet :** Platine Hotel : environ 29 000 € par an à récupérer ?
@@ -76,7 +76,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Hôtel-Restaurant Au Cygne (Eschau, 67) — AOS — envoi vendredi 6/11, 11 h 45
+## 3. Hôtel-Restaurant Au Cygne (Eschau, 67) — AOS — envoi lundi 9/11, 11 h 45
 
 **À :** fbouyoud@gmail.com
 **Objet :** Frédérique, environ 22 000 € par an à récupérer au Cygne ?
@@ -105,7 +105,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Auberge Frankenbourg (La Vancelle, 67) — AOS — envoi lundi 9/11, 10 h
+## 4. Auberge Frankenbourg (La Vancelle, 67) — AOS — envoi mardi 10/11, 10 h
 
 **À :** g.buecher@gmail.com *(publiée dans l'annuaire Qualité Tourisme comme adresse de contact ; « Guillaume » **déduit** de l'initiale)*
 **Objet :** Auberge Frankenbourg : environ 16 000 € par an à récupérer ?
@@ -134,7 +134,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Hôtel Le Quatorze (Figeac, 46) — AOS — envoi lundi 9/11, 10 h 15
+## 5. Hôtel Le Quatorze (Figeac, 46) — AOS — envoi mardi 10/11, 10 h 15
 
 **À :** direction@le-quatorze.fr
 **Objet :** Hôtel Le Quatorze : environ 16 000 € par an à récupérer ?
