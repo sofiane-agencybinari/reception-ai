@@ -73,8 +73,8 @@
     },
     {
       "id": "p11",
-      "titre": "Le SMS de confirmation",
-      "texte": "Un client qui commande par téléphone veut une seule chose : être sûr que c'est bien noté.\nAvec Ligne, il reçoit un SMS de confirmation dès qu'il raccroche. Et en cuisine, la commande s'affiche directement à l'écran.\nMoins de « c'est pour quel nom déjà ? », moins d'erreurs.",
+      "titre": "Le tableau de bord",
+      "texte": "Combien d'appels hier soir ? À quelle heure ça sonne le plus ? Qu'est-ce qu'on vous demande le plus souvent ?\nAvec Ligne, chaque appel est retrouvable sur votre tableau de bord : la commande, l'heure et ce que le client voulait.\nC'est utile pour caler le personnel du rush, et pour savoir enfin ce qui se passe au téléphone quand vous êtes en cuisine.",
       "visuel": "",
       "date": "2026-11-16"
     },
