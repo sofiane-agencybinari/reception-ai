@@ -24,6 +24,8 @@ const FIXED = [
   ["5/11", "15:00", "Hôtel Belfast (RDV proposé, mail du 27/10)"],
   ["6/11", "15:00", "Hôtel Belfast (RDV proposé, mail du 27/10)"],
   ["16/11", "15:00", "RDV Royal Champagne"],
+  ["9/11", "16:00", "Maison Pic (brouillon Gmail du 6/11, D. Pont)"],
+  ["10/11", "16:30", "Maison Pic (brouillon Gmail du 6/11, D. Pont)"],
   ["18/11", "16:00", "OKKO HOTELS (brouillon Gmail du 2/11, réponse à S. Adam / T. Carrié)"],
   ["19/11", "15:30", "OKKO HOTELS (brouillon Gmail du 2/11, réponse à S. Adam / T. Carrié)"],
 ];
