@@ -21,7 +21,7 @@ Limites de cette recherche : depuis le cloud, les sites des établissements, Pap
 
 ---
 
-## 1. Le MA – Hôtel de la Tour (Libourne) — AOS — envoi lundi 9/11, 9 h 45
+## 1. Le MA – Hôtel de la Tour (Libourne) — AOS — envoi mardi 10/11, 9 h 45
 
 **À :** hoteldelatour.libourne@gmail.com
 **Objet :** Le MA : environ 16 200 € par an à récupérer ?
@@ -39,7 +39,7 @@ Notre estimation (90 € la nuit, 60 % d'occupation, 55 % des nuits via les plat
 
 AOS relie vos outils et prend ces tâches en charge. On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 18/11 à 15 h 30 ou jeudi 12/11 à 17 h 15.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 18/11 à 15 h 30 ou vendredi 13/11 à 16 h 15.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -52,7 +52,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Esprit Pizza (Nort-sur-Erdre, Nantes) — Ligne — envoi lundi 9/11, 10 h
+## 2. Esprit Pizza (Nort-sur-Erdre, Nantes) — Ligne — envoi mardi 10/11, 10 h
 
 **À :** espritpizza@orange.fr
 **Objet :** Esprit Pizza : environ 4 400 € par mois d'appels manqués ?
@@ -69,7 +69,7 @@ Estimation (panier de 25 €, 26 soirs/mois) :
 
 Ligne décroche en moins de 2 secondes, 24h/24, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. Dès 49 €/mois par restaurant + minutes (2 appels simultanés), installation en 24 h, sans engagement. Démo : ligne-ai.com.
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 18/11 à 15 h 45 ou jeudi 12/11 à 17 h 30.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 18/11 à 15 h 45 ou vendredi 13/11 à 16 h 30.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -80,7 +80,7 @@ Sofiane Aokache — Ligne — 06 95 84 64 41
 
 ---
 
-## 3. Aux Trois Goûts (Strasbourg-Cronenbourg, Eckbolsheim, Wasselonne) — Ligne — envoi lundi 9/11, 10 h 15
+## 3. Aux Trois Goûts (Strasbourg-Cronenbourg, Eckbolsheim, Wasselonne) — Ligne — envoi mardi 10/11, 10 h 15
 
 **À :** 3gouts@gmail.com
 **Objet :** Aux Trois Goûts : environ 6 600 € par mois d'appels manqués ?
@@ -97,7 +97,7 @@ Sur 3 restaurants (panier de 25 €, 26 soirs/mois) :
 
 Ligne décroche en moins de 2 secondes, 24h/24, gère jusqu'à 10 appels simultanés, prend la commande à la voix, l'envoie sur l'écran cuisine et confirme par SMS. Dès 49 €/mois par restaurant + minutes, installation en 24 h, sans engagement. Démo : ligne-ai.com.
 
-On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 18/11 à 16 h 15 ou jeudi 12/11 à 15 h.
+On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 18/11 à 16 h 15 ou lundi 16/11 à 16 h.
 
 Bien cordialement,
 Sofiane Aokache — Ligne — 06 95 84 64 41
@@ -108,7 +108,7 @@ Sofiane Aokache — Ligne — 06 95 84 64 41
 
 ---
 
-## 4. Hôtel Vauban (Brest) — AOS — envoi lundi 9/11, 10 h 30
+## 4. Hôtel Vauban (Brest) — AOS — envoi mardi 10/11, 10 h 30
 
 **À :** contact@hotelvauban.fr
 **Objet :** Hôtel Vauban : environ 23 400 € par an à récupérer ?
@@ -126,7 +126,7 @@ Notre estimation (70 € la nuit, 65 % d'occupation, 55 % des nuits via les plat
 
 AOS relie vos outils et prend ces tâches en charge. On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 18/11 à 16 h 30 ou jeudi 12/11 à 15 h 15.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 18/11 à 16 h 30 ou lundi 16/11 à 16 h 15.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -137,7 +137,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Les Hôtels Saint-Louis (Paris) — AOS — envoyer en dernier — envoi lundi 9/11, 10 h 45
+## 5. Les Hôtels Saint-Louis (Paris) — AOS — envoyer en dernier — envoi mardi 10/11, 10 h 45
 
 **À :** marais@saintlouis-hotels.com
 **Objet :** Hôtels Saint-Louis : environ 173 000 € par an à récupérer ?
@@ -155,7 +155,7 @@ Estimation (18 chambres en moyenne, 170 € la nuit, 80 % d'occupation, 55 % via
 
 AOS relie vos outils et prend ces tâches en charge. On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 18/11 à 16 h 45 ou jeudi 12/11 à 15 h 30.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 18/11 à 16 h 45 ou lundi 16/11 à 16 h 30.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41

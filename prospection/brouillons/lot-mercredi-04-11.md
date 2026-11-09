@@ -21,7 +21,7 @@ Pistes écartées le 29/10 : Manoir de la Roche Torin et Hôtel Libéra Caen (d�
 
 ---
 
-## 1. Best Western Plus Le Roof (Vannes) — AOS — envoi jeudi 12/11, 9 h 45
+## 1. Best Western Plus Le Roof (Vannes) — AOS — envoi vendredi 13/11, 9 h 45
 
 **À :** m.mancel@le-roof.com
 **Objet :** Le Roof : environ 30 000 € par an à récupérer ?
@@ -39,7 +39,7 @@ Estimation (110 €/nuit, 65 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel-restaurant, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 20/11 à 17 h 15 ou lundi 16/11 à 16 h.
+Un hôtel-restaurant, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 20/11 à 17 h 15 ou mardi 24/11 à 16 h 45.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -50,7 +50,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Château de Saulon (Saulon-la-Rue, 21) — AOS — envoi jeudi 12/11, 10 h
+## 2. Château de Saulon (Saulon-la-Rue, 21) — AOS — envoi vendredi 13/11, 10 h
 
 **À :** communication@chateau-saulon.com *(publiée dans l'annuaire Qualité Tourisme pour Stéphanie Tropet-Billet, correspondante ; adresse fonctionnelle)*
 **Objet :** Château de Saulon : environ 31 000 € par an à récupérer ?
@@ -68,7 +68,7 @@ Estimation (145 €/nuit, 65 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 23/11 à 17 h 15 ou lundi 16/11 à 17 h.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 23/11 à 17 h 15 ou mardi 24/11 à 17 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -79,7 +79,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Hôtel Aguado (Dieppe) — AOS — envoi jeudi 12/11, 10 h 15
+## 3. Hôtel Aguado (Dieppe) — AOS — envoi vendredi 13/11, 10 h 15
 
 **À :** aguado@hotelsdieppe.com
 **Objet :** Hôtel Aguado : environ 27 000 € par an à récupérer ?
@@ -97,7 +97,7 @@ Estimation (115 €/nuit, 70 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 20/11 à 17 h 30 ou lundi 16/11 à 16 h 15.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : vendredi 20/11 à 17 h 30 ou mardi 24/11 à 17 h 15.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -108,7 +108,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Hôtel Le Saint-Aubin (Saint-Aubin-sur-Mer, 14) — AOS — envoi jeudi 12/11, 10 h 30
+## 4. Hôtel Le Saint-Aubin (Saint-Aubin-sur-Mer, 14) — AOS — envoi vendredi 13/11, 10 h 30
 
 **À :** hotelsaintaubin@orange.fr
 **Objet :** Hôtel Le Saint-Aubin : environ 22 000 € par an à récupérer ?
@@ -126,7 +126,7 @@ Estimation (95 €/nuit, 65 % d'occupation, 55 % des nuits via les plateformes) 
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que vous restez à l'accueil et en salle.
 
-Un hôtel-restaurant, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 23/11 à 17 h 30 ou lundi 16/11 à 16 h 45.
+Un hôtel-restaurant, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 23/11 à 17 h 30 ou mardi 24/11 à 17 h 30.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -137,7 +137,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Hôtel Spa Le Relais des Moines (Villersexel, 70) — AOS — envoi jeudi 12/11, 10 h 45
+## 5. Hôtel Spa Le Relais des Moines (Villersexel, 70) — AOS — envoi vendredi 13/11, 10 h 45
 
 **À :** relaisdesmoines-spa@orange.fr
 **Objet :** Relais des Moines : environ 21 000 € par an à récupérer ?
@@ -155,7 +155,7 @@ Estimation (100 €/nuit, 60 % d'occupation, 55 % des nuits via les plateformes)
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel-restaurant, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : mardi 24/11 à 15 h ou lundi 16/11 à 17 h 15.
+Un hôtel-restaurant, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : mardi 24/11 à 15 h ou mercredi 25/11 à 15 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -166,7 +166,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 6. Ambassadeur Hôtel (Cherbourg) — AOS — envoi jeudi 12/11, 11 h
+## 6. Ambassadeur Hôtel (Cherbourg) — AOS — envoi vendredi 13/11, 11 h
 
 **À :** ambassadeur.hotel@wanadoo.fr
 **Objet :** Ambassadeur Hôtel : environ 19 000 € par an à récupérer ?
@@ -184,7 +184,7 @@ Estimation (85 €/nuit, 70 % d'occupation, 55 % des nuits via les plateformes) 
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 23/11 à 16 h 45 ou lundi 16/11 à 16 h 30.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 23/11 à 16 h 45 ou mercredi 25/11 à 15 h 15.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -195,7 +195,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 7. Hôtel des Ducs (Dijon) — AOS — envoi jeudi 12/11, 11 h 15
+## 7. Hôtel des Ducs (Dijon) — AOS — envoi vendredi 13/11, 11 h 15
 
 **À :** contact@hoteldesducs.com
 **Objet :** Hôtel des Ducs : environ 19 000 € par an à récupérer ?
@@ -213,7 +213,7 @@ Estimation (95 €/nuit, 75 % d'occupation, 55 % des nuits via les plateformes) 
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : lundi 16/11 à 17 h 30 ou mardi 17/11 à 15 h.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : mercredi 25/11 à 15 h 30 ou mardi 17/11 à 15 h.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -224,7 +224,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 8. Le Floréal (Vence) — AOS — envoi jeudi 12/11, 11 h 30
+## 8. Le Floréal (Vence) — AOS — envoi vendredi 13/11, 11 h 30
 
 **À :** contact@florealvence.com
 **Objet :** Le Floréal : environ 19 000 € par an à récupérer ?
