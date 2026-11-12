@@ -29,7 +29,7 @@ Pistes écartées le 29/10 : Hôtel Spa du Béryl (b.reveille@joa.fr, mais l'hô
 
 ---
 
-## 1. Grand Hôtel d'Orléans (Toulouse) — AOS — envoi jeudi 12/11, 12 h
+## 1. Grand Hôtel d'Orléans (Toulouse) — AOS — envoi vendredi 13/11, 12 h
 
 **À :** brigitte.hugounet@grand-hotel-orleans.fr
 **Objet :** Grand Hôtel d'Orléans : environ 26 000 € par an à récupérer ?
@@ -58,7 +58,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Empreinte Hôtel & Spa (Orléans) — AOS — envoi vendredi 13/11, 10 h 30
+## 2. Empreinte Hôtel & Spa (Orléans) — AOS — envoi lundi 16/11, 10 h 30
 
 **À :** pascal.desbois@empreintehotel.com
 **Objet :** Empreinte Hôtel : environ 25 000 € par an à récupérer ?
@@ -87,7 +87,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Hôtel du Lion d'Argent et des Tanneries (La Châtre, 36) — AOS — envoi vendredi 13/11, 10 h 45
+## 3. Hôtel du Lion d'Argent et des Tanneries (La Châtre, 36) — AOS — envoi lundi 16/11, 10 h 45
 
 **À :** pma7@leliondargent.com *(publiée dans l'annuaire Qualité Tourisme pour Pierre Marie Audebert ; « pma » = ses initiales, **déduit**)*
 **Objet :** Lion d'Argent : environ 22 000 € par an à récupérer ?
@@ -105,7 +105,7 @@ Estimation (80 €/nuit, 60 % d'occupation, 55 % des nuits via les plateformes) 
 
 AOS connecte vos logiciels, puis automatise les messages avant et après le séjour. En complément, si vous le souhaitez : un assistant IA que vous utilisez à votre convenance (un numéro pour vos clients pendant leur séjour), pendant que votre équipe reste à l'accueil.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 19/11 à 15 h ou mardi 17/11 à 15 h 30.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. **Audit approfondi, gratuit et sans engagement** de 30 min : jeudi 19/11 à 15 h ou jeudi 26/11 à 15 h 45.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -116,7 +116,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Hôtel Le Manoir (La Rochelle) — AOS — envoi lundi 16/11, 8 h 30
+## 4. Hôtel Le Manoir (La Rochelle) — AOS — envoi mardi 17/11, 8 h 30
 
 **À :** contact@lemanoirlarochelle.com
 **Objet :** Hôtel Le Manoir : environ 17 000 € par an à récupérer ?
@@ -145,7 +145,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Hôtel François 1er (La Rochelle) — AOS — envoi lundi 16/11, 8 h 45
+## 5. Hôtel François 1er (La Rochelle) — AOS — envoi mardi 17/11, 8 h 45
 
 **À :** information@hotelfrancois1er.fr
 **Objet :** Hôtel François 1er : environ 19 000 € par an à récupérer ?
@@ -174,7 +174,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 6. Hostellerie du Forez (Saint-Galmier, 42) — AOS — envoi lundi 16/11, 9 h
+## 6. Hostellerie du Forez (Saint-Galmier, 42) — AOS — envoi mardi 17/11, 9 h
 
 **À :** contact@hostellerieduforez.com
 **Objet :** Hostellerie du Forez : environ 23 000 € par an à récupérer ?
@@ -203,7 +203,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 7. James Boutique Hôtel (Colmar) — AOS — envoi lundi 16/11, 9 h 15
+## 7. James Boutique Hôtel (Colmar) — AOS — envoi mardi 17/11, 9 h 15
 
 **À :** contact@james-hotel.com
 **Objet :** James Boutique Hôtel : environ 25 000 € par an à récupérer ?
@@ -232,7 +232,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 8. Hôtel de la Place — Téjérina (Polliat, 01) — AOS — envoi lundi 16/11, 9 h 30
+## 8. Hôtel de la Place — Téjérina (Polliat, 01) — AOS — envoi mardi 17/11, 9 h 30
 
 **À :** hoteldelaplacepolliat@orange.fr
 **Objet :** Hôtel de la Place : environ 15 000 € par an à récupérer ?

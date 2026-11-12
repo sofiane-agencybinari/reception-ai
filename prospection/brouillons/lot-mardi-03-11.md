@@ -18,7 +18,7 @@ Les 4 premières adresses viennent de l'annuaire officiel Qualité Tourisme (mnt
 
 ---
 
-## 1. Le Grand Hôtel (Tours) — AOS — envoi vendredi 13/11, 11 h
+## 1. Le Grand Hôtel (Tours) — AOS — envoi lundi 16/11, 11 h
 
 **À :** pmdebroglie@legrandhoteltours.com
 **Objet :** Le Grand Hôtel de Tours : environ 38 000 € par an à récupérer ?
@@ -47,7 +47,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Hôtel de JoBo (Paris 4e) — AOS — envoi vendredi 13/11, 11 h 15
+## 2. Hôtel de JoBo (Paris 4e) — AOS — envoi lundi 16/11, 11 h 15
 
 **À :** xavier@holding-crouzet.com
 **Objet :** Xavier, environ 26 000 € par an à récupérer à l'Hôtel de JoBo ?
@@ -76,7 +76,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Le Marianne (Paris 8e) — AOS — envoi vendredi 13/11, 11 h 30
+## 3. Le Marianne (Paris 8e) — AOS — envoi lundi 16/11, 11 h 30
 
 **À :** fneveu@lemarianne.com
 **Objet :** Franck, environ 29 000 € par an à récupérer au Marianne ?
@@ -105,7 +105,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Le Petit Beaumarchais Hotel & Spa (Paris 11e) — AOS — envoi vendredi 13/11, 11 h 45
+## 4. Le Petit Beaumarchais Hotel & Spa (Paris 11e) — AOS — envoi lundi 16/11, 11 h 45
 
 **À :** louise.chelly@gmail.com
 **Objet :** Louise, environ 29 000 € par an à récupérer au Petit Beaumarchais ?
@@ -134,7 +134,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Diana Hotels Collection (Alsace, 14 hôtels) — AOS — envoyer en dernier — envoi vendredi 13/11, 12 h
+## 5. Diana Hotels Collection (Alsace, 14 hôtels) — AOS — envoyer en dernier — envoi lundi 16/11, 12 h
 
 **À :** thomas.baly@dianacollection.com *(déduite : format prenom.nom@dianacollection.com vu sur vanessa.turlin@dianacollection.com, publiée dans l'annuaire Qualité Tourisme)*
 **Objet :** Thomas, environ 144 000 € par an sur les hôtels Diana ?
