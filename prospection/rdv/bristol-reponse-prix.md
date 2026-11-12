@@ -1,5 +1,7 @@
 # Le Bristol : réponse à T. Matteï sur la fourchette de prix (brouillon Ronde, 12/11)
 
+> ⚠️ 12/11 12h37 : Tristan a déjà envoyé l'estimation (9 000–12 000 € HT + 800–1 200 € HT/mois). Ce brouillon est obsolète, ne pas l'envoyer.
+
 > Il ne manque que les montants, à remplir par Sofiane (les [crochets]). Aucun prix n'est inventé ici.
 > Ce texte part en réponse dans le fil Gmail « Re: Le Bristol Paris × AOS » (T. Matteï, avec en copie M. Naël, A. Dumas, A. Canneva et Tristan).
 > Rien n'est envoyé sans « envoie Bristol ».
