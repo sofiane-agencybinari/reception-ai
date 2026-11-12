@@ -9,7 +9,7 @@
 « Le Bristol Paris × AOS — Une fiche client unique, de la chambre au spa ». Date, contact : Sofiane Aokache, 06 95 84 64 41.
 
 ## Page 2 — Ce que nous avons compris (constat partagé pendant la visio)
-- 4 outils qui ne communiquent pas entre eux : Opera PMS (hébergement), SevenRooms (restaurants et bar), TAC (spa), Microsoft Dynamics CRM.
+- 4 outils qui ne communiquent pas entre eux : Opera PMS (hébergement), SevenRooms (restaurants et bar), TAC (spa), Dot.cy (CRM) — corrigé le 12/11 d'après T. Matteï.
 - Aujourd'hui, l'historique d'un client au spa ou au bar n'apparaît pas quand il réserve une chambre. Les équipes le transmettent à la main, par mail.
 - Les intégrations prévues : SevenRooms au 1er trimestre 2027, TAC mi-2027. D'ici là, rien n'est relié.
 
@@ -19,10 +19,10 @@
 - Total : environ 68 000 € et 730 h par an. Estimations à partir de données publiques et d'hypothèses prudentes, à confirmer pendant l'audit.
 
 ## Page 4 — L'objectif
-Un seul point d'entrée pour la donnée client. Chaque passage (chambre, restaurant, bar, spa) met à jour automatiquement la fiche dans Dynamics, sans ressaisie.
+Un seul point d'entrée pour la donnée client. Chaque passage (chambre, restaurant, bar, spa) met à jour automatiquement la fiche dans le CRM (Dot.cy), sans ressaisie.
 
 ## Page 5 — Schéma de la solution
-Opera, SevenRooms, TAC → couche de connexion AOS (API) → fiche client unique dans Dynamics → équipes accueil, conciergerie et marketing.
+Opera, SevenRooms, TAC → couche de connexion AOS (API) → fiche client unique dans le CRM (Dot.cy) → équipes accueil, conciergerie et marketing.
 
 ## Page 6 — Ce que ça change au quotidien (3 cas concrets)
 1. Un client du spa réserve une chambre : la réception voit ses préférences.
