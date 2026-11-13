@@ -66,7 +66,7 @@ Sources vérifiées : https://mammapizzagroup.fr/mentions-legales · https://mam
 
 ---
 
-## 3. Hostellerie Le Maréchal — AOS — envoi vendredi 13/11, 9 h
+## 3. Hostellerie Le Maréchal — AOS — envoi lundi 16/11, 9 h
 **À :** info@le-marechal.com
 **Objet :** Le Maréchal : environ 23 700 € par an à récupérer, Monsieur Bomo ?
 
@@ -83,7 +83,7 @@ Hypothèses : 120 € la nuit, 65 % d'occupation, 55 % des nuits via les platefo
 
 AOS relie vos outils et répond à ces demandes : la moitié récupérée, c'est déjà 12 000 €/an.
 
-Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : mardi 17/11 à 17 h 15 ou vendredi 27/11 à 15 h 30.
+Un hôtel, c'est beaucoup de gestion et de soucis négligés faute de temps. Je vous propose un audit approfondi, gratuit et sans engagement, de 30 minutes : vendredi 27/11 à 15 h 15 ou vendredi 27/11 à 15 h 30.
 
 Cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -121,7 +121,7 @@ Sources vérifiées : https://www.vie-economique.com/actualites/you-sushi-change
 
 ---
 
-## 5. Hôtel de France (Angers) — AOS — envoyer en dernier — envoi vendredi 13/11, 9 h 30
+## 5. Hôtel de France (Angers) — AOS — envoyer en dernier — envoi lundi 16/11, 9 h 30
 **À :** direction@hoteldefrance-angers.com
 **Objet :** Vincent, environ 30 000 € par an à récupérer à l'Hôtel de France ?
 

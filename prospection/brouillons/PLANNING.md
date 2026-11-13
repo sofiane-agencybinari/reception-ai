@@ -70,3 +70,5 @@ Si un jour d'envoi saute, décaler tout le planning d'un jour ouvré **et** refa
 > **12/11 19h45 (Ronde) — décalage d'un jour ouvré** : le lot du jeu 12/11 n'est pas parti (pas de « envoie »). Lots décalés : 12/11→ven 13/11 (14), 13/11→lun 16/11 (15), 16/11→mar 17/11 (13). 12 créneaux d'audit devenus trop proches réattribués (17/11, 26/11, 27/11). check-creneaux : 0 collision.
 
 > **13/11 17h25 (Standard) — 🛑 STOP LIGNE appliqué (règle n°0)** : 6 brouillons restaurants marqués « abandonné — stop Ligne 13/11 » (Esprit Pizza, Aux Trois Goûts, Easy Sushi, Mamma Pizza, + 2 autres dans vendredi-30-10.md / mardi-03-11.md). Lots restants 100 % AOS : ven 13/11 = 9, lun 16/11 = 14, mar 17/11 = 13. Tâches Ligne (post LinkedIn) déjà désactivées.
+
+> **13/11 19h45 (Ronde) — décalage d'un jour ouvré** : lot AOS du ven 13/11 non envoyé. Nouveau planning : lun 16/11 = 9, mar 17/11 = 14, mer 18/11 = 13 (100 % AOS). 10 créneaux d'audit devenus trop proches réattribués (18/11 → 27/11). Seules erreurs restantes de check-creneaux : brouillons Ligne abandonnés (sans tag, normal).

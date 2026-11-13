@@ -15,7 +15,7 @@
 
 ---
 
-## 1. Le Grand Hôtel (Sète) — AOS — envoi vendredi 13/11, 11 h
+## 1. Le Grand Hôtel (Sète) — AOS — envoi lundi 16/11, 11 h
 
 **À :** l.dubois@legrandhotelsete.com
 **Objet :** Le Grand Hôtel de Sète : environ 31 000 € par an à récupérer ?
@@ -44,7 +44,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Grand Hôtel de l'Europe (Morlaix) — AOS — envoi lundi 16/11, 8 h 30
+## 2. Grand Hôtel de l'Europe (Morlaix) — AOS — envoi mardi 17/11, 8 h 30
 
 **À :** contact@hoteleurope-morlaix.com
 **Objet :** Grand Hôtel de l'Europe : environ 25 000 € par an à récupérer ?
@@ -75,7 +75,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Dina Morgabine (La Réunion, 5 hôtels) — AOS — envoi lundi 16/11, 8 h 45
+## 3. Dina Morgabine (La Réunion, 5 hôtels) — AOS — envoi mardi 17/11, 8 h 45
 
 **À :** direction@dinamorgabine.com
 **Objet :** Dina Morgabine : environ 64 000 € par an à récupérer ?

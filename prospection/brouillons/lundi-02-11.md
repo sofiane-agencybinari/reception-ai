@@ -21,7 +21,7 @@ Limites de cette recherche : depuis le cloud, les sites des établissements, Pap
 
 ---
 
-## 1. Le MA – Hôtel de la Tour (Libourne) — AOS — envoi vendredi 13/11, 9 h 45
+## 1. Le MA – Hôtel de la Tour (Libourne) — AOS — envoi lundi 16/11, 9 h 45
 
 **À :** hoteldelatour.libourne@gmail.com
 **Objet :** Le MA : environ 16 200 € par an à récupérer ?
@@ -39,7 +39,7 @@ Notre estimation (90 € la nuit, 60 % d'occupation, 55 % des nuits via les plat
 
 AOS relie vos outils et prend ces tâches en charge. On connaît le secteur : beaucoup de gestion et de soucis négligés faute de temps.
 
-Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 18/11 à 15 h 30 ou mardi 17/11 à 15 h.
+Je vous propose un **audit approfondi, gratuit et sans engagement**, de 30 minutes : mercredi 18/11 à 15 h 30 ou mercredi 18/11 à 16 h 15.
 
 Bien cordialement,
 Sofiane Aokache — AOS — 06 95 84 64 41
@@ -108,7 +108,7 @@ Sofiane Aokache — Ligne — 06 95 84 64 41
 
 ---
 
-## 4. Hôtel Vauban (Brest) — AOS — envoi vendredi 13/11, 10 h 30
+## 4. Hôtel Vauban (Brest) — AOS — envoi lundi 16/11, 10 h 30
 
 **À :** contact@hotelvauban.fr
 **Objet :** Hôtel Vauban : environ 23 400 € par an à récupérer ?
@@ -137,7 +137,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 5. Les Hôtels Saint-Louis (Paris) — AOS — envoyer en dernier — envoi vendredi 13/11, 10 h 45
+## 5. Les Hôtels Saint-Louis (Paris) — AOS — envoyer en dernier — envoi lundi 16/11, 10 h 45
 
 **À :** marais@saintlouis-hotels.com
 **Objet :** Hôtels Saint-Louis : environ 173 000 € par an à récupérer ?
