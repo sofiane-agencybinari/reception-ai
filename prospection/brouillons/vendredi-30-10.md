@@ -13,7 +13,7 @@ Aucun prospect n'a été remplacé : les 5 restent fiables (sociétés actives, 
 
 ---
 
-## 1. Easy Sushi — Ligne — envoi vendredi 13/11, 8 h 30
+## 1. Easy Sushi — Ligne — abandonné — stop Ligne 13/11
 **À :** dirigeant@easysushi.org
 **Objet :** Vincent, environ 17 600 € par mois d'appels perdus chez Easy Sushi ?
 
@@ -40,7 +40,7 @@ Sources vérifiées : https://www.easysushi.fr/en/legal-notices · https://www.e
 
 ---
 
-## 2. Mamma Pizza — Ligne — envoi vendredi 13/11, 8 h 45
+## 2. Mamma Pizza — Ligne — abandonné — stop Ligne 13/11
 **À :** commandes@mammapizzagroup.fr
 **Objet :** Giacomo, environ 6 700 € par mois d'appels perdus chez Mamma Pizza ?
 
@@ -94,7 +94,7 @@ Sources vérifiées : https://www.romantikhotels.com/en/hotels/le-marechal/ · h
 
 ---
 
-## 4. YOU Sushi — Ligne — envoi vendredi 13/11, 9 h 15
+## 4. YOU Sushi — Ligne — abandonné — stop Ligne 13/11
 **À :** contact@yousushi.fr
 **Objet :** YOU Sushi : environ 14 800 € par mois d'appels perdus sur 6 adresses
 

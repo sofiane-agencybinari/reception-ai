@@ -104,7 +104,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Pizza Gabriel + Nenni Ma Foi (Danjoutin / Belfort) — Ligne — envoi lundi 16/11, 9 h
+## 4. Pizza Gabriel + Nenni Ma Foi (Danjoutin / Belfort) — Ligne — abandonné — stop Ligne 13/11
 
 **À :** pizzagabrielpro@gmail.com
 **Objet :** Nenni Ma Foi et Pizza Gabriel : 3 300 € par mois d'appels manqués ?

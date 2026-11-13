@@ -52,7 +52,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Esprit Pizza (Nort-sur-Erdre, Nantes) — Ligne — envoi vendredi 13/11, 10 h
+## 2. Esprit Pizza (Nort-sur-Erdre, Nantes) — Ligne — abandonné — stop Ligne 13/11
 
 **À :** espritpizza@orange.fr
 **Objet :** Esprit Pizza : environ 4 400 € par mois d'appels manqués ?
@@ -80,7 +80,7 @@ Sofiane Aokache — Ligne — 06 95 84 64 41
 
 ---
 
-## 3. Aux Trois Goûts (Strasbourg-Cronenbourg, Eckbolsheim, Wasselonne) — Ligne — envoi vendredi 13/11, 10 h 15
+## 3. Aux Trois Goûts (Strasbourg-Cronenbourg, Eckbolsheim, Wasselonne) — Ligne — abandonné — stop Ligne 13/11
 
 **À :** 3gouts@gmail.com
 **Objet :** Aux Trois Goûts : environ 6 600 € par mois d'appels manqués ?
