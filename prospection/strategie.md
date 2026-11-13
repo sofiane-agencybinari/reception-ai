@@ -1,5 +1,14 @@
 # Stratégie de prospection (mise à jour par l'Analyste chaque vendredi)
 
+## 🛑 RÈGLE N°0 — STOP LIGNE, UNIQUEMENT AOS (décision de Sofiane, 13/11/2026 16h38)
+
+**À partir de maintenant, on ne travaille plus que pour AOS (hôtels indépendants et petits groupes hôteliers).** Cette règle passe avant toutes les autres :
+- **Plus rien au nom de Ligne** : aucun mail, brouillon, relance, démo, post LinkedIn ou contenu Ligne. Plus de prospection restaurants.
+- Brouillons Ligne/restaurants déjà prêts et non envoyés : **ne pas les envoyer**, les marquer « abandonné — stop Ligne 13/11 » dans PLANNING.md et reserve-prospects.md (sans supprimer les lignes).
+- Envois programmés Ligne/restaurants encore en attente dans Outlook : les signaler dans boite-equipes.md pour que Sofiane les annule (ne pas toucher à ceux d'une autre équipe sans son accord).
+- Si un restaurant / prospect Ligne répond : le signaler en une ligne à Sofiane, ne rien préparer.
+- Réserve, brouillons, analyse et idées : 100 % AOS. Les quotas (15 mails/jour) et la méthode chiffrée restent les mêmes.
+
 ## ⚠️ RÈGLE N°1 POUR TOUTES LES ÉQUIPES — communiquer avec Sofiane (22/10)
 
 Sofiane ne veut plus passer d'une conversation à l'autre. Toute équipe (AOS ①–⑤, Analyste, Prospecteur, Rapporteur, restaurants…) qui a :
