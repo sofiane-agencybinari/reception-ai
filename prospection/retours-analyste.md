@@ -57,3 +57,8 @@ L'Analyste lit chaque jour suivi.csv, les réponses reçues, les rebonds et ce q
 - Envois du 12/11 à 17h40 : 2 envois Cowork (Grand Hôtel des Thermes Saint-Malo – O. Raulic ; Château de Pizay – J. Guironnet), tous deux vérifiés sans doublon. Le lot cloud de 14 n'est toujours pas parti faute de « envoie ».
 - Stock de brouillons : suffisant (lots jeu/ven/lun prêts), réserve à 64 lignes « prêt ». Pas de nouvelle rédaction utile tant que les lots existants ne partent pas : la ronde du soir décalera le planning si besoin.
 - Consigne : Cowork envoie en fin de journée (17h-18h30) ; viser plutôt 9h-11h, meilleur taux d'ouverture chez les directeurs d'hôtel.
+
+### 14/11 13h40 (Ronde)
+- Constat : 36 brouillons AOS sont prêts (9 lun 16, 14 mar 17, 13 mer 18). C'est 2,4 jours au rythme de 15/jour, mais plus de 7 semaines au rythme réel (~5 envois Cowork par semaine). Rédiger plus ne sert à rien tant que les lots ne partent pas. Chaque soir, la ronde décale les créneaux d'audit.
+- Constat : la réserve compte 51 prospects AOS « prêt » (plus que les 30 demandés). Aucune réponse depuis l'envoi du devis Bristol (12/11) et de Terre Blanche (13/11).
+- Consigne : un seul « envoie la semaine » de Sofiane lundi matin suffirait à faire partir 36 mails sur 3 jours, en respectant 15/jour (voir idée « envoi groupé du lundi » dans idees.md).
