@@ -23,3 +23,8 @@ Chaque équipe ajoute ici ses idées, sans attendre Sofiane : nouveaux segments,
 - **Constat** : sur les 7 derniers jours ouvrés, les lots préparés dans le cloud ne sont jamais partis (aucun « envoie »). Seul Cowork envoie, environ 2 mails par jour au lieu de 15.
 - **Idée** : chaque lundi matin, un seul message récapitulatif avec les 5 lots de la semaine. Sofiane répond « envoie la semaine » une fois, et les envois partent chaque jour à 9h30, toujours dans la limite de 15 par jour.
 - **Effet attendu** : passer d'environ 10 à 75 mails par semaine sans lui demander plus d'une validation. — statut : à valider par Sofiane
+
+### 14/11 (Ronde) — Appel de suivi J+3 pour les envois Cowork
+- **Constat** : suivi.csv compte environ 230 lignes d'envois et seulement 2 réponses écrites. Le mail seul ne suffit pas pour toucher des directeurs d'hôtel très occupés (« beaucoup de gestion faute de temps »).
+- **Idée** : 3 jours ouvrés après chaque envoi AOS, un appel de 2 minutes à la réception, entre 15 h et 17 h 30, en demandant le directeur nommé : « je vous ai envoyé une estimation chiffrée lundi, avez-vous 15 min pour l'audit gratuit ? ». Première liste pour mer 18/11 : Raulic (Grand Hôtel des Thermes), Guironnet (Château de Pizay), Delauné (Terre Blanche). Je prépare une fiche d'appel d'une ligne par hôtel, sur le modèle de la « fiche audit express ».
+- **Effet attendu** : obtenir les premiers rendez-vous sans envoyer plus de mails. Aucun mail ne part, c'est Sofiane qui appelle. — statut : à valider par Sofiane
