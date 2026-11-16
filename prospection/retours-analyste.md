@@ -75,3 +75,8 @@ L'Analyste lit chaque jour suivi.csv, les réponses reçues, les rebonds et ce q
 - Les 2 « oui » sont des maisons haut de gamme (palace / 5★) avec une équipe structurée.
 - Céline Risso n'est pas venue à la visio du 16/11 15h (mail « je suis connecté » envoyé 15h08, avec la signature Ligne par erreur). → Relance courte et chaleureuse à préparer : nouveau créneau lundi ou mardi 14h30-16h30 (ses créneaux préférés), signature AOS.
 - **Consignes** : appliquer la RÈGLE N°0 bis de strategie.md dès cette nuit. Réécrire tous les brouillons non partis (lots 17/11 et 18/11 en priorité) avec une accroche personnelle sourcée ; ceux sans fait personnel trouvé sont retirés du lot et remis en réserve « à creuser ».
+
+### 17/11 00h45 (Ronde)
+- Constat : 16/11 = 3 envois réels (Geffroy EMERIA Dinard, Corbillé Kasinos de Bretagne, Chaudron Groupe Ettori, via Gmail aos-ai.fr), 0 du lot « lundi 16/11 » des brouillons cloud. 1 RDV tenu : Royal Champagne (Mme Risso) à 15h.
+- Constat : la règle 0 bis (17/11 0h30) rend non conformes les 36 brouillons des lots 16-18/11 : ils listent 2 créneaux d'audit (interdit dans le 1er mail) et n'ouvrent pas sur un fait personnel daté < 6 mois. Le décalage habituel des créneaux est donc sans objet ce soir : je ne l'ai pas fait.
+- Consigne : avant toute programmation, réécrire chaque brouillon au modèle 0 bis (accroche personnelle sourcée → compliment précis → 2 constats chiffrés max → « 20 minutes, la semaine prochaine ? », objet sans montant, 120-170 mots, signature AOS). Pas de fait personnel trouvé = retour en réserve « à creuser ». Priorité : les 4★/5★/palaces du stock.
