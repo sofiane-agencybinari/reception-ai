@@ -9,6 +9,25 @@
 - Si un restaurant / prospect Ligne répond : le signaler en une ligne à Sofiane, ne rien préparer.
 - Réserve, brouillons, analyse et idées : 100 % AOS. Les quotas (15 mails/jour) et la méthode chiffrée restent les mêmes.
 
+## 🎯 RÈGLE N°0 bis — ACCROCHE PERSONNELLE + MINI-AUDIT CHIFFRÉ (décision de Sofiane, 17/11/2026 0h30) — PASSE AVANT LA MÉTHODE CHIFFRÉE
+
+Constat : ~230 mails envoyés depuis le 12/10, **2 vraies réponses positives** (Royal Champagne → RDV ; Le Bristol → visio, proposition, devis). Ces 2 mails sont les seuls à ouvrir sur **un fait récent, vrai et personnel sur la personne** qu'on contacte. Tous les autres ouvrent sur l'hôtel ou sur un chiffre. Analyse complète : retours-analyste.md (17/11).
+
+**Chaque nouveau mail (et chaque brouillon pas encore parti) doit suivre ce modèle :**
+1. **1re phrase = accroche personnelle sur la PERSONNE**, datée de moins de 6 mois, vérifiable, avec la source notée dans le brouillon (lien) :
+   - un trophée, un prix, une étoile, un classement, un label obtenu (ex. Royal Champagne : « Félicitations pour le trophée remis au Chef Raoux au Gault&Millau Tour Grand Est. Votre message à la brigade, « et ce n'est que le début », m'a marqué. ») ;
+   - une prise de poste ou une nomination (ex. Bristol : « Vous avez pris la direction du Bristol le 1er octobre, après l'Eden Rock. ») ;
+   - un post LinkedIn qu'elle a écrit (citer 5-10 mots), une interview, une ouverture, une rénovation, un recrutement en cours.
+   - Où chercher : LinkedIn (posts et activité de la personne), Google Actualités, Gault&Millau, Michelin, Condé Nast, Hospitality ON, Journal des Palaces, L'Hôtellerie Restauration, offres d'emploi récentes.
+   - **Pas de fait personnel trouvé = pas d'envoi.** Le prospect retourne en réserve « à creuser », on passe au suivant. Jamais de flatterie vague (« votre bel établissement ») ni de fait inventé.
+2. **2e phrase = un vrai compliment précis** sur ce qu'ils font bien (ex. Bristol : « vos équipes répondent à chacun de vos 3 200 avis, ce qui est rare à ce volume »).
+3. **Mini-audit chiffré** : 2 constats MAXIMUM, concrets et vérifiables sur leurs propres outils/prix (nommer les logiciels : Synxis, TheFork, Mews, D-Edge… ou un écart de prix réel vu sur Google), chiffrés en € ou en heures par an, hypothèses entre parenthèses.
+4. **Demande petite** : « 20 minutes », offert et sans engagement, « la semaine prochaine ? » (pas de liste de créneaux dans le 1er mail).
+5. **Objet sans code ni montant** : décrire le problème vu de chez eux (ex. « Royal Champagne : un même client, plusieurs logiciels »). Jamais de « [D] » ni de « [D:…] » dans un objet réel ; le montant peut aller dans le corps.
+6. **Cible** : maisons haut de gamme (4★, 5★, palaces, hôtels étoilés ou primés) en priorité — ce sont elles qui ont répondu, et elles ont une équipe à qui transmettre (Bristol a renvoyé vers le marketing et l'a fait vite).
+7. **Signature AOS uniquement** (jamais la bannière Ligne : le mail du 16/11 14h08 à Mme Risso portait encore la signature Ligne → à corriger partout).
+8. Mail court : 120-170 mots hors signature.
+
 ## ✅ RÈGLE ENVOIS — « envoie » permanent de Sofiane (16/11/2026 02h44)
 
 Sofiane a dit « envoie » pour **tous les brouillons AOS (hôtels) vérifiés** : plus besoin d'attendre son feu vert. Chaque jour ouvré, l'équipe qui gère Outlook **programme** les envois du jour (15 max, tous comptes confondus), **espacés dans la journée entre 9 h et 17 h** (environ un toutes les 30 min, jamais deux à la même heure), lots les plus anciens d'abord, adresses nominatives en priorité. Toujours : aucun Ligne/restaurant (règle n°0), vérifier doublons dans suivi.csv et envois déjà programmés, mettre à jour suivi.csv et PLANNING.md après programmation. Tout le reste (recherche, brouillons, LinkedIn, analyse, idées) avance sans attendre.
