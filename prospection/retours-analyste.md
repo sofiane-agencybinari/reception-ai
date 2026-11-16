@@ -62,3 +62,8 @@ L'Analyste lit chaque jour suivi.csv, les réponses reçues, les rebonds et ce q
 - Constat : 36 brouillons AOS sont prêts (9 lun 16, 14 mar 17, 13 mer 18). C'est 2,4 jours au rythme de 15/jour, mais plus de 7 semaines au rythme réel (~5 envois Cowork par semaine). Rédiger plus ne sert à rien tant que les lots ne partent pas. Chaque soir, la ronde décale les créneaux d'audit.
 - Constat : la réserve compte 51 prospects AOS « prêt » (plus que les 30 demandés). Aucune réponse depuis l'envoi du devis Bristol (12/11) et de Terre Blanche (13/11).
 - Consigne : un seul « envoie la semaine » de Sofiane lundi matin suffirait à faire partir 36 mails sur 3 jours, en respectant 15/jour (voir idée « envoi groupé du lundi » dans idees.md).
+
+### 16/11 09h40 (Ronde)
+- Constat : la règle « envoie permanent » (commit fbc3430, 16/11 02h44) est en place, mais à 09h40 aucun des 9 brouillons du lot « lundi 16/11 » n'est programmé ni parti (Outlook : envoyés et brouillons vides depuis 07h ; aucun commit d'équipe depuis). Le premier créneau prévu par la règle (9 h) est déjà passé.
+- Constat : stock inchangé (36 brouillons AOS sur 3 jours, réserve 51 « prêt ») : la rédaction n'est pas le goulot, c'est l'envoi.
+- Consigne : l'équipe qui gère Outlook/aos-ai.fr doit programmer les 9 mails du lot de lundi entre 10 h et 17 h (un toutes les 30–45 min). Sinon, la Ronde du soir décale les lots d'un jour (16→17, 17→18, 18→19).
