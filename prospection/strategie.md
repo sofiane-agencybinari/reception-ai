@@ -9,6 +9,10 @@
 - Si un restaurant / prospect Ligne répond : le signaler en une ligne à Sofiane, ne rien préparer.
 - Réserve, brouillons, analyse et idées : 100 % AOS. Les quotas (15 mails/jour) et la méthode chiffrée restent les mêmes.
 
+## ✅ RÈGLE ENVOIS — « envoie » permanent de Sofiane (16/11/2026 02h44)
+
+Sofiane a dit « envoie » pour **tous les brouillons AOS (hôtels) vérifiés** : plus besoin d'attendre son feu vert. Chaque jour ouvré, l'équipe qui gère Outlook **programme** les envois du jour (15 max, tous comptes confondus), **espacés dans la journée entre 9 h et 17 h** (environ un toutes les 30 min, jamais deux à la même heure), lots les plus anciens d'abord, adresses nominatives en priorité. Toujours : aucun Ligne/restaurant (règle n°0), vérifier doublons dans suivi.csv et envois déjà programmés, mettre à jour suivi.csv et PLANNING.md après programmation. Tout le reste (recherche, brouillons, LinkedIn, analyse, idées) avance sans attendre.
+
 ## ⚠️ RÈGLE N°1 POUR TOUTES LES ÉQUIPES — communiquer avec Sofiane (22/10)
 
 Sofiane ne veut plus passer d'une conversation à l'autre. Toute équipe (AOS ①–⑤, Analyste, Prospecteur, Rapporteur, restaurants…) qui a :
