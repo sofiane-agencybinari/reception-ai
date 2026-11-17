@@ -80,3 +80,12 @@ L'Analyste lit chaque jour suivi.csv, les réponses reçues, les rebonds et ce q
 - Constat : 16/11 = 3 envois réels (Geffroy EMERIA Dinard, Corbillé Kasinos de Bretagne, Chaudron Groupe Ettori, via Gmail aos-ai.fr), 0 du lot « lundi 16/11 » des brouillons cloud. 1 RDV tenu : Royal Champagne (Mme Risso) à 15h.
 - Constat : la règle 0 bis (17/11 0h30) rend non conformes les 36 brouillons des lots 16-18/11 : ils listent 2 créneaux d'audit (interdit dans le 1er mail) et n'ouvrent pas sur un fait personnel daté < 6 mois. Le décalage habituel des créneaux est donc sans objet ce soir : je ne l'ai pas fait.
 - Consigne : avant toute programmation, réécrire chaque brouillon au modèle 0 bis (accroche personnelle sourcée → compliment précis → 2 constats chiffrés max → « 20 minutes, la semaine prochaine ? », objet sans montant, 120-170 mots, signature AOS). Pas de fait personnel trouvé = retour en réserve « à creuser ». Priorité : les 4★/5★/palaces du stock.
+
+### 17/11 07h45 (Ronde) — premiers tests de la règle 0 bis
+
+- **Constat chiffré** : 4 brouillons 4★ testés cette nuit (Saulon, Mère Poulard, Petit Beaumarchais, Le Marianne) → **2 accroches personnelles < 6 mois trouvées (50 %)**, 2 « à creuser ». Les accroches viennent de la presse locale (Info-Beaune) et des réponses signées aux avis Tripadvisor ; LinkedIn et la presse nationale n'ont rien donné de récent.
+- **Conséquence** : à ce rythme, les 36 brouillons des lots 16–18/11 donneraient ~18 mails conformes. Pour tenir 15/jour il faut **~30 recherches d'accroche par jour**.
+- **Consignes** :
+  1. Chercher l'accroche d'abord dans (a) la presse locale (site d'info de la ville), (b) les réponses du dirigeant aux avis Tripadvisor/Google (datées), (c) Facebook/Instagram de l'établissement (événements datés). C'est là que sont les faits récents des indépendants.
+  2. Avant tout envoi des réécritures : revérifier la date de la source (le jour même) et l'adresse.
+  3. Les lots 16–18/11 non réécrits restent **non conformes** : ne pas les envoyer en l'état (Mère Poulard et Petit Beaumarchais marqués SUSPENDU, Saulon et Marianne REMPLACÉ ; les autres ne sont pas encore marqués).
