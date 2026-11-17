@@ -94,3 +94,8 @@ L'Analyste lit chaque jour suivi.csv, les réponses reçues, les rebonds et ce q
 - lot-mercredi-04-11.md : 7 brouillons sur 8 sont des 3★ (Le Roof, Aguado, Saint-Aubin, Relais des Moines, Ambassadeur, Hôtel des Ducs, Floréal), adresses génériques, aucun fait personnel → **marqués SUSPENDU** (règle 0 bis, point 6 : cible 4★/5★/palaces). Seul Saulon (réécrit, 0bis n° 1) reste envoyable.
 - Conséquence : le lot du 18/11 tombe de 8 à 1 mail. Envoyables aujourd'hui : **Saulon + Marianne = 2**. Il faut de nouveaux prospects 4★/5★ avec accroche, pas des réécritures de 3★.
 - Consigne : la réserve doit maintenant être triée par étoiles avant tout travail de rédaction ; ne plus rédiger de 3★.
+
+### 17/11 16h45 (Ronde) — rendement de la source « ouvertures »
+- Bilan de l'après-midi : 7 pistes vérifiées → **1 brouillon conforme 0 bis** (Relais d'Amboise), 1 à creuser (Aubusson, nom du directeur contradictoire), 5 écartées. Hôtel du Sentier et Sanna Gehrke/La Malmaison : articles de lhotellerie-restauration.fr non datés, mais l'ouverture du Sentier date du « 12 janvier » d'une année antérieure (image ~2023) → trop vieux.
+- Consigne : sur lhotellerie-restauration.fr, la date n'apparaît pas toujours dans la page. Ne retenir un fait que si la date est explicite (2026) ; sinon, recouper ailleurs.
+- Stock envoyable au 17/11 soir : **3 mails** (Saulon, Marianne, Amboise). C'est loin des 15/jour : le goulot, c'est la recherche d'accroches. Il faut environ 30 min par prospect conforme.
