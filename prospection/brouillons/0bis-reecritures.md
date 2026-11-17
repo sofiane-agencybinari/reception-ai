@@ -27,3 +27,9 @@ Sofiane Aokache — AOS
 **Fonction :** « Directeur Général du Château de Saulon » sur son profil LinkedIn (fr.linkedin.com/in/jorge-g-0710118, vu le 17/11) → remplace « M. Fayard » de la fiche d'origine (info périmée).
 **Calculs :** repris du détail de lot-mercredi-04-11.md (ressaisie 19 710 € ; chambres 1 444 853 € × 0,4675 % = 6 755 €).
 **À faire avant envoi :** chercher l'adresse nominative de J. Gonzalez (format prénom.nom@chateau-saulon.com non confirmé) ; sinon envoyer à communication@.
+
+---
+
+## À creuser (pas d'accroche < 6 mois trouvée — ne pas envoyer)
+
+- **Groupe La Mère Poulard (mercredi-04-11.md n° 3, F. Vincent)** — faits les plus récents trouvés le 17/11 : interview ICI Cotentin du 30/03/2026 (30 M€ d'ici 2032, « renouveler notre offre hôtelière ») et presse du 19-26/03/2026 → plus de 6 mois. À rouvrir si un fait daté après le 17/05/2026 apparaît (LinkedIn de F. Vincent, réouverture d'un hôtel rénové, nomination). Version d'origine à ne pas envoyer en l'état.

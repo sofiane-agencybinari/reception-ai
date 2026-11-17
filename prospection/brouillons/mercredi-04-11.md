@@ -72,7 +72,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Groupe La Mère Poulard / Le Saint Aubert (Mont-Saint-Michel) — AOS — envoi mardi 17/11, 9 h 30
+## 3. Groupe La Mère Poulard / Le Saint Aubert (Mont-Saint-Michel) — AOS — envoi mardi 17/11, 9 h 30 — ⚠️ SUSPENDU règle 0 bis (à creuser, voir 0bis-reecritures.md)
 
 **À :** frederic.vincent@merepoulard.fr *(déduite : format vu sur william.delpoux@merepoulard.fr, publiée dans l'annuaire Qualité Tourisme)*
 **Objet :** La Mère Poulard : environ 67 000 € par an à récupérer ?
