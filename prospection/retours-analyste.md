@@ -99,3 +99,8 @@ L'Analyste lit chaque jour suivi.csv, les réponses reçues, les rebonds et ce q
 - Bilan de l'après-midi : 7 pistes vérifiées → **1 brouillon conforme 0 bis** (Relais d'Amboise), 1 à creuser (Aubusson, nom du directeur contradictoire), 5 écartées. Hôtel du Sentier et Sanna Gehrke/La Malmaison : articles de lhotellerie-restauration.fr non datés, mais l'ouverture du Sentier date du « 12 janvier » d'une année antérieure (image ~2023) → trop vieux.
 - Consigne : sur lhotellerie-restauration.fr, la date n'apparaît pas toujours dans la page. Ne retenir un fait que si la date est explicite (2026) ; sinon, recouper ailleurs.
 - Stock envoyable au 17/11 soir : **3 mails** (Saulon, Marianne, Amboise). C'est loin des 15/jour : le goulot, c'est la recherche d'accroches. Il faut environ 30 min par prospect conforme.
+
+### 17/11 21h45 (Ronde) — doublon évité de justesse
+- Saint Roch (Courchevel) appartient à Maisons Pariente, groupe déjà écrit 2 fois en octobre (CEO, sans réponse). Le doublon n'a été vu qu'après la recherche (~10 min perdues).
+- Consigne : **avant toute recherche d'accroche**, lancer `grep -i "<hôtel>\|<groupe>\|<ville>" prospection/suivi.csv prospection/brouillons/*.md prospection/linkedin/contacts.json`. Aubusson (LinkedIn) et Saint Roch (suivi.csv) auraient été repérés tout de suite.
+- Bilan du 17/11 : 5 brouillons conformes à la règle 0 bis (Saulon, Marianne, Amboise, Aubusson, Sivolière), 7 brouillons 3★ suspendus, 4 pistes « à creuser ». Échéance : Sivolière avant le 3/12.
