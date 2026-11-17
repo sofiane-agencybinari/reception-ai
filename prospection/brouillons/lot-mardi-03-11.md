@@ -76,7 +76,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 3. Le Marianne (Paris 8e) — AOS — envoi mardi 17/11, 11 h 30
+## 3. Le Marianne (Paris 8e) — AOS — envoi mardi 17/11, 11 h 30 — ⚠️ REMPLACÉ par 0bis-reecritures.md n° 2 (règle 0 bis), ne pas envoyer cette version
 
 **À :** fneveu@lemarianne.com
 **Objet :** Franck, environ 29 000 € par an à récupérer au Marianne ?

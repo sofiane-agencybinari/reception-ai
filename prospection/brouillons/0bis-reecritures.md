@@ -28,6 +28,29 @@ Sofiane Aokache — AOS
 **Calculs :** repris du détail de lot-mercredi-04-11.md (ressaisie 19 710 € ; chambres 1 444 853 € × 0,4675 % = 6 755 €).
 **À faire avant envoi :** chercher l'adresse nominative de J. Gonzalez (format prénom.nom@chateau-saulon.com non confirmé) ; sinon envoyer à communication@.
 
+## 2. Le Marianne (Paris 8e, 4★) — remplace lot-mardi-03-11.md n° 3
+
+**À :** fneveu@lemarianne.com *(adresse de la version d'origine, à revérifier avant envoi)*
+**Objet :** Vos réponses aux avis du Marianne
+
+Bonjour Monsieur Neveu,
+
+En lisant les avis Tripadvisor du Marianne, j'ai vu que vous signez vous-même les réponses, encore cet été. Sur 31 chambres à deux pas des Champs-Élysées, garder ce lien personnel avec chaque client, avec 4,7/5 sur plus de 900 avis, c'est rare.
+
+Deux points, vus de l'extérieur :
+1. Ressaisie entre PMS, channel manager et messagerie : environ 14 800 €/an (1 h 30 par jour à 27 €/h chargé).
+2. Réservations ramenées en direct : environ 9 300 €/an (5 % des nuits vendues sur les plateformes, 31 chambres, 220 €, 80 % d'occupation, 17 % de commission).
+
+Accepteriez-vous 20 minutes, gratuites et sans engagement, la semaine prochaine ? Je vous montre comment rendre ce temps à l'accueil.
+
+Bien cordialement,
+Sofiane Aokache — AOS
+06 95 84 64 41
+
+**Accroche (source) :** réponses signées « Franck Neveu, Directeur général » sur la page Tripadvisor du Marianne, de 12/2024 à 08/2026 (relevé de la fiche d'origine) — https://www.tripadvisor.fr/Hotel_Review-g187147-d7156343-Reviews-Le_Marianne_Hotel-Paris_Ile_de_France.html ; 926 avis au 17/11. **À revérifier avant envoi** : ouvrir la page et noter la date exacte de la dernière réponse signée (doit être ≥ 17/05/2026).
+**Fonction :** LinkedIn « Directeur d'hôtel – Le Marianne Paris » (fr.linkedin.com/in/franckneveu).
+**Calculs :** repris de lot-mardi-03-11.md (ressaisie 14 783 € ; 1 991 440 € × 0,4675 % = 9 310 €). « PMS, channel manager » = outils génériques, logiciels exacts non visibles.
+
 ---
 
 ## À creuser (pas d'accroche < 6 mois trouvée — ne pas envoyer)
