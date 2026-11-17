@@ -53,6 +53,31 @@ Sofiane Aokache — AOS
 
 ---
 
+## 3. Relais d'Amboise (Amboise, 5★) — NOUVEAU prospect (Ronde 17/11 14h45)
+
+**À :** info@relaisdamboise.com — à l'attention de M. Jean-Baptiste Loiseau, directeur général *(adresse générale publiée sur le site ; pas d'adresse nominative trouvée)*
+**Objet :** Le Relais d'Amboise, deux mois après
+
+Bonjour Monsieur Loiseau,
+
+Vingt et un ans au Choiseul, puis la direction du Relais d'Amboise inauguré le 24 septembre : peu de directeurs ouvrent un cinq-étoiles dans la maison qu'ils connaissent par cœur. Le spa creusé dans les Greniers de César et l'entrée chez The Leading Hotels of the World en font déjà une adresse à part sur la Loire.
+
+Deux points, vus de l'extérieur :
+1. Ressaisie entre PMS, channel manager, spa et restaurant : environ 19 700 €/an (2 h par jour à 27 €/h chargé).
+2. Réservations ramenées en direct : environ 41 000 €/an (5 % des nuits vendues sur les plateformes, 63 chambres, 350 € la nuit, 60 % d'occupation, 17 % de commission).
+
+Accepteriez-vous 20 minutes, gratuites et sans engagement, la semaine prochaine ? Je vous montre comment rendre ce temps à vos équipes.
+
+Bien cordialement,
+Sofiane Aokache — AOS
+06 95 84 64 41
+
+**Accroche (sources) :** LinkedIn fr.linkedin.com/in/jean-baptiste-loiseau-bb046a168 (« Directeur général, Relais d'Amboise, févr. 2026 – aujourd'hui » ; « Le Choiseul, 21 ans, directeur exploitation ») ; inauguration le 24/09/2026 : La Revue des Hôtels, 04/10/2026 (larevuedeshotels.com/hotel-relais-amboise-ouverture-cinq-etoiles-spa-troglodytique) ; LHW : TourMaG. Fait < 6 mois ✔.
+**Fiche :** 5★, 36 quai Charles Guinot, 37400 Amboise, 63 chambres dont 22 suites, dès 305 €/nuit, restaurant Le Choiseul (chef Nicolas Aubry), rooftop, piscine, spa troglodyte. Fusion du Choiseul et des Minimes (fermés fin 2024). Propriétaire : Frédéric Jousset (fonds Artnova, déjà propriétaire du Relais de Chambord). Exploitant : **Marugal** (société de gestion hôtelière, directeur Arnaud Laporte). ⚠️ Les décisions logiciel peuvent se prendre chez Marugal : si pas de réponse, viser Arnaud Laporte. Tél. 02 47 30 45 45. Pas de doublon dans suivi.csv (Manoir les Minimes écarté le 29/10 faute d'adresse, avant la fusion).
+**Calculs :** ressaisie 2 h × 27 € × 365 = 19 710 € ; direct 63 × 365 × 0,60 = 13 797 nuits × 350 € = 4 828 950 € × 5 % × 17 % = 41 046 €. 350 € = hypothèse (prix d'appel 305 €), 60 % = hypothèse d'année d'ouverture. **139 mots.** Créneau : non (règle 0 bis, pas de créneaux dans le 1er mail).
+
+---
+
 ## À creuser (pas d'accroche < 6 mois trouvée — ne pas envoyer)
 
 - **Groupe La Mère Poulard (mercredi-04-11.md n° 3, F. Vincent)** — faits les plus récents trouvés le 17/11 : interview ICI Cotentin du 30/03/2026 (30 M€ d'ici 2032, « renouveler notre offre hôtelière ») et presse du 19-26/03/2026 → plus de 6 mois. À rouvrir si un fait daté après le 17/05/2026 apparaît (LinkedIn de F. Vincent, réouverture d'un hôtel rénové, nomination). Version d'origine à ne pas envoyer en l'état.
