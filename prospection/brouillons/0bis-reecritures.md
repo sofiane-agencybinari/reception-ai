@@ -35,7 +35,7 @@ Sofiane Aokache — AOS
 
 Bonjour Monsieur Neveu,
 
-En lisant les avis Tripadvisor du Marianne, j'ai vu que vous signez vous-même les réponses, encore cet été. Sur 31 chambres à deux pas des Champs-Élysées, garder ce lien personnel avec chaque client, avec 4,7/5 sur plus de 900 avis, c'est rare.
+En lisant les avis Tripadvisor du Marianne, j'ai vu que vous signez vous-même les réponses, encore ces dernières semaines. Sur 31 chambres à deux pas des Champs-Élysées, garder ce lien personnel avec chaque client, avec 4,7/5 sur plus de 900 avis, c'est rare.
 
 Deux points, vus de l'extérieur :
 1. Ressaisie entre PMS, channel manager et messagerie : environ 14 800 €/an (1 h 30 par jour à 27 €/h chargé).
@@ -47,7 +47,7 @@ Bien cordialement,
 Sofiane Aokache — AOS
 06 95 84 64 41
 
-**Accroche (source) :** réponses signées « Franck Neveu, Directeur général » sur la page Tripadvisor du Marianne, de 12/2024 à 08/2026 (relevé de la fiche d'origine) — https://www.tripadvisor.fr/Hotel_Review-g187147-d7156343-Reviews-Le_Marianne_Hotel-Paris_Ile_de_France.html ; 926 avis au 17/11. **À revérifier avant envoi** : ouvrir la page et noter la date exacte de la dernière réponse signée (doit être ≥ 17/05/2026).
+**Accroche (source) :** réponses signées « Franck Neveu, Directeur général » sur la page Tripadvisor du Marianne, de 12/2024 à 08/2026 (relevé de la fiche d'origine) — https://www.tripadvisor.fr/Hotel_Review-g187147-d7156343-Reviews-Le_Marianne_Hotel-Paris_Ile_de_France.html ; 926 avis au 17/11. **✔ Vérifié le 18/11 00h40** : réponses signées « Franck_NEVEU, Directeur général » il y a 2 semaines (×2), il y a 3 semaines (×2), puis les 27/09 et 18-19/09/2026 ; 926 avis, note 4,7. Accroche valide, la phrase du mail a été passée à « ces dernières semaines ».
 **Fonction :** LinkedIn « Directeur d'hôtel – Le Marianne Paris » (fr.linkedin.com/in/franckneveu).
 **Calculs :** repris de lot-mardi-03-11.md (ressaisie 14 783 € ; 1 991 440 € × 0,4675 % = 9 310 €). « PMS, channel manager » = outils génériques, logiciels exacts non visibles.
 
