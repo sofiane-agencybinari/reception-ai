@@ -105,7 +105,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 4. Le Petit Beaumarchais Hotel & Spa (Paris 11e) — AOS — envoi mardi 17/11, 11 h 45
+## 4. Le Petit Beaumarchais Hotel & Spa (Paris 11e) — AOS — envoi mardi 17/11, 11 h 45 — ⚠️ SUSPENDU règle 0 bis (à creuser, voir 0bis-reecritures.md)
 
 **À :** louise.chelly@gmail.com
 **Objet :** Louise, environ 29 000 € par an à récupérer au Petit Beaumarchais ?
