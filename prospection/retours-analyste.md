@@ -89,3 +89,8 @@ L'Analyste lit chaque jour suivi.csv, les réponses reçues, les rebonds et ce q
   1. Chercher l'accroche d'abord dans (a) la presse locale (site d'info de la ville), (b) les réponses du dirigeant aux avis Tripadvisor/Google (datées), (c) Facebook/Instagram de l'établissement (événements datés). C'est là que sont les faits récents des indépendants.
   2. Avant tout envoi des réécritures : revérifier la date de la source (le jour même) et l'adresse.
   3. Les lots 16–18/11 non réécrits restent **non conformes** : ne pas les envoyer en l'état (Mère Poulard et Petit Beaumarchais marqués SUSPENDU, Saulon et Marianne REMPLACÉ ; les autres ne sont pas encore marqués).
+
+### 17/11 12h45 (Ronde) — lot du mer 18/11 passé au filtre 0 bis
+- lot-mercredi-04-11.md : 7 brouillons sur 8 sont des 3★ (Le Roof, Aguado, Saint-Aubin, Relais des Moines, Ambassadeur, Hôtel des Ducs, Floréal), adresses génériques, aucun fait personnel → **marqués SUSPENDU** (règle 0 bis, point 6 : cible 4★/5★/palaces). Seul Saulon (réécrit, 0bis n° 1) reste envoyable.
+- Conséquence : le lot du 18/11 tombe de 8 à 1 mail. Envoyables aujourd'hui : **Saulon + Marianne = 2**. Il faut de nouveaux prospects 4★/5★ avec accroche, pas des réécritures de 3★.
+- Consigne : la réserve doit maintenant être triée par étoiles avant tout travail de rédaction ; ne plus rédiger de 3★.
