@@ -111,7 +111,7 @@ Sofiane Aokache — AOS
 
 Bonjour Madame Carcassonne,
 
-La Sivolière rouvre le 3 décembre sous le nom de Sivolière Hôtel & Résidence. Porter une maison fondée en 1980 par Jean Cattelin et lui donner un nouveau chapitre, sans perdre l'esprit chalet que vos clients décrivent comme « calme et discret », c'est un bel équilibre.
+La Sivolière rouvre le 3 décembre sous le nom de Sivolière Hôtel & Résidence. Porter une maison fondée en 1980 par Jean Cattelin et lui donner un nouveau chapitre, sans perdre l’esprit de chalet calme et discret qui fait sa réputation, c’est un bel équilibre.
 
 Deux points, vus de l'extérieur :
 1. Ressaisie entre PMS, channel manager et demandes des clients, sur une saison courte : environ 10 500 €/saison (3 h par jour à 27 €/h chargé, 130 jours).
@@ -123,7 +123,7 @@ Bien cordialement,
 Sofiane Aokache — AOS
 06 95 84 64 41
 
-**Accroche (sources) :** réouverture le jeudi 3/12/2026 sous le nom « Sivolière Hôtel & Résidence », 35 chambres et suites, « fondée en 1980 par Jean Cattelin, pionnier de Courchevel, la maison aujourd'hui portée par Florence Carcassonne » : La Revue des Hôtels, 07/10/2026 (larevuedeshotels.com/nouveaux-hotels-luxe-ski-hiver-2026-2027). « Very quiet, chic and understated lodge » : seecourchevel.com (citation traduite et résumée, à garder entre guillemets seulement si on cite la source, sinon reformuler). Fait < 6 mois ✔.
+**Accroche (sources) :** réouverture le jeudi 3/12/2026 sous le nom « Sivolière Hôtel & Résidence », 35 chambres et suites, « fondée en 1980 par Jean Cattelin, pionnier de Courchevel, la maison aujourd'hui portée par Florence Carcassonne » : La Revue des Hôtels, 07/10/2026 (larevuedeshotels.com/nouveaux-hotels-luxe-ski-hiver-2026-2027). « Very quiet, chic and understated lodge » : seecourchevel.com (reformulé sans guillemets dans le mail). Fait < 6 mois ✔.
 **Fiche :** 444 route des Chenus, Courchevel 1850, tél. 04 79 08 08 33, saisonnier (hiver seulement), 35 chambres (courchevel.com ; 38 « rooms, suites and apartments » selon Tripadvisor). Étoiles : 5★ selon excellencecourchevel.com, **non confirmé** (Atout France à vérifier) → pas d'étoiles dans le mail. Indépendant familial (déduit de l'article ; pas de groupe cité). Fonction exacte de F. Carcassonne non confirmée (« portée par » = propriétaire/dirigeante probable).
 **Calculs :** ressaisie 3 h × 27 € × 130 j = 10 530 € ; direct 35 × 130 × 0,85 = 3 867,5 nuits × 900 € = 3 480 750 € × 5 % × 17 % = 29 586 €. 900 € et 85 % = hypothèses (Courchevel 1850 en saison, prix non relevés). **Envoyer avant le 3/12** (l'accroche « avant l'ouverture » perd son sens après). ~150 mots.
 
