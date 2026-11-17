@@ -78,8 +78,33 @@ Sofiane Aokache — AOS
 
 ---
 
+## 4. Hôtel d'Aubusson (Paris 6e, 5★ indépendant) — NOUVEAU prospect (Ronde 17/11 17h45)
+
+**À :** contact@hoteldaubusson.com — à l'attention de M. Nicolas Guipet, directeur général *(adresse générale publiée sur le site ; pas d'adresse nominative trouvée)*
+**Objet :** La réouverture de l'Hôtel d'Aubusson
+
+Bonjour Monsieur Guipet,
+
+Quatorze ans à la tête de l'Hôtel d'Aubusson, et vous l'avez rouvert en septembre après un an de travaux : 44 clés au lieu de 50, la piscine de 20 m redessinée, et les soirées jazz du Café Laurent reprises dès le 30 septembre. Choisir moins de chambres pour plus d'espace, c'est un vrai parti pris.
+
+Deux points, vus de l'extérieur :
+1. Ressaisie entre PMS, channel manager, spa et service en chambre : environ 19 700 €/an (2 h par jour à 27 €/h chargé).
+2. Réservations ramenées en direct : environ 76 800 €/an (5 % des nuits vendues sur les plateformes, 44 chambres, 750 € la nuit, 75 % d'occupation, 17 % de commission).
+
+Accepteriez-vous 20 minutes, gratuites et sans engagement, la semaine prochaine ? Je vous montre comment rendre ce temps à vos équipes.
+
+Bien cordialement,
+Sofiane Aokache — AOS
+06 95 84 64 41
+
+**Accroche (sources) :** réouverture en 09/2026 après un an de travaux, 44 clés au lieu de 50, piscine de 20 m, jazz du Café Laurent relancé le 30/09 : La Revue des Hôtels, 15/10/2026 (larevuedeshotels.com/hotel-aubusson-paris-reouverture-saint-germain-des-pres). Fait < 6 mois ✔.
+**Fonction :** LinkedIn fr.linkedin.com/in/nicolasguipet (« General Manager, Hôtel d'Aubusson, juil. 2012 – aujourd'hui ») ; mentions légales du site (directeur de la publication) ; président de la SAS AUBUSSON (SIREN 490 754 249, d'après des extraits d'annuaires d'entreprises). Le « Luc Guillo Lohan » cité par l'article est probablement le directeur des opérations : on écrit au DG et président.
+**⚠️ Avant envoi :** Guipet figure dans prospection/linkedin/contacts.json (message préparé le 26/10). Si l'invitation LinkedIn est partie sans réponse, ce mail sert de relance par un autre canal, c'est acceptable. Si elle a reçu une réponse, ne pas envoyer.
+**Calculs :** ressaisie 2 h × 27 € × 365 = 19 710 € ; direct 44 × 365 × 0,75 = 12 045 nuits × 750 € = 9 033 750 € × 5 % × 17 % = 76 787 €. 750 € = hypothèse (prix d'appel 691 € en Supérieure, relevé du 15/10) ; 75 % = hypothèse (Paris 5★). **148 mots.**
+
+---
+
 ## À creuser (pas d'accroche < 6 mois trouvée — ne pas envoyer)
 
 - **Groupe La Mère Poulard (mercredi-04-11.md n° 3, F. Vincent)** — faits les plus récents trouvés le 17/11 : interview ICI Cotentin du 30/03/2026 (30 M€ d'ici 2032, « renouveler notre offre hôtelière ») et presse du 19-26/03/2026 → plus de 6 mois. À rouvrir si un fait daté après le 17/05/2026 apparaît (LinkedIn de F. Vincent, réouverture d'un hôtel rénové, nomination). Version d'origine à ne pas envoyer en l'état.
 - **Le Petit Beaumarchais (lot-mardi-03-11.md n° 4, Louise Chelly)** — recherche du 17/11 : rien de daté après mai 2026 (presse 2021, LinkedIn sans post visible). Piste : ouverture du Petit Oberkampf (« latest Parisian address » sur son site) — date à trouver ; si < 6 mois, accroche possible. **17/11 13h45 : piste fermée** — le Petit Oberkampf (4★, Les Petits Hôtels) a des avis Tripadvisor bien antérieurs à 2026, ce n'est pas une ouverture récente. Dernière piste : le signataire des réponses Tripadvisor du Petit Oberkampf (réponses datées 18/05 et 09/06/2026) — si c'est Louise Chelly, accroche « vos réponses aux avis ». Ne pas envoyer la version d'origine.
-- **Hôtel d'Aubusson (Paris 6e, 5★ indépendant)** — Ronde 17/11 15h45 : accroche possible (réouverture en septembre 2026 après un an de travaux, 44 clés au lieu de 50, spa 400 m², piscine 20 m, soirées jazz du Café Laurent relancées le 30/09 — La Revue des Hôtels, 15/10/2026 ; dès 691 €/nuit). **Bloquant : nom du directeur contradictoire** — l'article cite « son directeur, Luc Guillo Lohan », notre fichier LinkedIn (contacts.json, 26/10) cite Nicolas Guipet, DG. Et Guipet est déjà dans la file LinkedIn : vérifier si l'invitation est partie avant de doubler par mail. Adresses publiées : reservations@ / contact@ / concierge@hoteldaubusson.com (aucune nominative). Ne pas rédiger avant d'avoir tranché.
