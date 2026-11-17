@@ -50,7 +50,7 @@ Sofiane Aokache — AOS — 06 95 84 64 41
 
 ---
 
-## 2. Château de Saulon (Saulon-la-Rue, 21) — AOS — envoi mercredi 18/11, 10 h
+## 2. Château de Saulon (Saulon-la-Rue, 21) — AOS — envoi mercredi 18/11, 10 h — ⚠️ REMPLACÉ par 0bis-reecritures.md n° 1 (règle 0 bis), ne pas envoyer cette version
 
 **À :** communication@chateau-saulon.com *(publiée dans l'annuaire Qualité Tourisme pour Stéphanie Tropet-Billet, correspondante ; adresse fonctionnelle)*
 **Objet :** Château de Saulon : environ 31 000 € par an à récupérer ?
