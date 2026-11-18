@@ -183,7 +183,7 @@ Sofiane Aokache — AOS
 06 95 84 64 41
 
 **Accroche (sources) :** réouverture en décembre 2026, rénovation par Astet Studio, 54 balcons face au Mont-Blanc, « vise la cinquième étoile », prix d'appel 234 € : La Revue des Hôtels, 07/10/2026. Hôtel exploité par Temmos : même source, plus alti-mag. Fait < 6 mois ✔.
-**⚠️ Avant envoi :** vérifier qu'Alain D'Addio est toujours DG de Temmos. Il l'est depuis 2015 selon groupe-ecomedia.com, article non daté, et Temmos figure sur son LinkedIn. S'il ne l'est plus, écrire « Madame, Monsieur » à la direction générale de Temmos. Nombre de clés : 54 selon La Revue, 74 selon alti-mag ; on garde 54 (« 54 balcons »). Siège de Temmos à Chamonix, SIREN 514 972 843. Pas de doublon dans suivi.csv ni LinkedIn.
+**✔ Vérifié le 18/11 à 10h45** : Alain D'Addio est bien « Directeur Général, TEMMOS HOTELS ». Il figure parmi les intervenants d'EquipHotel Paris 2026, dans une table ronde Hospitality Talks animée par Hôtel & Lodge avec @lemorgane.chamonix ; la fiche d'intervenant dit qu'il « dirige depuis 3 ans Temmos Hotels ». **Option d'accroche** : mentionner sa table ronde à EquipHotel, mais seulement si la date est confirmée et passée (sinon, garder l'accroche réouverture). Nombre de clés : 54 selon La Revue, 74 selon alti-mag ; on garde 54 (« 54 balcons »). Siège de Temmos à Chamonix, SIREN 514 972 843. Pas de doublon dans suivi.csv ni LinkedIn.
 **Calculs :** ressaisie 2 h × 27 € × 300 j = 16 200 € ; direct 54 × 300 × 0,70 = 11 340 nuits × 350 € = 3 969 000 € × 5 % × 17 % = 33 737 €. 350 €, 70 % et 300 jours = hypothèses (5★ visé, prix d'appel 234 €, deux saisons). **Envoyer avant la réouverture.** Environ 150 mots.
 
 ---
