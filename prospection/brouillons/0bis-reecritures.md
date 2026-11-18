@@ -138,10 +138,35 @@ Sofiane Aokache — AOS
 
 ---
 
+## 6. Solestia Group / Hôtel Posidonia (Nice + 3 hôtels 4★ à Cannes) — NOUVEAU (Ronde 18/11 7h45)
+
+**À :** admin@posidonia-hotel.com, à l'attention de M. Rodolphe Chupin. L'adresse est générale, publiée dans la politique de confidentialité du site ; reservation@solestia-group.com en secours. Pas d'adresse nominative trouvée.
+**Objet :** Le Posidonia, quatre mois après
+
+Bonjour Monsieur Chupin,
+
+Le Posidonia a ouvert en juillet avec ses 38 chambres, le vitrail de Franck Lebraly et le restaurant Sacha : un an après la création de Solestia, c'est déjà votre quatrième maison, avec le Verlaine, le Cézanne et le Renoir à Cannes. Monter un groupe aussi vite tout en gardant l'esprit de chaque adresse, c'est rare.
+
+Deux points, vus de l'extérieur :
+1. Ressaisie entre PMS, channel manager et messageries, sur quatre hôtels : environ 59 000 €/an (1 h 30 par jour et par hôtel à 27 €/h chargé).
+2. Réservations ramenées en direct au Posidonia seul : environ 20 600 €/an (5 % des nuits vendues sur les plateformes, 38 chambres, 250 € la nuit, 70 % d'occupation, 17 % de commission).
+
+Accepteriez-vous 20 minutes, gratuites et sans engagement, la semaine prochaine ? Je vous montre comment rendre ce temps à vos équipes.
+
+Bien cordialement,
+Sofiane Aokache — AOS
+06 95 84 64 41
+
+**Accroche (sources) :** ouverture du Posidonia le 10/07/2026, 38 chambres, vitrail de Franck Lebraly, restaurant Sacha : La Revue des Hôtels (larevuedeshotels.com/…/hotel-posidonia-nice). Groupe créé en octobre 2025 et 3 hôtels à Cannes : fiche réserve du 23/10 (ligne 33). Fait < 6 mois ✔.
+**À vérifier avant envoi :** les noms des 3 hôtels de Cannes (Verlaine, Cézanne, Renoir) et le 4★ du Posidonia viennent de la fiche réserve du 23/10, pas d'une nouvelle vérification ; si un nom est faux, retirer la liste. Société exploitante du Posidonia : SOROPA, RCS Nice 850 332 263 (politique de confidentialité du site). Pas de doublon dans suivi.csv. Une fois envoyé, passer la ligne 33 de reserve-prospects.md en « envoyé ».
+**Calculs :** ressaisie 4 × 1,5 h × 27 € × 365 = 59 130 € ; direct 38 × 365 × 0,70 = 9 709 nuits × 250 € = 2 427 250 € × 5 % × 17 % = 20 632 €. 250 € et 70 % = hypothèses (Nice 4★, prix non relevés). Environ 140 mots.
+
+---
+
 ## À creuser (pas d'accroche < 6 mois trouvée — ne pas envoyer)
 
 - **Pistes vues le 18/11 à 2h45 (Ronde), pas encore vérifiées** :
-  - **Hôtel Posidonia** (Nice, 38 chambres, restaurant Sacha) : ouvert le 10/07/2026, selon La Revue des Hôtels (larevuedeshotels.com/…/hotel-posidonia-nice). Vu le 18/11 à 6h45. ⚠️ **C'est le 4★ de Solestia Group**, groupe familial de Rodolphe Chupin, déjà en réserve depuis le 23/10 (reserve-prospects.md ligne 33 : 3 hôtels 4★ à Cannes et le Posidonia ; environ 90 k€/an chiffrés). Pas encore contacté : aucune trace dans suivi.csv. Accroche « ouverture du Posidonia le 10/07 » valable jusqu'au 10/01/2027. **Bloquant : il manque l'e-mail direct de R. Chupin** (seule l'adresse générique reservation@solestia-group.com est publiée). Prochaine étape : rédiger le mail 0 bis pour R. Chupin une fois l'adresse trouvée.
+  - **Hôtel Posidonia** (Nice, 38 chambres, restaurant Sacha) : ouvert le 10/07/2026, selon La Revue des Hôtels (larevuedeshotels.com/…/hotel-posidonia-nice). Vu le 18/11 à 6h45. → **Rédigé : voir n° 6.** C'est le 4★ de Solestia Group, groupe familial de Rodolphe Chupin, déjà en réserve depuis le 23/10 (reserve-prospects.md ligne 33 : 3 hôtels 4★ à Cannes et le Posidonia ; environ 90 k€/an chiffrés). Pas encore contacté : aucune trace dans suivi.csv. Accroche « ouverture du Posidonia le 10/07 » valable jusqu'au 10/01/2027. **Bloquant : il manque l'e-mail direct de R. Chupin** (seule l'adresse générique reservation@solestia-group.com est publiée). Prochaine étape : rédiger le mail 0 bis pour R. Chupin une fois l'adresse trouvée.
   - ~~**Hôtellerie des Laquets**~~ — **écartée le 18/11 à 3h45**. Ouverture vérifiée le 25/09/2026 (La Revue des Hôtels, 16/10) : 4★, 16 chambres, à partir de 599 € avec téléphérique et dîner. Mais l'hôtel est vendu et géré par le site du Pic du Midi (picdumidi.com), une structure publique ou parapublique dont les achats passent probablement par appel d'offres. Il fonctionne aussi en forfait tout compris presque complet (environ 96 % d'occupation selon L'Écho touristique) : peu de ressaisie et peu de commissions de plateformes. Pas pour nous.
   - ~~**Bel Hôtel Oléron**~~ — **écarté le 18/11 à 4h45**. C'est un hôtel sous enseigne MGallery Collection, donc dans le réseau Accor (fiche all.accor.com), rouvert vers juin 2026. Les logiciels sont donc imposés par Accor : chaîne, hors cible. Pour mémoire : directeur Serge Lucas, DG de CLR Hôtels (groupe CGR) Vincent Mariau.
 - **Le Morgane (Chamonix, groupe Temmos Hotels)** — Ronde 17/11 22h45 : l'accroche est solide. L'hôtel rouvre en décembre 2026 après une rénovation complète par le studio Astet, avec l'objectif d'obtenir la 5e étoile (sources : La Revue des Hôtels 07/10/2026, alti-mag, dossier de presse de Chamonix hiver 2026-27). Il n'a pas encore été contacté : aucune trace dans suivi.csv, les brouillons ou LinkedIn. **Bloquant : décideur et e-mail non trouvés.** Le nombre de chambres diverge : 54 clés selon La Revue, 74 chambres selon alti-mag. Temmos est un groupe de plusieurs hôtels, donc la décision logiciel se prend probablement au siège. Contact repéré : Marion Pietri, directrice commerciale et marketing de Temmos (LinkedIn). Décideur probable : **Alain D'Addio**, directeur général du groupe Temmos depuis mai 2015 selon groupe-ecomedia.com (article non daté), avec Temmos visible sur son LinkedIn fr.linkedin.com/in/alain-daddio. Il faut vérifier qu'il est toujours en poste en 2026. **Il manque encore le format des adresses @temmos.com.** À envoyer avant la réouverture.
