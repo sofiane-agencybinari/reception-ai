@@ -28,6 +28,8 @@ Sofiane Aokache — AOS
 **Calculs :** repris du détail de lot-mercredi-04-11.md (ressaisie 19 710 € ; chambres 1 444 853 € × 0,4675 % = 6 755 €).
 **À faire avant envoi :** chercher l'adresse nominative de J. Gonzalez (format prénom.nom@chateau-saulon.com non confirmé) ; sinon envoyer à communication@.
 
+**✔ Vérifié le 18/11 01h45** : Jorge G. est DG du Château de Saulon selon son LinkedIn (fr.linkedin.com/in/jorge-g-0710118) et RocketReach ; Laurent Fayard signait encore les réponses Tripadvisor le 18/12/2025, donc la passation date de 2026 (journal-du-palais.fr : « le nouveau directeur »). On écrit bien à M. Gonzalez.
+
 ## 2. Le Marianne (Paris 8e, 4★) — remplace lot-mardi-03-11.md n° 3
 
 **À :** fneveu@lemarianne.com *(adresse de la version d'origine, à revérifier avant envoi)*
