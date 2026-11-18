@@ -104,3 +104,8 @@ L'Analyste lit chaque jour suivi.csv, les réponses reçues, les rebonds et ce q
 - Saint Roch (Courchevel) appartient à Maisons Pariente, groupe déjà écrit 2 fois en octobre (CEO, sans réponse). Le doublon n'a été vu qu'après la recherche (~10 min perdues).
 - Consigne : **avant toute recherche d'accroche**, lancer `grep -i "<hôtel>\|<groupe>\|<ville>" prospection/suivi.csv prospection/brouillons/*.md prospection/linkedin/contacts.json`. Aubusson (LinkedIn) et Saint Roch (suivi.csv) auraient été repérés tout de suite.
 - Bilan du 17/11 : 5 brouillons conformes à la règle 0 bis (Saulon, Marianne, Amboise, Aubusson, Sivolière), 7 brouillons 3★ suspendus, 4 pistes « à creuser ». Échéance : Sivolière avant le 3/12.
+
+### 18/11 17h45 (Ronde) — le stock est prêt, c'est l'envoi qui bloque
+- Mails envoyés le 18/11 : **0/15**. Réponses : 0. Le stock de brouillons conformes 0 bis est passé de 5 à **7** dans la journée (+ Posidonia, + Morgane). Deux pistes « à creuser » ont été fermées (Petit Beaumarchais : dernière réponse Tripadvisor du 13/05, trop ancienne ; Guipet : aucune réponse LinkedIn notée).
+- Constat : 2 accroches sont datées et s'usent vite (Sivolière : réouverture le 3/12 ; Morgane : réouverture en décembre). Chaque jour sans envoi leur fait perdre de la force, alors que la rédaction a pris environ 30 min par mail.
+- Consigne : ne plus rédiger de nouveau mail tant que les 7 ne sont pas partis. La Ronde passe à la vérification des accroches juste avant l'envoi (dates, fonctions) et à la préparation des relances J+3.
