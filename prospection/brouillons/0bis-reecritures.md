@@ -163,13 +163,38 @@ Sofiane Aokache — AOS
 
 ---
 
+## 7. Le Morgane (Chamonix, groupe Temmos) — NOUVEAU (Ronde 18/11 9h45)
+
+**À :** contact@temmos.com (adresse du siège publiée dans les mentions légales de temmos.com), à l'attention de M. Alain D'Addio, directeur général du groupe. En copie possible : direction@hotelmorganechamonix.com, adresse donnée dans une ancienne réponse Tripadvisor, domaine à vérifier.
+**Objet :** La réouverture du Morgane
+
+Bonjour Monsieur D'Addio,
+
+Le Morgane rouvre en décembre au pied de l'Aiguille du Midi, entièrement repensé par Astet Studio, avec 54 balcons face au Mont-Blanc et l'ambition d'une cinquième étoile. Viser ce cap sur une maison historique de Chamonix, c'est un vrai pari, et il se joue souvent sur les détails du séjour.
+
+Deux points, vus de l'extérieur :
+1. Ressaisie entre PMS, channel manager, spa et restaurants : environ 16 200 €/an (2 h par jour à 27 €/h chargé, 300 jours d'ouverture).
+2. Réservations ramenées en direct : environ 33 700 €/an (5 % des nuits vendues sur les plateformes, 54 chambres, 350 € la nuit, 70 % d'occupation sur 300 jours, 17 % de commission).
+
+Accepteriez-vous 20 minutes, gratuites et sans engagement, la semaine prochaine ? Je vous montre comment rendre ce temps à vos équipes avant l'ouverture.
+
+Bien cordialement,
+Sofiane Aokache — AOS
+06 95 84 64 41
+
+**Accroche (sources) :** réouverture en décembre 2026, rénovation par Astet Studio, 54 balcons face au Mont-Blanc, « vise la cinquième étoile », prix d'appel 234 € : La Revue des Hôtels, 07/10/2026. Hôtel exploité par Temmos : même source, plus alti-mag. Fait < 6 mois ✔.
+**⚠️ Avant envoi :** vérifier qu'Alain D'Addio est toujours DG de Temmos. Il l'est depuis 2015 selon groupe-ecomedia.com, article non daté, et Temmos figure sur son LinkedIn. S'il ne l'est plus, écrire « Madame, Monsieur » à la direction générale de Temmos. Nombre de clés : 54 selon La Revue, 74 selon alti-mag ; on garde 54 (« 54 balcons »). Siège de Temmos à Chamonix, SIREN 514 972 843. Pas de doublon dans suivi.csv ni LinkedIn.
+**Calculs :** ressaisie 2 h × 27 € × 300 j = 16 200 € ; direct 54 × 300 × 0,70 = 11 340 nuits × 350 € = 3 969 000 € × 5 % × 17 % = 33 737 €. 350 €, 70 % et 300 jours = hypothèses (5★ visé, prix d'appel 234 €, deux saisons). **Envoyer avant la réouverture.** Environ 150 mots.
+
+---
+
 ## À creuser (pas d'accroche < 6 mois trouvée — ne pas envoyer)
 
 - **Pistes vues le 18/11 à 2h45 (Ronde), pas encore vérifiées** :
   - **Hôtel Posidonia** (Nice, 38 chambres, restaurant Sacha) : ouvert le 10/07/2026, selon La Revue des Hôtels (larevuedeshotels.com/…/hotel-posidonia-nice). Vu le 18/11 à 6h45. → **Rédigé : voir n° 6.** C'est le 4★ de Solestia Group, groupe familial de Rodolphe Chupin, déjà en réserve depuis le 23/10 (reserve-prospects.md ligne 33 : 3 hôtels 4★ à Cannes et le Posidonia ; environ 90 k€/an chiffrés). Pas encore contacté : aucune trace dans suivi.csv. Accroche « ouverture du Posidonia le 10/07 » valable jusqu'au 10/01/2027. **Bloquant : il manque l'e-mail direct de R. Chupin** (seule l'adresse générique reservation@solestia-group.com est publiée). Prochaine étape : rédiger le mail 0 bis pour R. Chupin une fois l'adresse trouvée.
   - ~~**Hôtellerie des Laquets**~~ — **écartée le 18/11 à 3h45**. Ouverture vérifiée le 25/09/2026 (La Revue des Hôtels, 16/10) : 4★, 16 chambres, à partir de 599 € avec téléphérique et dîner. Mais l'hôtel est vendu et géré par le site du Pic du Midi (picdumidi.com), une structure publique ou parapublique dont les achats passent probablement par appel d'offres. Il fonctionne aussi en forfait tout compris presque complet (environ 96 % d'occupation selon L'Écho touristique) : peu de ressaisie et peu de commissions de plateformes. Pas pour nous.
   - ~~**Bel Hôtel Oléron**~~ — **écarté le 18/11 à 4h45**. C'est un hôtel sous enseigne MGallery Collection, donc dans le réseau Accor (fiche all.accor.com), rouvert vers juin 2026. Les logiciels sont donc imposés par Accor : chaîne, hors cible. Pour mémoire : directeur Serge Lucas, DG de CLR Hôtels (groupe CGR) Vincent Mariau.
-- **Le Morgane (Chamonix, groupe Temmos Hotels)** — Ronde 17/11 22h45 : l'accroche est solide. L'hôtel rouvre en décembre 2026 après une rénovation complète par le studio Astet, avec l'objectif d'obtenir la 5e étoile (sources : La Revue des Hôtels 07/10/2026, alti-mag, dossier de presse de Chamonix hiver 2026-27). Il n'a pas encore été contacté : aucune trace dans suivi.csv, les brouillons ou LinkedIn. **Bloquant : décideur et e-mail non trouvés.** Le nombre de chambres diverge : 54 clés selon La Revue, 74 chambres selon alti-mag. Temmos est un groupe de plusieurs hôtels, donc la décision logiciel se prend probablement au siège. Contact repéré : Marion Pietri, directrice commerciale et marketing de Temmos (LinkedIn). Décideur probable : **Alain D'Addio**, directeur général du groupe Temmos depuis mai 2015 selon groupe-ecomedia.com (article non daté), avec Temmos visible sur son LinkedIn fr.linkedin.com/in/alain-daddio. Il faut vérifier qu'il est toujours en poste en 2026. **Il manque encore le format des adresses @temmos.com.** À envoyer avant la réouverture.
+- **Le Morgane (Chamonix, groupe Temmos Hotels)** → **rédigé : voir n° 7.** — Ronde 17/11 22h45 : l'accroche est solide. L'hôtel rouvre en décembre 2026 après une rénovation complète par le studio Astet, avec l'objectif d'obtenir la 5e étoile (sources : La Revue des Hôtels 07/10/2026, alti-mag, dossier de presse de Chamonix hiver 2026-27). Il n'a pas encore été contacté : aucune trace dans suivi.csv, les brouillons ou LinkedIn. **Bloquant : décideur et e-mail non trouvés.** Le nombre de chambres diverge : 54 clés selon La Revue, 74 chambres selon alti-mag. Temmos est un groupe de plusieurs hôtels, donc la décision logiciel se prend probablement au siège. Contact repéré : Marion Pietri, directrice commerciale et marketing de Temmos (LinkedIn). Décideur probable : **Alain D'Addio**, directeur général du groupe Temmos depuis mai 2015 selon groupe-ecomedia.com (article non daté), avec Temmos visible sur son LinkedIn fr.linkedin.com/in/alain-daddio. Il faut vérifier qu'il est toujours en poste en 2026. **Il manque encore le format des adresses @temmos.com.** À envoyer avant la réouverture.
 - **Saint Roch Courchevel 1850 (Maisons Pariente, 5★)** — ⚠️ **DÉJÀ CONTACTÉ** : suivi.csv montre 2 mails à François Tixier-Lacaze (CEO), le 16/10 sur contact@ et le 17/10 sur f.tixier-lacaze@maisonspariente.com (format déduit), sans réponse. **Ne pas faire de 1er mail.** Seule option : une relance au CEO avec l'accroche Saint Roch (ouverture le 18/12/2026, 5e adresse du groupe ; site officiel et The Hospitality Tribune du 09/09/2026). À décider par Sofiane, et à faire seulement si la règle « relance » le permet.
 - **Groupe La Mère Poulard (mercredi-04-11.md n° 3, F. Vincent)** — faits les plus récents trouvés le 17/11 : interview ICI Cotentin du 30/03/2026 (30 M€ d'ici 2032, « renouveler notre offre hôtelière ») et presse du 19-26/03/2026 → plus de 6 mois. À rouvrir si un fait daté après le 17/05/2026 apparaît (LinkedIn de F. Vincent, réouverture d'un hôtel rénové, nomination). Version d'origine à ne pas envoyer en l'état.
 - **Le Petit Beaumarchais (lot-mardi-03-11.md n° 4, Louise Chelly)** — recherche du 17/11 : rien de daté après mai 2026 (presse 2021, LinkedIn sans post visible). Piste : ouverture du Petit Oberkampf (« latest Parisian address » sur son site) — date à trouver ; si < 6 mois, accroche possible. **17/11 13h45 : piste fermée** — le Petit Oberkampf (4★, Les Petits Hôtels) a des avis Tripadvisor bien antérieurs à 2026, ce n'est pas une ouverture récente. Dernière piste : le signataire des réponses Tripadvisor du Petit Oberkampf (réponses datées 18/05 et 09/06/2026) — si c'est Louise Chelly, accroche « vos réponses aux avis ». Ne pas envoyer la version d'origine.
