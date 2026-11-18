@@ -158,7 +158,7 @@ Sofiane Aokache — AOS
 06 95 84 64 41
 
 **Accroche (sources) :** ouverture du Posidonia le 10/07/2026, 38 chambres, vitrail de Franck Lebraly, restaurant Sacha : La Revue des Hôtels (larevuedeshotels.com/…/hotel-posidonia-nice). Groupe créé en octobre 2025 et 3 hôtels à Cannes : fiche réserve du 23/10 (ligne 33). Fait < 6 mois ✔.
-**À vérifier avant envoi :** les noms des 3 hôtels de Cannes (Verlaine, Cézanne, Renoir) et le 4★ du Posidonia viennent de la fiche réserve du 23/10, pas d'une nouvelle vérification ; si un nom est faux, retirer la liste. Société exploitante du Posidonia : SOROPA, RCS Nice 850 332 263 (politique de confidentialité du site). Pas de doublon dans suivi.csv. Une fois envoyé, passer la ligne 33 de reserve-prospects.md en « envoyé ».
+**✔ Vérifié le 18/11 à 8h45** : Verlaine (46 chambres), Cézanne (29 chambres, spa) et Renoir, tous 4★ à Cannes, se renvoient l'un à l'autre sur leurs sites (« the hotels in our collection »). Amilcar Magazine confirme le lancement du groupe Solestia avec le rachat de ces 3 hôtels. Société exploitante du Posidonia : SOROPA, RCS Nice 850 332 263 (politique de confidentialité du site). Pas de doublon dans suivi.csv. Une fois envoyé, passer la ligne 33 de reserve-prospects.md en « envoyé ».
 **Calculs :** ressaisie 4 × 1,5 h × 27 € × 365 = 59 130 € ; direct 38 × 365 × 0,70 = 9 709 nuits × 250 € = 2 427 250 € × 5 % × 17 % = 20 632 €. 250 € et 70 % = hypothèses (Nice 4★, prix non relevés). Environ 140 mots.
 
 ---
