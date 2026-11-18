@@ -4,12 +4,14 @@ Chaque mail ici **remplace** la version d'origine indiquée. Modèle : accroche 
 
 ---
 
-> **Ordre d'envoi conseillé (Ronde, 18/11 5h45)**, 5 mails conformes, à répartir entre 9 h et 17 h selon la règle ENVOIS :
-> 1. **Sivolière** (n° 5) : la réouverture est le 3/12, donc c'est le plus urgent.
-> 2. **Relais d'Amboise** (n° 3) : inauguré il y a 8 semaines, l'accroche perd de sa force chaque semaine.
-> 3. **Hôtel d'Aubusson** (n° 4) : vérifier d'abord qu'il n'y a pas eu de réponse LinkedIn de N. Guipet.
-> 4. **Le Marianne** (n° 2) : accroche revérifiée le 18/11.
-> 5. **Château de Saulon** (n° 1) : accroche du 14/07, valable jusqu'à mi-janvier.
+> **Ordre d'envoi conseillé (Ronde, mis à jour 18/11 16h45)** : 7 mails conformes, à répartir entre 9 h et 17 h selon la règle ENVOIS.
+> 1. **Sivolière** (n° 5) : la réouverture est le 3/12, c'est le plus urgent.
+> 2. **Le Morgane** (n° 7) : la réouverture est en décembre, l'accroche ne vaut qu'avant.
+> 3. **Relais d'Amboise** (n° 3) : inauguré il y a 8 semaines, l'accroche s'use chaque semaine.
+> 4. **Solestia / Posidonia** (n° 6) : ouvert le 10/07, l'accroche « quatre mois après » s'use vite.
+> 5. **Hôtel d'Aubusson** (n° 4) : aucune réponse LinkedIn de N. Guipet n'est notée (vérifié le 18/11) ; Sofiane confirme sur LinkedIn.
+> 6. **Le Marianne** (n° 2) : accroche revérifiée le 18/11.
+> 7. **Château de Saulon** (n° 1) : accroche du 14/07, valable jusqu'à mi-janvier.
 
 ## 1. Château de Saulon (Saulon-la-Rue, 21, 4★) — remplace lot-mercredi-04-11.md n° 2
 
