@@ -33,3 +33,12 @@ Chaque équipe ajoute ici ses idées, sans attendre Sofiane : nouveaux segments,
 - **Fait** : sur 2 recherches dans larevuedeshotels.com (rubrique « Nouveaux hôtels France »), 2 hôtels 5★ indépendants avec un fait daté < 2 mois (Relais d'Amboise inauguré le 24/09, Hôtel d'Aubusson rouvert en 09/2026) et un directeur cité. Avec la méthode presse locale / avis Tripadvisor, on était à 2 accroches sur 4 essais.
 - **Idée** : chaque Ronde passe d'abord par les ouvertures et réouvertures 4★/5★ en France (larevuedeshotels.com/nouveaux-hotels-france, lhotellerie-restauration.fr). Une ouverture = accroche datée, une équipe qui met ses outils en place, et un budget logiciel ouvert.
 - **Garde-fou** : vérifier que l'hôtel n'est pas géré par une chaîne (Accor, Marriott…). Une société de gestion indépendante (ex. Marugal) reste acceptable.
+
+### 18/11 13h45 (Ronde) — Relancer les groupes déjà contactés grâce à leur ouverture de cet hiver
+- **Fait** : 3 groupes déjà écrits en octobre sans réponse ouvrent un nouvel hôtel en décembre 2026 (La Revue des Hôtels, 07/10) :
+  - Chapitre Six : Bourbon Hotel, Courchevel 1850, 5★, 31 chambres, 1re nuit le 18/12 ; Nicolas Saltiel, contacté les 20 et 21/10.
+  - Maisons Pariente : Saint Roch, Courchevel 1850, ouverture le 18/12 ; François Tixier-Lacaze, contacté les 16 et 17/10.
+  - Fahrenheit Seven / The Sevener : 3e hôtel aux Menuires, 4★, 1re nuit le 11/12 ; Stéphane Vidoni, contacté le 28/10.
+- **Idée** : une **relance courte** (≤ 90 mots) à chacun avant l'ouverture. Accroche : « ouverture le 18/12 », puis une seule question : « comment comptez-vous gérer les réservations et le planning du nouvel hôtel avec les autres ? ». Ce sont des relances, pas des premiers mails : la règle des 15/jour s'applique, et cela ne compte pas comme un nouveau prospect.
+- **Pourquoi** : une ouverture est le seul moment où un groupe rouvre la question de ses logiciels, et ces 3 dirigeants connaissent déjà le nom AOS.
+- → **À valider par Sofiane** : « oui relances ouvertures » / « non ».
