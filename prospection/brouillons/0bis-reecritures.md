@@ -109,6 +109,7 @@ Sofiane Aokache — AOS
 **Accroche (sources) :** réouverture en 09/2026 après un an de travaux, 44 clés au lieu de 50, piscine de 20 m, jazz du Café Laurent relancé le 30/09 : La Revue des Hôtels, 15/10/2026 (larevuedeshotels.com/hotel-aubusson-paris-reouverture-saint-germain-des-pres). Fait < 6 mois ✔.
 **Fonction :** LinkedIn fr.linkedin.com/in/nicolasguipet (« General Manager, Hôtel d'Aubusson, juil. 2012 – aujourd'hui ») ; mentions légales du site (directeur de la publication) ; président de la SAS AUBUSSON (SIREN 490 754 249, d'après des extraits d'annuaires d'entreprises). Le « Luc Guillo Lohan » cité par l'article est probablement le directeur des opérations : on écrit au DG et président.
 **⚠️ Avant envoi :** Guipet figure dans prospection/linkedin/contacts.json (message préparé le 26/10). Si l'invitation LinkedIn est partie sans réponse, ce mail sert de relance par un autre canal, c'est acceptable. Si elle a reçu une réponse, ne pas envoyer.
+**18/11 15h45 (Ronde) :** contacts.json ne garde ni statut d'envoi ni réponse pour Guipet (message préparé le 26/10, LinkedIn en pause depuis). Rien n'indique une réponse → l'envoi du mail reste possible ; seul Sofiane peut confirmer sur LinkedIn qu'aucun échange n'a eu lieu.
 **Calculs :** ressaisie 2 h × 27 € × 365 = 19 710 € ; direct 44 × 365 × 0,75 = 12 045 nuits × 750 € = 9 033 750 € × 5 % × 17 % = 76 787 €. 750 € = hypothèse (prix d'appel 691 € en Supérieure, relevé du 15/10) ; 75 % = hypothèse (Paris 5★). **148 mots.**
 
 ---
