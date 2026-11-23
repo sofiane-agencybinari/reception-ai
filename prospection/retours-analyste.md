@@ -109,3 +109,7 @@ L'Analyste lit chaque jour suivi.csv, les réponses reçues, les rebonds et ce q
 - Mails envoyés le 18/11 : **0/15**. Réponses : 0. Le stock de brouillons conformes 0 bis est passé de 5 à **7** dans la journée (+ Posidonia, + Morgane). Deux pistes « à creuser » ont été fermées (Petit Beaumarchais : dernière réponse Tripadvisor du 13/05, trop ancienne ; Guipet : aucune réponse LinkedIn notée).
 - Constat : 2 accroches sont datées et s'usent vite (Sivolière : réouverture le 3/12 ; Morgane : réouverture en décembre). Chaque jour sans envoi leur fait perdre de la force, alors que la rédaction a pris environ 30 min par mail.
 - Consigne : ne plus rédiger de nouveau mail tant que les 7 ne sont pas partis. La Ronde passe à la vérification des accroches juste avant l'envoi (dates, fonctions) et à la préparation des relances J+3.
+
+### 23/11 15h40 (Ronde) — 4 envois hors cible (chaîne Accor)
+- **Constat** : sur 6 envois du 20 au 23/11, 4 visent des hôtels MGallery (Accor), soit 67 % hors cible ; 1 refus (Napoléon, 20/11) ; 0 réponse positive.
+- **Consigne** : exclure tout domaine de chaîne (@accor.com, @marriott.com, @hilton.com, @ihg.com, @hyatt.com) avant envoi ; pas de relance J+3 sur ces 4 ; reprendre les 7 brouillons conformes de 0bis-reecritures.md (Sivolière avant le 3/12).
